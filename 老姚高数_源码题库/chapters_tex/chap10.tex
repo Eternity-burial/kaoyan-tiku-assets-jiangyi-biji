@@ -1,0 +1,9998 @@
+\begin{center}
+{\Large \bfseries \textcolor{lyred}{第十章 重积分}}
+\end{center}
+
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第10.1 节 二重积分的概念与性质}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.二重积分的概念}}
+
+{\bfseries \textcolor{lyred}{1.曲顶柱体的体积}}
+
+{\bfseries \textcolor{lyred}{2.平面薄片的质量}}
+
+{\bfseries \textcolor{lyred}{3.二重积分的定义}}
+
+设
+(
+)
+,
+f x y 在有界闭区域D 上有界,将D 任意分成n 小块
+i
+\sigma 
+\Delta 
+,作二重积分和 
+(
+)
+,
+n
+i
+i
+i
+i
+f \psi \eta 
+\sigma 
+=
+\Delta 
+\sum 
+, (
+)
+,
+i
+i
+i
+\psi \eta 
+\sigma 
+\forall 
+\in \Delta 
+,若在无限细分D 的过程中,随
+\lambda \to 
+,该和总是 
+趋向于同一常数I ,它只依赖于
+(
+)
+,
+f x y 和D ,则称
+(
+)
+,
+f x y 在D 上\textcolor{lyred}{可积},记 
+(
+)
+,
+D
+I
+f x y d\sigma 
+=\int \int 
+,称它为
+(
+)
+,
+f x y 在D 上的\textcolor{lyred}{二重积分},其中
+(
+)
+,
+f x y 为\textcolor{lyred}{被积函数}, 
+(
+)
+,
+f x y d\sigma 为\textcolor{lyred}{被积表达式}, d\sigma 为\textcolor{lyred}{面积元素},在直角坐标下,也可以记d
+dxdy
+\sigma =
+, 
+D 为\textcolor{lyred}{积分区域}, ,x y 为\textcolor{lyred}{积分变量}. 
+\textcolor{lyred}{定理}.平面有界闭区域上的二元连续函数必可积. 
+\textcolor{lyred}{例}.
+x
+y
+a
+a
+x
+y d
+a
+\sigma 
+\pi 
++
+\le 
+-
+-
+=
+\int \int 
+. 
+\textcolor{lyred}{例}.
+x
+y
+a
+x
+y d
+a
+a
+a
+a
+a
+\sigma 
+\pi 
+\pi 
+\pi 
++
+\le 
++
+=
+\cdots 
+-
+\cdots 
+=
+\int \int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.二重积分的性质}}
+
+\textcolor{lyred}{性质1}.
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+D
+D
+D
+f x y
+g x y
+d
+f x y d
+g x y d
+\alpha 
+\beta 
+\sigma 
+\alpha 
+\sigma 
+\beta 
+\sigma 
+\pm 
+=
+\pm 
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+; 
+\textcolor{lyred}{性质2}.
+(
+)
+(
+)
+(
+)
+,
+,
+,
+D
+D
+D
+D
+f
+x y d
+f x y d
+f
+x y d
+\sigma 
+\sigma 
+\sigma 
++
+=
++
+\int \int 
+\int \int 
+\int \int 
+; 
+\textcolor{lyred}{性质3}.
+D
+d\sigma 
+\sigma 
+\cdots 
+=
+\int \int 
+,即区域D 的面积,一般地,
+D
+k d
+k
+\sigma 
+\sigma 
+\cdots 
+=
+\int \int 
+; 
+\textcolor{lyred}{性质4}.设在D 上
+(
+)
+(
+)
+,
+,
+f x y
+g x y
+\le 
+,则
+(
+)
+(
+)
+,
+,
+D
+D
+f x y d
+g x y d
+\sigma 
+\sigma 
+\le 
+\int \int 
+\int \int 
+; 
+\textcolor{lyred}{推论}.
+(
+)
+(
+)
+,
+,
+D
+D
+f x y d
+f x y d
+\sigma 
+\sigma 
+\le 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{性质5(估值定理)}.设在D 上
+(
+)
+,
+m
+f x y
+M
+\le 
+\le 
+,则
+(
+)
+,
+D
+m
+f x y d
+M
+\sigma 
+\sigma 
+\sigma 
+\le 
+\le 
+\int \int 
+; 
+\textcolor{lyred}{性质6(积分中值定理)}.设
+(
+)
+,
+f x y 在D 上连续,则存在(
+)
+,
+D
+\psi \eta \in 
+,使得 
+(
+)
+(
+)
+,
+,
+D
+f
+f
+x y d
+\psi \eta 
+\sigma 
+\sigma 
+=
+\int \int 
+,称为
+(
+)
+,
+f x y 在D 上的\textcolor{lyred}{平均值}. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.对称性}}
+
+1.设D 关于y 轴对称,即(
+)
+(
+)
+,
+,
+x y
+D
+x y
+D
+\in 
+\Rightarrow -
+\in 
+,则 
+(1)当
+(
+)
+(
+)
+,
+,
+f
+x y
+f x y
+-
+=-
+时,
+(
+)
+,
+D
+f x y d\sigma =
+\int \int 
+; 
+(2)当
+(
+)
+(
+)
+,
+,
+f
+x y
+f x y
+-
+=
+时,
+(
+)
+(
+)
+\{
+\}
+,
+,
+D
+D
+x
+f x y d
+f x y d
+\sigma 
+\sigma 
+\cap 
+\ge 
+=
+\int \int 
+\int \int 
+. 
+2.设D 关于x 轴对称,即(
+)
+(
+)
+,
+,
+x y
+D
+x
+y
+D
+\in 
+\Rightarrow 
+-
+\in 
+,则情况类似. 
+3.设D 关于直线y
+x
+=
+对称,即轮换对称:(
+)
+(
+)
+,
+,
+x y
+D
+y x
+D
+\in 
+\Rightarrow 
+\in 
+,则 
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+D
+D
+D
+f x y d
+f
+y x d
+f x y
+f
+y x
+d
+\sigma 
+\sigma 
+\sigma 
+=
+=
++
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+;特别地,此时 
+()
+()
+()
+()
+D
+D
+D
+f x d
+f
+y d
+f x
+f
+y
+d
+\sigma 
+\sigma 
+\sigma 
+=
+=
++
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+D
+I
+x
+y
+d\sigma 
+=
++
++
+\int \int 
+,其中
+:
+x
+y
+D a
+b
++
+\le . 
+解.
+D
+I
+d
+ab
+ab
+\sigma 
+\pi 
+\pi 
+=
+=
+=
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+D
+I
+x
+y
+d\sigma 
+=
++
+\int \int 
+,其中
+:
+D x
+y
++
+\le . 
+解.(
+)
+x
+y
++
+展开式里每一项均是x 或y 的奇函数,故
+I =
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+x
+x
+D
+I
+y
+x
+e
+x
+e
+d\sigma 
+-
+
+
+=
++
++
+-
+
+
+\int \int 
+,其中
+:
+D x
+y
+\le 
+\le , 1
+x
+-\le 
+\le . 
+解.
+(
+)
+(
+)
+x
+x
+x
+x
+D
+D
+I
+xy e
+e
+d
+y e
+e
+d
+\sigma 
+\sigma 
+-
+-
+=
++
++
+-
+=
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+xd\sigma 
+=\int \int 
+,其中
+(
+)
+(
+)
+:
+D
+x
+y
+-
++
+-
+\le . 
+解.
+(
+)
+(
+)
+D
+D
+D
+I
+x
+d
+x
+d
+d
+\sigma 
+\sigma 
+\sigma 
+\pi 
+\pi 
+=
+-+
+=
+-
++
+=
++
+=
+\int \int 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+yd\sigma 
+=\int \int 
+,其中D 由
+x
+y
+y
+=-
+-
+,
+x =-,
+y =
+,
+y =
+围成. 
+解.
+(
+)
+(
+)
+1 1
+D
+D
+D
+D
+I
+y
+d
+y
+d
+d
+d
+\pi 
+\sigma 
+\sigma 
+\sigma 
+\sigma 
+=
+-+
+=
+-
++
+=
+=
+-
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+D
+I
+x
+y
+dxdy
+=
+-
+\int \int 
+,其中
+:
+D x
+y
+x
+y
++
+\le 
++
+. 
+解.
+D
+D
+I
+x dxdy
+y dxdy
+=
+-
+=
+\int \int 
+\int \int 
+,或者
+(
+)
+D
+I
+y
+x
+dxdy
+=
+-
+=
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+()
+()
+()
+()
+D
+af x
+bf
+y
+I
+d
+f x
+f
+y
+\sigma 
++
+=
++
+\int \int 
+,其中
+:
+D x
+y
++
+\le . 
+解.
+()
+()
+()
+()
+()
+()
+()
+()
+D
+D
+af x
+bf
+y
+af
+y
+bf x
+a
+b
+a
+b
+I
+d
+d
+f x
+f
+y
+f
+y
+f x
+\sigma 
+\sigma 
+\pi 
+
+
++
++
++
++
+=
++
+=
+=
+
+
++
++
+
+
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.证明:
+x
+y
+D
+e
+I
+d
+e
+\sigma 
+\pi 
++
+=
+\ge 
++
+\int \int 
+,其中
+:
+D x
+y
++
+\le . 
+证.若
+()
+f x >
+,则
+()
+()
+()
+()
+()
+()
+D
+D
+D
+f x
+f x
+f
+y
+d
+d
+d
+f
+y
+f
+y
+f x
+\sigma 
+\sigma 
+\sigma 
+
+
+=
++
+\ge 
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+,证毕. 
+\textcolor{lyred}{补充练习 }
+1.设
+(
+)
+,
+f x y 连续,求
+(
+)
+(
+)
+(
+)
+lim
+,
+r
+x x
+y y
+r
+f x y d
+r
+\sigma 
+\pi 
++
+\to 
+-
++
+-
+\le 
+\int \int 
+. 
+解.上式
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+lim
+,
+lim
+,
+,
+x
+y
+r
+f
+f
+f x
+y
+\psi \eta 
+\psi \eta 
+\psi \eta 
++
+\to 
+\to 
+=
+=
+=
+. 
+2.设
+(
+)
+(
+)
+,
+3 1
+,
+x
+y
+f x y
+x
+y
+f x y d\sigma 
++
+\le 
+=
+-
+-
++\int \int 
+,求
+(
+)
+,
+f x y . 
+解.设
+(
+)
+,
+D
+f x y d
+A
+\sigma =
+\int \int 
+,则
+(
+)
+,
+3 1
+f x y
+x
+y
+A
+=
+-
+-
++
+,于是 
+D
+A
+x
+y d
+A
+A
+A
+\pi 
+\sigma 
+\pi 
+\pi 
+\pi 
+\pi 
+=
+-
+-
++
+=
++
+\Rightarrow 
+=-
+\int \int 
+. 
+3.求
+()
+(
+)
+D
+I
+f x
+f
+y
+d\sigma 
+=
+-
+-
+
+
+
+
+\int \int 
+,其中
+:
+D
+x
+y
++
+\le . 
+解.
+()
+(
+)
+()
+(
+)
+2 D
+I
+f x
+f
+x
+f
+y
+f
+y
+d\sigma 
+=
+-
+-
++
+-
+-
+=
+
+
+
+
+\int \int 
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第10.2 节 二重积分的计算法}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.利用直角坐标计算二重积分}}
+
+\textcolor{lyred}{公式1}.设D 为X-型区域: a
+x
+b
+\le 
+\le 
+,
+()
+()
+y
+x
+y
+y
+x
+\le 
+\le 
+,则 
+(
+)
+(
+)
+()
+()
+(
+)
+()
+()
+,
+,
+,
+y
+x
+y
+x
+b
+b
+D
+a
+y
+x
+a
+y
+x
+f x y d
+f x y dy dx
+dx
+f x y dy
+\sigma 
+
+
+=
+=
+
+
+
+
+
+
+\int \int 
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{公式2}.设D 为Y-型区域:c
+y
+d
+\le 
+\le 
+,
+()
+()
+x
+y
+x
+x
+y
+\le 
+\le 
+,则 
+(
+)
+(
+)
+()
+()
+(
+)
+()
+()
+,
+,
+,
+x
+y
+x
+y
+d
+d
+D
+c
+x
+y
+c
+x
+y
+f x y d
+f x y dx dy
+dy
+f x y dx
+\sigma 
+
+
+=
+=
+
+
+
+
+
+
+\int \int 
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{推论}.
+()
+()
+[
+][
+]
+()
+()
+,
+,
+b
+d
+a b
+c d
+a
+c
+x
+y dxdy
+x dx
+y dy
+\varphi 
+\zeta 
+\varphi 
+\zeta 
+\times 
+\cdots 
+=
+\cdots 
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,且
+()
+f x >
+,证明:
+()
+()
+(
+)
+b
+b
+a
+a
+f x dx
+dx
+b
+a
+f x
+\ge 
+-
+\int 
+\int 
+. 
+证.左式
+()
+()
+[
+][
+]
+()
+()
+()
+()
+[
+][
+]
+,
+,
+,
+,
+a b
+a b
+a b
+a b
+D
+f x
+f x
+f
+y
+d
+d
+d
+f
+y
+f
+y
+f x
+\sigma 
+\sigma 
+\sigma 
+\times 
+\times 
+
+
+=
+=
++
+\ge 
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+,证毕. 
+\textcolor{lyred}{例}.将
+(
+)
+,
+D
+I
+f x y d\sigma 
+=\int \int 
+化作两种顺序的二次积分,其中 
+(1) D 由
+y
+x
+=
+, y
+x
+=
+围成; 
+解.
+(
+)
+(
+)
+,
+,
+y
+x
+y
+x
+I
+dx
+f x y dy
+dy
+f x y dx
+=
+=
+\int 
+\int 
+\int 
+\int 
+. 
+(2) D 由
+y
+x
+=
+-
+,
+x
+y
++
+-
+=
+围成; 
+解.
+(
+)
+(
+)
+4 2
+,
+,
+y
+x
+x
+y
+I
+dx
+f x y dy
+dy
+f x y dx
+-
+-
+-
+-
+=
+=
+\int 
+\int 
+\int 
+\int 
+. 
+(3) D 由
+2y
+x
+=
+,
+y
+x
+=
+-
+围成; 
+解.
+(
+)
+(
+)
+(
+)
+,
+,
+,
+y
+x
+x
+x
+x
+y
+I
+dx
+f x y dy
+dx
+f x y dy
+dy
+f x y dx
++
+-
+-
+-
+=
++
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+(4) D 由
+x
+y
++
+=
+,
+x
+y
+-
+=
+,
+x =
+围成. 
+解.
+(
+)
+(
+)
+(
+)
+,
+,
+,
+y
+y
+x
+x
+I
+dx
+f x y dy
+dy
+f x y dx
+dy
+f x y dx
+-
+-
+=
+=
++
+\int 
+\int 
+\int \int 
+\int 
+\int 
+. 
+(5) D 由
+ln
+y
+x
+=
+,
+y
+e
+x
+=
++-
+,
+y =
+围成. 
+解.
+(
+)
+(
+)
+(
+)
+ln
+,
+,
+,
+y
+e
+y
+e
+x
+e
+e
+x
+e
+e
+I
+dx
+f x y dy
+dx
+f x y dy
+dy
+f x y dx
++-
++
++-
+=
++
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+(6) D 由y
+x
+=
+,
+y
+x
+=
++,
+y =,
+y =
+围成. 
+解.
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+y
+x
+x
+x
+x
+y
+I
+dx
+f x y dy
+dx
+f x y dy
+dx f x y dy
+dy
+f x y dx
++
++
+-
+=
++
++
+=
+\int 
+\int 
+\int 
+\int 
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+y d\sigma 
+=\int \int 
+,其中D 由
+(
+)
+(
+)(
+)
+sin
+1 cos
+x
+a t
+t
+t
+y
+a
+t
+\pi 
+=
+-
+
+\le \le 
+
+=
+-
+
+与x 轴围成. 
+解.
+()
+(
+)
+(
+)
+1 cos
+sin
+y x
+a
+a
+a
+I
+dx
+y dy
+y dx
+t
+d t
+t
+a
+\pi 
+\pi 
+\pi 
+\pi 
+=
+=
+=
+-
+-
+=
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+arctan
+D
+I
+yd\sigma 
+=\int \int 
+,其中D 由y
+x
+=
+,
+y =,
+x =
+围成. 
+解.
+arctan
+arctan
+y
+I
+dy
+ydx
+y
+ydy
+\pi 
+=
+=
+=
+-
+\int \int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+y
+D
+I
+x e
+d\sigma 
+-
+=\int \int 
+,其中D 由y
+x
+=
+,
+y =,
+x =
+围成. 
+解.
+y
+y
+y
+y
+I
+dy x e
+dx
+e
+dy
+e
+-
+-
+
+
+=
+=
+=
+-
+
+
+
+
+\int \int 
+\int 
+. 
+\textcolor{lyred}{例}.
+sin
+sin
+sin
+sin
+1 cos1
+x
+y
+D
+x
+x
+x
+dy
+dx
+d
+dx
+dy
+xdx
+x
+x
+x
+\sigma 
++
+-
+=
+=
+=
+=-
+\int 
+\int 
+\int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+x
+D
+y
+x
+dy
+x
+y dx
+x
+y d
+dx
+x
+y dy
+dx
+\pi 
+\pi 
+\sigma 
+-
+=
+-
+=
+-
+=
+=
+\int 
+\int 
+\int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+2x
+y
+x
+f x
+e
+dy
+-
+=\int 
+,求
+()
+I
+f x dx
++\infty 
+=\int 
+. 
+解.
+y
+x
+y
+y
+y
+y
+x
+I
+dx
+e
+dy
+dy e
+dx
+ye
+dy
++\infty 
++\infty 
++\infty 
+-
+-
+-
+=
+=
+=
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.交换积分顺序:(1)
+(
+)
+(
+)
+,
+,
+y
+x
+dx
+f x y dy
+dy
+f x y dx
+-
+-
+-
+=
+\int 
+\int 
+\int 
+\int 
+; 
+(2)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+y
+y
+x
+x
+dx
+f x y dy
+dy
+f x y dx
+dy
+f x y dx
+-
+-
+=
++
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+; 
+(3)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+y
+x
+y
+x
+x
+dy
+f x y dx
+dx
+f x y dy
+dx
+f x y dy
+=
++
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+; 
+(4)
+(
+)
+(
+)
+(
+)
+2 2
+,
+,
+,
+x
+y
+x
+y
+dy
+f x y dx
+dx
+f x y dy
+dx
+f x y dy
+-
+-
+=
++
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+; 
+(5)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+y
+x x
+x
+y
+dx
+f x y dy
+dx
+f x y dy
+dy
+f x y dx
+-
+-
+-
+-
+-
++
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+; 
+(6)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+y
+x
+x
+y
+y
+dy
+f x y dx
+dy
+f x y dx
+dx
+f x y dy
++
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+y
+x d\sigma 
+=
+-
+\int \int 
+,其中
+:
+D x \le ,0
+y
+\le 
+\le 
+. 
+解.
+(
+)
+(
+)
+x
+x
+I
+dx
+x
+ydy
+dx
+y
+x dy
+x
+dx
+x
+dx
+-
+-
+-
+-
+=
+-
++
+-
+=
++
+-
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+(
+)
+2sin
+2 sin
+x dx
+t
+d
+t
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
++
+-
+=
++
++
+=
++
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+cos
+D
+I
+x
+y d\sigma 
+=
++
+\int \int 
+,其中D 由
+y =
+, y
+x
+=
+,
+x
+\pi 
+=
+围成. 
+解.
+(
+)
+(
+)
+cos
+cos
+y
+x
+y
+x
+I
+dy
+x
+y dx
+dx
+x
+y dy
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+=
++
+-
++
+=
+-
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+sin
+D
+I
+xy
+y d\sigma 
+=
++
+\int \int 
+,其中D 由x
+\pi 
+=-
+, y
+\pi 
+=
+, y
+x
+=
+围成. 
+解.
+(
+)
+sin
+sin
+1 cos
+D
+x
+I
+ydxdy
+dx
+ydy
+x dx
+\pi 
+\pi 
+\pi 
+\pi 
+=
+=
+=
++
+=
+\int \int 
+\int \int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+D
+I
+y
+xy
+x
+y
+d\sigma 
+=
++
+\cdots 
++
+\int \int 
+,其中D 由
+y
+x
+=
+,
+y =,
+x =-围成. 
+解.
+D
+D
+I
+y d
+dx y dy
+\sigma 
++
+-
+=
+=
+=
+\int \int 
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.利用极坐标计算二重积分}}
+
+\textcolor{lyred}{公式3}.设D 为曲边扇形:\alpha 
+\theta 
+\beta 
+\le 
+\le 
+,
+()
+()
+\rho \theta 
+\rho 
+\rho 
+\theta 
+\le 
+\le 
+,则 
+(
+)
+(
+)
+()
+()
+,
+cos ,
+sin
+D
+f x y d
+d
+f
+d
+\rho 
+\theta 
+\beta 
+\alpha 
+\rho \theta 
+\sigma 
+\theta 
+\rho 
+\theta \rho 
+\theta \rho \rho 
+=
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+z
+x
+y
+=
++
+与
+z
+x
+y
+=
+-
+-
+所围立体的体积. 
+解.
+(
+)(
+)
+(
+)
+x
+y
+x
+y
+V
+x
+y
+x
+y
+d
+x
+y
+d
+\sigma 
+\sigma 
++
+\le 
++
+\le 
+
+
+=
+-
+-
+-
++
+=
+-
+-
+=
+
+
+\int \int 
+\int \int 
+(
+)
+(
+)
+d
+d
+d
+\pi 
+\theta 
+\rho 
+\rho \rho 
+\pi 
+\rho 
+\rho \rho 
+\pi 
+-
+=
+-
+=
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+D
+I
+x
+y
+d\sigma 
+=
++
+\int \int 
+,其中
+:1
+D
+x
+y
+\le 
++
+\le 
+. 
+解.
+(
+)
+(
+)
+D
+D
+I
+x
+y
+d
+x
+y
+d
+d
+d
+\pi 
+\pi 
+\sigma 
+\sigma 
+\theta \rho 
+\rho \rho 
+=
++
+=
++
+=
+\cdots 
+=
+\int \int 
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+x
+y
+R
+x
+y
+R
+x
+y
+R
+x
+y
+x
+y
+d
+d
+x
+y
+d
+a
+b
+a
+b
+a
+b
+\sigma 
+\sigma 
+\sigma 
++
+\le 
++
+\le 
++
+\le 
+
+
+
+
+
+
++
+=
++
+=
++
++
+
+
+
+
+
+
+
+
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+R
+a
+b
+\pi 
+
+
+=
++
+
+
+
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+D
+I
+xy
+x x
+y
+y
+x
+y
+d\sigma 
+=
++
++
++
++
+\int \int 
+,其中
+:
+D x
+y
+ax
++
+\le 
+. 
+解.
+2 cos
+cos
+cos
+a
+D
+I
+x x
+y d
+d
+d
+a
+d
+a
+\pi 
+\pi 
+\theta 
+\pi 
+\pi 
+\sigma 
+\theta 
+\rho 
+\theta \rho \rho \rho 
+\theta \theta 
+-
+-
+=
++
+=
+\cdots 
+\cdots 
+=
+=
+\int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+x
+y
+z
++
++
+\le 
+被
+x
+y
+x
++
+=
+截得立体的体积. 
+解.
+2cos
+x
+y
+x
+V
+x
+y dxdy
+d
+d
+\pi 
+\theta 
+\pi 
+\pi 
+\theta 
+\rho 
+\rho \rho 
++
+\le 
+-
+
+
+=
+-
+-
+=
+-
+\cdots 
+=
+-
+
+
+
+
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+D
+I
+x
+x yd\sigma 
+=
++
+\int \int 
+,其中
+:
+D ay
+x
+y
+ay
+\le 
++
+\le 
+. 
+解.
+2 sin
+sin
+cos sin
+sin
+cos
+a
+D
+a
+I
+xyd
+d
+d
+a
+d
+a
+\pi 
+\pi 
+\theta 
+\theta 
+\sigma 
+\theta 
+\rho 
+\theta 
+\theta \rho \rho 
+\theta 
+\theta \theta 
+=
+=
+\cdots 
+=
+=
+\int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+x
+y d\sigma 
+=
+-
+-
+\int \int 
+,其中
+:
+D x
+y
++
+\le ,
+x
+y
+y
++
+\le 
+. 
+解.
+2sin
+2 3
+I
+d
+d
+d
+d
+\pi 
+\pi 
+\theta 
+\pi 
+\theta 
+\rho \rho \rho 
+\theta 
+\rho \rho \rho 
+\pi 
+-
+=
+-
++
+-
+=
+-
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+xyd\sigma 
+=\int \int 
+,其中D 由
+y =
+,
+y =
+,
+x =-,
+x
+y
+y
+=-
+-
+围成. 
+解.
+2sin
+cos sin
+I
+dx xydy
+d
+d
+\pi 
+\theta 
+\pi 
+\theta 
+\rho 
+\theta 
+\theta \rho \rho 
+-
+
+
+=
+-
+\cdots 
+=---
+=-
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+x
+y d\sigma 
+=
++
+\int \int 
+,其中
+: 2
+D
+x
+x
+y
+-
+\le 
++
+\le 
+. 
+解.
+2cos
+I
+d
+d
+d
+d
+\pi 
+\pi 
+\theta 
+\pi 
+\theta \rho \rho \rho 
+\theta 
+\rho \rho \rho 
+\pi 
+-
+=
+\cdots 
+-
+\cdots 
+=
+-
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+x
+y
+y d\sigma 
+=
++
++
+\int \int 
+,其中
+:
+D x
+y
++
+\le 
+. 
+解.
+(
+)
+(
+)
+y x
+y
+x
+y
+y
+I
+x
+y
+y d
+x
+y
+y d
+\sigma 
+\sigma 
+-
+\le 
++
+\le 
++
+\le -
+=
++
++
+-
++
++
+=
+\int \int 
+\int \int 
+(
+)
+(
+)
+x
+y
+x
+y
+y
+x
+y
+y d
+x
+y
+y d
+\sigma 
+\sigma 
+\pi 
++
+\le 
++
+\le -
++
++
+-
++
++
+=
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+arctan
+D
+y
+I
+d
+x \sigma 
+=\int \int 
+,其中D 由y
+x
+=
+,
+y =
+,
+x =
+围成. 
+解.
+cos
+tan
+ln 2
+cos
+I
+d
+d
+d
+d
+\pi 
+\pi 
+\pi 
+\theta 
+\pi 
+\theta 
+\theta \rho \rho 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+=
+\cdots 
+=
+\cdots 
+=
+=
+-
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+D
+I
+x
+y d\sigma 
+=
++
+\int \int 
+,其中D 由y
+x
+=
+,
+y
+x
+=
+围成. 
+解.
+(
+)
+sin
+cos
+sin
+tan
+sec
+sec
+cos
+I
+d
+d
+d
+d
+\theta 
+\pi 
+\pi 
+\pi 
+\theta 
+\theta 
+\theta 
+\rho \rho \rho 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+=
+\cdots 
+=
+=
+=
++
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+y x
+y x
+D
+I
+e
+d\sigma 
+-
++
+=\int \int 
+,其中D 由
+x
+y
++
+=与坐标轴围成. 
+解.
+(
+)
+sin
+cos
+sin
+cos
+cos
+sin
+sin
+cos
+sin
+cos
+cos
+sin
+I
+d
+e
+d
+e
+d
+\pi 
+\pi 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+\theta 
+\rho \rho 
+\theta 
+\theta 
+\theta 
+-
+-
++
++
++
+=
+=
+=
++
+\int 
+\int 
+\int 
+(
+)
+(
+)
+tan
+tan
+tan
+tan
+u
+u
+u
+d
+du
+e
+e
+e
+d
+e
+u
+e
+u
+\pi 
+\theta 
+\theta 
+\theta 
+\theta 
++\infty 
++\infty 
+-
+-
+-
++
++
++
+
+
+=
+=-
+=
+-
+
+
++
+
+
++
++
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.计算概率积分
+x
+I
+e
+dx
+\pi 
++\infty 
+-
+-\infty 
+=
+\int 
+. 
+解.
+x
+x
+x
+y
+I
+e
+dx
+e
+dx
+dx
+e
+dy
+d
+e
+d
+\pi 
+\rho 
+\theta 
+\rho \rho 
+\pi 
+\pi 
+\pi 
++\infty 
++\infty 
++\infty 
++\infty 
++\infty 
++
+-
+-
+-
+-
+-\infty 
+-\infty 
+-\infty 
+-\infty 
+=
+\cdots 
+=
+=
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+t
+e
+d
+e dt
+\rho 
+\rho 
++\infty 
++\infty 
+-
+-
+=
+=
+\int 
+\int 
+,故
+I =. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.化二次积分为定积分}}
+
+\textcolor{lyred}{例}.设
+()
+sin
+f x
+x
+=
+,令
+()
+()
+t
+t
+y
+F t
+dy
+f x dx
+=\int \int 
+,求
+()
+F'
+. 
+解.
+()
+()
+()(
+)
+t
+x
+t
+F t
+dx
+f x dy
+f x
+x
+dx
+=
+=
+-
+\int \int 
+\int 
+,故
+()
+()
+sin16
+F
+f
+'
+=
+=
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,证明:
+(
+)
+()
+(
+)
+()
+y
+b
+b
+n
+n
+a
+a
+a
+dy
+y
+x
+f x dx
+b
+x
+f x dx
+n
++
+-
+=
+-
++
+\int \int 
+\int 
+. 
+证.左式
+(
+)
+()
+(
+)
+()
+b
+b
+b
+n
+n
+a
+x
+a
+dx
+y
+x
+f x dy
+b
+x
+f x dx
+n
++
+=
+-
+=
+-
++
+\int \int 
+\int 
+,证毕. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,证明:
+()
+()
+()
+x
+dx
+f x f
+y dy
+f x dx
+
+
+=
+
+
+
+
+\int \int 
+\int 
+. 
+证.左式
+()
+()
+()
+()
+[
+][
+]
+0,1
+0,1
+y
+dy
+f
+y f x dx
+f x f
+y dxdy
+\times 
+=
+=
+\int \int 
+\int \int 
+,即得,证毕. 
+\textcolor{lyred}{例}.设
+()
+f u 连续,证明:
+(
+)
+()
+x
+y
+f x
+y dxdy
+f u du
++
+\le 
+-
++
+=
+\int \int 
+\int 
+. 
+证. D 由
+x
+y
++
+=\pm ,
+x
+y
+-
+=\pm 围成,令u
+x
+y
+v
+x
+y
+=
++
+
+=
+-
+
+,
+(
+)
+(
+)
+,
+,
+x y
+u v
+\partial 
+=
+\partial 
+,则 
+(
+)
+()
+()
+D
+f x
+y dxdy
+du
+f u dv
+f u du
+-
+-
+-
++
+=
+=
+\int \int 
+\int 
+\int 
+\int 
+,证毕. 
+\textcolor{lyred}{补充练习 }
+1.求
+(
+)
+x
+y
+D
+I
+y
+xe
+d\sigma 
++
+=
++
+\int \int 
+,其中D 由y
+x
+=
+,
+y =-,
+x =围成. 
+解.
+y
+D
+I
+yd
+dy
+ydx
+y dy
+\sigma 
+-
+-
+-
+=
+=
+=-
+=-
+\int \int 
+\int 
+\int 
+\int 
+. 
+2.设
+(
+)
+,
+,
+x
+y
+e
+x
+y
+f x y
++
+
+\le 
++
+\le 
+
+=
+
+，
+其它
+,求
+(
+)
+2,0
+,
+x
+y
+I
+f x y d\sigma 
+\le \le 
+\le \le 
+=
+\int \int 
+. 
+解.
+(
+)
+x
+y
+x
+y
+x
+y
+x
+y
+x
+y
+x
+y
+I
+d
+d
+e
+d
+e
+d
+\pi 
+\sigma 
+\sigma 
+\sigma 
+\pi 
+\sigma 
++
++
++
+\le 
++
+\ge 
+\le 
++
+\le 
+\le 
++
+\le 
+=
++
++
+=
++
+-
++
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+(
+)
+(
+)
+(
+)
+e
+e
+d
+e
+d
+e
+e
+\pi 
+\rho 
+\pi 
+\pi 
+\pi 
+\pi 
+\theta 
+\rho \rho 
+\pi 
+\pi 
+--
++
+-
++
+=
++
+-
++
+-
+=
++
+\int 
+\int 
+. 
+3.求
+D
+I
+x
+y
+d\sigma 
+=
++
+-
+\int \int 
+,其中
+:
+D
+x \le ,
+y \le . 
+解.
+(
+)
+(
+)
+D
+x
+y
+x
+y
+I
+x
+y
+d
+x
+y
+d
+x
+y
+d
+\sigma 
+\sigma 
+\sigma 
++
+\le 
++
+\ge 
+=
++
+-
+=
+-
+-
++
++
+-
+=
+\int \int 
+\int \int 
+\int \int 
+(
+)
+(
+)
+x
+d
+d
+dx
+x
+y
+dy
+\pi 
+\pi 
+\pi 
+\theta 
+\rho 
+\rho \rho 
+\pi 
+-
+
+
+-
++
++
+-
+=
++
+-
+=
+-
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+; 
+或者,
+(
+)
+(
+)
+cos
+I
+d
+d
+d
+d
+\pi 
+\pi 
+\theta 
+\theta 
+\rho 
+\rho \rho 
+\theta 
+\rho 
+\rho \rho 
+\pi 
+=
+-
++
+-
+=
+-
+\int 
+\int 
+\int 
+\int 
+. 
+4.求
+(
+)
+D
+I
+d
+x
+y
+\sigma 
+=
++
++
+\int \int 
+,其中
+: 0
+D
+x
+\le 
+\le ,0
+y
+\le 
+\le . 
+解.
+(
+)
+(
+)
+cos
+sin
+I
+d
+d
+d
+d
+\pi 
+\pi 
+\theta 
+\theta 
+\pi 
+\theta 
+\rho \rho 
+\theta 
+\rho \rho 
+\rho 
+\rho 
+=
++
++
++
+\int 
+\int 
+\int 
+\int 
+arctan
+arctan
+2 2
+2 2
+\pi 
+
+
+=
++
+-
+
+
+
+
+; 
+或者,
+(
+)
+cos
+arctan
+I
+d
+d
+\pi 
+\theta 
+\theta 
+\rho \rho 
+\rho 
+=
+=
++
+\int 
+\int 
+. 
+5.设
+(
+)
+(
+)
+(
+)
+,
+,
+,
+D
+f x y
+x
+f x y d
+y
+f x x dx
+\sigma 
+-
+=
++
++
+\int \int 
+\int 
+,其中D 由y
+x
+=
+与
+y =围成,求 
+(
+)
+,
+f x y . 
+解.设
+(
+)
+,
+D
+A
+f x y d\sigma 
+=\int \int 
+,
+(
+)
+,
+B
+f x x dx
+-
+=\int 
+,则
+(
+)
+,
+f x y
+Ax
+By
+=
++
++,于是 
+(
+)
+D
+D
+A
+Ax
+By
+d
+B
+yd
+B
+\sigma 
+\sigma 
+=
++
++
+=
++=
++
+\int \int 
+\int \int 
+,
+(
+)
+B
+Ax
+Bx
+dx
+-
+=
++
++
+=
+\int 
+,故 
+故
+A =
+,因此
+(
+)
+,
+f x y
+x
+y
+=
++
++. 
+6.设
+()
+t
+x
+y
+t
+f t
+e
+f
+x
+y
+d
+\pi 
+\sigma 
++
+\le 
+
+
+=
++
++
+
+
+
+
+\int \int 
+,求
+()
+f t . 
+解.
+()
+t
+t
+t
+t
+f t
+e
+d
+f
+d
+e
+f
+d
+\pi 
+\pi 
+\pi 
+\theta 
+\rho \rho \rho 
+\pi 
+\rho \rho \rho 
+
+
+
+
+=
++
+=
++
+
+
+
+
+
+
+
+
+\int 
+\int 
+\int 
+,两边求导, 
+()
+()
+()
+()
+t
+t
+f
+t
+te
+tf t
+f
+t
+tf t
+te
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+'
+'
+=
++
+\Rightarrow 
+-
+=
+,又
+()
+f
+=,解得 
+()
+(
+)
+t
+f t
+e
+t
+\pi 
+\pi 
+=
++
+. 
+7.设
+(
+)
+,
+f x y 连续,且
+(
+)
+0,0
+f
+=,求
+(
+)
+lim
+,
+x
+x t
+x
+I
+dt
+f t u du
+x
++
+-
+\to 
+=
+\int 
+\int 
+. 
+解.
+(
+)
+(
+)
+(
+)
+,
+,
+0,0
+lim
+lim
+D
+x
+x
+f t u dtdu
+f
+x
+f
+I
+x
+x
+\psi \eta 
++
++
+\to 
+\to 
+\cdots 
+=
+=
+=
+=
+\int \int 
+. 
+8.设
+(
+)
+,
+f x y 连续,且
+(
+)
+0,0
+f
+=,求
+(
+)
+lim
+,
+x
+tx t
+x
+I
+dt
+f t u du
+x
++
+-
+\to 
+=
+\int 
+\int 
+. 
+解.
+(
+)
+(
+)
+2 2
+,
+,
+lim
+lim
+,
+t
+u
+tx u
+x
+x
+f t u dtdu
+I
+f
+x
+\pi 
+\pi 
+\psi \eta 
++
++
++
+\le 
+\ge 
+\to 
+\to 
+=
+=
+=
+\int \int 
+. 
+9.设
+(
+)
+,
+f x y 连续,且
+(
+)
+0,0
+f
+=,求
+(
+)
+lim
+,
+x
+x
+x
+t
+I
+dt
+f t u du
+x
++
+\to 
+=
+\int \int 
+. 
+解.
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+0,0
+lim
+lim
+lim
+x
+u
+x
+x
+x
+x
+du
+f t u dt
+f t x dt
+f
+x
+f
+I
+x
+x
+\psi 
++
++
++
+\to 
+\to 
+\to 
+=
+=
+=
+=
+=
+\int 
+\int 
+\int 
+. 
+10.证明:
+x
+e
+dx
+e
+\pi 
+-
+
+
+
+
+>
+-
+
+
+
+
+
+
+
+
+\int 
+. 
+证.
+[
+][
+]
+0,1
+0,1
+1,
+0,
+x
+x
+y
+x
+y
+x
+y
+x
+y
+x
+y
+e
+dx
+e
+dx e
+dy
+e
+d
+e
+d
+\sigma 
+\sigma 
+-
+-
+-
+-
+-
+-
+-
+\times 
++
+\le 
+\ge 
+\ge 
+
+=
+=
+>
+=
+
+
+
+
+\int 
+\int 
+\int 
+\int \int 
+\int \int 
+d
+e
+d
+e
+\pi 
+\rho 
+\pi 
+\theta 
+\rho \rho 
+-
+
+
+=
+-
+
+
+
+
+\int 
+\int 
+,证毕. 
+11.设
+()
+f x 连续,证明:
+()
+()
+b
+b
+a
+a
+f
+x dx
+f x dx
+b
+a
+
+
+\ge 
+
+
+-
+
+
+\int 
+\int 
+. 
+证.(
+)
+()
+()
+()
+[
+][
+]
+()
+[
+][
+]
+,
+,
+,
+,
+b
+b
+b
+a
+a
+a
+a b
+a b
+a b
+a b
+b
+a
+f
+x dx
+dy
+f
+x dx
+f
+x d
+f
+y d
+\sigma 
+\sigma 
+\times 
+\times 
+-
+=
+=
+=
+=
+\int 
+\int \int 
+\int \int 
+\int \int 
+()
+()
+[
+][
+]
+()
+()
+[
+][
+]
+()
+,
+,
+,
+,
+b
+a b
+a b
+a b
+a b
+a
+f
+x
+f
+y
+d
+f x f
+y d
+f x dx
+\sigma 
+\sigma 
+\times 
+\times 
+
+
+
+
++
+\ge 
+=
+
+
+
+
+
+\int \int 
+\int \int 
+\int 
+,证毕. 
+12.设()
+p x ,
+()
+f x , ()
+[
+]
+,
+g x
+C a b
+\in 
+,且()
+p x \ge 
+,
+()
+f x , ()
+g x 单增,证明: 
+()
+()
+()()
+()
+()()()
+b
+b
+b
+b
+a
+a
+a
+a
+p x f x dx p x g x dx
+p x dx
+f x p x g x dx
+\le 
+\int 
+\int 
+\int 
+\int 
+. 
+证.即证
+()
+()()()
+[
+][
+]
+()
+()()()
+[
+][
+]
+,
+,
+,
+,
+a b
+a b
+a b
+a b
+p x f x p y g y d
+p x f
+y p y g y d
+\sigma 
+\sigma 
+\times 
+\times 
+\le 
+\int \int 
+\int \int 
+, 
+左式-右式
+()()()
+()
+()
+[
+][
+]
+,
+,
+a b
+a b
+p x p y g y
+f x
+f
+y
+d\sigma 
+\times 
+=
+-
+=
+
+
+
+
+\int \int 
+()()()
+()
+()
+[
+][
+]
+,
+,
+a b
+a b
+p y p x g x
+f
+y
+f x
+d\sigma 
+\times 
+-
+=
+
+
+
+
+\int \int 
+()()
+()
+()
+()
+()
+[
+][
+]
+,
+,
+2 a b
+a b
+p x p y
+g y
+g x
+f x
+f
+y
+d\sigma 
+\times 
+-
+-
+\le 
+
+
+
+
+
+
+\int \int 
+,证毕. 
+13.设
+()
+f x >
+,连续,单调减少,证明:
+()
+()
+()
+()
+xf
+x dx
+f
+x dx
+xf x dx
+f x dx
+\le 
+\int 
+\int 
+\int 
+\int 
+. 
+证.即证
+()
+()
+[
+][
+]
+()
+()
+[
+][
+]
+0,1
+0,1
+0,1
+0,1
+xf
+x f
+y d
+yf
+x f
+y d
+\sigma 
+\sigma 
+\times 
+\times 
+\le 
+\int \int 
+\int \int 
+, 
+左式-右式
+(
+)
+()
+()
+[
+][
+]
+(
+)
+()
+()
+[
+][
+]
+0,1
+0,1
+0,1
+0,1
+x
+y f
+x f
+y d
+y
+x f
+y f x d
+\sigma 
+\sigma 
+\times 
+\times 
+=
+-
+=
+-
+=
+\int \int 
+\int \int 
+(
+)
+()
+()
+()
+()
+[
+][
+]
+0,1
+0,1
+x
+y
+f x
+f
+y
+f
+y f x d\sigma 
+\times 
+-
+-
+\le 
+
+
+
+
+\int \int 
+,证毕. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第10.3 节 三重积分}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.三重积分的定义}}
+
+设
+(
+)
+, ,
+f x y z 为有界闭区域\Omega 上的有界函数,将\Omega 任意分成n 小块
+iv
+\Delta ,直径为
+i\lambda , 
+作和
+(
+)
+,
+,
+n
+i
+i
+i
+i
+i
+f
+v
+\psi \eta 
+=
+\Delta 
+\sum 
+,
+(
+)
+,
+,
+i
+i
+i
+iv
+\psi \eta 
+\forall 
+\in \Delta ,其中
+iv
+\Delta 表示体积,若在无限细分\Omega 的 
+过程中,随着
+\{\}
+1max
+i
+i n
+\lambda 
+\lambda 
+\le \le 
+=
+\to 
+,该积分和总是趋向于同一个常数I ,它只依赖于 
+(
+)
+, ,
+f x y z 和\Omega ,则称
+(
+)
+, ,
+f x y z 在\Omega 上\textcolor{lyred}{可积},记
+(
+)
+, ,
+I
+f x y z dv
+\Omega 
+=\int \int \int 
+,称为
+(
+)
+, ,
+f x y z 
+在\Omega 上的\textcolor{lyred}{三重积分}. 
+\textcolor{lyred}{注}. dv 为\textcolor{lyred}{体积元素},在直角坐标系下也记dv
+dxdydz
+=
+. 
+\textcolor{lyred}{定理}.设
+(
+)
+, ,
+f x y z 在有界闭区域\Omega 上连续,则
+(
+)
+, ,
+f x y z dv
+\Omega \int \int \int 
+存在. 
+\textcolor{lyred}{物理意义}.设\Omega 具有连续密度
+(
+)
+, ,
+f x y z ,则
+(
+)
+, ,
+M
+f x y z dv
+\Omega 
+=\int \int \int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.三重积分的性质}}
+
+\textcolor{lyred}{性质1}.
+(
+)
+f
+g dv
+f dv
+g dv
+\alpha 
+\beta 
+\alpha 
+\beta 
+\Omega 
+\Omega 
+\Omega 
+\pm 
+=
+\cdots 
+\pm 
+\cdots 
+\int \int \int 
+\int \int \int 
+\int \int \int 
+; 
+\textcolor{lyred}{性质2}.
+(
+)
+(
+)
+(
+)
+, ,
+, ,
+, ,
+f x y z dv
+f x y z dv
+f x y z dv
+\Omega +\Omega 
+\Omega 
+\Omega 
+=
++
+\int \int \int 
+\int \int \int 
+\int \int \int 
+; 
+\textcolor{lyred}{性质3}.
+1 dv
+\Omega 
+\cdots 
+=\Omega 
+\int \int \int 
+,一般地,
+k dv
+k
+\Omega 
+\cdots 
+=\Omega 
+\int \int \int 
+; 
+\textcolor{lyred}{性质4}.设\Omega 上
+(
+)
+(
+)
+, ,
+, ,
+f x y z
+g x y z
+\le 
+,则
+(
+)
+(
+)
+, ,
+, ,
+f x y z dv
+g x y z dv
+\Omega 
+\Omega 
+\le 
+\int \int \int 
+\int \int \int 
+; 
+\textcolor{lyred}{推论}.
+(
+)
+(
+)
+, ,
+, ,
+f x y z dv
+f x y z dv
+\Omega 
+\Omega 
+\le 
+\int \int \int 
+\int \int \int 
+. 
+\textcolor{lyred}{性质5(估值定理)}.设\Omega 上m
+f
+M
+\le 
+\le 
+,则m
+f dv
+M
+\Omega 
+\cdots \Omega \le 
+\le 
+\cdots \Omega 
+\int \int \int 
+; 
+\textcolor{lyred}{性质6(积分中值定理)}.设
+(
+)
+, ,
+f x y z 在\Omega 上连续,则(
+)
+, ,
+\psi \eta 
+\exists 
+\in \Omega ,使得 
+(
+)
+(
+)
+, ,
+, ,
+f
+f x y z dv
+\psi \eta 
+\Omega 
+=\Omega \int \int \int 
+,称为
+(
+)
+, ,
+f x y z 在\Omega 上的\textcolor{lyred}{平均值}. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.对称性}}
+
+1.若\Omega 关于xOy 面(上下)对称,则当
+(
+)
+, ,
+f x y z 关于z 为奇函数时, 
+(
+)
+, ,
+f x y z dv
+\Omega 
+=
+\int \int \int 
+;关于z 为偶函数时,
+(
+)
+(
+)
+\{
+\}
+, ,
+, ,
+z
+f x y z dv
+f x y z dv
+\Omega 
+\Omega \cap 
+\ge 
+=
+\int \int \int 
+\int \int \int 
+. 
+2.若\Omega 关于yOz 面(前后)对称,则当
+(
+)
+, ,
+f x y z 关于x 为奇函数时, 
+(
+)
+, ,
+f x y z dv
+\Omega 
+=
+\int \int \int 
+;关于x 为偶函数时,
+(
+)
+(
+)
+\{
+\}
+, ,
+, ,
+x
+f x y z dv
+f x y z dv
+\Omega 
+\Omega \cap 
+\ge 
+=
+\int \int \int 
+\int \int \int 
+. 
+3.若\Omega 关于xOz 面(左右)对称,则当
+(
+)
+, ,
+f x y z 关于y 为奇函数时, 
+(
+)
+, ,
+f x y z dv
+\Omega 
+=
+\int \int \int 
+;关于y 为偶函数时,
+(
+)
+(
+)
+\{
+\}
+, ,
+, ,
+y
+f x y z dv
+f x y z dv
+\Omega 
+\Omega \cap 
+\ge 
+=
+\int \int \int 
+\int \int \int 
+. 
+4.若\Omega 关于x , y 具有轮换对称性,即当(
+)
+, ,
+x y z \in \Omega 时,(
+)
+, ,
+y x z \in \Omega ,则 
+(
+)
+(
+)
+, ,
+, ,
+f x y z dv
+f
+y x z dv
+\Omega 
+\Omega 
+=
+\int \int \int 
+\int \int \int 
+,特别地,
+()
+()
+f x dv
+f
+y dv
+\Omega 
+\Omega 
+=
+\int \int \int 
+\int \int \int 
+. 
+5.若\Omega 关于y , z 具有轮换对称性,则
+()
+()
+f
+y dv
+f z dv
+\Omega 
+\Omega 
+=
+\int \int \int 
+\int \int \int 
+. 
+6.若\Omega 关于x , z 具有轮换对称性,则
+()
+()
+f x dv
+f z dv
+\Omega 
+\Omega 
+=
+\int \int \int 
+\int \int \int 
+. 
+7.若\Omega 关于x , y , z 具有轮换对称性(不变性),即当(
+)
+, ,
+x y z \in \Omega 时,其所有轮换 
+(
+)
+,
+,
+x y z
+'
+'
+'\in \Omega ,则
+()
+()
+()
+f x dv
+f
+y dv
+f z dv
+\Omega 
+\Omega 
+\Omega 
+=
+=
+\int \int \int 
+\int \int \int 
+\int \int \int 
+. 
+\textcolor{lyred}{例}.设
+: x
+y
+z
+a
+\Omega 
++
++
+\le 
+,记
+\Omega 为\Omega 位于第一卦限的部分,则有 
+(
+)
+(
+)
+(
+)
+x
+y
+z
+dv
+x
+y
+z
+dv
+x
+y
+z
+dv
+x dv
+\Omega 
+\Omega 
+\Omega 
+\Omega 
++
++
+=
++
++
+=
++
++
+=
+\int \int \int 
+\int \int \int 
+\int \int \int 
+\int \int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z dv
+\Omega 
+=
++
++
+\int \int \int 
+,其中
+(
+)
+(
+)
+:
+x
+y
+z
+\Omega 
+-
++
+-
++
+\le . 
+解.
+(
+)
+(
+)
+1 1
+I
+xdv
+ydv
+x
+dv
+y
+dv
+dv
+\pi 
+\Omega 
+\Omega 
+\Omega 
+\Omega 
+\Omega 
+=
++
+=
+-
++
++
+-+
+=
+=
+\int \int \int 
+\int \int \int 
+\int \int \int 
+\int \int \int 
+\int \int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+ax
+by
+cz dv
+\Omega 
+=
++
++
+\int \int \int 
+,其中
+:
+z
+x
+y
+z
+z
+\Omega 
+\le 
++
++
+\le 
+. 
+解.
+I
+c
+zdv
+c
+zdv
+c
+zdv
+c
+dv
+c
+dv
+c
+\pi 
+\Omega 
+\Omega 
+\Omega 
+\Omega 
+\Omega 
+=
+=
+-
+=
+-
+=
+\int \int \int 
+\int \int \int 
+\int \int \int 
+\int \int \int 
+\int \int \int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.直角坐标下的计算}}
+
+{\bfseries \textcolor{lyred}{1.投影法(坐标面投影法,先一后二)}}
+
+设
+(
+)
+(
+)
+(
+)(
+)
+\{
+\}
+, ,
+:
+,
+,
+,
+,
+xy
+x y z
+z
+x y
+z
+z
+x y
+x y
+D
+\Omega =
+\le 
+\le 
+\in 
+为XY-型区域,则 
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+, ,
+, ,
+, ,
+xy
+xy
+z
+x y
+z
+x y
+D
+z
+x y
+D
+z
+x y
+f x y z dv
+f x y z dz dxdy
+dxdy
+f x y z dz
+\Omega 
+
+
+=
+=
+
+
+
+
+
+
+\int \int \int 
+\int \int 
+\int 
+\int \int 
+\int 
+. 
+\textcolor{lyred}{例}.求I
+zdv
+\Omega 
+=\int \int \int 
+,其中\Omega 由
+x =,
+y =,
+z
+x
+y
+=
++
+和坐标面围成. 
+解.
+(
+)
+1,0
+x
+y
+x
+y
+x
+y
+I
+dxdy
+zdz
+dx dy
+zdz
+dx
+x
+y
+dy
++
++
+\le \le 
+\le \le 
+=
+=
+=
++
+=
+\int \int 
+\int 
+\int \int 
+\int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求I
+zdv
+\Omega 
+=\int \int \int 
+,其中\Omega 由
+x
+y
+z
++
++
+=和三个坐标面围成. 
+解.
+(
+)
+xy
+x
+x
+x
+y
+x
+y
+D
+I
+dxdy
+xdz
+dx
+dy
+xdz
+dx
+x
+x
+y dy
+-
+-
+--
+--
+=
+=
+=
+-
+-
+=
+\int \int 
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+dv
+\Omega 
+=
++
+\int \int \int 
+,其中
+:
+x
+y
+z
+\Omega 
++
+\le 
+, 2
+z
+\le 
+\le . 
+解.
+(
+)
+(
+)
+x
+y
+x
+y
+x
+y
+x
+y
+I
+dxdy
+x
+y
+dz
+dxdy
+x
+y
+dz
++
+\le 
++
++
+\le 
++
+=
++
+-
++
+=
+\int \int 
+\int 
+\int \int 
+\int 
+d
+d
+dz
+d
+d
+dz
+\pi 
+\pi 
+\rho 
+\rho 
+\theta \rho \rho 
+\rho 
+\theta \rho \rho 
+\rho 
+\pi 
+-
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+; 
+或者,
+(
+)
+(
+)
+x
+y
+x
+y
+x
+y
+I
+dxdy
+x
+y
+dz
+dxdy
+x
+y
+dz
++
+\le 
+\le 
++
+\le 
++
+=
++
++
++
+=
+\int \int 
+\int 
+\int \int 
+\int 
+d
+d
+dz
+d
+d
+dz
+\pi 
+\pi 
+\rho 
+\theta \rho \rho \rho 
+\theta \rho \rho 
+\rho 
+\pi 
++
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+x dv
+I
+x
+y
+\Omega 
+=
++
+\int \int \int 
+,其中\Omega 由
+z =,
+z
+x
+y
+=
++
+,
+z
+x
+y
+=
++
+围成. 
+解.
+x
+y
+x
+y
+x
+y
+x
+y
+I
+dxdy
+x
+y dz
+dxdy
+x
+y dz
++
+\le 
++
+\le 
++
++
+=
++
+-
++
+=
+\int \int 
+\int 
+\int \int 
+\int 
+d
+d
+dz
+d
+d
+dz
+\pi 
+\pi 
+\rho 
+\rho 
+\theta \rho \rho \rho 
+\theta \rho \rho \rho 
+\pi 
+-
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+; 
+或者,
+x
+y
+x
+y
+x
+y
+x
+y
+x
+y
+I
+dxdy
+x
+y dz
+dxdy
+x
+y dz
++
++
+\le 
+\le 
++
+\le 
++
++
+=
++
++
++
+=
+\int \int 
+\int 
+\int \int 
+\int 
+d
+d
+dz
+d
+d
+dz
+\rho 
+\pi 
+\pi 
+\rho 
+\rho 
+\theta \rho \rho \rho 
+\theta \rho \rho \rho 
+\pi 
++
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+dv
+\Omega 
+=
++
+\int \int \int 
+,其中\Omega 由
+z
+x
+y
+=
++
+,
+z
+x
+=
+-
+围成. 
+解.
+(
+)
+(
+)(
+)
+x
+x
+y
+x
+y
+x
+y
+I
+dxdy
+x
+y
+dz
+x
+y
+x
+y
+dxdy
+\pi 
+-
++
+\le 
++
++
+\le 
+=
++
+=
++
+-
+-
+=
+\int \int 
+\int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+sin
+y
+z
+I
+dv
+z
+\Omega 
+=\int \int \int 
+,其中\Omega 由y
+z
+=
+,
+x
+z
+\pi 
++
+=
+,
+x =
+,
+y =
+围成. 
+解.
+sin
+sin
+yz
+z
+z
+z
+D
+y
+z
+y
+z
+I
+dydz
+dx
+dz
+dy
+dx
+z
+z
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+=
+=
+=
+-
+\int \int 
+\int 
+\int 
+\int 
+\int 
+; 
+或者,
+sin
+sin
+xz
+x
+z
+z
+D
+y
+z
+y
+z
+I
+dxdz
+dy
+dx
+dz
+dy
+z
+z
+\pi 
+\pi 
+\pi 
+-
+=
+=
+=
+-
+\int \int 
+\int 
+\int 
+\int 
+\int 
+. 
+{\bfseries \textcolor{lyred}{2.截面法(坐标轴投影法,先二后一)}}
+
+设
+(
+)
+(
+)
+\{
+\}
+, ,
+:
+,
+,
+z
+x y z
+z
+z
+z
+x y
+D
+\Omega =
+\le 
+\le 
+\in 
+,则 
+(
+)
+(
+)
+(
+)
+, ,
+, ,
+, ,
+z
+z
+z
+z
+z
+D
+z
+D
+f x y z dv
+f x y z dxdy dz
+dz
+f x y z dxdy
+\Omega 
+
+
+=
+=
+
+
+
+
+
+
+\int \int \int 
+\int \int \int 
+\int \int \int 
+. 
+\textcolor{lyred}{例}.求
+ln
+z
+x
+y
+=
++
+,
+z =
+,
+z =围成立体的体积. 
+解.
+z
+z
+x
+y
+e
+e
+V
+dv
+dz
+dxdy
+e dz
+\pi 
+\pi 
+\Omega 
++
+\le 
+-
+=
+\cdots 
+=
+\cdots 
+=
+=
+\int \int \int 
+\int 
+\int \int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+dv
+\Omega 
+=
++
+\int \int \int 
+,其中
+:
+x
+y
+z
+\Omega 
++
+\le 
+, 2
+z
+\le 
+\le . 
+解.
+(
+)
+z
+x
+y
+z
+I
+dz
+x
+y
+dxdy
+dz
+d
+d
+\pi 
+\theta 
+\rho 
+\rho \rho 
+\pi 
++
+\le 
+=
++
+=
+\cdots 
+=
+\int 
+\int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+I
+x dv
+\Omega 
+=\int \int \int 
+,其中\Omega 由
+z =,
+z
+x
+y
+=
++
+,
+z
+x
+y
+=
++
+围成. 
+解.
+(
+)
+z
+z
+z
+x
+y
+z
+I
+dz
+x
+y
+d
+dz
+d
+d
+\pi 
+\sigma 
+\theta 
+\rho 
+\rho \rho 
+\pi 
+\le 
++
+\le 
+=
++
+=
+\cdots 
+=
+\int 
+\int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z dv
+\Omega 
+=
++
++
+\int \int \int 
+,其中\Omega 由
+x
+y
+z
++
++
+=
+和三个坐标面围成. 
+解.
+(
+)
+,
+0,
+x y
+z x
+y
+I
+zdv
+dz
+zdxdy
+z
+z
+dz
+\Omega 
++\le -
+\ge 
+\ge 
+=
+=
+=
+\cdots 
+-
+=
+\int \int \int 
+\int 
+\int \int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+I
+z dv
+\Omega 
+=\int \int \int 
+,其中
+:
+x
+y
+z
+a
+b
+c
+\Omega 
++
++
+\le . 
+解.
+c
+c
+c
+c
+x
+y
+z
+a
+b
+c
+z
+I
+dz
+z dxdy
+ab
+z dz
+abc
+c
+\pi 
+\pi 
+-
+-
++
+\le -
+
+
+=
+=
+-
+=
+
+
+
+
+\int 
+\int \int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+I
+z
+x
+y
+dv
+\Omega 
+=
+-
++
+\int \int \int 
+,其中\Omega 由
+x
+y
++
+=,
+z =
+,
+z =围成. 
+解.
+(
+)
+(
+)
+x
+y
+z
+z
+x
+y
+I
+dz
+z
+x
+y
+dxdy
+dz
+x
+y
+z dxdy
++
+\le 
+\le 
++
+\le 
+=
+-
++
++
++
+-
+=
+\int 
+\int \int 
+\int 
+\int \int 
+(
+)
+(
+)
+z
+z
+dz
+d
+z
+d
+dz
+d
+z
+d
+\pi 
+\pi 
+\pi 
+\theta 
+\rho \rho \rho 
+\theta 
+\rho 
+\rho \rho 
+-
++
+-
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{注}.
+(
+)
+(
+)
+x
+y
+x
+y
+x
+y
+x
+y
+I
+dxdy
+x
+y
+z dz
+dxdy
+z
+x
+y
+dz
++
++
+\le 
++
+\le 
++
+=
++
+-
++
+-
++
+=
+\int \int 
+\int 
+\int \int 
+\int 
+(
+)
+(
+)
+d
+d
+z dz
+d
+d
+z
+dz
+\rho 
+\pi 
+\pi 
+\rho 
+\pi 
+\theta \rho \rho 
+\rho 
+\theta \rho \rho 
+\rho 
+-
++
+-
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z
+dv
+\Omega 
+=
++
++
+\int \int \int 
+,其中\Omega 由
+z
+x
+y
+=
++
+,
+z
+x
+y
+=
+-
+-
+围成. 
+解.
+(
+)(
+)
+z
+x
+y
+z
+z
+z
+z
+z
+z
+x
+y
+=
++
+
+\Rightarrow 
+=
+-
+\Rightarrow 
++
+-
+=
+\Rightarrow 
+=
+=
+-
+-
+
+,即
+x
+y
++
+=, 
+故
+(
+)
+(
+)
+I
+x
+y
+z
+dv
+x
+y
+dv
+z dv
+I
+I
+\Omega 
+\Omega 
+\Omega 
+=
++
++
+=
++
++
+=
++
+\int \int \int 
+\int \int \int 
+\int \int \int 
+,而 
+(
+)
+x
+y
+x
+y
+x
+y
+I
+dxdy
+x
+y
+dz
+d
+d
+dz
+\rho 
+\pi 
+\rho 
+\theta \rho \rho 
+\rho 
+\pi 
+\pi 
+-
+-
+-
++
+\le 
++
+=
++
+=
+=
+-
+\int \int 
+\int 
+\int 
+\int 
+\int 
+, 
+(
+)
+x
+y
+z
+x
+y
+z
+I
+dz
+z dxdy
+dz
+z dxdy
+z
+zdz
+z
+z
+dz
+\pi 
+\pi 
++
+\le 
++
+\le -
+=
++
+=
+\cdots 
++
+\cdots 
+-
+=
+\int 
+\int \int 
+\int 
+\int \int 
+\int 
+\int 
+\pi 
+\pi 
+-
+,故
+I
+\pi 
+\pi 
+=
+-
+. 
+{\bfseries \textcolor{lyred}{3.交换积分顺序}}
+
+\textcolor{lyred}{例}.证明:
+()
+(
+)
+()
+y
+x
+dx dy
+f z dz
+z
+f z dz
+=
+-
+\int \int \int 
+\int 
+. 
+证.
+()
+()
+(
+)
+()
+y
+x
+x
+x
+x
+z
+dx dy
+f z dz
+dx dz
+f z dy
+dx
+x
+z f z dz
+=
+=
+-
+=
+\int \int \int 
+\int \int \int 
+\int \int 
+(
+)
+()
+()
+(
+)
+()
+z
+z
+x
+dz
+x
+z f z dx
+zx
+f z dz
+z
+f z dz
+
+
+-
+=
+-
+=
+-
+
+
+
+
+\int \int 
+\int 
+\int 
+,证毕. 
+\textcolor{lyred}{例}.求
+x
+y
+I
+dx dy y
+z dz
+=
++
+\int \int \int 
+. 
+解.
+z
+z
+z
+z
+z
+x
+x
+x
+x
+I
+dx dz y
+z dy
+dz dx y
+z dy
+z dz dx ydy
+=
++
+=
++
+=
++
+=
+\int \int \int 
+\int \int \int 
+\int 
+\int \int 
+(
+)
+2 2
+z z
+x
+z
+z
+z dz
+dx
+z dz
+z
+z dz
+
+
+-
++
+=
+-
++
+=
++
+=
+-
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.柱面坐标下的计算}}
+
+空间点
+(
+)
+, ,
+M x y z ,若它在xOy 面上投影的极坐标为(
+)
+,
+\theta \rho ,则称(
+)
+,
+, z
+\theta \rho 
+为M 的 
+\textcolor{lyred}{柱面坐标},并且有关系
+cos
+sin
+x
+y
+z
+z
+\rho 
+\theta 
+\rho 
+\theta 
+=
+
+
+=
+
+=
+
+. 
+若
+()
+()
+(
+)
+(
+)
+:
+,
+,
+,
+,
+z
+z
+z
+\alpha 
+\theta 
+\beta \rho \theta 
+\rho 
+\rho 
+\theta 
+\theta \rho 
+\theta \rho 
+\Omega 
+\le 
+\le 
+\le 
+\le 
+\le 
+\le 
+,则 
+(
+)
+()
+()
+(
+)
+(
+)
+(
+)
+,
+,
+, ,
+cos ,
+sin ,
+z
+z
+f x y z dv
+d
+d
+f
+z dz
+\rho 
+\theta 
+\theta \rho 
+\beta 
+\alpha 
+\rho \theta 
+\theta \rho 
+\theta 
+\rho \rho 
+\rho 
+\theta \rho 
+\theta 
+\Omega 
+=
+\int \int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.(1)设
+:
+x
+y
+z
+\Omega 
++
++
+\le ,则
+(
+)
+, ,
+I
+f x y z dv
+\Omega 
+=
+=
+\int \int \int 
+(
+)
+(
+)
+, ,
+cos ,
+sin ,
+x
+y
+x
+y
+x
+y
+dxdy
+f x y z dz
+d
+d
+f
+z dz
+\rho 
+\pi 
+\rho 
+\theta \rho \rho 
+\rho 
+\theta \rho 
+\theta 
+-
+-
+-
++
+\le 
+-
+-
+-
+-
+-
+=
+\int \int 
+\int 
+\int 
+\int 
+\int 
+. 
+(2)设\Omega 由
+x
+y
+x
++
+=
+,
+z =
+,
+z =围成,则
+(
+)
+, ,
+I
+f x y z dv
+\Omega 
+=
+=
+\int \int \int 
+(
+)
+(
+)
+2cos
+, ,
+cos ,
+sin ,
+x
+y
+x
+dxdy
+f x y z dz
+d
+d
+f
+z dz
+\pi 
+\theta 
+\pi 
+\theta 
+\rho \rho 
+\rho 
+\theta \rho 
+\theta 
++
+\le 
+-
+=
+\int \int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设(
+)
+(
+)
+,0
+,
+,
+x
+y
+r
+z h
+u r h
+f
+x
+y
+z dv
++
+\le 
+\le \le 
+=
++
+\int \int \int 
+,其中f 连续,求
+2u
+r h
+\partial 
+\partial \partial . 
+解. (
+)
+(
+)
+(
+)
+,
+,
+,
+r
+h
+r
+h
+u r h
+d
+d
+f
+z dz
+d
+f
+z dz
+\pi 
+\theta \rho \rho 
+\rho 
+\pi \rho \rho 
+\rho 
+=
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+,故 
+(
+)
+,
+h
+u
+r
+f r z dz
+r
+\pi 
+\partial 
+=
+\partial 
+\int 
+,
+(
+)
+,
+u
+rf r h
+r h
+\pi 
+\partial 
+=
+\partial \partial 
+. 
+\textcolor{lyred}{注}. (
+)
+(
+)
+(
+)
+,
+,
+,
+h
+r
+h
+r
+u r h
+dz
+d
+f
+z
+d
+dz
+f
+z
+d
+\pi 
+\theta 
+\rho 
+\rho \rho 
+\pi 
+\rho 
+\rho \rho 
+=
+=
+\int 
+\int 
+\int 
+\int \int 
+,故 
+(
+)
+,
+r
+u
+f
+h
+d
+h
+\pi 
+\rho 
+\rho \rho 
+\partial 
+=
+\partial 
+\int 
+,
+(
+)
+,
+u
+rf r h
+h r
+\pi 
+\partial 
+=
+\partial \partial 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{六.球面坐标下的计算}}
+
+空间点M 的经度,纬度以及到原点的距离构成有序数组(
+)
+, ,r
+\theta \varphi 
+,它称为该点的 
+\textcolor{lyred}{球面坐标},有关系
+sin
+cos
+sin
+sin
+cos
+x
+r
+y
+r
+z
+r
+\varphi 
+\theta 
+\varphi 
+\theta 
+\varphi 
+=
+
+
+=
+
+=
+
+. 
+若
+(
+)
+(
+)
+:
+,
+,
+,
+,
+r
+r
+r
+\theta 
+\theta 
+\theta \varphi 
+\varphi 
+\varphi 
+\varphi \theta 
+\varphi \theta 
+\Omega 
+\le 
+\le 
+\le 
+\le 
+\le 
+\le 
+,则 
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+, ,
+sin
+sin
+cos , sin
+sin , cos
+r
+r
+f x y z dv
+d
+d
+f r
+r
+r
+r dr
+\varphi \theta 
+\theta 
+\varphi 
+\theta 
+\varphi 
+\varphi \theta 
+\theta 
+\varphi \varphi 
+\varphi 
+\theta 
+\varphi 
+\theta 
+\varphi 
+\Omega 
+=
+\int \int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z
+dv
+\Omega 
+=
++
++
+\int \int \int 
+,其中
+:
+x
+y
+z
+\Omega 
++
++
+\le . 
+解.
+(
+)
+(
+)
+I
+x
+y
+z
+dv
+x dv
+x
+y
+z
+dv
+\Omega 
+\Omega 
+\Omega 
+=
++
++
+=
+=
++
++
+=
+\int \int \int 
+\int \int \int 
+\int \int \int 
+sin
+sin
+d
+d
+r
+r dr
+d
+r dr
+\pi 
+\pi 
+\pi 
+\theta 
+\varphi \varphi 
+\pi 
+\varphi \varphi 
+\pi 
+\cdots 
+=
+\cdots 
+\cdots 
+\cdots 
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+I
+x
+y
+z
+dv
+\Omega 
+=
++
++
+-
+\int \int \int 
+,其中
+:
+x
+y
+z
+x
+y
+\Omega 
++
+\le 
+\le 
+-
+-
+. 
+解.
+(
+)
+(
+)
+I
+x
+y
+z
+dv
+x
+y
+z
+dv
+\Omega 
+\Omega 
+=
+-
++
++
++
++
++
+-
+=
+\int \int \int 
+\int \int \int 
+(
+)
+(
+)
+(
+)
+sin
+sin
+d
+d
+r r dr
+d
+d
+r
+r dr
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\theta 
+\varphi \varphi 
+\theta 
+\varphi \varphi 
+-
+-
++
+-
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z
+dv
+\Omega 
+=
++
++
+\int \int \int 
+,其中
+: x
+y
+z
+x
+y
+z
+\Omega 
++
++
+\le 
++
++
+. 
+解.
+:
+x
+y
+z
+
+
+
+
+
+
+\Omega 
+-
++
+-
++
+-
+\le 
+
+
+
+
+
+
+
+
+
+
+
+
+,令
+,
+,
+x
+x
+y
+y
+z
+z
+'
+'
+'
+=
++
+=
++
+=
++
+, 
+则
+I
+x
+y
+z
+dv
+x
+y
+z
+dv
+'
+'
+\Omega 
+\Omega 
+
+
+
+
+
+
+
+
+
+
+'
+'
+'
+'
+'
+'
+'
+'
+=
++
++
++
++
++
+=
++
++
++
+=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\int \int \int 
+\int \int \int 
+3 4
+3 3
+sin
+4 3
+d
+d
+r
+r dr
+\pi 
+\pi 
+\theta 
+\varphi \varphi 
+\pi 
+\pi 
+
+
+\cdots 
++
+\cdots 
+=
+
+
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+dv
+\Omega 
+=
++
+\int \int \int 
+,其中
+(
+)
+: x
+y
+z
+a
+a
+\Omega 
++
++
+-
+\le 
+. 
+解.
+(
+)
+(
+)
+2 cos
+sin
+sin
+a
+I
+x
+y
+dv
+x
+y
+dv
+d
+d
+r
+r dr
+\pi 
+\varphi 
+\pi 
+\theta 
+\varphi \varphi 
+\varphi 
+\Omega 
+\Omega 
+=
++
+=
++
+=
+\cdots 
+=
+\int \int \int 
+\int \int \int 
+\int 
+\int 
+\int 
+sin
+cos
+a
+d
+a
+\pi 
+\pi 
+\varphi 
+\varphi \varphi 
+\pi 
+=
+\int 
+. 
+\textcolor{lyred}{例}.求半径a 的球面与半顶角为\alpha 的内接圆锥面所围立体体积. 
+解.
+(
+)
+2 cos
+sin
+1 cos
+a
+a
+V
+dv
+d
+d
+r dr
+\varphi 
+\pi 
+\alpha 
+\pi 
+\theta 
+\varphi \varphi 
+\alpha 
+\Omega 
+=
+=
+=
+-
+\int \int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+I
+z dv
+\Omega 
+=\int \int \int 
+,其中
+:
+z
+x
+y
+z
+z
+\Omega 
+\le 
++
++
+\le 
+. 
+解.
+(
+)
+2cos
+cos
+sin
+cos
+I
+d
+d
+r
+r dr
+\pi 
+\varphi 
+\pi 
+\varphi 
+\theta 
+\varphi \varphi 
+\varphi 
+\pi 
+=
+\cdots 
+=
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+I
+z dv
+\Omega 
+=\int \int \int 
+,其中
+:
+x
+y
+z
+\Omega 
++
++
+\le ,
+x
+y
+z
+z
++
++
+\le 
+. 
+解.
+x
+y
+z
+z
+x
+y
+z
+z
+
++
++
+=
+\Rightarrow 
+=
+
++
++
+=
+
+,
+x
+y
++
+=
+,在两曲面交线处
+\pi 
+\varphi =
+,故 
+(
+)
+(
+)
+2cos
+sin
+cos
+sin
+cos
+I
+d
+d
+r
+r dr
+d
+d
+r
+r dr
+\pi 
+\pi 
+\varphi 
+\pi 
+\pi 
+\pi 
+\theta 
+\varphi \varphi 
+\varphi 
+\theta 
+\varphi \varphi 
+\varphi 
+\pi 
+=
++
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{补充练习 }
+1.将
+(
+)
+, ,
+x y
+x
+dx
+dy
+f x y z dz
++
+-
+\int 
+\int 
+\int 
+化为先x ,再z ,后y 的三次积分. 
+解.
+(
+)
+(
+)
+, ,
+, ,
+x y
+y
+x y
+x
+dx
+dy
+f x y z dz
+dy
+dx
+f x y z dz
++
+-
++
+-
+=
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+(
+)
+(
+)
+, ,
+, ,
+y
+y
+y
+y
+z y
+dy dz
+f x y z dx
+dy dz
+f x y z dx
+-
+-
+-
++
+\int \int 
+\int 
+\int \int 
+\int 
+. 
+2.两种方法计算
+I
+z dv
+\Omega 
+=\int \int \int 
+,其中
+:
+x
+y
+z
+\Omega 
++
++
+\le ,
+z
+x
+y
++\ge 
++
+. 
+解.
+x
+y
+x
+y
+x
+y
+I
+dxdy
+z dz
+d
+d
+z dz
+\rho 
+\pi 
+\rho 
+\pi 
+\theta \rho \rho 
+-
+-
+-
+-
++
+\le 
++
+-
+=
+=
+=
+\int \int 
+\int 
+\int 
+\int 
+\int 
+; 
+(
+)
+x
+y
+z
+x
+y
+z
+I
+dz
+z dxdy
+dz
+z dxdy
+\pi 
+-
++
+\le -
++
+\le 
++
+=
++
+=
+\int 
+\int \int 
+\int 
+\int \int 
+. 
+3.两种方法计算
+z
+x
+y
+=
++
+与
+z
+x
+y
+=
+-
+-
+所围立体的体积. 
+解.
+(
+)
+x
+y
+x
+y
+x
+y
+V
+dv
+dxdy
+dz
+d
+d
+\pi 
+\theta 
+\rho 
+\rho \rho \rho 
+\pi 
+-
+-
+\Omega 
++
+\le 
++
+=
+\cdots 
+=
+\cdots 
+=
+-
+-
+=
+\int \int \int 
+\int \int 
+\int 
+\int 
+\int 
+; 
+(
+)
+x
+y
+z
+x
+y
+z
+V
+dv
+dz
+d
+dz
+d
+z dz
+z dz
+\sigma 
+\sigma 
+\pi 
+\pi 
+\pi 
+\Omega 
++
+\le 
++
+\le -
+=
+\cdots 
+=
++
+=
++
+-
+=
+\int \int \int 
+\int 
+\int \int 
+\int 
+\int \int 
+\int 
+\int 
+. 
+4.两种方法计算I
+zdv
+\Omega 
+=\int \int \int 
+,其中
+:
+x
+y
+z
+\Omega 
++
++
+\le ,
+x
+y
+z
+z
++
++
+\le 
+. 
+解.
+x
+y
+z
+z
+z
+x
+y
+z
+z
+
++
++
+=
+\Rightarrow =
+\Rightarrow 
+=
+
++
++
+=
+
+,即
+x
+y
++
+=
+,故 
+(
+)
+3 4
+3 4
+2 1
+x
+y
+x
+y
+x
+y
+x
+y
+I
+dxdy
+zdz
+x
+y
+dxdy
+\pi 
+-
+-
++
+\le 
++
+\le 
+-
+-
+-
+=
+=
+-
+-
+-
+=
+\int \int 
+\int 
+\int \int 
+; 
+1 2
+1 2
+x
+y
+z z
+x
+y
+z
+I
+dz
+zdxdy
+dz
+zdxdy
+\pi 
++
+\le 
+-
++
+\le -
+=
++
+=
+\int 
+\int \int 
+\int 
+\int \int 
+. 
+5.设
+()
+f x 连续,
+()
+lim
+x
+f x
+x
+\to 
+=,求
+(
+)
+lim
+t
+x
+y
+z
+t z
+I
+f x
+y
+z
+dv
+t
++
+\to 
++
++
+\le 
+\cdots 
+=
++
++
+\int \int \int 
+. 
+解.
+(
+)
+()
+lim
+t
+I
+f
+t
+f
+t
+\psi 
+\eta 
+
+\pi 
+\pi 
++
+\to 
+=
++
++
+\cdots 
+=
+=
+. 
+6.设
+:
+t
+D
+x
+y
+t
++
+\le 
+,
+:
+t x
+y
+z
+t
+\Omega 
++
++
+\le 
+,
+()
+(
+)
+0,
+f x
+C
+\in 
++\infty ,且
+()
+f x >
+,求 
+(
+)
+(
+)
+lim
+t
+t
+t
+D
+f x
+y
+z
+dv
+t
+f x
+y
+d\sigma 
++
+\Omega 
+\to 
++
++
++
+\int \int \int 
+\int \int 
+. 
+解.原式
+(
+)
+(
+)
+()
+()
+lim
+t
+f
+t
+f
+f
+f u
+v
+t
+\psi 
+
+\eta 
+\pi 
+\pi 
++
+\to 
++
++
+\cdots 
+=
+=
+\cdots 
+=
++
+\cdots 
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第10.4 节 重积分的应用}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.曲面的面积}}
+
+\textcolor{lyred}{定理}.设光滑曲面
+(
+)
+:
+,
+z
+z x y
+\Sigma 
+=
+,(
+)
+,
+xy
+x y
+D
+\in 
+,其中
+xy
+D 为有界闭区域,则它的面积 
+xy
+x
+y
+D
+A
+z
+z d\sigma 
+=
++
++
+\int \int 
+. 
+\textcolor{lyred}{例}.求半径为R 的球的表面积. 
+解.
+z
+R
+x
+y
+=
+-
+-
+,故
+x
+y
+R
+R
+A
+d
+R
+R
+x
+y
+\sigma 
+\pi 
++
+\le 
+=
+=
+-
+-
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+x
+y
+z
+a
++
++
+=
+含在
+x
+y
+ax
++
+=
+内部分的面积. 
+解.
+(
+)
+cos
+a
+x
+y
+ax
+a
+a
+A
+d
+d
+d
+a
+a
+x
+y
+a
+\pi 
+\theta 
+\pi 
+\sigma 
+\theta 
+\rho \rho 
+\pi 
+\rho 
++
+\le 
+-
+=
+=
+\cdots 
+=
+-
+-
+-
+-
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+z
+x
+y
+=
++
+被
+z
+x
+=
+所割下部分的面积. 
+解.
+z
+x
+y
+x
+y
+x
+z
+x
+=
++
+
+\Rightarrow 
++
+=
+
+=
+
+,故
+2 2
+x
+y
+x
+A
+d\sigma 
+\pi 
++
+\le 
+=
+\cdots 
+=
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+1 : z
+x
+y
+\Sigma 
+=
++
+与
+2 :
+z
+x
+y
+\Sigma 
+=
+-
++
+围成立体的表面积. 
+解.
+z
+x
+y
+x
+y
+z
+x
+y
+=
++
+
+\Rightarrow 
++
+=
+=
+-
++
+
+,故
+A
+A
+A
+=
++
+= 
+5 5
+x
+y
+x
+y
+d
+x
+y d
+\sigma 
+\sigma 
+\pi 
++
+\le 
++
+\le 
+
+
+-
++
++
++
+=
++
+
+
+
+
+
+
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.某屋顶由两个半径分别为1和2 的半球叠加而成,求表面积. 
+解.
+4 3
+x
+y
+A
+d
+x
+y
+\pi 
+\sigma 
+\pi 
+\pi 
+\le 
++
+\le 
+=
++
+=
++
+-
+-
+\int \int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.质心与形心}}
+
+{\bfseries \textcolor{lyred}{1.质点系}}
+
+设xOy 平面上有n 个位于(
+)
+(
+)
+,
+,
+,
+,
+n
+n
+x y
+x
+y
+\Lambda 
+处的质点,质量为
+1,
+,
+n
+m
+m
+\Lambda 
+,则 
+该质点系的\textcolor{lyred}{质心}坐标为(
+)
+,x y ,其中 
+n
+i
+i
+n
+y
+i
+i
+i
+n
+i
+i
+i
+m x
+M
+m
+x
+x
+M
+M
+m
+=
+=
+=
+=
+=
+=
+\sum 
+\sum 
+\sum 
+,
+n
+i
+i
+n
+x
+i
+i
+i
+n
+i
+i
+i
+m y
+M
+m
+y
+y
+M
+M
+m
+=
+=
+=
+=
+=
+=
+\sum 
+\sum 
+\sum 
+. 
+若
+i
+m
+m
+=
+,则
+n
+i
+i
+x
+x
+n
+=
+=\sum 
+,
+n
+i
+i
+y
+y
+n
+=
+=\sum 
+,此时(
+)
+,x y 也称为质点系的\textcolor{lyred}{形心}. 
+{\bfseries \textcolor{lyred}{2.平面薄片}}
+
+设平面薄片占有xOy 面上有界闭区域D ,密度为
+(
+)
+,x y
+\mu 
+,连续,则它的\textcolor{lyred}{质心}坐标\textcolor{lyred}{ }
+(
+)
+(
+)
+,
+,
+y
+D
+D
+x
+x y d
+M
+x
+M
+x y d
+\mu 
+\sigma 
+\mu 
+\sigma 
+=
+=\int \int 
+\int \int 
+,
+(
+)
+(
+)
+,
+,
+x
+D
+D
+y
+x y d
+M
+y
+M
+x y d
+\mu 
+\sigma 
+\mu 
+\sigma 
+=
+=\int \int 
+\int \int 
+. 
+若薄片均匀,则
+D
+D
+xd
+x
+d
+\sigma 
+\sigma 
+=\int \int 
+\int \int 
+,
+D
+D
+yd
+y
+d
+\sigma 
+\sigma 
+=\int \int 
+\int \int 
+,此时(
+)
+,x y 也称为D 的\textcolor{lyred}{形心}. 
+\textcolor{lyred}{例}.求位于两圆
+2sin
+\rho 
+\theta 
+=
+和
+4sin
+\rho 
+\theta 
+=
+之间的均匀薄片的质心. 
+解.
+x =
+,
+4sin
+2sin
+sin
+D
+y
+yd
+d
+d
+A
+\pi 
+\theta 
+\theta 
+\sigma 
+\theta 
+\rho 
+\theta \rho \rho 
+\pi 
+=
+=
+\cdots 
+=
+\int \int 
+\int 
+\int 
+,故为
+0, 3
+
+
+
+
+
+
+. 
+\textcolor{lyred}{例}.在均匀半圆形薄板下接一个宽与圆直径相同的长方形的均匀薄板,要求质心 
+在圆心处,求圆半径与长方形的高之比. 
+解.以半圆直径边为x 轴,对称轴为y 轴,则质心为原点,故
+y =
+, 
+于是
+sin
+R
+R
+x
+D
+D
+R
+h
+M
+yd
+yd
+d
+d
+dx
+ydy
+\pi 
+\mu 
+\sigma 
+\mu 
+\sigma 
+\mu 
+\theta \rho 
+\theta \rho \rho 
+\mu 
+-
+-
+=
++
+=
+\cdots 
++
+=
+\Rightarrow 
+\int \int 
+\int \int 
+\int 
+\int 
+\int 
+\int 
+:
+:
+R
+Rh
+R h
+\mu 
+\mu 
+\mu 
+\mu 
+-
+=
+\Rightarrow 
+=
+. 
+{\bfseries \textcolor{lyred}{3.空间立体}}
+
+设物体占有空间有界闭区域\Omega ,密度为
+(
+)
+, ,
+x y z
+\rho 
+,连续,则\textcolor{lyred}{质心}坐标 
+x dv
+x
+dv
+\rho 
+\rho 
+\Omega 
+\Omega 
+=\int \int \int 
+\int \int \int 
+,
+y dv
+y
+dv
+\rho 
+\rho 
+\Omega 
+\Omega 
+=\int \int \int 
+\int \int \int 
+,
+z dv
+z
+dv
+\rho 
+\rho 
+\Omega 
+\Omega 
+=\int \int \int 
+\int \int \int 
+. 
+若\Omega 均匀,则
+xdv
+x
+dv
+\Omega 
+\Omega 
+=\int \int \int 
+\int \int \int 
+,
+ydv
+y
+dv
+\Omega 
+\Omega 
+=\int \int \int 
+\int \int \int 
+,
+zdv
+z
+dv
+\Omega 
+\Omega 
+=\int \int \int 
+\int \int \int 
+,此时(
+)
+, ,
+x y z 也称为\Omega 的\textcolor{lyred}{形心}. 
+\textcolor{lyred}{例}.求均匀半球体
+(
+)
+:
+x
+y
+z
+a
+z
+\Omega 
++
++
+\le 
+\ge 
+的质心. 
+解.
+x
+y
+=
+=
+,
+a
+x
+y
+a
+z
+a
+z
+zdv
+dz
+zdxdy
+a
+V
+V
+a
+\pi 
+\pi 
+\Omega 
++
+\le 
+-
+=
+=
+=
+\cdots 
+=
+\int \int \int 
+\int 
+\int \int 
+. 
+\textcolor{lyred}{例}.均匀半球,密度为
+\rho ,下接半径相同的均匀圆柱体,密度为
+\rho ,质心在球心处, 
+求圆柱半径与高之比. 
+解.以球心为原点,对称轴为z 轴建立坐标系,设质心(
+)
+, ,
+x y z ,由 
+z
+z dv
+zdv
+zdv
+\rho 
+\rho 
+\rho 
+\Omega 
+\Omega 
+\Omega 
+=
+\Rightarrow 
+=
+\Rightarrow 
++
+=
+\int \int \int 
+\int \int \int 
+\int \int \int 
+,于是 
+sin
+cos
+:
+R
+h
+x
+y
+R
+d
+d
+r
+r dr
+dxdy
+zdz
+R h
+\pi 
+\pi 
+\rho 
+\rho 
+\theta 
+\varphi \varphi 
+\varphi 
+\rho 
+\rho 
+-
++
+\le 
+\cdots 
++
+=
+\Rightarrow 
+=
+\int 
+\int 
+\int 
+\int \int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.转动惯量(惯性矩)}}
+
+{\bfseries \textcolor{lyred}{1.质点系}}
+
+设xOy 平面上有n 个质点,分别位于(
+)
+(
+)
+,
+,
+,
+,
+n
+n
+x y
+x
+y
+\Lambda 
+处,则该质点系对于x 轴及 
+y 轴的\textcolor{lyred}{转动惯量}分别为
+n
+x
+i
+i
+i
+I
+m y
+=
+=\sum 
+,
+n
+y
+i
+i
+i
+I
+m x
+=
+=\sum 
+. 
+{\bfseries \textcolor{lyred}{2.平面薄片}}
+
+设平面薄片占有xOy 面上的有界闭区域D ,密度为
+(
+)
+,x y
+\mu 
+,连续,则它对于x 轴
+和y 轴的\textcolor{lyred}{转动惯量}
+(
+)
+,
+x
+D
+I
+y
+x y d
+\mu 
+\sigma 
+=\int \int 
+,
+(
+)
+,
+y
+D
+I
+x
+x y d
+\mu 
+\sigma 
+=\int \int 
+. 
+\textcolor{lyred}{例}.求半径为a ,密度为\mu 的半圆薄片对其直径边的转动惯量. 
+解.
+,
+sin
+a
+x
+x
+y
+a
+y
+I
+y d
+d
+d
+a
+\pi 
+\mu 
+\sigma 
+\mu 
+\theta \rho 
+\theta \rho \rho 
+\pi \mu 
++
+\le 
+\ge 
+=
+=
+\cdots 
+=
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+y
+x
+=
+,
+y =围成的密度为\mu 的薄片对
+y =-的转动惯量. 
+解.
+(
+)
+(
+)
+D
+x
+I
+y
+d
+dx
+y
+dy
+\mu \sigma 
+\mu 
+\mu 
+-
+=
++
+=
++
+=
+\int \int 
+\int 
+\int 
+. 
+{\bfseries \textcolor{lyred}{3.空间立体}}
+
+设物体占有空间有界闭区域\Omega ,密度
+(
+)
+, ,
+x y z
+\rho 
+,连续,则转动惯量为 
+(
+)
+xI
+y
+z
+dv
+\rho 
+\Omega 
+=
++
+\cdots 
+\int \int \int 
+,
+(
+)
+yI
+z
+x
+dv
+\rho 
+\Omega 
+=
++
+\cdots 
+\int \int \int 
+,
+(
+)
+zI
+x
+y
+dv
+\rho 
+\Omega 
+=
++
+\cdots 
+\int \int \int 
+. 
+\textcolor{lyred}{例}.设匀质立体
+(
+)
+:
+1 1
+x
+y
+z
+z
+\Omega 
++
+-
+\le 
+\le 
+\le 
+的密度为
+\rho ,求
+zI . 
+解.
+(
+)
+(
+)
+z
+x
+y
+z
+I
+x
+y
+dv
+dz
+x
+y
+dxdy
+\rho 
+\rho 
+\pi \rho 
+\Omega 
++
+\le 
++
+=
++
+=
++
+=
+\int \int \int 
+\int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求密度为
+\rho 的均匀球体关于过球心的轴的转动惯量. 
+解.
+(
+)
+(
+)
+zI
+x
+y
+dv
+x
+y
+z
+dv
+\rho 
+\rho 
+\Omega 
+\Omega 
+=
++
+=
++
++
+=
+\int \int \int 
+\int \int \int 
+sin
+a
+d
+d
+r
+r dr
+a
+\pi 
+\pi 
+\rho 
+\theta 
+\varphi \varphi 
+\pi \rho 
+\cdots 
+=
+\int 
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.引力}}
+
+设物体占有空间有界闭域\Omega ,密度为
+(
+)
+, ,
+x y z
+\rho 
+.连续,则它对
+(
+)
+,
+,
+P x
+y z
+处单位 
+质点的\textcolor{lyred}{引力}为 
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+x
+y
+z
+x
+x
+y
+y
+z
+z
+F
+F F F
+G
+dv
+dv
+dv
+r
+r
+r
+\rho 
+\rho 
+\rho 
+\Omega 
+\Omega 
+\Omega 
+
+
+-
+-
+-
+=
+=
+
+
+
+
+\int \int \int 
+\int \int \int 
+\int \int \int 
+\rho 
+,其中 
+(
+)
+(
+)
+(
+)
+r
+x
+x
+y
+y
+z
+z
+=
+-
++
+-
++
+-
+. 
+\textcolor{lyred}{例}.求密度为
+\rho 的球体
+: x
+y
+z
+R
+\Omega 
++
++
+\le 
+对位于点
+(
+)(
+)
+0 0,0,
+M
+a
+a
+R
+>
+处的单位 
+质点的引力. 
+解.由对称性,设
+(
+)
+0,0,
+z
+F
+F
+=
+\rho 
+,则
+(
+)
+(
+)
+z
+z
+a
+F
+G
+dv
+x
+y
+z
+a
+\rho 
+\Omega 
+-
+=
+=
+
+
++
++
+-
+
+
+\int \int \int 
+(
+)
+(
+)
+R
+R
+x
+y
+R
+z
+G
+z
+a dz
+dxdy
+x
+y
+z
+a
+\rho 
+-
++
+\le 
+-
+-
+=
+
+
++
++
+-
+
+
+\int 
+\int \int 
+(
+)
+(
+)
+R
+R
+z
+R
+R
+d
+GM
+G
+z
+a dz
+d
+G
+a
+a
+z
+a
+\pi 
+\pi 
+\rho 
+\rho \rho 
+\rho 
+\theta 
+\rho 
+-
+-
+-
+=-
+=-
+
+
++
+-
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设密度为
+\rho 的均匀柱体
+(
+)
+:
+x
+y
+R
+z
+h
+\Omega 
++
+\le 
+\le \le 
+,求它对位于
+(
+)(
+)
+0,0,
+M
+a a
+h
+>
+处的单位质点的引力. 
+解.设
+(
+)
+0,0,
+z
+F
+F
+=
+\rho 
+,则
+(
+)
+(
+)
+(
+)
+(
+)
+z
+z
+a
+F
+G
+dv
+x
+y
+z
+a
+\rho 
+\Omega 
+-
+=
+=
+
+
+-
++
+-
++
+-
+
+
+\int \int \int 
+(
+)
+(
+)
+(
+)
+(
+)
+h
+R
+h
+x
+y
+R
+z
+a
+z
+a
+G
+dxdy
+dz
+G
+d
+d
+dz
+x
+y
+z
+a
+z
+a
+\pi 
+\rho 
+\rho 
+\theta \rho \rho 
+\rho 
++
+\le 
+-
+-
+=
+=
+
+
+
+
++
++
+-
++
+-
+
+
+
+
+\int \int 
+\int 
+\int 
+\int 
+\int 
+(
+)
+2 G
+h
+R
+h
+a
+R
+a
+\pi 
+\rho 
+
+-
++
++
+-
+-
++
+
+
+
+. 
+\textcolor{lyred}{例}.求半径为R ,半顶角为\alpha ,密度为
+\rho 的均匀球锥体对顶点处单位质点的引力. 
+解.取顶点为原点,对称轴为z 轴建立坐标系,则
+(
+)
+0,0,
+z
+F
+F
+=
+\rho 
+,其中 
+(
+)
+cos
+sin
+sin
+R
+z
+zdv
+r
+F
+G
+G
+d
+d
+r
+dr
+G
+R
+r
+x
+y
+z
+\pi 
+\alpha 
+\rho 
+\varphi 
+\rho 
+\theta 
+\varphi 
+\varphi 
+\rho \pi 
+\alpha 
+\Omega 
+=
+=
+\cdots 
+=
++
++
+\int \int \int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设顶点在原点,半顶角为6
+\pi 的球面
+(
+)
+x
+y
+z
+a
+a
++
++
+-
+=
+的内接均匀正圆锥体 
+\Omega (密度为
+\rho )对原点处单位质点的引力. 
+解.
+x
+y
+F
+F
+=
+=
+,
+z
+Gz
+dv
+F
+r
+\rho 
+\Omega 
+=\int \int \int 
+,\Omega 顶部高度
+2 cos
+cos
+z
+a
+a
+\pi 
+\pi 
+
+
+=
+=
+
+
+
+
+,于是 
+在球坐标中,\Omega 的顶面方程为
+cos
+r
+a
+\varphi =
+,即
+2cos
+a
+r
+\varphi 
+=
+,因此 
+2cos
+cos
+sin
+a
+z
+r
+F
+G
+d
+d
+r dr
+aG
+r
+\pi 
+\varphi 
+\pi 
+\varphi 
+\rho 
+\theta 
+\varphi \varphi 
+\rho 
+\pi 
+
+
+=
+\cdots 
+=
+-
+
+
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设有密度为\mu 的均匀半圆形薄片,占有区域
+:
+D x
+y
+R
++
+\le 
+,
+y \ge 
+,圆心上方 
+有一单位质点P , OP
+a
+=
+,求薄片对该质点的引力. 
+解.质点位于(
+)
+0,0,a ,设
+(
+)
+0,
+,
+y
+z
+F
+F F
+=
+\rho 
+,其中
+(
+)
+y
+D
+y
+F
+G
+d
+r
+\mu 
+\sigma 
+-
+=
+=
+\int \int 
+(
+)
+sin
+ln
+R
+d
+R
+a
+R
+R
+G
+d
+G
+a
+a
+R
+a
+\pi 
+\rho 
+\theta \rho \rho 
+\mu 
+\theta 
+\mu 
+\rho 
+
+
+\cdots 
++
++
+=
+-
+
+
+
+
++
+
+
++
+\int 
+\int 
+, 
+(
+)
+(
+)
+R
+z
+D
+a
+d
+a
+F
+G
+d
+G a d
+G
+r
+a
+R
+a
+\pi 
+\mu 
+\rho \rho 
+\sigma 
+\mu 
+\theta 
+\mu \pi 
+\rho 
+
+
+-
+=
+=-
+=-
+-
+
+
++
+
+
++
+\int \int 
+\int 
+\int 
+. 

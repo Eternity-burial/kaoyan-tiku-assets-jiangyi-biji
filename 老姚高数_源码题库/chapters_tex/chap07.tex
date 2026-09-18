@@ -1,0 +1,5239 @@
+\begin{center}
+{\Large \bfseries \textcolor{lyred}{第七章 微分方程}}
+\end{center}
+
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第7.1 节 微分方程的基本概念}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.微分方程的例子}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.微分方程的概念}}
+
+{\bfseries \textcolor{lyred}{1.微分方程}}
+
+表示未知函数,未知函数的导数及自变量之间关系的等式称为\textcolor{lyred}{微分方程}; 
+微分方程中出现的未知函数导数的最高阶数称为该方程的\textcolor{lyred}{阶}. 
+\textcolor{lyred}{例}.
+y
+x
+'=
+(一阶),
+0.4
+s''=-
+(二阶),
+sin
+x y
+xy
+xy
+y
+x
+'''
+''
+'
++
+-
+=
+(三阶). 
+\textcolor{lyred}{一阶方程}:
+(
+)
+, ,
+F x y y'=
+,或者
+(
+)
+,
+y
+f x y
+'=
+. 
+\textcolor{lyred}{n 阶方程}:
+()
+(
+)
+, ,
+,
+n
+F x y y
+y
+'
+=
+\Lambda ,
+,或者
+()
+(
+)
+(
+)
+, ,
+,
+,
+n
+n
+y
+f x y y
+y
+-
+'
+=
+\Lambda 
+. 
+{\bfseries \textcolor{lyred}{2.通解与特解}}
+
+\textcolor{lyred}{通解}:含有n 个相互独立的任意常数项的解. 
+\textcolor{lyred}{特解}:不包含任意常数项的解. 
+\textcolor{lyred}{例}.
+y
+x
+C
+=
++
+是
+y
+x
+'=
+的通解,
+y
+x
+=
++是它的特解. 
+\textcolor{lyred}{例}.
+0.2
+s
+t
+C t
+C
+=-
++
++
+是
+0.4
+s''=-
+的通解,
+0.2
+s
+t
+t
+=-
++
+是它的特解. 
+\textcolor{lyred}{积分曲线}:方程的特解在坐标平面上代表的曲线. 
+\textcolor{lyred}{例}.求方程
+y
+x
+''=
+的一条积分曲线,使它与
+y
+x
+=
+在(
+)
+2,4 处相切. 
+解.
+y
+x
+y
+xdx
+x
+C
+''
+'
+=
+\Rightarrow 
+=
+=
++
+\int 
+,
+(
+)
+y
+x
+C
+dx
+x
+C x
+C
+=
++
+=
++
++
+\int 
+,代入 
+()
+y
+=
+,
+()
+y'
+=
+,得
+C =-,
+C =
+,故
+y
+x
+x
+=
+-
++
+. 
+{\bfseries \textcolor{lyred}{3.初值问题}}
+
+\textcolor{lyred}{例}.
+()
+y
+x
+y
+'=
+
+
+=
+
+,其中()1
+y
+=
+称为\textcolor{lyred}{初始条件}. 
+\textcolor{lyred}{例}.
+()
+()
+0.4
+s
+s
+s
+''=-
+
+
+=
+
+'
+=
+
+,其中()
+s
+=
+, ()
+s'
+=
+称为\textcolor{lyred}{初始条件}. 
+\textcolor{lyred}{一阶初值问题}:
+(
+)
+,
+x x
+y
+f x y
+y
+y
+=
+'
+
+=
+
+=
+
+,\textcolor{lyred}{二阶初值问题}:
+(
+)
+, ,
+x x
+x x
+y
+f x y y
+y
+y
+y
+y
+=
+=
+''
+'
+=
+
+=
+
+'
+=
+
+. 
+类似地,还有\textcolor{lyred}{n 阶初值问题}. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第7.2 节 可分离变量的微分方程}}
+
+\textcolor{lyred}{定义}.形如()
+()
+g y dy
+f x dx
+=
+的方程称为\textcolor{lyred}{可分离变量}的微分方程. 
+\textcolor{lyred}{解法}:由
+()
+()
+g y dy
+f x dx
+=
+\int 
+\int 
+,解得
+()
+()
+G y
+F x
+C
+=
++
+,称为\textcolor{lyred}{隐式通解}. 
+\textcolor{lyred}{例}.求
+dy
+xy
+dx =
+的通解. 
+解.
+ln
+x
+dy
+xdx
+y
+x
+C
+y
+Ce
+y =
+\Rightarrow 
+=
++
+\Rightarrow 
+=
+\int 
+\int 
+,其中
+C
+C
+e
+=\pm 
+或0 . 
+\textcolor{lyred}{注}.一般地,
+()
+()
+ln
+f x
+y
+f x
+C
+y
+Ce
+=
++
+\Rightarrow 
+=
+. 
+\textcolor{lyred}{例}.(人口模型)考虑人口函数
+()
+N t ,忽略政治,经济,环境等因素,人口增长率与 
+人口基数成正比,即
+ln
+dN
+dN
+rN
+rdt
+N
+rt
+C
+dt
+N
+=
+\Rightarrow 
+=
+\Rightarrow 
+=
++
+\int 
+\int 
+,即
+rt
+N
+Ce
+=
+,代入 
+t =
+,
+N
+N
+=
+,得
+C
+N
+=
+,故
+r t
+N
+N e \cdots 
+=
+. 
+\textcolor{lyred}{例}.(阻滞增长人口模型)设地球资源能容纳的最大人口数为K ,则 
+(
+)
+(
+)
+1 ln
+dN
+dN
+N
+r K
+N
+rdt
+rt
+C
+N dt
+N K
+N
+K
+K
+N
+=
+-
+\Rightarrow 
+=
+\Rightarrow 
+=
++
+-
+-
+\int 
+\int 
+,即 
+rK t
+N
+Ce
+K
+N
+\cdots 
+=
+-
+,由
+t =
+,
+N
+N
+=
+,得
+N
+C
+K
+N
+=
+-
+,故
+rK t
+N
+N
+e
+K
+N
+K
+N
+\cdots 
+=
+-
+-
+,即 
+(
+)
+rK t
+KN
+N
+N
+K
+N
+e-
+\cdots 
+=
++
+-
+,称为\textcolor{lyred}{Logistic 函数}. 
+\textcolor{lyred}{例}.质量为m 的降落伞在空中由静止开始下落,设下落过程中的空气阻力与速度 
+成正比,试求下落速度与下落时间的关系. 
+解.设下落t 秒后速度
+()
+v
+v t
+=
+,则
+dv
+dv
+m
+mg
+kv
+dt
+dt
+mg
+kv
+m
+=
+-
+\Rightarrow 
+=
+-
+\int 
+\int 
+,得 
+ln mg
+kv
+t
+C
+k
+m
+-
+-
+=
++
+,即
+k t
+m
+mg
+kv
+Ce
+-
+\cdots 
+-
+=
+,代入()
+v
+=
+,得C
+mg
+=
+,故 
+k t
+m
+mg
+v
+e
+k
+-
+\cdots 
+
+
+=
+-
+
+
+
+
+,当t \to +\infty 时,
+mg
+v
+k
+\approx 
+. 
+\textcolor{lyred}{补充练习} 
+1.求
+y
+xy
+y
+x
+'+
+-
+=-
+的通解. 
+解.
+(
+)(
+)
+(
+)
+arctan
+dy
+y
+y
+x
+x dx
+y
+x
+x
+C
+y
+'=
++
+-
+\Rightarrow 
+=
+-
+\Rightarrow 
+=
+-
++
++
+. 
+2.求连续函数
+()
+f x ,使它满足
+()
+(
+)
+x
+x
+f t dt
+x
+tf x
+t dt
+=
++
+-
+\int 
+\int 
+. 
+解.令u
+x
+t
+=
+-,则
+(
+)
+(
+)
+()
+()
+()
+x
+x
+x
+x
+tf x
+t dt
+x
+u f u du
+x
+f u du
+uf u du
+-
+=
+-
+=
+-
+\int 
+\int 
+\int 
+\int 
+, 
+故
+()
+()
+()
+()
+()
+x
+x
+x
+x
+f t dt
+x
+x
+f u du
+uf u du
+f x
+f u du
+=
++
+-
+\Rightarrow 
+=+
+\Rightarrow 
+\int 
+\int 
+\int 
+\int 
+()
+()
+f
+x
+f x
+'
+=
+,即
+()
+y
+f x
+=
+满足dy
+y
+dx =
+,解得
+x
+y
+Ce
+=
+,由
+x =
+,
+y =,得
+C =,故 
+()
+x
+f x
+e
+=
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第7.3 节 齐次方程}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.变量替换}}
+
+\textcolor{lyred}{例}.求
+dy
+dx
+x
+y
+=
++
++的通解. 
+解.引入未知函数
+u
+x
+y
+=
++
++,
+du
+dy
+dx
+dx
+=+
+,代入方程,得
+du
+dx
+u
+=+
+,解得 
+ln
+u
+u
+x
+C
+-
++
+=
++
+,即
+ln
+x
+y
+y
+C
++
++
+=
++
+,故
+y
+x
+y
+Ce
++
++
+=
+. 
+\textcolor{lyred}{例}.求
+(
+)
+ln
+dy
+x
+y
+xy
+dx -
+-
+=
+
+
+
+
+的通解. 
+解.
+(
+)
+(
+)
+ln
+d xy
+y
+xy
+dx
+-
+=
+,令u
+xy
+=
+,
+ln
+du
+u
+u
+dx
+x
+=
+,解得
+ln ln
+ln
+u
+x
+C
+=
++
+,即 
+ln
+Cx
+u
+Cx
+u
+e
+=
+\Rightarrow 
+=
+,故
+Cx
+xy
+e
+=
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.齐次方程}}
+
+\textcolor{lyred}{定义}.形如dy
+y
+dx
+x
+\varphi 
+
+=
+
+
+
+
+的方程称为\textcolor{lyred}{齐次方程}. 
+\textcolor{lyred}{例}.(
+)
+(
+)
+y
+y
+x
+x
+dy
+x y
+xy
+x y
+xy
+dx
+x
+y
+dy
+dx
+x
+y
+y
+x
+
+
+-
+
+-
+
+
+-
+-
++
+=
+\Leftrightarrow 
+=
+=
++
+
+
++
+
+
+
+. 
+\textcolor{lyred}{解法}:令
+y
+u
+x
+=
+,即y
+xu
+=
+, dy
+du
+u
+x
+dx
+dx
+=
++
+,代入方程,得
+()
+du
+u
+x
+u
+dx
+\varphi 
++
+=
+,分离变量. 
+\textcolor{lyred}{例}.求
+2 dy
+dy
+y
+x
+xy
+dx
+dx
++
+=
+的通解. 
+解.
+y
+dy
+y
+x
+y
+dx
+xy
+x
+x
+
+
+
+
+
+
+=
+=
+-
+-
+,令
+y
+u
+x
+=
+,则y
+xu
+=
+, dy
+du
+u
+x
+dx
+dx
+=
++
+,代入方程,得 
+du
+u
+u
+x dx
+u
++
+=
+-,解得
+ln
+ln
+u
+u
+x
+C
+-
+=
++
+,即
+ln
+y
+y
+C
+x
+=
++
+,故
+y
+x
+y
+Ce
+=
+. 
+\textcolor{lyred}{例}.求
+y
+x
+x
+y
+y =
++
++
+'
+的通解. 
+解.以y 为自变量,得 
+x
+x
+y
+dx
+x
+x
+dy
+y
+y
+y
++
++
+=
+=
++
++,令
+x
+u
+y
+=
+,则x
+yu
+=
+, dx
+du
+u
+y
+dy
+dy
+=
++
+,代入方程,得 
+(
+)
+ln
+ln
+du
+du
+dy
+u
+y
+u
+u
+u
+u
+y
+C
+dy
+y
+u
++
+=
++
++\Rightarrow 
+=
+\Rightarrow 
++
++
+=
++
++
+\int 
+\int 
+,得 
+(
+)
+u
+u
+Cy
+u
+Cy
+u
++
++=
+\Rightarrow 
++=
+-
+,故
+x
+y
+C
+C
+=
++
+. 
+\textcolor{lyred}{补充练习 }
+1.求
+xy
+y
+xy
+'+
+=
+的通解. 
+解.
+y
+y
+y
+x
+x
+'+
+=
+,令
+y
+u
+x
+=
+, y
+xu
+=
+,则dy
+du
+u
+x
+dx
+dx
+=
++
+,代入方程,得 
+(
+)
+du
+du
+dx
+u
+x
+u
+u
+dx
+x
+u
+u
++
++
+=
+\Rightarrow 
+=
+-
+,解得
+xy
+x
+C
+=
++
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第7.4 节 一阶线性微分方程}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.一阶线性方程}}
+
+\textcolor{lyred}{一阶线性方程}:
+()
+()
+dy
+P x y
+Q x
+dx +
+=
+,其中
+()
+P x 为系数,
+()
+Q x 称为非齐次项; 
+若
+()
+Q x \equiv 
+,则称为\textcolor{lyred}{齐次的线性方程};否则称为\textcolor{lyred}{非齐次的线性方程}. 
+\textcolor{lyred}{常数变易法}.(一)求对应的齐次线性方程
+()
+dy
+P x y
+dx +
+=
+的通解: 
+()
+()
+P x dx
+dy
+P x dx
+y
+Ce
+y
+-\int 
+=-
+\Rightarrow 
+=
+,其中
+()
+P x dx
+\int 
+表示
+()
+P x 的某个原函数; 
+(二)令
+()
+()
+P x dx
+y
+u x e
+-\int 
+=
+,代入方程,得 
+()
+()
+P x dx
+du e
+Q x
+dx
+-\int 
+=
+,故有\textcolor{lyred}{通解公式}:
+()
+()
+()
+P x dx
+P x dx
+y
+e
+Q x e
+dx
+C
+-
+
+
+\int 
+\int 
+=
++
+
+
+
+
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+dy
+y
+x
+dx
+x
+-
+=
++
++
+的通解. 
+解.(一)
+(
+)
+dy
+y
+dy
+dx
+y
+C x
+dx
+x
+y
+x
+-
+=
+\Rightarrow 
+=
+\Rightarrow 
+=
++
++
++
+; 
+(二)令
+(
+)
+y
+u x
+=
++
+,代入方程,得
+(
+)
+(
+)
+du
+x
+x
+dx \cdots 
++
+=
++
+,解得
+(
+)
+u
+x
+C
+=
++
++
+,故 
+(
+)
+(
+)
+y
+x
+C x
+=
++
++
++
+. 
+\textcolor{lyred}{例}.求
+cos
+sin 2
+y
+x
+y
+y
+'=
++
+的通解. 
+解.以y 为自变量,则
+cos
+sin 2
+dx
+y x
+y
+dy -
+\cdots 
+=
+,故 
+(
+)
+(
+)
+cos
+cos
+sin
+sin 2
+2sin
+y dy
+y dy
+y
+x
+e
+y e
+dy
+C
+y
+Ce
+-
+-
+-
+
+
+\int 
+\int 
+=
+\cdots 
++
+=-
+-
++
+
+
+
+
+\int 
+. 
+\textcolor{lyred}{例}.容器内盛有盐水100L ,初始含盐量50g ,现注入浓度
+2g L
+c =
+的盐水,速度为 
+3L min
+v =
+,同时又以
+2L min
+v =
+的速度放水,求容器内的含盐量的变化规律. 
+解.设t 分钟后含盐量为x 克,盐水浓度
+x
+c
+t
+=
++,故单位时间含盐量的变化为 
+2 3
+dx
+x
+dt
+t
+=
+\cdots -
+\cdots 
++
+(流入-流出),即
+dx
+x
+dt
+t
++
+=
++
+,由通解公式,得 
+(
+)
+(
+)
+2 100
+dt
+dt
+t
+t
+C
+x
+e
+e
+dt
+C
+t
+t
+-
++
++
+
+
+\int 
+\int 
+=
+\cdots 
++
+=
++
++
+
+
++
+
+
+\int 
+,其中
+1.5 10
+C =-
+\times 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.伯努利方程}}
+
+\textcolor{lyred}{例}.求
+ln
+dy
+y
+y
+x
+dx
+x
++
+=
+的通解. 
+解.
+(
+)
+2ln
+2ln
+d y
+dy
+y
+y
+y
+x
+x
+dx
+x
+dx
+x
+-
+-
+-
+-
++
+=
+\Leftrightarrow -
++
+=
+,令
+z
+y-
+=
+,得线性方程 
+2ln
+dz
+z
+x
+dx
+x
+-
+\cdots 
+=-
+,解得
+(
+)
+ln
+z
+x C
+x
+=
+-
+,故
+(
+)
+ln
+y
+x C
+x
+=
+-
+. 
+\textcolor{lyred}{定义}.形如
+()
+()
+(
+)
+0,1
+n
+dy
+P x y
+Q x y
+n
+dx +
+=
+\neq 
+的方程称为\textcolor{lyred}{伯努利方程}. 
+\textcolor{lyred}{解法}:
+()
+()
+()
+()
+n
+n
+n
+n
+dy
+d
+y
+P x y
+Q x
+y
+P x y
+Q x
+dx
+n dx
+-
+-
+-
+-
++
+=
+\Leftrightarrow 
+\cdots 
++
+=
+-
+,令
+1 n
+z
+y -
+=
+,则 
+(
+)()
+(
+)
+()
+dz
+n P x z
+n Q x
+dx +
+-
+=
+-
+,为线性方程,可解出z . 
+\textcolor{lyred}{例}.设
+()
+f x 连续,且满足
+()
+()
+()
+x
+f t
+f x
+dt
+t f t
+t
+=+
++
+\int 
+,求
+()
+f x . 
+解.
+()
+()
+()
+f x
+f
+x
+x f x
+x
+'
+=
++
+,即
+()
+y
+f x
+=
+满足
+dy
+y
+dx
+x y
+x
+=
++
+,以y 为自变量,得 
+dx
+x
+x
+dy
+y
+=
++
+,即
+dx
+dx
+x
+x
+x
+dy
+y
+dy
+y
+-
+-
+-
+=
+\Rightarrow 
++
+=-,解得1
+y
+C
+x
+y
+=-
++
+; 
+代入
+x =,
+y =,得
+C =
+,故
+()
+1 1
+y
+x
+f x
+x
+y
+x
++-
+=-
++
+\Rightarrow 
+=
+. 
+\textcolor{lyred}{补充练习 }
+1.设曲线
+()
+y
+y x
+=
+过(
+)
+1,1 ,它在(
+)
+,x y 处的切线与坐标轴及过切点平行于y 轴的 
+直线所围成的梯形面积等于常数
+3a ,求
+()
+y
+y x
+=
+. 
+解.
+y x
+y
+y x
+a
+'
+-
+\cdots +
++
+\cdots 
+=
+,即
+dy
+a
+y
+dx
+x
+x
+-
+=-
+,解得
+2a
+y
+Cx
+x
+=
++
+; 
+代入
+x =,
+y =,得
+C
+a
+=-
+,故
+(
+)
+1 2
+a
+y
+a
+x
+x
+=
++
+-
+. 
+2.设
+()
+f x 连续,且满足
+()
+(
+)
+sin
+x
+f x
+x
+f x
+t dt
+=
+-
+-
+\int 
+,求
+()
+f x . 
+解.
+()
+()
+sin
+x
+f x
+x
+f u du
+=
+-\int 
+,求导得
+()
+()
+cos
+f
+x
+x
+f x
+'
+=
+-
+,即
+()
+y
+f x
+=
+满足 
+cos
+y
+y
+x
+'+
+=
+,解得
+()
+(
+)
+1 cos
+sin
+x
+f x
+x
+x
+Ce-
+=
++
++
+,
+()
+f
+C
+=
+\Rightarrow 
+=-
+. 
+3.设
+()
+f x 可导,且
+()
+()
+(
+)
+f tx dt
+f x
+x
+=
++
+>
+\int 
+,
+()1
+f
+=,求
+()
+f x . 
+解.
+()
+()
+x
+f u du
+xf x
+x
+=
++
+\int 
+,求导得
+()
+()
+()
+f x
+f x
+xf
+x
+'
+=
++
++,即 
+()
+()
+f
+x
+f x
+x
+x
+'
++
+=-
+,解得
+()
+C
+f x
+x
+=
+-,
+()1
+f
+C
+=\Rightarrow 
+=
+. 
+4.设
+()
+f x 连续,且满足
+()
+()
+x
+x
+x
+f x
+e
+e
+f
+t dt
+=
+-\int 
+,求
+()
+f x . 
+解.
+()
+()
+()
+()
+()
+x
+x
+x
+x
+x
+f
+x
+e
+e
+f
+t dt
+e f
+x
+f x
+e f
+x
+'
+=
+-
+-
+=
+-
+\int 
+,即
+()
+y
+f x
+=
+满足 
+x
+y
+y
+e y
+'-
+=-
+,解得
+()
+x
+x
+f x
+e
+Ce-
+=
++
+,
+()
+f
+C
+=\Rightarrow 
+=. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第7.5 节 可降阶的高阶微分方程}}
+
+\textcolor{lyred}{类型一}.
+()
+()
+n
+y
+f x
+=
+. 
+\textcolor{lyred}{解法}:
+(
+)
+()
+()
+n
+n
+y
+y
+dx
+f
+x dx
+-=
+=
+\int 
+\int 
+,连续积分n 次.\textcolor{lyred}{ }
+\textcolor{lyred}{例}.求
+cos
+x
+y
+e
+x
+'''=
+-
+的通解. 
+解.积分得
+sin
+x
+y
+e
+x
+C
+''=
+-
++
+,再积分得
+cos
+x
+y
+e
+x
+C x
+C
+'=
++
++
++
+,再积分得 
+sin
+x
+y
+e
+x
+C x
+C x
+C
+=
++
++
++
++
+. 
+\textcolor{lyred}{类型二}.
+(
+)
+,
+y
+f x y
+''
+'
+=
+,缺y .\textcolor{lyred}{ }
+\textcolor{lyred}{解法}:设dy
+p
+dx =
+,则dp
+y
+dx
+''
+=
+,代入方程,得
+(
+)
+,
+dp
+f x p
+dx =
+,解出通解
+(
+)
+,
+p
+p x C
+=
+,即 
+(
+)
+,
+dy
+p x C
+dx =
+,于是
+(
+)
+,
+y
+p x C
+dx
+C
+=
++
+\int 
+. 
+\textcolor{lyred}{例}.求(
+)
+x
+y
+xy
+''
+'
++
+=
+的通解. 
+解.设dy
+p
+dx =
+,则(
+)
+(
+)
+dp
+dp
+x
+x
+xp
+dx
+p
+C
+x
+dx
+p
+x
++
+=
+\Rightarrow 
+=
+\Rightarrow 
+=
++
++
+,即 
+(
+)
+1 1
+dy
+C
+x
+dx =
++
+,故
+(
+)
+(
+)
+y
+C
+x
+dx
+C
+x
+x
+C
+=
++
+=
++
++
+\int 
+. 
+\textcolor{lyred}{类型三}.
+(
+)
+,
+y
+f
+y y
+''
+'
+=
+,缺x .\textcolor{lyred}{ }
+\textcolor{lyred}{解法}:设
+dy
+p
+dx
+=
+,以y 为自变量,则
+dp
+dp dy
+dp
+y
+p
+dx
+dy dx
+dy
+''=
+=
+\cdots 
+=
+,代入方程,得 
+(
+)
+,
+dp
+p
+f
+y p
+dy =
+,解出
+(
+)
+,
+p
+p y C
+=
+,即
+(
+)
+,
+dy
+p y C
+dx =
+,再分离变量,得 
+(
+)
+,
+dy
+dx
+p y C
+=
+,解出
+(
+)
+,
+dy
+x
+C
+p y C
+=
++
+\int 
+. 
+\textcolor{lyred}{例}.求
+yy
+y
+''
+'
+-
+=
+的通解. 
+解.设
+dy
+p
+dx
+=
+,以y 为自变量,则
+dp
+dp dy
+dp
+y
+p
+dx
+dy dx
+dy
+''=
+=
+\cdots 
+=
+,代入方程,得 
+ln
+ln
+dp
+dp
+dy
+yp
+p
+p
+y
+C
+p
+C y
+dy
+p
+y
+-
+=
+\Rightarrow 
+=
+\Rightarrow 
+=
++
+\Rightarrow 
+=
+,即
+dy
+C y
+dx =
+\Rightarrow  
+ln
+C x
+dy
+C dx
+y
+C x
+C
+y
+C e
+y
+=
+\Rightarrow 
+=
++
+\Rightarrow 
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设地球质量为M ,半径为R ,一质量为m 的火箭,由地面以速度
+2GM
+v
+R
+=
+垂直向上发射,求火箭高度r 与时间t 的关系. 
+解.
+(
+)
+d r
+GMm
+m dt
+R
+r
+=-
++
+,令
+dr
+v
+dt
+=
+,以r 为自变量,则
+d r
+dv dr
+dv
+v
+dt
+dr dt
+dr
+=
+\cdots 
+=
+, 
+代入方程,得
+(
+)
+(
+)
+dv
+GM
+GM
+v
+vdv
+dr
+dr
+R
+r
+R
+r
+=-
+\Rightarrow 
+=
++
++
+,解得
+v
+GM
+C
+R
+r
+=
++
++
+, 
+代入
+r =
+,
+2GM
+v
+R
+=
+,得
+C =
+,于是
+2GM
+v
+R
+r
+=
++
+,即
+2GM
+v
+R
+r
+=
++
+,故 
+dr
+GM
+R
+rdr
+GM dt
+dt
+R
+r
+=
+\Rightarrow 
++
+=
++
+,解得(
+)
+3 R
+r
+GM t
+C
++
+=
+\cdots +
+, 
+代入
+t =
+,
+r =
+,得
+C
+R
+=
+,因此(
+)
+R
+r
+GM t
+R
++
+=
+\cdots +
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第7.6 节 高阶线性微分方程}}
+
+\textcolor{lyred}{二阶齐次线性方程}:
+()
+()
+y
+P x y
+Q x y
+''
+'
++
++
+=
+-----(1); 
+\textcolor{lyred}{二阶非齐次线性方程}:
+()
+()
+()
+y
+P x y
+Q x y
+f x
+''
+'
++
++
+=
+-----(2). 
+\textcolor{lyred}{定理}.设
+()
+1y
+x 与
+()
+2y
+x 均是(1)的解,则
+()
+()
+y
+C y
+x
+C y
+x
+=
++
+也是(1)的解,其中 
+C ,
+C 为任意常数. 
+\textcolor{lyred}{定义}.若存在不全为零的常数
+,
+,
+,
+n
+k k
+k
+\Lambda 
+,使
+n
+n
+k y
+k y
+k y
++
++
++
+\equiv 
+\Lambda 
+,则称这n 个 
+函数\textcolor{lyred}{线性相关},否则称为\textcolor{lyred}{线性无关}. 
+\textcolor{lyred}{定理}.设
+()
+1y
+x 与
+()
+2y
+x 是(1)的两个线性无关的特解,则
+()
+()
+y
+C y
+x
+C y
+x
+=
++
+是 
+(1)的通解. 
+\textcolor{lyred}{例}.已知
+y
+y
+y
+''
+'
+-
++
+=
+有两个线性无关的解
+x
+y
+e
+=
+和
+x
+y
+xe
+=
+,故它的通解为 
+x
+x
+y
+C e
+C xe
+=
++
+. 
+\textcolor{lyred}{注}.一般地,若函数
+()
+()
+()
+,
+,
+,
+n
+y
+x
+y
+x
+y
+x
+\Lambda 
+是n 阶齐次线性微分方程 
+()
+()
+(
+)
+()
+()
+n
+n
+n
+n
+y
+a
+x y
+a
+x y
+a
+x y
+-
+-
+'
++
++
++
++
+=
+\Lambda 
+的n 个线性无关的特解,则 
+()
+()
+()
+n
+n
+y
+C y
+x
+C y
+x
+C y
+x
+=
++
++
++
+\Lambda 
+是该方程的通解. 
+\textcolor{lyred}{定理}.设()
+y x 是(1)的解,
+()
+y
+x
+*
+是(2)的解,则
+()
+()
+y
+y x
+y
+x
+*
+=
++
+是(2)的解. 
+\textcolor{lyred}{定理}.设(
+)
+;
+,
+y x C C
+是(1)的通解,
+()
+y
+x
+*
+是(2)的特解,则y
+y
+y*
+=
++
+是(2)的通解. 
+\textcolor{lyred}{例}.
+y
+y
+y
+''
+'
+-
++
+=
+有特解
+y*=,故
+x
+x
+y
+C e
+C xe
+=
++
++为它的通解. 
+\textcolor{lyred}{定理}.设
+()
+ky
+x
+*
+是
+()
+()
+()(
+)
+1,2
+k
+y
+P x y
+Q x y
+f
+x
+k
+''
+'
++
++
+=
+=
+的解,则 
+()
+()
+y
+y
+x
+y
+x
+*
+*
+=
+\pm 
+是
+()
+()
+()
+()
+y
+P x y
+Q x y
+f
+x
+f
+x
+''
+'
++
++
+=
+\pm 
+的解. 
+\textcolor{lyred}{推论}.设
+()
+1y
+x
+*
+与
+()
+2y
+x
+*
+均是(2)的解,则
+()
+()
+y
+x
+y
+x
+*
+*
+-
+是(1)的解. 
+\textcolor{lyred}{例}.设
+()
+1y
+x ,
+()
+2y
+x 及
+()
+3y
+x 均为(2)的解,则该方程必有解______. 
+(A)
+y
+y
+y
++
++
+   (B)
+y
+y
+y
++
+-
+   (C)
+y
+y
+y
+-
+-
+   (D)
+y
+y
+y
+-
+-
+-
+解.
+(
+)
+y
+y
+y
+y
+y
+y
++
+-
+=
+-
++
+是(2)的解,故选(B). 
+\textcolor{lyred}{例}.已知
+y =
+,
+y
+x
+=
++
+,
+x
+y
+x
+e
+=
++
++
+均为(2)的解,求通解. 
+解.
+(
+)
+(
+)
+x
+y
+C
+y
+y
+C
+y
+y
+y
+C e
+C x
+=
+-
++
+-
++
+=
++
++. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第7.7 节 常系数齐次线性微分方程}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.二阶常系数齐次线性方程}}
+
+(1)
+y
+p y
+q y
+''
+'
++
++
+=
+,其中p ,q 为常数. 
+\textcolor{lyred}{特征方程法}:由于
+r x
+e \cdots 和它的各阶导数之间只差一个常数倍,故假设(1)具有形如 
+r x
+y
+e \cdots 
+=
+的特解,其中r 待定,则
+(
+)
+rx
+y
+p y
+q y
+r
+pr
+q e
+''
+'
++
++
+=
+\Leftrightarrow 
++
++
+=
+\Leftrightarrow  
+r
+pr
+q
++
++
+=
+,解出
+1,2
+p
+p
+q
+r
+-
+\pm 
+-
+=
+,得(1)的两个特解
+r x
+y
+e
+=
+,
+r x
+y
+e
+=
+. 
+\textcolor{lyred}{定义}.(2)
+r
+pr
+q
++
++
+=
+,称为(1)的\textcolor{lyred}{特征方程},
+1,2
+p
+p
+q
+r
+-
+\pm 
+-
+=
+称为\textcolor{lyred}{特征根}. 
+\textcolor{lyred}{情形1}.
+\Delta >
+,即(2)有两个不相等的实根1r 与2r ,此时(1)有两个线性无关的解 
+r x
+y
+e
+=
+,
+r x
+y
+e
+=
+,通解
+r x
+r x
+y
+C e
+C e
+=
++
+; 
+\textcolor{lyred}{情形2}.
+\Delta =
+,即(2)有两个相等实根1
+p
+r
+r
+=
+=-
+,此时(1)有一个解
+r x
+y
+e
+=
+,而 
+r x
+y
+xe
+=
+是另一个解,通解
+(
+)
+r x
+y
+C
+C x e
+=
++
+; 
+\textcolor{lyred}{情形3}.
+\Delta <
+,即(2)有一对共轭复根1,2
+r
+i
+\alpha 
+\beta 
+=
+\pm 
+,此时(1)有两个线性无关的解 
+cos
+x
+e
+x
+\alpha 
+\beta ,
+sin
+x
+e
+x
+\alpha 
+\beta ,通解
+(
+)
+cos
+sin
+x
+y
+e
+C
+x
+C
+x
+\alpha 
+\beta 
+\beta 
+=
++
+. 
+\textcolor{lyred}{例}.求
+y
+y
+y
+''
+'
+-
+-
+=
+的通解. 
+解.
+(
+)(
+)
+r
+r
+r
+r
+r
+-
+-
+=
+\Rightarrow 
+-
++
+=
+\Rightarrow 
+=-,3,故
+x
+x
+y
+C e
+C e
+-
+=
++
+. 
+\textcolor{lyred}{例}.求
+y
+y
+y
+''
+'
++
++
+=
+的通解. 
+解.
+(
+)
+r
+r
+r
+r
++
++=
+\Rightarrow 
++
+=
+\Rightarrow 
+=-, 1
+-,故
+(
+)
+x
+y
+C
+C x e-
+=
++
+. 
+\textcolor{lyred}{例}.求
+y
+y
+y
+''
+'
+-
++
+=
+的通解. 
+解.
+(
+)
+r
+r
+r
+r
+i
+-
++
+=
+\Rightarrow 
+-
+=-\Rightarrow 
+=\pm 
+,故
+(
+)
+cos2
+sin 2
+x
+y
+e
+C
+x
+C
+x
+=
++
+. 
+\textcolor{lyred}{例}.求以
+(
+)
+x
+y
+C
+C x e
+=
++
+为通解的二阶齐次线性微分方程. 
+解.特征方程为(
+)
+r
+r
+r
+-
+=
+-
++
+,故所求方程为
+y
+y
+y
+''
+'
+-
++
+=
+. 
+\textcolor{lyred}{例}.求
+y
+y
+''+
+=
+的在(
+)
+, 1
+\pi -
+处和直线
+y
+x
+\pi 
++=
+-
+相切的积分曲线. 
+解.
+r
+r
+i
++
+=
+\Rightarrow 
+=\pm \cdots ,通解
+cos3
+sin3
+y
+C
+x
+C
+x
+=
++
+,由
+x
+x
+y
+y
+\pi 
+\pi 
+=
+=
+
+=-
+'
+=
+
+,得 
+cos3
+sin3
+1,
+sin3
+cos3
+C
+C
+C
+C
+C
+C
+\pi 
+\pi 
+\pi 
+\pi 
++
+=-
+
+\Rightarrow 
+=
+=-
+-
++
+=
+
+,故
+cos3
+sin3
+y
+x
+x
+=
+-
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.n 阶常系数齐次线性方程}}
+
+(3)
+()
+(
+)1
+n
+n
+n
+n
+y
+p y
+p
+y
+p y
+-
+-
+'
++
++
++
++
+=
+\Lambda 
+,其中
+,
+,
+,
+n
+p
+p
+p
+\Lambda 
+为常数. 
+(4)
+n
+n
+n
+n
+r
+p r
+p
+r
+p
+-
+-
++
++
++
++
+=
+\Lambda 
+称为(3)的\textcolor{lyred}{特征方程}. 
+若r 是(4)的k 重实根,则(3)有一组特解
+m
+r x
+y
+x e
+=
+,0
+m
+k
+\le 
+\le 
+-; 
+若r
+i
+\alpha 
+\beta 
+=
+\pm 
+是(4)的k 重共轭复根,则(3)有两组特解: 
+cos
+m
+x
+y
+x e
+x
+\alpha 
+\beta 
+=
+,
+sin
+m
+x
+y
+x e
+x
+\alpha 
+\beta 
+=
+,0
+m
+k
+\le 
+\le 
+-. 
+\textcolor{lyred}{例}.求
+y
+y
+y
+y
+'''
+''
+'
+-
++
++
+=
+的通解. 
+解.
+(
+)(
+)
+(
+)(
+)(
+)
+r
+r
+r
+r
+r
+r
+r
+r
+r
+-
++
++
+=
+\Rightarrow 
+-
++
++
+=
+\Rightarrow 
+-
+-
++
+=
+,得 
+r =-, 2 ,5,故
+x
+x
+x
+y
+C e
+C e
+C e
+-
+=
++
++
+. 
+\textcolor{lyred}{例}.求
+()
+()
+()
+y
+y
+y
+y
+y
+y
+''
+'
++
++
++
++
++
+=
+的通解. 
+解.
+(
+)(
+)
+r
+r
+r
+r
+r
+r
+r
++
++
++
+++=
+\Rightarrow 
++
++
+=
+,得
+r =-, i
+\pm , i
+\pm ,故 
+cos
+sin
+cos
+sin
+x
+y
+C e
+C
+x
+C
+x
+C x
+x
+C x
+x
+-
+=
++
++
++
++
+. 
+\textcolor{lyred}{例}.求具有特解
+x
+y
+xe
+=
+及
+x
+y
+e-
+=
+的三阶常系数齐次线性微分方程. 
+解.(
+)(
+)
+r
+r
+r
+r
+r
+-
++
+=
+\Rightarrow 
+-
+-+=
+,故方程为
+y
+y
+y
+y
+'''
+''
+'
+-
+-
++
+=
+. 
+\textcolor{lyred}{补充练习 }
+1.求
+()
+y
+y
+y
+'''
+''
+-
++
+=
+的通解. 
+解.
+(
+)
+r
+r
+r
+r
+r
+r
+r
+-
++
+=
+\Rightarrow 
+-
++
+=
+\Rightarrow 
+=
+,0 ,1
+2i
+\pm 
+,故 
+cos2
+sin 2
+x
+x
+y
+C
+C x
+C e
+x
+C e
+x
+=
++
++
++
+. 
+2.利用变换
+cos
+x
+t
+=
+化简方程(
+)
+x
+y
+xy
+y
+''
+'
+-
+-
++
+=
+,并求通解. 
+解.
+sin
+dy dt
+dy
+y
+dt dx
+t dt
+'=
+=-
+,
+cos
+sin
+sin
+sin
+dy dt
+t dy
+d y
+y
+dt dx
+t dt
+t dt
+t
+'
+
+
+
+''=
+=
+-
+-
+
+
+
+
+
+
+
+, 
+代入方程,得
+d y
+y
+dt
++
+=
+,解得
+cos
+sin
+y
+C
+t
+C
+t
+C x
+C
+x
+=
++
+=
++
+-
+. 
+3.设
+()
+y
+y x
+=
+满足方程
+y
+by
+cy
+''
+'
++
++
+=
+,其中,
+b c >
+,求
+()
+lim
+x
+y x
+\to +\infty 
+. 
+解.
+r
+br
+c
++
++
+=
+,
+1,2
+b
+b
+c
+r
+-\pm 
+-
+=
+. 
+(1)当
+b
+c
+-
+>
+时,
+r x
+r x
+y
+C e
+C e
+=
++
+,而1,2
+r
+<
+,故
+()
+lim
+x
+y x
+\to +\infty 
+=
+; 
+(2)当
+b
+c
+-
+=
+时,
+(
+)
+b x
+y
+C
+C x e
+-
+=
++
+,而
+r <
+,故
+()
+lim
+x
+y x
+\to +\infty 
+=
+; 
+(3)当
+b
+c
+-
+<
+时,
+(
+)
+cos
+sin
+b x
+y
+e
+C
+x
+C
+x
+\beta 
+\beta 
+-
+=
++
+,故
+()
+lim
+x
+y x
+\to +\infty 
+=
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第7.8 节 常系数非齐次线性方程}}
+
+(1)
+()
+y
+py
+qy
+f x
+''
+'
++
++
+=
+,其中p ,q 为常数. 
+由于叠加原理,求(1)的通解等价于求对应的齐次线性方程的通解(
+)
+;
+,
+y x C C
+和 
+(1)的一个特解
+()
+y
+x
+*
+,而求y*的方法为\textcolor{lyred}{待定系数法}. 
+\textcolor{lyred}{情形一}.
+()
+()
+x
+m
+f x
+P
+x e\lambda 
+=
+,其中
+()
+m
+P
+x 为m 次多项式. 
+设
+()
+k
+x
+m
+y
+x Q
+x e\lambda 
+*=
+,其中
+()
+m
+Q
+x 为待定的m 次多项式,当\lambda 不是特征根时,
+k =
+, 
+当\lambda 是单特征根时,
+k =,当\lambda 是重特征根时,
+k =
+. 
+\textcolor{lyred}{例}.求
+(
+)
+x
+y
+y
+y
+x
+e
+''
+'
++
+-
+=
++
+的通解. 
+解.(一)
+r
+r
+r
++
+-
+=
+\Rightarrow 
+=-, 1
+2 ,故
+x
+x
+y
+C e
+C e
+-
+=
++
+; 
+(二)
+\lambda =不是特征根,令
+(
+)
+*
+x
+y
+ax
+bx
+c e
+=
++
++
+,代入原方程,得 
+(
+)
+ax
+a
+b x
+a
+b
+c
+x
+
+
++
++
++
++
++
+=
++
+
+
+
+
+,于是
+a =,
+b =-,
+c =
+,即 
+*
+x
+y
+x
+x
+e
+
+
+=
+-
++
+
+
+
+
+,故
+x
+x
+x
+y
+C e
+C e
+x
+x
+e
+-
+
+
+=
++
++
+-
++
+
+
+
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+x
+y
+y
+y
+x e-
+''
+'
+-
+-
+=
+-
+的通解. 
+解.(一)
+r
+r
+r
+-
+-
+=
+\Rightarrow 
+=-,2 ,故
+x
+x
+y
+C e
+C e
+-
+=
++
+; 
+(二)
+\lambda =-为单特征根,令
+(
+)
+*
+x
+y
+x ax
+b e-
+=
++
+,代入原方程,得 
+(
+)
+ax
+a
+b
+x
+-
++
+-
+=-
++,于是
+a =,
+b =-,即
+(
+)
+*
+x
+y
+x
+x e-
+=
+-
+,故 
+(
+)
+x
+x
+x
+y
+C e
+C e
+x
+x e
+-
+-
+=
++
++
+-
+. 
+\textcolor{lyred}{例}.求
+(
+)
+x
+y
+y
+y
+x
+e
+''
+'
+-
++
+=
++
+的通解. 
+解.(一)
+r
+r
+r
+-
++
+=
+\Rightarrow 
+=
+,3,故
+(
+)
+x
+y
+C
+C x e
+=
++
+; 
+(二)
+\lambda =
+为重特征根,令
+(
+)
+*
+3x
+y
+x
+ax
+b e
+=
++
+,代入原方程,得6
+ax
+b
+x
++
+=
++,于是 
+a =
+,
+b =
+,即
+*
+x
+y
+x
+x
+e
+
+
+=
++
+
+
+
+
+,故
+(
+)
+x
+x
+y
+C
+C x e
+x
+x
+e
+
+
+=
++
++
++
+
+
+
+
+. 
+\textcolor{lyred}{情形二}.
+()
+()
+()
+(
+)
+cos
+sin
+x
+l
+n
+f x
+e
+P x
+x
+P
+x
+x
+\lambda 
+\omega 
+\omega 
+\omega 
+=
++
+\neq 
+
+
+
+
+,其中
+()
+lP x 为l 次多项式, 
+()
+nP x 为n 次多项式. 
+设
+()
+()
+cos
+sin
+k
+x
+m
+m
+y
+x e
+Q
+x
+x
+R
+x
+x
+\lambda 
+\omega 
+\omega 
+*=
++
+
+
+
+,
+(
+)
+max
+,
+m
+l n
+=
+,其中
+()
+m
+Q
+x ,
+()
+m
+R
+x 为 
+待定的m 次多项式,当
+i
+\lambda 
+\omega 
++
+不是特征根时,
+k =
+;当
+i
+\lambda 
+\omega 
++
+是特征根时
+k =. 
+\textcolor{lyred}{例}.求
+cos 2
+y
+y
+x
+x
+''+
+=
+的通解. 
+解.(一)
+r
+r
+i
++=
+\Rightarrow 
+=\pm ,故
+cos
+sin
+y
+C
+x
+C
+x
+=
++
+; 
+(二)
+i
+i
+\lambda 
+\omega 
++
+=
+不是特征根,令
+(
+)
+(
+)
+*
+cos2
+sin 2
+y
+ax
+b
+x
+cx
+d
+x
+=
++
++
++
+,代入 
+原方程,得(
+)
+(
+)
+cos2
+sin 2
+cos2
+ax
+b
+c
+x
+cx
+d
+a
+x
+x
+x
+-
+-
++
+-
++
++
+=
+,于是 
+a =-
+,
+b =
+,
+c =
+,
+d =
+,即
+*
+cos2
+sin 2
+y
+x
+x
+x
+=-
++
+,故 
+cos
+sin
+cos2
+sin 2
+y
+C
+x
+C
+x
+x
+x
+x
+=
++
+-
++
+. 
+\textcolor{lyred}{例}.求
+cos2
+x
+y
+y
+y
+e
+x
+''
+'
+-
++
+=
+的通解. 
+解.(一)
+r
+r
+r
+i
+-
++
+=
+\Rightarrow 
+=\pm 
+,故
+(
+)
+cos2
+sin 2
+x
+y
+e
+C
+x
+C
+x
+=
++
+; 
+(二)
+i
+i
+\lambda 
+\omega 
++
+=+
+是特征根,令
+(
+)
+*
+cos2
+sin 2
+x
+y
+x a
+x
+b
+x e
+=
++
+,代入方程,得 
+4 cos2
+4 sin 2
+cos2
+b
+x
+a
+x
+x
+-
+=
+,于是
+a =
+,
+b =
+,即
+*
+sin 2
+x
+y
+xe
+x
+=
+,故 
+(
+)
+cos2
+sin 2
+sin 2
+x
+x
+y
+e
+C
+x
+C
+x
+xe
+x
+=
++
++
+. 
+\textcolor{lyred}{例}.求
+(
+)
+cos2
+y
+y
+x
+x
+''+
+=
++
+的通解. 
+解.(一)
+r
+r
+i
++
+=
+\Rightarrow 
+=\pm 
+,故
+cos2
+sin 2
+y
+C
+x
+C
+x
+=
++
+; 
+(二)设
+*
+*
+*
+y
+y
+y
+=
++
+,其中(1)
+*
+1y
+ax
+b
+=
++
+,代入
+y
+y
+x
+''+
+=
+,得
+*
+y
+x
+=
+; 
+(2)
+(
+)
+*
+cos2
+sin 2
+y
+x a
+x
+b
+x
+=
++
+,代入
+cos2
+y
+y
+x
+''+
+=
+,得
+*
+1 sin 2
+y
+x
+x
+=
+,故 
+1 sin 2
+y
+x
+x
+x
+*=
++
+,因此
+cos2
+sin 2
+sin 2
+y
+C
+x
+C
+x
+x
+x
+x
+=
++
++
++
+. 
+\textcolor{lyred}{补充练习 }
+1.求以
+(
+)
+x
+x
+y
+C
+x e
+C e-
+=
++
++
+为通解的二阶常系数线性方程. 
+解.
+x
+x
+x
+y
+C e
+C e
+xe
+-
+=
++
++
+,特征方程为(
+)(
+)
+r
+r
+r
+r
+-
++
+=
+\Leftrightarrow 
++-
+=
+, 
+故
+()
+y
+y
+y
+f x
+''
+'
++
+-
+=
+,代入
+x
+y
+xe
+*=
+,得
+()
+3 x
+f x
+e
+=
+,故
+x
+y
+y
+y
+e
+''
+'
++
+-
+=
+. 
+2.求以
+(
+)
+cos
+sin
+x
+y
+C
+x
+C
+x
+e
+=
++
++
+为通解的二阶常系数线性方程. 
+解.
+(
+)
+cos
+sin
+x
+x
+y
+e
+C
+x
+C
+x
+e
+=
++
++
+,
+r
+i
+=+是特征根,故特征方程为(
+)
+r -
+=-,即 
+r
+r
+-
++
+=
+,故
+()
+y
+y
+y
+f x
+''
+'
+-
++
+=
+,代入
+x
+y
+e
+*=
+,得
+()
+x
+f x
+e
+=
+,故所求方程为 
+x
+y
+y
+y
+e
+''
+'
+-
++
+=
+. 
+3.设
+x
+x
+y
+xe
+e
+=
++
+,
+x
+x
+y
+xe
+e-
+=
++
+,
+x
+x
+x
+y
+xe
+e
+e-
+=
++
++
+均为一个二阶常系数非齐次 
+线性方程的特解,求此方程. 
+解.
+x
+y
+y
+e-
+-
+=
+,
+x
+y
+y
+e
+-
+=
+为对应齐次线性方程的解,故特征方程 
+(
+)(
+)
+r
+r
+-
++
+=
+,即
+r
+r
+--
+=
+,故所求方程为
+()
+y
+y
+y
+f x
+''-
+-
+=
+,又代入 
+x
+y
+xe
+=
+,得
+()
+(
+)
+x
+f x
+e
+x
+=
+-
+. 
+4.设
+()
+f x 有连续的二阶导数,
+()
+()
+()
+x
+t
+f x
+f
+t
+f t
+te
+dt
+-
+''
+
+
+=+
++
+-
+
+
+\int 
+,且 
+()
+f '
+=
+,求
+()
+f x . 
+解.
+()
+()
+()
+x
+f
+x
+f
+x
+f x
+xe-
+'
+''
+
+
+=
++
+-
+
+,
+()
+y
+f x
+=
+满足
+x
+y
+y
+y
+xe-
+''
+'
+-
++
+=
+; 
+(一)
+r
+r
+r
+-
++
+=
+\Rightarrow 
+=,2 ,故
+x
+x
+y
+C e
+C e
+=
++
+; 
+(二)
+\lambda =-不是特征根,设
+(
+)
+x
+y
+ax
+b e
+*
+-
+=
++
+,代入原方程,得 
+x
+y
+x
+e
+*
+-
+
+
+=
++
+
+
+
+
+,故
+x
+x
+x
+y
+C e
+C e
+x
+e-
+
+
+=
++
++
++
+
+
+
+
+,由
+x =
+,
+y =,
+y'=
+,得 
+C =
+,
+C =-
+,故
+()
+x
+x
+x
+f x
+e
+e
+x
+e-
+
+
+=
+-
++
++
+
+
+
+
+. 
+5.求
+sin
+y
+a y
+x
+''+
+=
+的通解,其中
+a >
+. 
+解.
+r
+a
++
+=
+,r
+ai
+=\pm 
+;(1)若
+a \neq ,设
+cos
+sin
+y
+A
+x
+B
+x
+*=
++
+,代入方程,得 
+A =
+,
+B
+a
+=
+-,故
+cos
+sin
+sin
+y
+C
+ax
+C
+ax
+x
+a
+=
++
++
+-
+; 
+(2)若
+a =,设
+(
+)
+cos
+sin
+y
+x A
+x
+B
+x
+*=
++
+,代入方程,得
+A =-
+,
+B =
+,故 
+cos
+sin
+cos
+y
+C
+x
+C
+x
+x
+x
+=
++
+-
+. 
+6.求
+cos
+y
+y
+x
+''+
+=
+的通解. 
+解.(一)
+r
+r
+i
++
+=
+\Rightarrow 
+=\pm 
+,故
+cos2
+sin 2
+y
+C
+x
+C
+x
+=
++
+; 
+(二)
+cos
+cos2
+x
+x
+=
++
+,(1)
+y
+y
+''+
+=
+,
+y*=
+;(2)
+cos2
+y
+y
+x
+''+
+=
+, 
+令
+(
+)
+*
+cos2
+sin 2
+y
+x a
+x
+b
+x
+=
++
+,代入方程,得
+sin 2
+x
+y
+x
+*=
+,故 
+sin 2
+x
+y
+x
+*=
++
+,于是
+cos2
+sin 2
+sin 2
+x
+y
+C
+x
+C
+x
+x
+=
++
++
++
+. 
+7.求
+(
+)
+sin
+d x
+dx
+y
+x
+dy
+dy
+
+
++
++
+=
+
+
+
+
+满足条件()
+y
+=
+,
+()
+y'
+=
+的解. 
+解.
+dx
+dy
+y
+=
+',
+d x
+d
+dx
+y
+y
+dy
+dx
+y
+dy
+y
+y
+y
+''
+''
+
+
+=
+=-
+=-
+
+'
+'
+'
+'
+
+
+,代入方程,得 
+sin
+y
+y
+x
+''-
+=
+,解得
+1 sin
+x
+x
+y
+C e
+C e
+x
+-
+=
++
+-
+,由()
+y
+=
+,
+()
+y'
+=
+,得 
+C =,
+C =-,故
+1 sin
+x
+x
+y
+e
+e
+x
+-
+=
+-
+-
+. 
+8.利用变换
+tan
+x
+u
+=
+化简方程(
+)
+(
+)
+d y
+dy
+x
+x
+x
+x
+y
+dx
+dx
+x
++
++
++
++
+=
++
+,并求通解. 
+解.
+cos
+dy
+dy du
+dy
+u
+dx
+du dx
+du
+=
+=
+\cdots 
+,
+2cos sin
+cos
+cos
+d y
+dy
+d y
+u
+u
+u
+u
+dx
+du
+du
+
+
+=-
+\cdots 
++
+\cdots 
+
+
+
+
+, 
+代入方程,得
+sin
+d y
+y
+u
+du +
+=
+,解得
+cos
+sin
+cos
+y
+C
+u
+C
+u
+u
+u
+=
++
+-
+,即 
+arctan
+2 1
+C
+C x
+x
+y
+x
+x
+x
+=
++
+-
++
++
++
+. 

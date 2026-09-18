@@ -1,0 +1,7240 @@
+\begin{center}
+{\Large \bfseries \textcolor{lyred}{第五章 定积分}}
+\end{center}
+
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第5.1 节 定积分的概念与性质}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.定积分问题举例}}
+
+{\bfseries \textcolor{lyred}{1.曲边梯形的面积}}
+
+{\bfseries \textcolor{lyred}{2.变速直线运动的路程}}
+
+{\bfseries \textcolor{lyred}{3.细棒的质量}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.定积分的定义}}
+
+设
+()
+f x 为[
+]
+,a b 上的有界函数,将[
+]
+,a b 任意分成n 段[
+]
+1,
+i
+i
+x
+x
+-
+,长度
+i
+i
+i
+x
+x
+x
+\Delta 
+-
+=
+-
+, 
+令
+\{
+\}
+max
+,
+,
+n
+x
+x
+\lambda =
+\Delta 
+\Delta 
+\Lambda 
+,
+[
+]
+1,
+i
+i
+i
+x
+x
+\psi 
+-
+\forall 
+\in 
+,作和
+()
+n
+i
+i
+i
+f
+x
+\psi 
+=
+\Delta 
+\sum 
+,若在无限细分[
+]
+,a b 的 
+过程中,随着
+\lambda \to 
+,该和总是趋向于同一个常数I ,它只依赖于
+()
+f x 和[
+]
+,a b ,则 
+称
+()
+f x 在[
+]
+,a b 上\textcolor{lyred}{可积},并记
+()
+b
+a
+I
+f x dx
+=\int 
+,称为
+()
+f x 在[
+]
+,a b 上的\textcolor{lyred}{定积分}. 
+()
+n
+i
+i
+i
+f
+x
+\psi 
+=
+\Delta 
+\sum 
+为\textcolor{lyred}{积分和},
+()
+f x 为\textcolor{lyred}{被积函数},
+()
+f x dx 为\textcolor{lyred}{被积表达式}, x 为\textcolor{lyred}{积分变量}, 
+a 为\textcolor{lyred}{积分下限},b 为\textcolor{lyred}{积分上限},[
+]
+,a b 为\textcolor{lyred}{积分区间}. 
+\textcolor{lyred}{注}.定积分的值与积分变量的符号无关. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.可积的条件}}
+
+\textcolor{lyred}{定理}.[
+]
+,a b 上只有有限个间断点的有界函数必可积. 
+\textcolor{lyred}{推论}.[
+]
+,a b 上的连续函数必可积. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.定积分与不定积分的关系}}
+
+\textcolor{lyred}{定理}.设
+()
+f x 在[
+]
+,a b 上连续,且
+()
+()
+F
+x
+f x
+'
+=
+,则
+()
+()
+()
+b
+a
+f x dx
+F b
+F a
+=
+-
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.定积分的几何与物理意义}}
+
+{\bfseries \textcolor{lyred}{1.几何意义}}
+
+(1)当
+()
+f x \ge 
+时,
+()
+b
+a
+f x dx
+A
+=
+\int 
+;(2)当
+()
+f x \le 
+时,
+()
+b
+a
+f x dx
+A
+=-
+\int 
+; 
+(3)一般地,
+()
+b
+a
+f x dx
+A
+A
++
+-
+=
+-
+\int 
+,即曲边梯形面积的代数和. 
+\textcolor{lyred}{注}.当
+()
+f x 为奇函数时
+()
+a
+a
+f x dx
+-
+=
+\int 
+,为偶函数时
+()
+()
+b
+a
+a
+f x dx
+f x dx
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+a
+a
+x dx
+a
+\pi 
+-
+=
+\int 
+,
+(
+)
+x
+x dx
+x
+dx
+\pi 
+-
+=
+-
+-
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+tan
+x
+x dx
+x
+-
+=
++
+\int 
+,
+sin
+x
+xdx
+-
+=
+\int 
+. 
+\textcolor{lyred}{例}.
+[
+]
+1 cos
+sin
+2 sin
+cos
+xdx
+x dx
+xdx
+x
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+-
+=
+=
+=
+-
+=
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}. (
+)
+x
+x
+dx
+x dx
+x dx
+-
+-
+
+
+=
+=
+=
+=
+
+
+
+
+\int 
+\int 
+\int 
+. 
+{\bfseries \textcolor{lyred}{2.物理意义}}
+
+(1)若已知直线运动的速度
+()
+v
+v t
+=
+,则位移
+()
+T
+T
+S
+v t dt
+=\int 
+. 
+(2)设细棒位于[
+]
+,a b 上,有连续的线密度
+()
+x
+\rho 
+,则质量
+()
+b
+a
+M
+x dx
+\rho 
+=\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{六.利用定积分计算数列极限}}
+
+设
+()
+f x 在[
+]
+,a b 上连续,取
+(
+)
+i
+i
+x
+a
+b
+a
+n
+=
++
+-
+,则
+()
+()
+lim
+b
+n
+i
+n
+i
+a
+b
+a
+f x
+f x dx
+n
+\to \infty 
+=
+-
+=
+\sum 
+\int 
+; 
+特别地,
+()
+lim
+lim
+n
+n
+n
+n
+i
+i
+i
+i
+f
+f
+f x dx
+n
+n
+n
+n
+\to \infty 
+\to \infty 
+=
+=
+-
+
+
+
+
+=
+=
+
+
+
+
+
+
+
+
+\sum 
+\sum 
+\int 
+. 
+\textcolor{lyred}{例}.
+lim
+sin
+sin
+sin
+lim
+sin
+sin
+n
+n
+n
+i
+n
+i
+xdx
+n
+n
+n
+n
+n
+n
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\to \infty 
+\to \infty 
+=
+
+
++
++
++
+=
+=
+=
+
+
+
+
+\sum 
+\int 
+\Lambda 
+. 
+\textcolor{lyred}{例}.设
+(
+)(
+)
+n
+n
+i
+a
+n
+i
+n
+i
+=
+=
++-
++
+\sum 
+,求lim
+n
+n
+a
+\to \infty 
+.\textcolor{lyred}{ }
+解.
+n
+n
+n
+i
+i
+a
+n
+i
+n
+i
+=
+=
+\le 
+\le 
++
++-
+\sum 
+\sum 
+,而
+lim
+lim
+ln 2
+n
+n
+n
+n
+i
+i
+dx
+i
+n
+i
+n
+x
+n
+\to \infty 
+\to \infty 
+=
+=
+=
+=
+=
++
++
++
+\sum 
+\sum 
+\int 
+, 
+ln 2
+n
+n
+i
+i
+dx
+i
+n
+i
+n
+x
+n
+=
+=
+=
+=
+=
+-
++-
++
++
+\sum 
+\sum 
+\int 
+,故lim
+ln 2
+n
+n
+a
+\to \infty 
+=
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{七.定积分的性质}}
+
+\textcolor{lyred}{规定}:
+()
+()
+a
+b
+b
+a
+f x dx
+f x dx
+=-
+\int 
+\int 
+,例如:
+x dx
+x dx
+=-
+=-
+\int 
+\int 
+. 
+\textcolor{lyred}{性质1(线性性)}.
+()
+()
+()
+()
+b
+b
+b
+a
+a
+a
+f x
+g x
+dx
+f x dx
+g x dx
+\alpha 
+\beta 
+\alpha 
+\beta 
+\pm 
+=
+\pm 
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{性质2(对积分区间的可加性)}.
+()
+()
+()
+b
+c
+b
+a
+a
+c
+f x dx
+f x dx
+f x dx
+=
++
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+1 sin 2
+cos
+sin
+cos
+sin
+xdx
+x
+x
+dx
+x
+x dx
+\pi 
+\pi 
+\pi 
+-
+=
+-
+=
+-
+=
+\int 
+\int 
+\int 
+(
+)
+(
+)
+cos
+sin
+sin
+cos
+2 2
+x
+x dx
+x
+x dx
+\pi 
+\pi 
+\pi 
+-
++
+-
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+x dx
+x dx
+xdx
+xdx
+-
+-
+-
+=
+=-
++
+=
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{性质3}.
+(
+)
+b
+a
+k dx
+k b
+a
+\cdots 
+=
+-
+\int 
+;特别地,
+b
+b
+a
+a
+dx
+dx
+b
+a
+=
+\cdots 
+=
+-
+\int 
+\int 
+. 
+\textcolor{lyred}{性质4}.设在[
+]
+,a b 上
+()
+f x \ge 
+,则
+()
+b
+a
+f x dx \ge 
+\int 
+. 
+\textcolor{lyred}{注}.若
+()
+[
+]
+,
+f x
+C a b
+\in 
+,
+()
+f x \ge 
+,且不恒为0 ,则
+()
+b
+a
+f x dx >
+\int 
+. 
+\textcolor{lyred}{推论}.设在[
+]
+,a b 上
+()
+()
+f x
+g x
+\ge 
+,则
+()
+()
+b
+b
+a
+a
+f x dx
+g x dx
+\ge 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.证明:
+lim
+n
+n
+x
+dx
+x
+\to \infty 
+=
++
+\int 
+. 
+证.由
+n
+n
+x
+dx
+x dx
+n
+x
+\le 
+\le 
+=
++
++
+\int 
+\int 
+,即得,证毕. 
+\textcolor{lyred}{推论}.
+()
+()
+b
+b
+a
+a
+f x dx
+f x dx
+\le 
+\int 
+\int 
+. 
+\textcolor{lyred}{性质5(估值定理)}.设在[
+]
+,a b 上
+()
+m
+f x
+M
+\le 
+\le 
+,则 
+(
+)
+()
+(
+)
+b
+a
+m b
+a
+f x dx
+M b
+a
+-
+\le 
+\le 
+-
+\int 
+. 
+\textcolor{lyred}{性质6(积分中值定理)}.设
+()
+f x 在[
+]
+,a b 上连续,则存在
+[
+]
+,a b
+\psi \in 
+,使得 
+()
+()(
+)
+b
+a
+f x dx
+f
+b
+a
+\psi 
+=
+-
+\int 
+,即
+()
+()
+()
+lim
+b
+n
+i
+n
+i
+a
+f
+f x dx
+f x
+b
+a
+n
+\psi 
+\to \infty 
+=
+=
+=
+-
+\sum 
+\int 
+. 
+\textcolor{lyred}{注}.该值称为
+()
+f x 在[
+]
+,a b 上的\textcolor{lyred}{平均值}. 
+\textcolor{lyred}{积分第一中值定理}.设
+()
+f x , ()
+g x 均在[
+]
+,a b 上连续,且()
+g x \ge 
+,则 
+存在
+[
+]
+,a b
+\psi \in 
+,使得
+()()
+()
+()
+b
+b
+a
+a
+f x g x dx
+f
+g x dx
+\psi 
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{注}.“
+[
+]
+,a b
+\psi 
+\exists \in 
+”可以改进为“
+(
+)
+,a b
+\psi 
+\exists \in 
+”. 
+\textcolor{lyred}{例}.设
+()
+f x 可导,
+()
+()
+f
+f x dx
+=\int 
+,证明:
+(
+)
+0,1
+\psi 
+\exists \in 
+,使得
+()
+f
+\psi 
+'
+=
+. 
+证.
+()
+()
+()
+f
+f
+f
+\eta 
+\eta 
+=
+\cdots 
+=
+,
+2 ,1
+\eta 
+
+
+\in 
+
+
+
+,即得,证毕. 
+\textcolor{lyred}{例}.设
+()
+f x 可导,
+()
+()
+f
+xf x dx
+=\int 
+,证明:存在
+(
+)
+0,1
+\psi \in 
+,使得
+()
+()
+f
+f
+\psi 
+\psi 
+\psi 
+'
++
+=
+. 
+证.
+()
+()
+f
+f
+\eta 
+\eta 
+=
+,
+(
+)
+0,1
+\eta \in 
+,令
+()
+()
+F x
+xf x
+=
+,则
+()
+()
+F
+F \eta 
+=
+,证毕. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{八.积分不等式}}
+
+\textcolor{lyred}{例}.设
+()
+f x >
+,连续,证明:
+()
+()
+ln
+ln
+f x dx
+f x dx
+\le 
+\int 
+\int 
+. 
+证.
+()
+ln
+lim
+ln
+limln
+limln
+n
+n
+n
+n
+n
+n
+n
+i
+i
+i
+i
+i
+i
+f x dx
+f
+f
+f
+n
+n
+n
+n
+n
+\to \infty 
+\to \infty 
+\to \infty 
+=
+=
+=
+
+
+
+
+
+
+=
+=
+\le 
+=
+
+
+
+
+
+
+
+
+
+
+
+
+\sum 
+\sum 
+
+\int 
+()
+ln lim
+ln
+n
+n
+i
+i
+f
+f x dx
+n
+n
+\to \infty 
+=
+
+=
+
+
+
+
+\sum 
+\int 
+,证毕. 
+\textcolor{lyred}{例}.设
+()
+sin
+,
+1,
+x
+x
+f x
+x
+x
+
+\neq 
+
+=
+
+=
+
+,证明:
+()
+f x dx
+\pi 
+\pi 
+\le 
+\le 
+\int 
+. 
+证.
+()
+f x 在0, 2
+\pi 
+
+
+
+
+
+
+上单调减少,故
+()
+f x
+\pi \le 
+\le ,即得,证毕. 
+\textcolor{lyred}{例}.设
+()
+f x 可导,
+()
+f a =
+,
+()
+f
+x
+M
+'
+\le 
+,证明:
+()
+(
+)
+b
+a
+M
+f x dx
+b
+a
+\le 
+-
+\int 
+. 
+证.
+()
+()
+()
+()
+(
+)
+b
+b
+b
+b
+a
+a
+a
+a
+f x dx
+f x
+f a dx
+f
+x
+a dx
+M
+x
+a dx
+\psi 
+'
+=
+-
+=
+-
+\le 
+-
+\int 
+\int 
+\int 
+\int 
+,证毕. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,单调增加,0
+\lambda 
+<
+<,证明:
+()
+()
+f x dx
+f x dx
+\lambda 
+\lambda 
+<
+\int 
+\int 
+. 
+证.
+()
+()
+(
+)
+()
+()
+f x dx
+f x dx
+f x dx
+f x dx
+\lambda 
+\lambda 
+\lambda 
+\lambda 
+\lambda 
+\lambda 
+-
+=
+-
+-
+=
+\int 
+\int 
+\int 
+\int 
+(
+)
+()
+(
+)(
+)
+(
+)
+()
+(
+)
+f
+f
+f
+f
+\lambda \lambda 
+\psi 
+\lambda 
+\psi 
+\lambda 
+\lambda 
+\lambda 
+\psi 
+\psi 
+-
+-
+-
+=
+-
+-
+<
+
+
+
+
+,证毕. 
+\textcolor{lyred}{例(柯西积分不等式)}.设
+()
+f x 与()
+g x 均在[
+]
+,a b 上连续,则 
+()()
+()
+()
+b
+b
+b
+a
+a
+a
+f x g x dx
+f
+x dx
+g
+x dx
+
+\le 
+\cdots 
+
+
+
+
+\int 
+\int 
+\int 
+. 
+证.
+(
+)
+,
+t
+\forall \in -\infty +\infty ,均有
+()
+()
+b
+a
+f x
+tg x
+dx
+-
+\ge 
+
+
+
+
+\int 
+,于是由 
+()
+()()
+()
+b
+b
+b
+a
+a
+a
+t
+g
+x dx
+t
+f x g x dx
+f
+x dx
+-
++
+\ge 
+\Rightarrow \Delta \le 
+\int 
+\int 
+\int 
+,即得,证毕. 
+\textcolor{lyred}{注}.(1)
+()
+()
+()
+(
+)
+()
+b
+b
+b
+b
+b
+a
+a
+a
+a
+a
+f x dx
+f x dx
+dx
+f
+x dx
+b
+a
+f
+x dx
+
+
+
+
+=
+\cdots 
+\le 
+\cdots 
+=
+-
+
+
+
+
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+(1)设
+()
+f x >
+,则
+()
+()
+()
+()
+(
+)
+b
+b
+b
+a
+a
+a
+f x dx
+dx
+f x
+dx
+b
+a
+f x
+f x
+
+
+
+
+\cdots 
+\ge 
+\cdots 
+=
+-
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{补充练习 }
+1.设
+n
+n
+i
+i
+a
+n
+i
+=
+=
++
+\sum 
+,求lim
+n
+n
+a
+\to \infty 
+.\textcolor{lyred}{ }
+解.
+(
+)
+lim
+lim
+ln 1
+ln 2
+n
+n
+n
+n
+i
+i
+x
+n
+a
+dx
+x
+n
+x
+i
+n
+\to \infty 
+\to \infty 
+=
+
+
+=
+=
+=
++
+=
+
+
++
+
+
++
+
+
+
+\sum 
+\int 
+. 
+2.设
+n
+n
+i
+n
+a
+n
+i
+=
+=
++
++
+\sum 
+,求lim
+n
+n
+a
+\to \infty 
+. 
+解.
+(
+)
+n
+n
+n
+i
+i
+n
+n
+a
+n
+i
+n
+i
+=
+=
+\le 
+\le 
++
++
++
+\sum 
+\sum 
+,
+(
+)
+lim
+lim
+n
+n
+n
+n
+i
+i
+n
+n
+n
+i
+i
+n
+\to \infty 
+\to \infty 
+=
+=
+=
++
++
++
+
+
++
+
+
+
+\sum 
+\sum 
+, 
+lim
+lim
+n
+n
+n
+n
+i
+i
+n
+n
+i
+n
+i
+n
+\to \infty 
+\to \infty 
+=
+=
+=
++
+
+
++
+
+
+
+\sum 
+\sum 
+,故
+lim
+n
+n
+dx
+a
+x
+\pi 
+\to \infty 
+=
+=
++
+\int 
+. 
+3.比较
+sin
+x
+P
+dx
+x
+\pi 
+\pi 
+-
+=
++
+\int 
+,
+sin
+x
+Q
+dx
+x
+\pi 
+\pi 
+-
+=
++
+\int 
+,
+(
+)
+sin
+cos
+x
+x
+R
+dx
+x
+\pi 
+\pi 
+-
+-
+=
++
+\int 
+的大小. 
+解.
+1 2sin cos
+x
+x
+R
+dx
+dx
+Q
+x
+x
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+-
+=
+=
+>
+>
++
++
+\int 
+\int 
+,而
+P =
+,故R
+Q
+P
+>
+>
+. 
+4.设
+sin
+n
+na
+x
+xdx
+-
+=\int 
+,求lim
+n
+n
+a
+\to \infty 
+. 
+解.
+n
+n
+na
+x dx
+x dx
+n
+-
+\le 
+=
+=
++
+\int 
+\int 
+,故lim
+n
+n
+a
+\to \infty 
+=
+. 
+5.设
+()
+f x 连续,
+()1
+f
+=,求
+()
+lim
+n
+n
+n
+n
+n
+n
+f x dx
++
+\to \infty 
+-\int 
+. 
+解.原式
+()
+()
+()
+lim
+3lim
+n
+n f
+f
+f
+n
+\psi 
+\psi 
+\psi 
+\to \infty 
+\to 
+=
+\cdots 
+\cdots 
+=
+=
+=
+. 
+6.设
+()
+f x 有连续的导数,求
+(
+)
+(
+)
+lim
+a
+a
+a
+f x
+a
+f x
+a
+dx
+a
+\to 
+-
++
+-
+-
+
+
+
+
+\int 
+. 
+解.上式
+(
+)
+(
+)
+()
+()
+2lim
+4lim
+a
+a
+f
+a
+f
+a
+f
+f
+a
+\psi 
+\psi 
+\eta 
+\to 
+\to 
++
+-
+-
+'
+'
+=
+=
+=
+. 
+7.设
+()
+f x 可导,
+()
+f x dx =
+\int 
+,证明:
+(
+)
+0,1
+\psi 
+\exists \in 
+,使得
+()
+()
+f
+f
+\psi 
+\psi 
+\psi 
+'
++
+=
+. 
+证.存在
+(
+)
+0,1
+c\in 
+,使得
+()
+f c =
+;令
+()
+()
+F x
+xf x
+=
+,则
+()
+()
+F
+F c
+=
+=
+,证毕. 
+8.设
+()
+()
+f x
+x
+x
+f x dx
+=
+-
++\int 
+,求
+()
+f x . 
+解.设
+()
+f x dx
+A
+=
+\int 
+,则
+()
+f x
+x
+Ax
+=
+-
++
+,故
+(
+)
+A
+x
+Ax
+dx
+=
+-
++
+=
+\int 
+x dx
+A x dx
+A
+A
+\pi 
+\pi 
+-
++
+=
++
+\Rightarrow 
+=
+\int 
+\int 
+,于是
+()
+f x
+x
+x
+\pi 
+=
+-
++
+. 
+9.设
+()
+()
+()
+f x
+x
+x
+f x dx
+f x dx
+=
+-
++
+\int 
+\int 
+,求
+()
+f x . 
+解.设
+()
+f x dx
+A
+=
+\int 
+,
+()
+f x dx
+B
+=
+\int 
+,则
+()
+f x
+x
+Ax
+B
+=
+-
++
+,于是 
+(
+)
+A
+x
+Ax
+B dx
+A
+B
+=
+-
++
+=
+-
++
+\int 
+,
+(
+)
+B
+x
+Ax
+B dx
+A
+B
+=
+-
++
+=
+-
++
+\int 
+,得 
+A =
+,
+B =
+,故
+()
+f x
+x
+x
+=
+-
++
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第5.2 节 微积分基本公式}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.积分上限函数及其导数}}
+
+\textcolor{lyred}{定理}.设
+()
+f x 在[
+]
+,a b 上连续,则
+()
+()
+x
+a
+x
+f t dt
+\Phi 
+=\int 
+在[
+]
+,a b 上可导,且 
+()
+()
+x
+f x
+'
+\Phi 
+=
+,
+(
+)
+,
+x
+a b
+\forall \in 
+,而
+()
+()
+a
+f a
++'
+\Phi 
+=
+,
+()
+()
+b
+f b
+-'
+\Phi 
+=
+. 
+\textcolor{lyred}{注}.当
+()
+f x 在[
+]
+,a b 上可积时,
+()
+x
+\Phi 
+一定在[
+]
+,a b 上连续. 
+\textcolor{lyred}{推论}.连续函数必有原函数. 
+\textcolor{lyred}{推论}.
+()
+()
+()
+()
+x
+a
+f t dt
+f
+x
+x
+\varphi 
+\varphi 
+\varphi 
+'
+
+
+'
+=
+\cdots 
+
+
+
+
+
+
+
+
+
+
+\int 
+,
+()
+()
+()
+()
+b
+x
+f t dt
+f
+x
+x
+\zeta 
+\zeta 
+\zeta 
+'
+
+
+'
+=-
+\cdots 
+
+
+
+
+
+
+
+
+
+
+\int 
+;一般地, 
+()
+()
+()
+()
+()
+()
+()
+x
+x
+f t dt
+f
+x
+x
+f
+x
+x
+\varphi 
+\zeta 
+\varphi 
+\varphi 
+\zeta 
+\zeta 
+'
+
+
+'
+'
+=
+\cdots 
+-
+\cdots 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\int 
+. 
+\textcolor{lyred}{例}.
+sin
+sin
+cos
+cos
+cos
+sin
+x
+t
+x
+x
+x
+d
+e dt
+x e
+x e
+dx
+
+=
+\cdots 
++
+\cdots 
+
+
+
+
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+cos
+cos
+cos
+2 sin
+x
+x
+x
+d
+d
+x
+t
+t dt
+x
+t dt
+t
+t dt
+x
+x
+dx
+dx
+
+
+
+
+-
+\cdots 
+=
+\cdots 
+-
+\cdots 
+=
+
+
+
+
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+,
+1,
+x
+t
+x
+e dt
+x
+F x
+x
+x
+
+\neq 
+
+=
+
+=
+
+\int 
+,证明:(1)
+()
+F x 连续;(2)
+()
+F x 可导. 
+解.
+()
+lim
+lim
+lim
+x
+t
+x
+x
+x
+x
+x
+x
+e dt
+e
+e
+F x
+x
+\to 
+\to 
+\to 
+-
+=
+=
+=
+\int 
+, 
+()
+()
+()
+lim
+lim
+lim
+x
+x
+t
+t
+x
+x
+x
+x
+x
+e dt
+e dt
+x
+F x
+F
+x
+F
+x
+x
+x
+\to 
+\to 
+\to 
+-
+-
+-
+'
+=
+=
+=
+=
+-
+\int 
+\int 
+lim
+lim
+x
+x
+x
+x
+x
+x
+e
+e
+xe
+xe
+x
+\to 
+\to 
+-
+-
+-
+=
+=
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,
+()
+f x >
+,证明:
+()
+()
+()
+x
+x
+tf t dt
+F x
+f t dt
+=\int 
+\int 
+在(
+)
+0,\infty 上单增. 
+证.
+()
+()
+()
+()
+()
+()
+()(
+)
+()
+()
+x
+x
+x
+x
+x
+xf x
+f t dt
+f x
+tf t dt
+f x
+x
+t f t dt
+F
+x
+f t dt
+f t dt
+-
+-
+'
+=
+=
+>
+
+
+
+
+
+
+
+
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+\int 
+,证毕. 
+\textcolor{lyred}{例}.设
+()
+f
+x
+'
+\ge 
+,令
+()
+()
+x
+a
+F x
+f t dt
+x
+a
+=
+-\int 
+,证明:当x
+a
+\neq 
+时,
+()
+F
+x
+'
+\ge 
+. 
+证.
+()
+()(
+)
+()
+(
+)
+()
+()
+(
+)
+x
+x
+a
+a
+f x
+x
+a
+f t dt
+f x
+f t
+dt
+F
+x
+x
+a
+x
+a
+-
+-
+-
+
+
+
+
+'
+=
+=
+-
+-
+\int 
+\int 
+,即得,证毕. 
+\textcolor{lyred}{注}.
+()(
+)
+()
+()
+()(
+)
+x
+a
+f x
+x
+a
+f t dt
+f x
+f
+x
+a
+\psi 
+-
+-
+=
+-
+-
+
+
+
+
+\int 
+,其中\psi 介于a 与x 之间. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.牛顿-莱布尼茨公式}}
+
+\textcolor{lyred}{定理}.设
+()
+f x 在[
+]
+,a b 上连续,且
+()
+()
+F
+x
+f x
+'
+=
+,则
+()
+()
+()
+b
+a
+f x dx
+F b
+F a
+=
+-
+\int 
+. 
+\textcolor{lyred}{推论}.设
+()
+f x 在[
+]
+,a b 上连续,则存在
+(
+)
+,a b
+\psi \in 
+,使得
+()
+()(
+)
+b
+a
+f x dx
+f
+b
+a
+\psi 
+=
+-
+\int 
+. 
+\textcolor{lyred}{补充练习 }
+1.设
+()
+1,
+sin ,
+x
+x
+f x
+x
+x
+
++
+\le 
+=
+>
+
+,
+()
+()
+x
+F x
+f t dt
+-
+=\int 
+,则在(
+)
+,
+-\infty +\infty 上______. 
+(A)
+()
+F x 是
+()
+f x 的原函数;  (B)
+()
+F x 不是
+()
+f x 的原函数,但可导; 
+(C)
+()
+F x 不可导,但连续;    (D)
+()
+F x 不连续. 
+解.
+()
+(
+)
+F
+f
+-
+-'
+=
+=,
+()
+(
+)
+F
+f
++
++'
+=
+=
+,故选(C). 
+2.设
+()
+(
+)
+sin
+F x
+x
+t
+t dt
+x
+-
+=
+-
+-<
+<
+\int 
+,求
+()
+F
+x
+''
+. 
+解.
+()
+sin
+sin
+sin
+sin
+x
+x
+x
+x
+F x
+x
+t dt
+t
+t dt
+t
+t dt
+x
+t dt
+-
+-
+=
+-
++
+-
+\int 
+\int 
+\int 
+\int 
+,故 
+()
+sin
+sin
+x
+x
+F
+x
+tdt
+tdt
+-
+'
+=
+-
+\int 
+\int 
+,
+()
+2sin
+F
+x
+x
+''
+=
+. 
+3.将当
+x
++
+\to 
+时的无穷小量:
+cos
+x
+t dt
+\alpha =\int 
+,
+tan
+x
+tdt
+\beta =\int 
+,
+sin
+x
+t dt
+\gamma =\int 
+,按阶的 
+由低到高的顺序排列. 
+解.
+cos
+lim
+lim
+k
+k
+x
+x
+x
+k
+x
+kx
+\alpha 
++
++
+-
+\to 
+\to 
+=
+\Rightarrow 
+=,
+2 tan
+lim
+lim
+lim
+k
+k
+k
+x
+x
+x
+x
+x
+x
+k
+x
+kx
+kx
+\beta 
++
++
++
+-
+-
+\to 
+\to 
+\to 
+=
+=
+\Rightarrow 
+=
+, 
+sin
+lim
+lim
+lim
+k
+k
+k
+x
+x
+x
+x
+x
+x
+k
+x
+kx
+kx
+\gamma 
++
++
++
+-
+-
+\to 
+\to 
+\to 
+=
+=
+\Rightarrow 
+=
+,故排序是
+, ,
+\alpha \gamma \beta . 
+4.设
+()
+f
+x
+'
+连续,
+()
+f
+=
+,令
+()
+()
+,
+0,
+x
+tf t dt
+x
+F x
+x
+x
+
+\neq 
+
+=
+
+=
+
+\int 
+,讨论
+()
+F
+x
+'
+的连续性. 
+解.当
+x \neq 
+时,
+()
+()
+()
+()
+()
+x
+x
+xf x
+x
+x
+tf t dt
+x f x
+tf t dt
+F
+x
+x
+x
+\cdots 
+-
+\cdots 
+-
+'
+=
+=
+\int 
+\int 
+,而 
+()
+()
+()
+()
+()
+()
+()
+lim
+lim
+lim
+lim
+x
+x
+x
+x
+x
+tf t dt
+F x
+F
+xf x
+f x
+f
+F
+x
+x
+x
+x
+\to 
+\to 
+\to 
+\to 
+'
+-
+'
+=
+=
+=
+=
+=
+\int 
+; 
+()
+()
+()
+()
+()
+()
+lim
+lim
+lim
+x
+x
+x
+xf x
+x f
+x
+xf x
+f
+x
+f
+F
+x
+x
+\to 
+\to 
+\to 
+'
+'
+'
++
+-
+'
+=
+=
+=
+,故连续. 
+5.设
+()
+[
+]
+,
+f
+x
+C a b
+\in 
+,单调减少,证明:
+()
+()
+b
+b
+a
+a
+a
+b
+xf
+x dx
+f
+x dx
++
+\le 
+\int 
+\int 
+. 
+证.令
+()
+()
+(
+)
+()
+x
+x
+a
+a
+F x
+tf t dt
+a
+x
+f t dt
+=
+-
++
+\int 
+\int 
+,
+()
+(
+)
+()
+()
+x
+a
+F
+x
+x
+a f x
+f t dt
+'
+=
+-
+-
+=
+\int 
+()
+()
+x
+a
+f x
+f t
+dt
+-
+\le 
+
+
+
+
+\int 
+,而
+()
+F a =
+,证毕. 
+6.设
+()
+f x 连续,
+()
+f x dx =
+\int 
+,证明:存在
+(
+)
+0,1
+\psi \in 
+,使得
+()
+()
+f x dx
+f
+\psi 
+\lambda 
+\psi 
++
+=
+\int 
+. 
+证.令
+()
+()
+x
+x
+F x
+e
+f t dt
+\lambda 
+=
+\int 
+,则
+()
+()
+F
+F
+=
+=
+,即得,证毕. 
+7.设
+()
+f x 与()
+g x 均在[
+]
+,a b 上连续,证明:存在
+(
+)
+,a b
+\psi \in 
+,使得 
+()
+()
+()
+()
+b
+a
+f
+g x dx
+g
+f x dx
+\psi 
+\psi 
+\psi 
+\psi 
+=
+\int 
+\int 
+. 
+证.令
+()
+()
+()
+x
+b
+a
+x
+F x
+f t dt
+g t dt
+=
+\cdots 
+\int 
+\int 
+,则
+()
+()
+F a
+F b
+=
+=
+,即得,证毕. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第5.3 节 定积分的换元法和分部积分法}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.定积分的换元法}}
+
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+x
+x dx
+x
+d x
+t dt
+\pi 
+-
+=
+-
+-
+-
+=
+-
+=
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+sin
+sin
+sin
+cos
+sin
+cos
+sin
+cos
+x
+xdx
+x
+x dx
+x
+xdx
+x
+xdx
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+=
+=
+-
+=
+\int 
+\int 
+\int 
+\int 
+sin
+sin
+sin
+sin
+xd
+x
+xd
+x
+u du
+u du
+\pi 
+\pi 
+\pi 
+-
+=
+-
+=
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+2sin
+4sin
+1 cos2
+2sin
+sin
+2cos
+x
+t
+x
+t
+t
+dx
+d
+t
+tdt
+dt
+t
+x
+\pi 
+\pi 
+\pi 
+\pi 
+=
+-
+=
+=
+=
+=
+-
+-
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+x u
+dx
+u
+du
+u
+x
+x
+u
+=
+
+
+=-
+=-
++
+=
+-
+
+
++
++
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+t
+x
+x
+t
+t
+dx
+d
+t
+dt
+t
+x
+=
++
+
+
++
++
+-
+=
+=
++
+=
+
+
++
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+t
+x
+x
+dx
+t d t
+t
+t
+dt
+=
++
++
+=
+\cdots 
+-
+=
+-
+=
+-
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+sin
+x
+n
+d
+x
+t dt
+dx
+-
+\int 
+. 
+解.
+(
+)
+(
+)
+sin
+sin
+sin
+x
+x
+u x t
+n
+n
+n
+x
+x t dt
+ud x u
+udu
+=-
+-
+=
+-
+=
+\int 
+\int 
+\int 
+,故
+(
+)
+sin
+sin
+x
+n
+n
+d
+x
+t dt
+x
+dx
+-
+=
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,且
+(
+)
+1 cos
+x
+tf x
+t dt
+x
+-
+=-
+\int 
+,求
+()
+f x . 
+解.
+(
+)
+(
+)
+()
+()
+()
+1 cos
+x
+x
+x
+u x t
+x
+tf x
+t dt
+x
+u f u du
+x
+f u du
+uf u du
+x
+=-
+-
+=-
+-
+=
+-
+=-
+\int 
+\int 
+\int 
+\int 
+,故 
+()
+()
+()
+()
+()
+sin
+sin
+cos
+x
+x
+f u du
+xf x
+xf x
+x
+f u du
+x
+f x
+x
++
+-
+=
+\Rightarrow 
+=
+\Rightarrow 
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,单调增加,0
+\lambda 
+<
+<,证明:
+()
+()
+f x dx
+f x dx
+\lambda 
+\lambda 
+<
+\int 
+\int 
+. 
+\textcolor{lyred}{证}.
+()
+(
+)
+()
+f x dx
+f
+t dt
+f t dt
+\lambda 
+\lambda 
+\lambda 
+\lambda 
+=
+<
+\int 
+\int 
+\int 
+,证毕. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.定积分的分部积分法}}
+
+\textcolor{lyred}{定理}.设()
+u x 与()
+v x 均在[
+]
+,a b 上有连续的导数,则 
+()()
+()()
+()
+()
+b
+b
+b
+a
+a
+a
+u x v x dx
+u x v x
+v x u
+x dx
+'
+'
+=
+-
+
+
+
+
+\int 
+\int 
+,即
+[
+]
+b
+b
+b
+a
+a
+a
+udv
+uv
+vdu
+=
+-
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+[
+]0
+cos
+sin
+sin
+sin
+x
+xdx
+xd
+x
+x
+x
+xdx
+\pi 
+\pi 
+\pi 
+\pi 
+=
+=
+-
+=-
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+1 sin
+sin
+cos
+1 sin
+cos
+cos
+cos
+cos
+x
+x
+xdx
+x
+x
+xd
+x
+dx
+dx
+xd
+x
+x
+x
+x
+x
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+-
+-
+=
+=-
+=
+=
+=
++
+\int 
+\int 
+\int 
+\int 
+\int 
+(
+)
+2ln
+2 \pi 
+-
++
++
+. 
+\textcolor{lyred}{例}.
+ln
+ln
+ln
+4ln 4
+4ln 4
+x dx
+xd
+x
+x
+x
+dx
+x
+x
+x
+
+
+
+
+=
+=
+-
+=
+-
+=
+-
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+[
+]
+arcsin
+arcsin
+2 6
+x
+xdx
+x
+x
+dx
+x
+x
+\pi 
+\pi 
+
+
+=
+-
+=
+\cdots 
++
+-
+=
++
+-
+
+
+-
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+ln
+sin ln
+sin
+sin
+sin1
+cos
+sin1
+cos
+e
+t
+x
+t
+t
+t
+t
+x dx
+e
+tdt
+tde
+e
+e
+tdt
+e
+tde
+=
+=
+=
+=
+-
+=
+-
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+(
+)
+sin1
+cos1 1
+sin
+sin1
+cos1 1
+t
+e
+e
+e
+tdt
+e
+e
+-
++-
+=
+-
++
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+x
+t
+f x
+e
+dt
+-
+=\int 
+,求
+()
+I
+f x dx
+=\int 
+. 
+解.
+()
+()
+1 1
+x
+x
+I
+xf x
+xf
+x dx
+xe
+dx
+e
+e
+-
+-
+
+
+
+
+'
+=
+-
+=-
+=
+=
+-
+
+
+
+
+
+
+
+
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+sin
+x
+t
+f x
+dt
+t
+\pi 
+=
+-
+\int 
+,求
+()
+I
+f x dx
+\pi 
+=\int 
+. 
+解.
+()
+()
+sin
+sin
+sin
+t
+x
+I
+xf x
+xf
+x dx
+dt
+x
+dx
+xdx
+t
+x
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi \pi 
+\pi 
+'
+=
+-
+=
+-
+=
+=
+
+
+
+
+-
+-
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+sin
+cos
+n
+n
+nI
+xdx
+xdx
+\pi 
+\pi 
+=
+=
+\int 
+\int 
+. 
+证.
+(
+)
+sin
+cos
+sin
+cos
+cos
+1 sin
+cos
+n
+n
+n
+nI
+xd
+x
+x
+x
+x
+n
+x
+xdx
+\pi 
+\pi 
+\pi 
+-
+-
+-
+
+
+=-
+=-
++
+\cdots 
+-
+=
+
+
+\int 
+\int 
+(
+)
+(
+)
+(
+)
+(
+)
+sin
+1 sin
+n
+n
+n
+n
+n
+n
+n
+x
+x dx
+n
+I
+n
+I
+I
+I
+n
+\pi 
+-
+-
+-
+-
+-
+-
+=
+-
+-
+-
+\Rightarrow 
+=
+\int 
+,故 
+(
+)
+(
+)
+1 !!
+,
+!!
+sin
+cos
+1 !!,
+!!
+n
+n
+n
+n
+n
+k
+n
+I
+xdx
+xdx
+n
+n
+k
+n
+\pi 
+\pi 
+\pi 
+-
+
+\cdots 
+=
+
+=
+=
+=
+-
+
+=
++
+
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.定积分的特殊技巧}}
+
+\textcolor{lyred}{定理}.设
+()
+f x 在[
+]
+,a a
+-
+上连续,则(1)
+(
+)
+()
+()
+a
+a
+f
+x
+f x
+f x dx
+-
+-
+=-
+\Rightarrow 
+=
+\int 
+; 
+(2)
+(
+)
+()
+()
+()
+a
+a
+a
+f
+x
+f x
+f x dx
+f x dx
+-
+-
+=
+\Rightarrow 
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+ln
+1 cos
+sin
+2 sin
+x
+x
+x dx
+x dx
+xdx
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+
+
++
++
++
+-
+=
+=
+=
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+sin
+x
+x
+x
+dx
+dx
+x
+dx
+x
+x
+\pi 
+-
++
+=
+=
+-
+-
+=
+-
++
+-
++
+-
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+x
+x
+x dx
+x
+x
+dx
+u
+u du
+\pi 
+-
+-
+=
+-
+-
+=
++
+-
+=
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,则
+()
+(
+)
+b
+b
+a
+a
+f x dx
+f a
+b
+x dx
+=
++
+-
+\int 
+\int 
+. 
+证.
+()
+(
+)(
+)
+(
+)
+b
+a
+b
+x a b t
+a
+b
+a
+f x dx
+f a
+b
+t d a
+b
+t
+f a
+b
+t dt
+=+-
+=
++
+-
++
+-
+=
++
+-
+\int 
+\int 
+\int 
+,证毕. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+sin
+cos
+f
+x dx
+f
+x dx
+\pi 
+\pi 
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+cos
+sin
+tan
+cos
+sin
+cos
+sin
+n
+n
+n
+n
+n
+n
+n
+dx
+x
+x
+dx
+dx
+x
+x
+x
+x
+x
+\pi 
+\pi 
+\pi 
+\pi 
+=
+=
+=
++
++
++
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+cos
+cos
+cos
+cos
+x
+x
+u
+u
+x
+u
+e
+e
+e
+e
+dx
+du
+\pi 
+\pi 
+\pi 
+-
+-
+=-
+-
+-
+=
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+tan
+ln 1
+tan
+ln 1
+tan
+ln 1
+1 1 tan
+u
+x dx
+u
+du
+du
+u
+\pi 
+\pi 
+\pi 
+\pi 
+
+
+-
+
+
+
+
++
+=
++
+-
+=
++
+=
+
+
+
+
+
+
++\cdots 
+
+
+
+
+
+
+\int 
+\int 
+\int 
+(
+)
+ln 2
+ln 2
+ln
+ln 1
+tan
+tan
+du
+x dx
+u
+\pi 
+\pi 
+\pi 
+\pi 
+
+
+=
+-
++
+=
+
+
++
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+x
+x
+x
+u
+u
+u
+u
+u
+u
+u
+u
+x
+xdx
+u
+du
+udu
+du
+de
+du
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+-
+-
+-
+-
+-
+-
+=
+=
+-
+=
+=
+=
++
++
++
++
++
++
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+arctan
+arctan
+arctan
+te
+e
+e
+e
+e
+e
+
+
+
+
+=
+-
+
+
+
+
+
+
+
+
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,则
+(
+)
+(
+)
+sin
+sin
+xf
+x dx
+f
+x dx
+\pi 
+\pi 
+\pi 
+=
+\int 
+\int 
+. 
+证.
+(
+)
+(
+)
+(
+)(
+)
+(
+)
+(
+)
+sin
+sin
+sin
+x
+t
+xf
+x dx
+t f
+t d
+t
+t f
+t dt
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+=-
+=
+-
+-
+=
+-
+\int 
+\int 
+\int 
+,证毕. 
+\textcolor{lyred}{例}.
+sin
+sin
+sin
+1 cos
+1 cos
+1 cos
+x
+x
+x
+x
+x
+du
+dx
+dx
+dx
+x
+x
+x
+u
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+=
+=
+=
+=
++
++
++
++
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,则
+()
+()
+(
+)
+a
+a
+a
+f x dx
+f x
+f
+x
+dx
+-
+=
++
+-
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+sin
+sin
+sin
+sin
+x
+x
+x
+x
+x
+x
+dx
+dx
+xdx
+e
+e
+e
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+
+
+=
++
+=
+=
+
+
++
++
++
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+()
+f x 连续,则
+()
+()
+(
+)
+a
+a
+f x dx
+f x
+f a
+x
+dx
+=
++
+-
+
+
+
+
+\int 
+\int 
+. 
+证.
+()
+()
+()
+()
+(
+)(
+)
+a
+a
+a
+a
+a
+a
+f x dx
+f x dx
+f x dx
+f x dx
+f a
+t d a
+t
+=
++
+=
++
+-
+-
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+()
+(
+)
+a
+a
+f x dx
+f a
+t dt
++
+-
+\int 
+\int 
+,证毕. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+sin
+sin
+f
+x dx
+f
+x dx
+\pi 
+\pi 
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+sin
+sin
+sin
+n
+n
+n
+x
+xdx
+xdx
+xdx
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+=
+=
+\int 
+\int 
+\int 
+. 
+{\bfseries \textcolor{lyred}{3.周期性}}
+
+\textcolor{lyred}{定理}.设
+()
+(
+)
+,
+f x
+C
+\in 
+-\infty +\infty ,有周期T ,则
+()
+()
+a T
+T
+a
+f x dx
+f x dx
++
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.证明:
+sin
+sin
+x
+e
+xdx
+\pi 
+>
+\int 
+. 
+证.
+(
+)
+(
+)
+sin
+sin
+sin
+sin
+sin
+sin
+sin
+sin
+x
+x
+x
+x
+e
+xdx
+e
+xdx
+e
+x
+e
+x
+dx
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+
+
+=
+=
++
+-
+=
+
+
+\int 
+\int 
+\int 
+(
+)
+sin
+sin
+sin
+x
+x
+e
+e
+xdx
+\pi 
+-
+-
+>
+\int 
+,证毕. 
+\textcolor{lyred}{例}.设
+()
+f x 为具有周期T 的连续奇函数,证明:
+()
+x
+f t dt
+\int 
+也有周期T . 
+证.
+()
+()
+()
+()
+()
+T
+x T
+x
+x T
+x
+x
+T
+f t dt
+f t dt
+f t dt
+f t dx
+f t dt
++
++
+-
+=
++
+=
++
+\int 
+\int 
+\int 
+\int 
+\int 
+,证毕. 
+\textcolor{lyred}{注}.设
+()
+f x 具有周期T ,则
+()
+()
+a nT
+T
+a
+f x dx
+n
+f x dx
++
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+1 sin 2
+cos
+sin
+cos
+sin
+20 2
+xdx
+x
+x dx
+x
+x dx
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
++
+=
++
+=
++
+=
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+1 sin 2
+sin
+cos
+sin
+cos
+20 2
+xdx
+x
+x dx
+x
+x dx
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+=
+-
+=
+-
+=
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+sin
+sin
+sin
+sin
+x
+t
+x
+x dx
+t
+t dt
+x
+x dx
+x dx
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+=
+-
+=
+-
+\Rightarrow 
+=
+=
+\int 
+\int 
+\int 
+\int 
+sin
+sin
+x dx
+xdx
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+=
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{补充练习 }
+1.设
+()
+,
+1 cos
+,
+x
+x
+x
+f x
+xe
+x
+-
+
+-\le 
+<
++
+=
+
+\ge 
+
+,求
+(
+)
+I
+f x
+dx
+=
+-
+\int 
+. 
+解.
+()
+cos
+tan
+1 cos
+t
+t
+dt
+t
+t
+I
+f t dt
+te
+dt
+d
+e
+dt
+t
+e
+-
+-
+-
+-
+-
+=
+=
++
+=
++
+=
+-
++
++
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+2.设
+()
+f x 连续,
+()
+lim
+x
+f x
+x
+\to 
+=,令
+()
+(
+)
+x
+F x
+tf x
+t
+dt
+=
+-
+\int 
+,求
+()
+lim
+x
+F x
+I
+x
+\to 
+=
+. 
+解.
+()
+()
+x
+u x
+t
+F x
+f u du
+=
+-
+=
+\int 
+,故
+()
+(
+)
+lim
+lim
+x
+x
+xf x
+F
+x
+I
+x
+x
+\to 
+\to 
+'
+=
+=
+=
+. 
+3.设
+()
+f x 连续,
+()
+lim
+x
+f x
+x
+\to 
+=,
+()
+()
+F x
+f tx dt
+=\int 
+,讨论
+()
+F
+x
+'
+的连续性. 
+解.
+()
+()
+x
+u tx
+f u du
+F x
+x
+=
+=\int 
+,
+()
+()
+()
+()
+lim
+lim
+1 lim 2
+x
+x
+x
+x
+xf x
+f u du
+f x
+F
+x
+x
+x
+\to 
+\to 
+\to 
+-
+'
+=
+=-
+=
+\int 
+, 
+()
+()
+()
+()
+lim
+lim
+lim 2
+x
+x
+x
+x
+f u du
+F x
+f x
+F
+x
+x
+x
+\to 
+\to 
+\to 
+'
+=
+=
+=
+=
+\int 
+,故连续. 
+4.设
+()
+f x 连续,
+()
+f
+\neq 
+,求
+(
+)
+()
+(
+)
+lim
+x
+x
+x
+x
+t f t dt
+I
+x
+f x
+t dt
+\to 
+-
+=
+-
+\int 
+\int 
+. 
+解.
+()
+()
+()
+()
+()
+()
+()
+()
+()
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x f t dt
+tf t dt
+f t dt
+f t dt
+x
+I
+x f u du
+f u du
+xf x
+f u du
+f x
+x
+\to 
+\to 
+\to 
+-
+=
+=
+=
+=
++
++
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+()
+()
+()
+()
+()
+()
+lim
+x
+f
+f
+f
+f x
+f
+f
+\psi 
+\psi 
+\to 
+=
+=
++
++
+. 
+5.设
+()
+f x 连续,证明:
+()
+(
+)
+()
+x
+t
+x
+f u du dt
+x
+t f t dt
+
+
+=
+-
+
+
+
+
+\int \int 
+\int 
+. 
+证一.左式
+()
+()
+()
+x
+x
+t
+t
+x
+f u du dt
+t
+f u du
+tf t dt
+
+
+
+
+=
+=
+-
+=
+
+
+
+
+
+
+
+
+\int \int 
+\int 
+\int 
+右式. 
+证二.当
+x =
+时成立; 左式求导
+()
+x
+f u du
+=\int 
+, 
+右式求导
+()
+()
+()
+()
+x
+x
+f t dt
+xf x
+xf x
+f t dt
+=
++
+-
+=
+\int 
+\int 
+,即得,证毕. 
+6.
+(
+)(
+)
+(
+)
+(
+)
+x
+x
+x
+x
+x
+x
+x
+x
+e
+e
+dx
+x e
+e
+dx
+xd e
+e
+e
+-
+-
+-
+-
++
+-
+=
+-
+=
++
+=
+\int 
+\int 
+\int 
+. 
+7.
+cos
+sin
+cos
+sin
+sin
+cos
+x
+x
+x
+x
+x
+x
+e
+e
+dx
+dx
+e
+e
+e
+e
+\pi 
+\pi 
+\pi 
+=
+=
++
++
+\int 
+\int 
+. 
+8.求
+cos
+cos
+cos
+cos
+cos
+sin
+x
+x
+xdx
+x
+xdx
+x
+xdx
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+-
+=
+-
+=
+=
+\int 
+\int 
+\int 
+. 
+9.
+(
+)
+(
+)
+sin 2
+tan
+sin 2
+tan
+sin
+6 sin
+x
+x
+dx
+x
+x
+dx
+udu
+udu
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
++
++
+-
+-
++
+=
++
+=
+=
+=
+\int 
+\int 
+\int 
+\int 
+3 1
+6 4 2 2
+\pi 
+\pi 
+\cdots 
+\cdots 
+\cdots 
+=
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第5.4 节 反常积分}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.无穷限的反常积分}}
+
+\textcolor{lyred}{例}.考虑
+x
+e dx
++\infty 
+-
+\int 
+,它的几何意义是曲线
+x
+y
+e-
+=
+与x 正半轴间区域的面积A ,而 
+(
+)
+lim
+lim 1
+t
+x
+t
+t
+t
+A
+e dx
+e
+-
+-
+\to +\infty 
+\to +\infty 
+=
+=
+-
+=
+\int 
+,故
+x
+e dx
++\infty 
+-
+=
+\int 
+. 
+\textcolor{lyred}{定义}.若
+()
+lim
+t
+t
+a
+f x dx
+\to +\infty \int 
+存在,则称\textcolor{lyred}{反常积分}
+()
+a
+f x dx
++\infty 
+\int 
+\textcolor{lyred}{收敛},其积分值 
+()
+()
+lim
+t
+t
+a
+a
+f x dx
+f x dx
++\infty 
+\to +\infty 
+=
+\int 
+\int 
+;反之,称
+()
+a
+f x dx
++\infty 
+\int 
+\textcolor{lyred}{发散}; 
+类似地,
+()
+()
+lim
+b
+b
+t
+t
+f x dx
+f x dx
+\to -\infty 
+-\infty 
+=
+\int 
+\int 
+,
+()
+()
+()
+f x dx
+f x dx
+f x dx
++\infty 
++\infty 
+-\infty 
+-\infty 
+=
++
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{注}.设
+()
+f x 连续,并且
+()
+()
+F
+x
+f x
+'
+=
+,则
+()
+()
+a
+a
+f x dx
+F x
++\infty 
++\infty 
+=
+
+
+
+\int 
+, 
+()
+()
+b
+b
+f x dx
+F x
+-\infty 
+-\infty 
+=
+
+
+
+\int 
+,
+()
+()
+f x dx
+F x
++\infty 
++\infty 
+-\infty 
+-\infty 
+=
+
+
+
+\int 
+.(假定极限均存在) 
+\textcolor{lyred}{例(p-积分)}.讨论
+p dx
+x
++\infty 
+\int 
+的敛散性. 
+解.当
+p =时,
+lim
+lim ln
+t
+t
+t
+dx
+dx
+t
+x
+x
++\infty 
+\to +\infty 
+\to +\infty 
+=
+=
+=+\infty 
+\int 
+\int 
+,发散; 
+当
+p <时,
+lim
+lim 1
+t
+p
+p
+p
+t
+t
+dx
+dx
+t
+x
+x
+p
+p
++\infty 
+-
+\to +\infty 
+\to +\infty 
+=
+=
+-
+=+\infty 
+-
+-
+\int 
+\int 
+,发散; 
+当
+p >时,
+lim
+lim 1
+t
+p
+p
+t
+t
+dx
+dx
+t
+x
+x
+p
+p
+p
++\infty 
+-
+\to +\infty 
+\to +\infty 
+=
+=
+-
+=
+-
+-
+-
+\int 
+\int 
+,收敛. 
+\textcolor{lyred}{注}.对
+ln2
+ln p
+p
+dx
+du
+x
+x
+u
++\infty 
++\infty 
+=
+\int 
+\int 
+,有相同的结果. 
+\textcolor{lyred}{例}.
+(
+)
+arctan
+3 3
+dx
+dx
+x
+x
+x
+x
+\pi 
+\pi 
+\pi 
++\infty 
++\infty 
++\infty 
++
+
+
+=
+=
+=
+-
+=
+
+
++
++
++
++
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+xdx
+xdx
+xdx
+du
+du
+x
+x
+x
+u
+u
++\infty 
++\infty 
++\infty 
+-\infty 
+-\infty 
++\infty 
+=
++
+=
++
++
++
++
+\int 
+\int 
+\int 
+\int 
+\int 
+,发散. 
+\textcolor{lyred}{例}.
+(
+)
+ln
+ln 2
+dx
+x
+dx
+x
+x
+x
+x
+x
++\infty 
++\infty 
++\infty 
+
+
+
+=
+-
+=
+=
+
+
+
+
++
++
++
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+sec
+sec
+cos
+1 sin
+sin
+sec
+tan
+x
+t
+dx
+d
+t
+tdt
+t d
+t
+t
+t
+x
+x
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
++\infty 
+=
+=
+=
+=
+-
+=
+-
+-
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+x t
+dx
+t dt
+x dx
+d x
+x
+t
+x
+x
+x
+x
+=
++\infty 
++\infty 
++\infty 
++\infty 
++
+
+
+=
+=
+=
+-
+=
+
+
++
++
++
+
+
+
+
+-
++
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+1 arctan
+2 2
+du
+u
+u
+\pi 
++\infty 
++\infty 
+-\infty 
+-\infty 
+
+
+=
+=
+
+
++
+
+
+\int 
+. 
+\textcolor{lyred}{例}.
+x
+x
+x
+x
+xe
+dx
+xde
+xe
+e
+dx
++\infty 
++\infty 
++\infty 
++\infty 
+-
+-
+-
+-
+
+
+=-
+=-
++
+=
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+ln
+ln
+ln
+x
+x
+dx
+xd
+dx
+x
+x
+x
+x
+x
++\infty 
++\infty 
++\infty 
++\infty 
++\infty 
+
+
+
+
+
+
+=
+-
+=-
++
+=
++-
+=
+
+
+
+
+
+
+
+
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.无界函数的反常积分}}
+
+\textcolor{lyred}{例}.考虑
+1 dx
+x
+\int 
+,它的几何意义是
+y
+x
+=
+,
+y =
+,
+x =
+,
+x =围成区域的面积,而 
+(
+)
+lim
+lim 2
+t
+t
+t
+A
+dx
+t
+x
++
++
+\to 
+\to 
+=
+=
+-
+=
+\int 
+,故
+dx
+x
+=
+\int 
+. 
+\textcolor{lyred}{定义}.若在
+()
+U c
+\forall 
+内
+()
+f x 均无界,则称c 为\textcolor{lyred}{无界间断点},或者\textcolor{lyred}{瑕点}. 
+\textcolor{lyred}{定义}.设
+()
+(
+]
+,
+f x
+C a b
+\in 
+, x
+a
+=
+为其无界间断点(这无所谓),若
+()
+lim
+b
+t
+a
+t
+f x dx
++
+\to \int 
+存在, 
+则称\textcolor{lyred}{反常积分}
+()
+b
+a
+f x dx
+\int 
+\textcolor{lyred}{收敛},其积分值
+()
+()
+lim
+b
+b
+t
+a
+a
+t
+f x dx
+f x dx
++
+\to 
+=
+\int 
+\int 
+; 
+类似地,若x
+b
+=
+为
+()
+f x 的无界间断点,则
+()
+()
+lim
+b
+t
+t
+b
+a
+a
+f x dx
+f x dx
+-
+\to 
+=
+\int 
+\int 
+; 
+若
+(
+)
+,
+c
+a b
+\in 
+为
+()
+f x 的无界间断点,则
+()
+()
+()
+b
+c
+b
+a
+a
+c
+f x dx
+f x dx
+f x dx
+=
++
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{注}.设c 为
+()
+f x 的无界间断点,
+()
+()
+F
+x
+f x
+'
+=
+,则
+()
+()
+c
+c
+a
+a
+f x dx
+F x
+-
+=
+
+
+
+\int 
+, 
+()
+()
+b
+b
+c
+c
+f x dx
+F x
++
+=
+
+
+
+\int 
+,
+()
+()
+()
+b
+b
+c
+a
+c
+a
+f x dx
+F x
+F x
+-
++
+=
++
+
+
+
+
+
+
+
+
+\int 
+.(假定极限均存在) 
+\textcolor{lyred}{例(p-积分)}.讨论
+p dx
+x\int 
+的敛散性. 
+解.当
+p =时,
+lim
+lim ln
+t
+t
+t
+dx
+dx
+t
+x
+x
++
++
+\to 
+\to 
+=
+=
+-
+=+\infty 
+\int 
+\int 
+,发散; 
+当
+p >时,
+lim
+lim
+p
+p
+p
+t
+t
+t
+dx
+dx
+t
+x
+x
+p
+p
++
++
+-
+\to 
+\to 
+=
+=
+-
+=+\infty 
+-
+-
+\int 
+\int 
+,发散; 
+当
+p <时,
+lim
+lim
+p
+p
+p
+t
+t
+t
+dx
+dx
+t
+x
+x
+p
+p
+p
++
++
+-
+\to 
+\to 
+=
+=
+-
+=
+-
+-
+-
+\int 
+\int 
+,收敛. 
+\textcolor{lyred}{例}.
+(
+)
+2 arcsin
+dx
+d
+x
+x
+x
+x
+x
+\pi 
+-
++
+
+
+=
+=
+=
+
+
+-
+-
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+(
+)
+tan
+2 cos
+sec
+dx
+d
+x
+du
+d
+t
+tdt
+t
+x x
+x
+u
+\pi 
+\pi 
++\infty 
++\infty 
++\infty 
+=
+=
+=
+=
+=
++
++
++
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+1 arctan
+u
+t
+dx
+dx
+dt
+du
+u
+u
+t t
+x x
+x
+x
+\pi 
++\infty 
++\infty 
++\infty 
++\infty 
++\infty 
+=
+-
+
+
+=
+=
+=
+=
+=
+
+
++
+-
+
+
+-
+-
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+dx
+dx
+dx
+dx
+dx
+x
+x
+x
+x
+x
+x
+x
+x
+=
++
+=
++
+=
+-
+-
+-
+
+
+
+
+-
+-
+-
+-
+
+
+
+
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+\int 
+(
+)
+(
+)
+arcsin 2
+ln
+ln 2
+x
+x
+x
+x
+\pi 
+-
++
+
+
+
+
+-
++
+-
++
+-
+=
++
++
+
+
+
+
+
+
+
+
+
+
+
+
+. 
+\textcolor{lyred}{例}.
+(
+)
+lim
+lim
+t
+t
+dx
+dx
+dx
+x
+x
+x
+x
+x
+-
++
+\to 
+\to 
+-
+-
+
+
+
+
+=
++
+=
+-
+-+-
+-
+-
+=+\infty 
+
+
+
+
+
+
+
+
+\int 
+\int 
+\int 
+,发散. 
+\textcolor{lyred}{例}.
+[
+]
+ln
+ln
+ln
+lim
+ln
+x
+xdx
+x
+x
+xd
+x
+x
+x
++
++
+\to 
+=
+-
+=
+-
+-=-
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+ln 1
+ln 1
+x
+x
+dx
+x
+x
+dx
+x
+-
+
+
+-
+=
+-
++
+=
+
+
+-
+
+
+\int 
+\int 
+(
+)
+(
+)
+(
+)
+ln 1
+ln
+ln 4
+lim
+1 ln 1
+ln 4
+x
+x
+x
+x
+x
+x
+x
+x
+-
+-
+\to 
++
+
+
+-
++
+-
+=
++
+-
+-
+-
+=
+-
+
+
+-
+
+
+. 
+\textcolor{lyred}{例}.
+ln
+ln
+ln
+ln
+x t
+x
+t
+x
+t
+dx
+d
+dt
+dx
+x
+t
+t
+x
+t
+=
++\infty 
++\infty 
++\infty 
++\infty 
+=
+=
+=-
++
++
++
++
+\int 
+\int 
+\int 
+\int 
+,故
+ln
+x dx
+x
++\infty 
+=
++
+\int 
+. 
+\textcolor{lyred}{注}.这个解法有问题,没有讨论收敛性. 
+\textcolor{lyred}{补充练习 }
+1.设
+()
+(
+)
+,
+,
+x
+x
+f x
+x
+x
+x
+
+\le 
++
+
+=
+
+>
++
+
+,求
+()
+()
+x
+F x
+f t dt
+-\infty 
+=\int 
+. 
+解.当
+x \le 
+时,
+()
+arctan
+x
+dt
+F x
+x
+t
+\pi 
+-\infty 
+=
+=
++
++
+\int 
+; 
+当
+x >
+时,
+()
+(
+)
+(
+)
+2arctan
+x
+x
+dt
+dt
+d t
+F x
+x
+t
+t
+t
+t
+\pi 
+\pi 
+-\infty 
+=
++
+=
++
+=
++
++
++
++
+\int 
+\int 
+\int 
+. 
+2.
+(
+)
+ln
+1 ln 2
+dx
+x
+dx
+x
+x
+x
+x
+x
+x
+x
++\infty 
++\infty 
++\infty 
++
+
+
+
+
+=
+-
++
++
+=
+-
+=-
+
+
+
+
++
++
+
+
+
+
+\int 
+\int 
+. 
+3.
+(
+)
+(
+)
+sin
+1 sin
+x
+x
+x
+x
+dx
+dx
+t
+t dt
+x
+x
+\pi 
+\pi 
++
++
+=
+=
++
+=+
+-
+-
+\int 
+\int 
+\int 
+. 
+4.
+(
+)
+(
+)
+(
+)
+sin
+1 sin
+π
+u
+t
+u
+x
+x
+dx
+dx
+du
+t
+dt
+x
+x
+u
+x
+\pi 
+\pi 
+=
+-
+-
++
+=
+=
+=
++
+=
+-
+-
+-
+-
+\int 
+\int 
+\int 
+\int 
+. 
+5.
+(
+)(
+)(
+)
+(
+)(
+)
+x t
+dx
+t dt
+dx
+x
+x
+x
+t
+t
+\alpha 
+\alpha 
+\alpha 
+\pi 
+\alpha 
+=
++\infty 
++\infty 
++\infty 
+\ge 
+=
+=
+=
++
++
++
++
++
+\int 
+\int 
+\int 
+. 
+6.已知
+sin
+x dx
+x
+\pi 
++\infty 
+=
+\int 
+,求(1)
+sin cos
+x
+x dx
+x
++\infty 
+\int 
+;(2)
+sin x dx
+x
++\infty 
+\int 
+. 
+解.(1)
+sin cos
+sin 2
+sin
+x
+x
+x
+u
+dx
+d x
+du
+x
+x
+u
+\pi 
++\infty 
++\infty 
++\infty 
+=
+=
+=
+\int 
+\int 
+\int 
+; 
+(2)
+sin
+sin
+2sin
+cos
+sin
+x
+x
+x
+x
+dx
+xd
+dx
+x
+x
+x
+x
+\pi 
++
++\infty 
++\infty 
++\infty 
++\infty 
+
+
+-
+-
+=
+=
++
+=
+
+
+
+
+\int 
+\int 
+\int 
+. 

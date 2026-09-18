@@ -1,0 +1,13017 @@
+\begin{center}
+{\Large \bfseries \textcolor{lyred}{第九章 多元函数微分法及其应用}}
+\end{center}
+
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第9.1 节 多元函数的基本概念}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.平面点集 n 维空间}}
+
+{\bfseries \textcolor{lyred}{1.平面点集}}
+
+建立了直角坐标系之后,平面可以表示为
+(
+)
+\{
+\}
+,
+: ,
+x y
+x y
+=
+\in 
+\mathbb{R}
+\mathbb{R},称为\textcolor{lyred}{坐标平面}. 
+设
+(
+)
+,
+P x
+y
+\in \mathbb{R},记
+(
+)\{
+\}
+(
+)
+(
+)
+(
+)
+\{
+\}
+,
+:
+,
+:
+U P
+P PP
+x y
+x
+x
+y
+y
+\delta 
+\delta 
+\delta 
+=
+<
+=
+-
++
+-
+<
+, 
+称为
+0P 的\delta \textcolor{lyred}{邻域},简记为
+(
+)
+U P ; 
+记
+(
+)\{
+\}
+,
+:0
+U P
+P
+PP
+\delta 
+\delta 
+=
+<
+<
+\circ 
+,称为
+0P 的\textcolor{lyred}{去心}\delta \textcolor{lyred}{邻域},简记为
+(
+)
+U P
+\circ 
+. 
+\textcolor{lyred}{定义}.设
+E \subset \mathbb{R},
+0P \in \mathbb{R},(1)若
+(
+)
+U P
+\exists 
+,使
+(
+)
+U P
+E
+\subset 
+,则称
+0P 为E 的\textcolor{lyred}{内点}; 
+(2)若
+(
+)
+U P
+\exists 
+,使
+(
+)
+U P
+E
+\cap 
+=\emptyset ,则称
+0P 为E 的\textcolor{lyred}{外点}; 
+(3)若
+0P 既不是E 的内点,也不是外点,则称
+0P 为E 的\textcolor{lyred}{边界点},其全体构成的点集 
+称为E 的\textcolor{lyred}{边界},记为E
+\partial ; 
+(4)若
+(
+)
+U P
+\forall 
+\circ 
+,均有
+(
+)
+U P
+E
+\cap 
+\neq \emptyset 
+\circ 
+,则称
+0P 是E 的\textcolor{lyred}{聚点}. 
+\textcolor{lyred}{定义}.设
+E \subset \mathbb{R},(1)若E
+E
+\cap \partial 
+=\emptyset ,则称E 为\textcolor{lyred}{开集}; 
+(2)若E
+E
+\partial 
+,则称E 为\textcolor{lyred}{闭集}. 
+\textcolor{lyred}{例}.
+(
+)
+\{
+\}
+,
+:1
+E
+x y
+x
+y
+=
+<
++
+<
+是开集,
+(
+)
+\{
+\}
+,
+:1
+E
+x y
+x
+y
+=
+\le 
++
+\le 
+是闭集, 
+(
+)
+\{
+\}
+,
+:1
+E
+x y
+x
+y
+=
+<
++
+\le 
+即非开集,也非闭集. 
+\textcolor{lyred}{定义}.设
+E \subset \mathbb{R},若E 中任何两点均可以用完全包含于E 中的折线连结起来,则 
+称E 是\textcolor{lyred}{连通集}. 
+\textcolor{lyred}{定义}.连通的开集称为\textcolor{lyred}{(开)区域};连通的闭集称为\textcolor{lyred}{闭区域}. 
+\textcolor{lyred}{定义}.设
+E \subset \mathbb{R},若存在
+R >
+,使得
+(
+)
+\{
+\}
+,
+:
+E
+x y
+x
+y
+R
+\subset 
++
+<
+,则称E 为\textcolor{lyred}{有界集}; 
+否则称为\textcolor{lyred}{无界集}. 
+{\bfseries \textcolor{lyred}{2.n 维空间}}
+
+\textcolor{lyred}{定义}.记
+(
+)
+\{
+\}
+,
+,
+,
+:
+n
+n
+i
+x x
+x
+x
+=
+\in 
+\Lambda 
+\mathbb{R}
+\mathbb{R},称为\textcolor{lyred}{n 维空间},其中的元素
+(
+)
+,
+,
+,
+n
+x
+x x
+x
+=
+\Lambda 
+称为n 维空间中的\textcolor{lyred}{点},或者\textcolor{lyred}{n 维向量}. 
+对于n 维向量,也可以定义加法,数乘,数量积等运算. 
+\textcolor{lyred}{定义}.设
+(
+)
+,
+,
+,
+n
+x
+x x
+x
+=
+\Lambda 
+,记
+n
+x
+x
+x
+x
+=
++
++
++
+\Lambda 
+,称为x 的\textcolor{lyred}{模}(长度). 
+设
+(
+)
+,
+,
+,
+n
+x
+x x
+x
+=
+\Lambda 
+,
+(
+)
+,
+,
+,
+n
+n
+y
+y y
+y
+=
+\in 
+\Lambda 
+\mathbb{R},则两者之间的\textcolor{lyred}{距离}定义为 
+(
+)
+(
+)
+(
+)
+(
+)
+,
+n
+n
+x y
+y
+x
+y
+x
+y
+x
+\rho 
+=
+-
++
+-
++
++
+-
+\Lambda 
+,也记为x
+y
+-
+. 
+利用距离概念可以定义邻域,由此得到开集,闭集,区域等概念. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.多元函数的概念}}
+
+\textcolor{lyred}{定义}.设D 为
+\mathbb{R}上非空点集,若按照法则f ,使得
+(
+)
+,
+P x y
+D
+\forall 
+\in 
+,变量z 均有唯一 
+确定的(实数)值与之对应,则称z 为x , y 的\textcolor{lyred}{二元函数},记为
+(
+)
+,
+z
+f x y
+=
+,或者 
+()
+z
+f P
+=
+,其中,x y 为\textcolor{lyred}{自变量}, z 为\textcolor{lyred}{因变量},或函数值. 
+类似地,可定义三元及三元以上的\textcolor{lyred}{n 元函数}:
+()
+u
+f P
+=
+,
+n
+P
+D
+\in 
+\subset \mathbb{R}. 
+\textcolor{lyred}{例}.二元函数
+z
+x
+y
+=
++
+,它的图形为旋转抛物面. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.多元函数的极限}}
+
+\textcolor{lyred}{定义}.给定
+()
+f P ,设
+0P 为
+f
+D 的聚点,若
+\varepsilon 
+\forall 
+>
+,
+\delta 
+\exists 
+>
+,当
+(
+)
+0,
+P
+D
+U P \delta 
+\in 
+\cap 
+\circ 
+时, 
+()
+f P
+A
+\varepsilon 
+-
+<
+,则称A 为当
+P
+P
+\to 
+时,
+()
+f P 的\textcolor{lyred}{极限},记为
+()
+lim
+P
+P f P
+A
+\to 
+=
+,或者, 
+(
+)
+(
+)
+(
+)
+,
+,
+lim
+,
+x y
+x
+y
+f
+x y
+A
+\to 
+=
+,也称为\textcolor{lyred}{二重极限}. 
+\textcolor{lyred}{注}.
+()
+lim
+P
+P f P
+\to 
+存在的本质是当D 中动点P 以任何方式趋向
+0P 时,
+()
+f P 均趋向于 
+同一个常数;由于平面上
+P
+P
+\to 
+的方式有无限多种,故这个要求是相当高的. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+sin
+xy
+xy
+f x y
+x
+y
+x
+y
+=
++
++
+,证明:
+(
+)
+(
+)
+(
+)
+,
+0,0
+lim
+,
+x y
+f x y
+\to 
+=
+. 
+证.
+(
+)
+,
+xy
+f x y
+x
+y
+x
+y
+-
+\le 
+\le 
++
++
+,因此,
+\varepsilon 
+\forall 
+>
+,可取
+\delta 
+\varepsilon 
+=
+, 
+当
+(
+)
+(
+)
+x
+y
+\delta 
+<
+-
++
+-
+<
+时,
+(
+)
+,
+f x y
+\varepsilon 
+-
+<
+,证毕. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+xy
+f x y
+x
+y
+=
++
+,证明:
+(
+)
+(
+)
+(
+)
+,
+0,0
+lim
+,
+x y
+f x y
+\to 
+不存在. 
+证.(
+)
+,x y 沿y
+kx
+=
+趋向于(
+)
+0,0 时,
+(
+)
+,
+k
+f x y
+k
+\to +
+,依k 不同而不同,故 
+(
+)
+(
+)
+,
+0,0
+lim
+x y
+xy
+x
+y
+\to 
++
+不存在,证毕. 
+\textcolor{lyred}{注}.若沿不同的路径,当
+P
+P
+\to 
+时,
+()
+f P 趋向于不同的数,则
+()
+lim
+P
+P f P
+\to 
+不存在. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+xy
+f x y
+x
+y
+=
++
+,证明:
+(
+)
+(
+)
+(
+)
+,
+0,0
+lim
+,
+x y
+f x y
+\to 
+不存在. 
+证.当(
+)
+,x y 沿y
+kx
+=
+趋向(
+)
+0,0 时,
+(
+)
+,
+k x
+k x
+f x y
+x
+k x
+k x
+=
+=
+\to 
++
++
+; 
+当(
+)
+,x y 沿
+x
+y
+=
+趋向(
+)
+0,0 时,
+(
+)
+,
+y
+f x y
+y
+y
+=
+\to 
++
+,证毕. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+(
+)
+(
+)
+,
+0,1
+,
+0,1
+1 1
+lim
+lim
+1 1
+x y
+x y
+xy
+xy
+xy
+\to 
+\to 
++-=
+=
+++
+. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+,
+1,0
+,
+1,0
+,
+1,0
+sin
+lim
+lim
+lim
+x y
+x y
+x y
+x y
+x y
+x
+x
+xy
+x
+xy
+x
+\to 
+\to 
+\to 
+=
+=
+=
+-
+-
+-
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+(
+)
+,
+0,0
+lim
+sin
+x y
+x
+y
+x y
+x
+y
+\to 
++
++
+. 
+解.
+(
+)
+(
+)
+,
+2 sin
+f x y
+x y
+x y
+\le 
+\le 
+\le 
+,故
+(
+)
+(
+)
+(
+)
+,
+0,0
+lim
+sin
+x y
+x
+y
+x y
+x
+y
+\to 
++
+=
++
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+,
+0,0
+lim
+x y
+x
+y
+x
+y
+\to 
++
++
+. 
+解.
+(
+)
+,
+x
+y
+f x y
+x
+y
+x
+y
+x
+y
+x
+y
+\le 
+\cdots 
++
+\cdots 
+\le 
++
++
++
+,故
+(
+)
+(
+)
+,
+0,0
+lim
+x y
+x
+y
+x
+y
+\to 
++
+=
++
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+,
+0,0
+lim
+x y
+x y
+x
+y
+\to 
++
+. 
+解.
+(
+)
+(
+)
+,
+0,0
+cos
+sin
+lim
+lim
+lim
+cos
+sin
+x y
+x y
+x
+y
+\rho 
+\rho 
+\rho 
+\theta 
+\theta 
+\rho 
+\theta 
+\theta 
+\rho 
++
++
+\to 
+\to 
+\to 
+=
+=
+=
++
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.多元函数的连续性}}
+
+\textcolor{lyred}{定义}.给定
+()
+f P ,
+f
+P
+D
+\in 
+,
+0P 是
+f
+D 的聚点,若
+()
+(
+)
+lim
+P
+P f P
+f P
+\to 
+=
+,则称
+0P 为
+()
+f P 的 
+\textcolor{lyred}{连续点},
+()
+f P 在
+0P 处\textcolor{lyred}{连续}. 
+\textcolor{lyred}{定义}.若
+()
+f P 在开或者闭区域D (其中的点均是聚点)上处处连续,则称
+()
+f P 为 
+D 上的\textcolor{lyred}{连续函数}. 
+\textcolor{lyred}{定理}.多元连续函数的和差积商(分母不为零)以及复合仍连续. 
+\textcolor{lyred}{定理}.多元初等函数在它的定义区域均连续. 
+\textcolor{lyred}{定义}.由具有不同自变量的基本初等函数和常数函数经过有限多次四则运算以及 
+复合所形成的,并且可以用一个式子来表示的函数称为\textcolor{lyred}{多元初等函数}. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+2 sin
+, ,
+ln
+x
+yz
+f x y z
+e
+x
+z
++
+=
++
++
++
+是三元初等函数. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.有界闭区域上连续函数的性质}}
+
+\textcolor{lyred}{定理(最大值最小值定理)}.有界闭区域上的连续函数必有界,并且能在该区域上 
+取到最大值和最小值. 
+\textcolor{lyred}{定理(介值定理)}.有界闭区域上的连续函数能够取到介于最大值和最小值之间的 
+任何值. 
+\textcolor{lyred}{定义}.设
+()
+f P 为D 上的函数,若
+\varepsilon 
+\forall >
+,
+\delta 
+\exists 
+>
+,当
+,
+P P
+D
+\in 
+,且
+PP
+\delta 
+<
+时,均有 
+(
+)
+(
+)
+f P
+f P
+\varepsilon 
+-
+<
+,则称
+()
+f P 在D 上\textcolor{lyred}{一致连续}. 
+\textcolor{lyred}{定理}.有界闭区域上的连续函数必在该区域上一致连续. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第9.2 节 偏导数}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.偏导数的定义及其计算法}}
+
+设
+(
+)
+,
+z
+f x y
+=
+在(
+)
+,
+x
+y
+的邻域内有定义,固定
+y
+y
+=
+,则()
+(
+)
+,
+g x
+f x y
+=
+成为x 的 
+一元函数,若
+(
+)
+(
+)
+(
+)
+,
+,
+lim
+x
+f x
+x y
+f x y
+g x
+x
+\Delta \to 
++\Delta 
+-
+'
+=
+\Delta 
+存在,则称为
+(
+)
+,
+f x y 在(
+)
+,
+x
+y
+处 
+对x 的\textcolor{lyred}{偏导数},记为
+(
+)
+,
+xz
+x
+y
+,
+(
+)
+,
+xf
+x
+y
+,
+x x
+y y
+z
+x
+=
+=
+\partial 
+\partial 
+,
+x x
+y y
+f
+x
+=
+=
+\partial 
+\partial 
+,等价地, 
+(
+)
+(
+)
+,
+,
+lim
+x
+x
+x x
+y y
+f x y
+f x
+y
+z
+x
+x
+x
+\to 
+=
+=
+-
+\partial 
+=
+\partial 
+-
+; 
+类似地,
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+lim
+lim
+y
+y
+y
+x x
+y y
+f x
+y
+y
+f x
+y
+f x
+y
+f x
+y
+z
+y
+y
+y
+y
+\Delta \to 
+\to 
+=
+=
++\Delta 
+-
+-
+\partial 
+=
+=
+\partial 
+\Delta 
+-
+.\textcolor{lyred}{ }
+若
+(
+)
+,
+z
+f
+x y
+=
+在区域D 内处处存在偏导数,则得到它的\textcolor{lyred}{偏导函数 }
+(
+)
+(
+)
+,
+,
+lim
+x
+f x
+x y
+f x y
+z
+x
+y
+\Delta \to 
++\Delta 
+-
+\partial =
+\partial 
+\Delta 
+,
+(
+)
+(
+)
+,
+,
+lim
+y
+f x y
+y
+f x y
+z
+y
+y
+\Delta \to 
++\Delta 
+-
+\partial =
+\partial 
+\Delta 
+. 
+\textcolor{lyred}{例}.设
+z
+x
+xy
+y
+=
++
++
+,则
+z
+x
+y
+x
+\partial =
++
+\partial 
+,
+z
+x
+y
+y
+\partial =
++
+\partial 
+. 
+\textcolor{lyred}{例}.设
+2 tan 2
+z
+x
+y
+=
+,则
+2 tan 2
+z
+x
+y
+x
+\partial =
+\partial 
+,
+sec 2
+z
+x
+y
+y
+\partial =
+\partial 
+. 
+\textcolor{lyred}{例}.设
+(
+)
+sin
+0,
+y
+z
+x
+x
+x
+=
+>
+\neq 
+,则
+sin
+sin
+y
+z
+y x
+x
+-
+\partial =
+\cdots 
+\partial 
+,
+sin ln
+cos
+y
+z
+x
+x
+y
+y
+\partial =
+\cdots 
+\partial 
+. 
+\textcolor{lyred}{例}.理想气体状态方程PV
+RT
+=
+,其中R 为常数,证明:
+P
+V
+T
+V
+T
+P
+\partial 
+\partial 
+\partial 
+\cdots 
+\cdots 
+=-
+\partial 
+\partial 
+\partial 
+. 
+证.
+RT
+P
+RT
+P
+V
+V
+V
+\partial 
+=
+\Rightarrow 
+=-
+\partial 
+,
+RT
+V
+R
+V
+P
+T
+P
+\partial 
+=
+\Rightarrow 
+=
+\partial 
+,
+PV
+T
+V
+T
+R
+P
+R
+\partial 
+=
+\Rightarrow 
+=
+\partial 
+,即得,证毕. 
+\textcolor{lyred}{例}.设
+(
+)
+(
+)
+,
+1 arctan
+y
+y
+f x y
+x e
+x
+x
+=
++
+-
+,求
+(
+)
+1,0
+xf
+,
+(
+)
+1,0
+yf
+. 
+解.
+(
+)
+,0
+f x
+x
+=
+,故
+(
+)
+(
+)
+,0
+1,0
+x
+x
+f
+x
+x
+f
+=
+\Rightarrow 
+=
+; 
+(
+)
+1,
+y
+f
+y
+e
+=
+,故
+(
+)
+(
+)
+1,
+1,0
+y
+y
+y
+f
+y
+e
+f
+=
+\Rightarrow 
+=
+. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+x
+y
+f x y
+e
++
+=
+,求
+(
+)
+0,0
+xf
+,
+(
+)
+0,0
+yf
+. 
+解.
+(
+)
+,0
+x
+f x
+e
+=
+,
+(
+)
+0,0
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+e
+e
+e
+f
+x
+x
+x
+\to 
+\to 
+\to 
+-
+-
+=
+=
+=
+-
+-
+,不存在; 
+(
+)
+0,
+y
+f
+y
+e
+=
+,
+(
+)
+(
+)
+0,
+0,0
+y
+y
+y
+f
+y
+ye
+f
+=
+\Rightarrow 
+=
+. 
+\textcolor{lyred}{例}.设
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+2 ,
+,
+0,0
+,
+0,
+,
+0,0
+xy
+x y
+x
+y
+f x y
+x y
+
+\neq 
+
++
+=
+
+=
+
+,求
+(
+)
+0,0
+xf
+,
+(
+)
+0,0
+yf
+. 
+解.
+(
+)
+(
+)
+(
+)
+,0
+0,0
+0,0
+lim
+lim
+x
+x
+x
+f x
+f
+f
+x
+x
+\to 
+\to 
+-
+-
+=
+=
+=
+-
+,类似地, 
+(
+)
+(
+)
+(
+)
+0,
+0,0
+0,0
+lim
+lim
+y
+y
+x
+f
+y
+f
+f
+y
+y
+\to 
+\to 
+-
+-
+=
+=
+=
+-
+. 
+\textcolor{lyred}{注}.上述函数在(
+)
+0,0 处不连续,故二元函数的偏导数存在不能推出连续性. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.高阶偏导数}}
+
+\textcolor{lyred}{二阶偏导数}:(1)
+z
+z
+x
+x
+x
+\partial 
+\partial 
+\partial 
+
+
+=
+
+
+\partial 
+\partial 
+\partial 
+
+
+,也记为
+f
+x
+\partial 
+\partial 
+,
+xx
+f ,
+xx
+z ,也称\textcolor{lyred}{纯偏导}; 
+(2)
+2z
+z
+x y
+y
+x
+\partial 
+\partial 
+\partial 
+
+
+=
+
+
+\partial \partial 
+\partial 
+\partial 
+
+
+,也记为
+2 f
+x y
+\partial 
+\partial \partial ,
+xy
+f ,
+xy
+z ,也称\textcolor{lyred}{混合偏导}; 
+(3)
+2z
+z
+y x
+x
+y
+
+
+\partial 
+\partial 
+\partial 
+=
+
+
+\partial \partial 
+\partial 
+\partial 
+
+
+,混合偏导;(4)
+z
+z
+y
+y
+y
+
+
+\partial 
+\partial 
+\partial 
+=
+
+
+\partial 
+\partial 
+\partial 
+
+
+,纯偏导. 
+\textcolor{lyred}{例}.设
+z
+x y
+xy
+xy
+=
+-
+-
++,则
+xz
+x y
+y
+y
+=
+-
+-
+,
+yz
+x y
+xy
+x
+=
+-
+-, 
+xx
+z
+xy
+=
+,
+yy
+z
+x
+xy
+=
+-
+,
+xy
+z
+x y
+y
+=
+-
+-,
+yx
+z
+x y
+y
+=
+-
+-. 
+\textcolor{lyred}{例}.设
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+2 ,
+,
+0,0
+,
+0,
+,
+0,0
+x y
+x y
+x
+y
+f x y
+x y
+
+\neq 
+
++
+=
+
+=
+
+,求
+(
+)
+0,0
+xy
+f
+,
+(
+)
+0,0
+yx
+f
+. 
+解.
+(
+)
+(
+)
+(
+)
+,0
+0,0
+0,0
+lim
+x
+x
+f x
+f
+f
+x
+\to 
+-
+=
+=
+-
+,
+(
+)
+(
+)
+(
+)
+0,
+0,0
+0,0
+lim
+y
+y
+f
+y
+f
+f
+y
+\to 
+-
+=
+=
+-
+, 
+(
+)
+(
+)
+,
+0,0
+x y \neq 
+时,
+(
+)
+(
+)
+(
+)
+(
+)
+,
+x
+x y x
+y
+x y
+x
+x y
+x y
+f
+x y
+x
+y
+x
+y
+x
+y
++
+-
+\cdots 
+=
+=
+-
++
++
++
+, 
+(
+)
+(
+)
+(
+)
+(
+)
+,
+y
+x
+x
+y
+x y
+y
+x
+x y
+f
+x y
+x
+y
+x
+y
+x
+y
++
+-
+\cdots 
+=
+=
+-
++
++
++
+,故 
+(
+)
+(
+)
+(
+)
+0,
+0,0
+0,0
+lim
+lim
+x
+x
+xy
+y
+y
+f
+y
+f
+f
+y
+y
+\to 
+\to 
+-
+-
+=
+=
+=
+-
+-
+, 
+(
+)
+(
+)
+(
+)
+,0
+0,0
+0,0
+lim
+lim
+y
+y
+yx
+x
+x
+f
+x
+f
+x
+f
+x
+x
+\to 
+\to 
+-
+-
+=
+=
+=
+-
+-
+. 
+\textcolor{lyred}{定理}.设
+(
+)
+,
+z
+f x y
+=
+的混合偏导数
+2z
+y x
+\partial 
+\partial \partial ,
+2z
+x y
+\partial 
+\partial \partial 均在区域D 内连续,则在该区域内 
+z
+z
+y x
+x y
+\partial 
+\partial 
+=
+\partial \partial 
+\partial \partial . 
+\textcolor{lyred}{注}.类似地,若
+(
+)
+,
+z
+f x y
+=
+的三阶混合偏导
+3z
+y x x
+\partial 
+\partial \partial \partial ,
+3z
+x y x
+\partial 
+\partial \partial \partial ,
+3z
+x x y
+\partial 
+\partial \partial \partial 在区域D 内 
+连续,则必在D 内相等,可以统一记为
+z
+x
+y
+\partial 
+\partial 
+\partial . 
+\textcolor{lyred}{例}.验证
+ln
+z
+x
+y
+=
++
+满足\textcolor{lyred}{Laplace 方程}:
+z
+z
+x
+y
+\partial 
+\partial 
++
+=
+\partial 
+\partial 
+. 
+证.
+z
+x
+x
+x
+y
+\partial =
+\partial 
++
+,
+(
+)
+(
+)
+(
+)
+x
+y
+x
+x
+z
+y
+x
+x
+x
+y
+x
+y
+\cdots 
++
+-\cdots 
+\partial 
+-
+=
+=
+\partial 
++
++
+; 
+类似地,
+(
+)
+z
+x
+y
+y
+x
+y
+\partial 
+-
+=
+\partial 
++
+,故
+z
+z
+x
+y
+\partial 
+\partial 
++
+=
+\partial 
+\partial 
+. 
+\textcolor{lyred}{例}.验证
+u
+x
+y
+z
+=
++
++
+满足\textcolor{lyred}{Laplace 方程}:
+u
+u
+u
+x
+y
+z
+\partial 
+\partial 
+\partial 
++
++
+=
+\partial 
+\partial 
+\partial 
+. 
+证.
+u
+r
+=
+,
+u
+r
+x
+x
+x
+r
+x
+r
+r
+r
+\partial 
+\partial 
+=-
+=-
+\cdots 
+=-
+\partial 
+\partial 
+,
+u
+r
+x
+r
+r
+x
+x
+r
+x
+r
+r
+\partial 
+-\cdots 
+\cdots \partial \partial 
+-
+=-
+=
+\partial 
+, 
+类似地,
+u
+y
+r
+y
+r
+\partial 
+-
+=
+\partial 
+,
+u
+z
+r
+z
+r
+\partial 
+-
+=
+\partial 
+,故
+u
+u
+u
+x
+y
+z
+\partial 
+\partial 
+\partial 
++
++
+=
+\partial 
+\partial 
+\partial 
+,证毕. 
+\textcolor{lyred}{补充练习 }
+1.设
+(
+)
+,ln
+ln
+x y
+y
+e
+f x
+y
+x
+x
+x
+x
+-
+
+
+-
+=
+-
+
+
+
+
+,求
+(
+)
+,
+f x y 及
+,
+f
+f
+x
+y
+\partial 
+\partial 
+\partial 
+\partial . 
+解.设u
+x
+y
+=
+-
+,
+ln
+v
+x
+=
+,则
+v
+x
+e
+=
+,
+v
+y
+e
+u
+=
+-
+,故
+(
+)
+,
+u
+v
+u
+f u v
+e
+v
+-
+=
+,即 
+(
+)
+,
+x
+y
+x
+f x y
+e
+y
+-
+=
+,于是
+x
+y
+f
+x e
+x
+y
+-
+\partial 
++
+=
+\partial 
+,
+(
+)
+x
+y
+x
+y
+f
+e
+y
+y
+-
++
+\partial 
+=-
+\partial 
+. 
+2.设
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+sin
+,
+,
+0,0
+,
+0,
+,
+0,0
+x
+y
+x y
+x
+y
+f x y
+x y
+
++
+\neq 
+
++
+=
+
+=
+
+,求
+(
+)
+0,0
+xf
+,
+(
+)
+0,0
+yf
+. 
+解.
+(
+)
+(
+)
+(
+)
+,0
+0,0
+0,0
+lim
+lim
+sin
+x
+x
+x
+x
+f x
+f
+f
+x
+x
+x
+\to 
+\to 
+-
+=
+=
+-
+不存在,
+(
+)
+0,0
+yf
+类似. 
+3.设
+()
+f u 二阶可导,且
+(
+)
+sin
+x
+z
+f e
+y
+=
+满足
+x
+z
+z
+ze
+x
+y
+\partial 
+\partial 
++
+=
+\partial 
+\partial 
+,求
+()
+f u . 
+解.令
+sin
+x
+u
+e
+y
+=
+,则
+()
+sin
+x
+z
+f
+u e
+y
+x
+\partial 
+'
+=
+\partial 
+,
+()
+cos
+x
+z
+f
+u e
+y
+y
+\partial 
+'
+=
+\partial 
+, 
+()
+()
+sin
+sin
+x
+x
+z
+f
+u e
+y
+f
+u e
+y
+x
+\partial 
+''
+'
+=
++
+\partial 
+,
+()
+()
+cos
+sin
+x
+x
+z
+f
+u e
+y
+f
+u e
+y
+y
+\partial 
+''
+'
+=
+-
+\partial 
+, 
+故
+()
+()
+x
+x
+f
+u e
+f u e
+''
+=
+,即
+()
+z
+f u
+=
+满足z
+z
+''=
+,解得
+()
+u
+u
+f u
+C e
+C e-
+=
++
+. 
+4.设
+(
+)
+u
+f
+x
+y
+=
++
+满足
+u
+u
+u
+u
+x
+y
+x
+y
+x
+x
+\partial 
+\partial 
+\partial 
++
+-
+\cdots 
++
+=
++
+\partial 
+\partial 
+\partial 
+,求
+()
+f x . 
+解.令
+r
+x
+y
+=
++
+,则u
+df
+r
+x df
+x
+dr
+x
+r dr
+\partial 
+\partial 
+=
+=
+\partial 
+\partial 
+,
+u
+r
+x df
+x d f
+x
+r
+dr
+r
+dr
+\partial 
+-
+=
++
+\partial 
+, 
+类似地,
+u
+r
+y df
+y d f
+y
+r
+dr
+r
+dr
+\partial 
+-
+=
++
+\partial 
+,代入原方程,得
+d f
+f
+r
+dr
++
+=
+,解得 
+()
+cos
+sin
+f r
+C
+r
+C
+r
+r
+=
++
++
+-,即
+()
+cos
+sin
+f x
+C
+x
+C
+x
+x
+=
++
++
+-. 
+5.设在区域D 内
+(
+)
+,
+xf
+x y 与
+(
+)
+,
+yf
+x y 均存在且有界,证明:
+(
+)
+,
+f x y 在D 内连续. 
+证.
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+z
+f x
+x y
+y
+f x y
+y
+f x y
+y
+f x y
+\Delta 
+=
++\Delta 
++\Delta 
+-
++\Delta 
++
++\Delta 
+-
+\le  
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+f x
+x y
+y
+f x y
+y
+f x y
+y
+f x y
++\Delta 
++\Delta 
+-
++\Delta 
++
++\Delta 
+-
+= 
+(
+)
+(
+)
+,
+,
+x
+y
+f
+y
+y
+x
+f
+x
+y
+M
+x
+N
+y
+\psi 
+\eta 
++\Delta 
+\Delta +
+\Delta 
+\le 
+\Delta +
+\Delta ,故(
+)
+(
+)
+,
+0,0
+x
+y
+\Delta 
+\Delta 
+\to 
+时, 
+(
+)
+(
+)
+,
+,
+f x
+x y
+y
+f x y
++\Delta 
++\Delta 
+\to 
+,证毕. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第9.3 节 全微分}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.全微分的定义}}
+
+\textcolor{lyred}{定义}.若
+(
+)
+,
+z
+f x y
+=
+在(
+)
+,x y 处的\textcolor{lyred}{全增量}
+(
+)
+(
+)
+,
+,
+z
+f x
+x y
+y
+f x y
+\Delta =
++\Delta 
++\Delta 
+-
+可表示为 
+()
+z
+A
+x
+B
+y
+o \rho 
+\Delta =
+\cdots \Delta +
+\cdots \Delta +
+,其中A , B 不依赖于x
+\Delta , y
+\Delta ,而
+(
+)
+(
+)
+x
+y
+\rho =
+\Delta 
++\Delta 
+,则 
+称
+(
+)
+,
+z
+f x y
+=
+在(
+)
+,x y 处\textcolor{lyred}{可微分}, A x
+B y
+\Delta +
+\Delta 称为它在(
+)
+,x y 处的\textcolor{lyred}{全微分},记为dz . 
+\textcolor{lyred}{例}.设z
+xy
+=
+,则
+(
+)(
+)
+z
+x
+x
+y
+y
+xy
+x x
+y y
+x y
+\Delta =
++\Delta 
++\Delta 
+-
+=\Delta +\Delta +\Delta \Delta ,而 
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+x y
+x
+y
+x
+y
+x
+y
+x
+y
+\Delta \Delta 
+\Delta 
++\Delta 
+\le 
+\cdots 
+\le 
+\Delta 
++\Delta 
+\Delta 
++\Delta 
+\Delta 
++\Delta 
+,故
+lim
+x y
+\rho 
+\rho 
+\to 
+\Delta \Delta =
+,可微,且 
+dz
+x x
+y y
+=\Delta +\Delta . 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.可微的条件}}
+
+\textcolor{lyred}{定理}.设
+(
+)
+,
+f x y 在(
+)
+,x y 处可微,则它在该点处连续. 
+\textcolor{lyred}{定理}.设
+(
+)
+,
+z
+f x y
+=
+在(
+)
+,x y 处可微,则它在(
+)
+,x y 处的偏导数必存在,并且 
+z
+z
+dz
+x
+y
+x
+y
+\partial 
+\partial 
+=
+\Delta +
+\Delta 
+\partial 
+\partial 
+,即
+z
+z
+dz
+dx
+dy
+x
+y
+\partial 
+\partial 
+=
++
+\partial 
+\partial 
+. 
+\textcolor{lyred}{注}.
+(
+)
+,
+z
+f x y
+=
+在(
+)
+,x y 处可微
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+lim
+x
+y
+z
+f
+x y
+x
+f
+x y
+y
+x
+y
+\rho 
++
+\to 
+
+
+\Delta -
+\Delta +
+\Delta 
+
+
+\Leftrightarrow 
+=
+\Delta 
++\Delta 
+. 
+\textcolor{lyred}{例}.设
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+2 ,
+,
+0,0
+,
+0,
+,
+0,0
+xy
+x y
+x
+y
+f x y
+x y
+
+\neq 
+
++
+=
+
+=
+
+,讨论它在(
+)
+0,0 处的可微性. 
+解.
+(
+)
+0,0
+xf
+=
+,
+(
+)
+0,0
+yf
+=
+,
+(
+)
+(
+)
+(
+)
+(
+)
+,
+0,0
+x y
+f
+f
+x
+y
+f
+x
+y
+\Delta \Delta 
+\Delta =
+\Delta 
+\Delta 
+-
+=
+\Delta 
++\Delta 
+, 
+(
+)
+(
+)
+(
+)
+(
+)
+0,0
+0,0
+lim
+lim
+x
+y
+f
+f
+x
+f
+y
+x y
+x
+y
+\rho 
+\rho 
+\rho 
++
++
+\to 
+\to 
+
+
+\Delta -
+\Delta +
+\Delta 
+\Delta \Delta 
+
+=
+\Delta 
++\Delta 
+不存在,不可微. 
+\textcolor{lyred}{例}.设
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+2 ,
+,
+0,0
+,
+0,
+,
+0,0
+x y
+x y
+x
+y
+f x y
+x y
+
+\neq 
+
++
+=
+
+=
+
+,讨论它在(
+)
+0,0 处的可微性. 
+解.
+(
+)
+0,0
+xf
+=
+,
+(
+)
+0,0
+yf
+=
+,
+(
+)
+(
+)
+(
+)(
+)
+(
+)
+(
+)
+,
+0,0
+x
+y
+f
+f
+x
+y
+f
+x
+y
+\Delta 
+\Delta 
+\Delta =
+\Delta 
+\Delta 
+-
+=
+\Delta 
++\Delta 
+, 
+(
+)
+(
+)
+(
+)(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+0,0
+0,0
+lim
+lim
+x
+y
+f
+f
+x
+f
+y
+x
+y
+x
+y
+x
+y
+\rho 
+\rho 
+\rho 
++
++
+\to 
+\to 
+
+
+\Delta -
+\Delta -
+\Delta 
+\Delta 
+\Delta 
+
+=
+=
+
+
+\Delta 
++\Delta 
+\Delta 
++\Delta 
+
+
+,可微. 
+\textcolor{lyred}{定理}.设
+(
+)
+,
+z
+f x y
+=
+在(
+)
+,x y 的邻域内可偏导,且偏导函数在(
+)
+,x y 处连续,则它在 
+(
+)
+,x y 处可微. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.全微分在近似计算中的应用}}
+
+设
+(
+)
+,
+f x y 在(
+)
+,
+x
+y
+处可微,且
+(
+)
+,
+xf
+x
+y
+与
+(
+)
+,
+yf
+x
+y
+不同时为零,则 
+当(
+)
+(
+)
+x
+x
+y
+y
+-
++
+-
+<<时,有近似公式: 
+(
+)
+(
+)
+(
+)(
+)
+(
+)(
+)
+,
+,
+,
+,
+x
+y
+f x y
+f x
+y
+f
+x
+y
+x
+x
+f
+x
+y
+y
+y
+\approx 
++
+-
++
+-
+. 
+\textcolor{lyred}{例}.近似计算(
+)
+2.02
+1.04
+. 
+解.设
+(
+)
+,
+y
+f x y
+x
+=
+,
+(
+)
+(
+)
+(
+)
+(
+)
+1.04,2.02
+1,2
+1,2
+0.04
+1,2
+0.02
+x
+y
+f
+f
+f
+f
+\approx 
++
+\cdots 
++
+\cdots 
+, 
+(
+)
+(
+)
+1,2
+1,2
+y
+xf
+yx -
+=
+=
+,
+(
+)
+(
+)
+1,2
+1,2
+ln
+y
+yf
+x
+x
+=
+=
+,故(
+)
+2.02
+1.04
+1.08
+\approx 
+. 
+\textcolor{lyred}{课内练习 }
+1.设
+(
+)
+,
+z
+f x y
+=
+在点(
+)
+1,2 处的全微分
+dz
+dx
+dy
+=
++
+,求
+(
+)
+2 ,2
+lim
+x
+f
+h
+h
+h
+\to 
++
+-
+. 
+解.
+(
+)
+1,2
+xf
+=
+,
+(
+)
+1,2
+yf
+=
+,故 
+(
+)
+(
+)
+(
+)
+(
+)(
+)
+(
+)
+1,2
+1,2
+2 ,2
+1,2
+lim
+lim
+x
+y
+x
+x
+f
+h
+f
+h
+o
+h
+h
+f
+h
+h
+f
+h
+h
+\to 
+\to 
+\cdots 
++
+\cdots -
++
++
++
+-
+-
+=
+(
+)
+2 2
+lim
+x
+h
+h
+h
+\to 
+\cdots 
++\cdots -
+=
+=-. 
+2.设
+(
+)
+(
+)
+sin
+,
+,
+0,
+x
+y
+x
+y
+x
+y
+f x y
+x
+y
+
++
++
+\neq 
+
++
+=
+
++
+=
+
+,证明:
+(
+)
+,
+f x y 在(
+)
+0,0 处可微. 
+证.
+(
+)
+0,0
+xf
+=
+,
+(
+)
+0,0
+yf
+=
+,
+(
+)
+(
+)
+(
+)
+0,0
+0,0
+0,0
+lim
+x
+y
+f
+f
+x
+f
+y
+\rho 
+\rho 
++
+\to 
+
+
+\Delta 
+-
+\Delta -
+\Delta 
+
+= 
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+lim
+sin
+x
+y
+x
+y
+x
+y
+\rho 
++
+\to 
+\Delta 
++\Delta 
+=
+\Delta 
++\Delta 
+\Delta 
++\Delta 
+,故可微,证毕. 
+3.证明:
+(
+)
+,
+f
+x y
+x
+y
+=
++
+在(
+)
+0,0 处不可微. 
+证.
+(
+)
+0,0
+xf
+=,
+(
+)
+0,0
+yf
+=,
+(
+)
+(
+)
+(
+)
+0,0
+0,0
+0,0
+lim
+x
+y
+f
+f
+x
+f
+y
+\rho 
+\rho 
++
+\to 
+
+
+\Delta 
+-
+\Delta -
+\Delta 
+
+= 
+(
+)
+(
+)
+(
+)
+(
+)
+lim
+x
+y
+x
+y
+x
+y
+\rho 
++
+\to 
+\Delta 
++\Delta 
+-\Delta -\Delta 
+\Delta 
++\Delta 
+不存在,故不可微,证毕. 
+4.设
+(
+)
+(
+)
+,
+,
+f x y
+x
+y
+x y
+\varphi 
+=
++
+,其中(
+)
+,x y
+\varphi 
+在(
+)
+0,0 处连续,证明:
+(
+)
+,
+f x y 在 
+(
+)
+0,0 处可微
+(
+)
+0,0
+\varphi 
+\Leftrightarrow 
+=
+. 
+证.必要性:在(
+)
+0,0 处可微
+(
+)
+0,0
+xf
+\Rightarrow 
+存在,而
+(
+)
+(
+)
+,0
+0,0
+lim
+x
+f x
+f
+x
+\to 
+-
+=
+-
+(
+)
+(
+)
+(
+)
+,0
+lim
+lim
+,0
+0,0
+x
+x
+x
+x
+x
+x
+x
+x
+\varphi 
+\varphi 
+\varphi 
+\to 
+\to 
+-
+=
+=\pm 
+-
+,故只能(
+)
+0,0
+\varphi 
+=
+; 
+充分性:
+(
+)
+(
+)
+(
+)
+(
+)
+,
+0,0
+0,0
+0,0
+lim
+x
+y
+f
+x
+y
+f
+f
+x
+f
+y
+\rho 
+\rho 
++
+\to 
+
+
+\Delta 
+\Delta 
+-
+-
+\Delta -
+\Delta 
+
+= 
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+lim
+lim
+lim
+,
+0,0
+x
+y
+x
+y
+f
+x
+y
+x
+y
+\rho 
+\rho 
+\rho 
+\varphi 
+\varphi 
+\varphi 
+\rho 
+\rho 
++
++
++
+\to 
+\to 
+\to 
+\Delta 
++\Delta 
+\Delta 
+\Delta 
+\Delta 
+\Delta 
+=
+=
+\Delta 
+\Delta 
+=
+=
+,故 
+在(
+)
+0,0 处可微,证毕. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第9.4 节 多元复合函数的求导法则}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.多元链式法则}}
+
+\textcolor{lyred}{定理}.设
+(
+)
+,
+z
+f u v
+=
+有连续的偏导数,且
+()
+u
+u x
+=
+,
+()
+v
+v x
+=
+可导,则 
+()
+()
+,
+z
+f u x
+v x
+=
+
+
+
+可导,并且dz
+f
+du
+f
+dv
+dx
+u dx
+v dx
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+. 
+\textcolor{lyred}{注}.设
+(
+)
+, ,
+z
+f u v w
+=
+,
+()
+u
+u x
+=
+,
+()
+v
+v x
+=
+,
+()
+w
+w x
+=
+,则 
+dz
+f
+du
+f
+dv
+f
+dw
+dx
+u dx
+v dx
+w dx
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+\partial 
+. 
+\textcolor{lyred}{推论}.设
+(
+)
+, ,
+z
+f u v x
+=
+有连续的偏导数,且
+()
+u
+u x
+=
+,
+()
+v
+v x
+=
+可导,则 
+()
+()
+,
+,
+z
+f u x
+v x
+x
+=
+
+
+
+可导,并且dz
+f
+du
+f
+dv
+f
+dx
+u dx
+v dx
+x
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
++
+\partial 
+\partial 
+\partial . 
+\textcolor{lyred}{例}.设
+sin
+z
+uv
+x
+=
++
+,其中
+x
+u
+e
+=
+,
+cos
+v
+x
+=
+,求dz
+dx . 
+解.
+sin
+cos
+cos
+sin
+cos
+x
+x
+x
+dz
+z du
+z dv
+z
+ve
+u
+x
+x
+e
+x
+e
+x
+x
+dx
+u dx
+v dx
+x
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
++
+=
+-
++
+=
+-
++
+\partial 
+\partial 
+\partial 
+. 
+\textcolor{lyred}{定理}.设
+(
+)
+,
+z
+f u v
+=
+有连续的偏导数,且
+(
+)
+,
+u
+u x y
+=
+,
+(
+)
+,
+v
+v x y
+=
+可偏导,则 
+(
+)
+(
+)
+,
+,
+,
+z
+f u x y
+v x y
+=
+
+
+
+可偏导,并且z
+f
+u
+f
+v
+x
+u
+x
+v
+x
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial , z
+f
+u
+f
+v
+y
+u
+y
+v y
+\partial 
+\partial \partial 
+\partial \partial 
+=
++
+\partial 
+\partial 
+\partial 
+\partial \partial . 
+\textcolor{lyred}{注}.设
+(
+)
+, ,
+z
+f u v w
+=
+,
+(
+)
+,
+u
+u x y
+=
+,
+(
+)
+,
+v
+v x y
+=
+,
+(
+)
+,
+w
+w x y
+=
+,则 
+z
+f
+u
+f
+v
+f
+w
+x
+u
+x
+v
+x
+w
+x
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial , z
+f
+u
+f
+v
+f
+w
+y
+u
+y
+v
+y
+w
+y
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+. 
+\textcolor{lyred}{推论}.设
+(
+)
+, ,
+u
+f x y z
+=
+有连续的偏导数,且
+(
+)
+,
+z
+z x y
+=
+可偏导,则 
+(
+)
+, ,
+,
+u
+f
+x y z x y
+=
+
+
+
+可偏导,并且u
+f
+f
+z
+x
+x
+z
+x
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial , u
+f
+f
+z
+y
+y
+z
+y
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial . 
+\textcolor{lyred}{例}.设
+(
+)
+xy
+z
+x
+y
+=
++
+,求z
+x
+\partial 
+\partial , z
+y
+\partial 
+\partial . 
+解.设
+v
+z
+u
+=
+,其中
+u
+x
+y
+=
++
+,v
+xy
+=
+,则z
+z
+u
+z
+v
+x
+u
+x
+v x
+\partial 
+\partial \partial 
+\partial \partial 
+=
++
+=
+\partial 
+\partial 
+\partial 
+\partial \partial 
+(
+)
+(
+)
+(
+)
+1 2
+ln
+ln 2
+xy
+xy
+v
+v
+vu
+u
+u y
+xy
+x
+y
+x
+y
+x
+y
+y
+-
+-\cdots +
+\cdots 
+=
++
+\cdots +
++
++
+\cdots 
+, 
+(
+)
+(
+)
+(
+)
+ln 2
+xy
+xy
+z
+z
+u
+z
+v
+xy
+x
+y
+x
+y
+x
+y
+x
+y
+u
+y
+v y
+-
+\partial 
+\partial \partial 
+\partial \partial 
+=
++
+=
++
+\cdots +
++
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial \partial 
+. 
+\textcolor{lyred}{例}.设
+(
+)
+, ,
+x
+y
+z
+u
+f x y z
+e
++
++
+=
+=
+,其中
+2 sin
+z
+x
+y
+=
+,求u
+x
+\partial 
+\partial , u
+y
+\partial 
+\partial . 
+解.
+2 sin
+x
+y
+z
+x
+y
+z
+u
+f
+f
+z
+xe
+ze
+x
+y
+x
+x
+z
+x
++
++
++
++
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
+\cdots 
+=
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial 
+, 
+cos
+x
+y
+z
+x
+y
+z
+u
+f
+f
+z
+ye
+ze
+x
+y
+y
+y
+z
+y
++
++
++
++
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
+\cdots 
+=
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial 
+. 
+\textcolor{lyred}{例}.求
+z
+z
+x
+y
+x
+y
+\partial 
+\partial 
++
+=
+\partial 
+\partial 
+在极坐标
+x
+y
+\rho =
++
+,
+arctan y
+x
+\theta =
+下的形式. 
+解.
+(
+)(
+)
+,
+,
+z
+x y
+\rho \theta 
+-
+-
+,则
+x
+x
+\rho 
+\rho 
+\partial 
+=
+\partial 
+,
+y
+y
+\rho 
+\rho 
+\partial 
+=
+\partial 
+,
+y
+x
+\theta 
+\rho 
+\partial 
+-
+=
+\partial 
+,
+x
+y
+\theta 
+\rho 
+\partial 
+=
+\partial 
+,故 
+z
+z
+z
+z
+x
+z
+y
+x
+x
+x
+\rho 
+\theta 
+\rho 
+\theta 
+\rho \rho 
+\theta 
+\rho 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+-
+=
+\cdots 
++
+\cdots 
+=
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+, 
+z
+z
+z
+z
+y
+z
+x
+y
+y
+y
+\rho 
+\theta 
+\rho 
+\theta 
+\rho \rho 
+\theta 
+\rho 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
+=
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+,代入
+z
+z
+x
+y
+x
+y
+\partial 
+\partial 
++
+=
+\partial 
+\partial 
+,得
+z
+\rho \rho 
+\partial 
+=
+\partial 
+. 
+\textcolor{lyred}{例}.求
+z
+z
+x
+y
+\partial 
+\partial 
++
+=
+\partial 
+\partial 
+在极坐标
+x
+y
+\rho =
++
+,
+arctan y
+x
+\theta =
+下的形式. 
+解.
+(
+)(
+)
+,
+,
+z
+x y
+\rho \theta 
+-
+-
+,
+z
+z
+x
+z
+y
+x
+\rho \rho 
+\theta 
+\rho 
+\partial 
+\partial 
+\partial 
+-
+=
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+\partial 
+,
+z
+x
+\partial 
+=
+\partial 
+x
+y
+z
+z
+x
+z
+z
+z
+y
+z
+x
+x
+x
+x
+x
+x
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\theta 
+\rho 
+\theta 
+\rho 
+\rho \theta 
+\rho 
+\rho 
+\rho 
+\theta \rho 
+\theta 
+\rho 
+\theta 
+\rho 
+\partial 
+\partial 
+\cdots 
+-\cdots 
+\cdots 
+\cdots 
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+-
+\partial 
+\partial 
+\partial 
++
+\cdots 
++
+\cdots 
++
++
+\cdots 
++
+\cdots 
+=
+
+
+
+
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+
+
+z x
+z
+y
+x
+z
+x
+z
+x
+z
+y
+y
+z
+xy
+\rho 
+\rho 
+\rho 
+\rho \theta \rho 
+\rho 
+\rho 
+\rho 
+\theta \rho \rho 
+\theta 
+\rho 
+\rho 
+\theta 
+\rho 
+
+
+
+
+\partial 
+\partial 
+-
+\partial 
+-
+\partial 
+\partial 
+-
+-
+\partial 
++
+\cdots 
++
+\cdots 
++
++
+\cdots 
++
+\cdots 
+=
+
+
+
+
+\partial 
+\partial \partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+
+
+
+
+z x
+z
+xy
+z y
+z
+x
+z
+xy
+\rho 
+\rho 
+\rho 
+\rho \theta \rho 
+\theta 
+\rho 
+\rho 
+\rho 
+\theta 
+\rho 
+\partial 
+\partial 
+\partial 
+\partial 
+-
+\partial 
+-
++
++
+\cdots 
++
+\cdots 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial 
+, 
+(
+)(
+)
+,
+,
+z
+x y
+\rho \theta 
+-
+-
+,
+z
+z
+y
+z
+x
+y
+\rho \rho 
+\theta 
+\rho 
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
+\partial 
+\partial 
+\partial 
+,
+z
+y
+\partial 
+=
+\partial 
+y
+x
+z
+z
+y
+z
+z
+z
+x
+z
+y
+y
+y
+y
+y
+y
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\theta 
+\rho 
+\theta 
+\rho 
+\rho \theta 
+\rho 
+\rho 
+\rho 
+\theta \rho 
+\theta 
+\rho 
+\theta 
+\rho 
+\partial 
+\partial 
+\cdots 
+-\cdots 
+-\cdots 
+\cdots 
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
++
+\cdots 
++
+\cdots 
++
++
+\cdots 
++
+\cdots 
+=
+
+
+
+
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+
+
+z y
+z
+x
+y
+z
+y
+z
+y
+z x
+x
+z
+xy
+\rho 
+\rho 
+\rho 
+\rho \theta \rho 
+\rho 
+\rho 
+\rho 
+\theta \rho \rho 
+\theta 
+\rho 
+\rho 
+\theta 
+\rho 
+
+
+
+
+\partial 
+\partial 
+\partial 
+-
+\partial 
+\partial 
+\partial 
+-
++
+\cdots 
++
+\cdots 
++
++
+\cdots 
++
+\cdots 
+=
+
+
+
+
+\partial 
+\partial \partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+
+
+
+
+z y
+z
+xy
+z x
+z
+y
+z
+xy
+\rho 
+\rho 
+\rho 
+\rho \theta \rho 
+\theta 
+\rho 
+\rho 
+\rho 
+\theta 
+\rho 
+\partial 
+\partial 
+\partial 
+\partial 
+-
+\partial 
+-
++
++
++
+\cdots 
++
+\cdots 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial 
+, 
+代入
+z
+z
+x
+y
+\partial 
+\partial 
++
+=
+\partial 
+\partial 
+,得
+z
+z
+z
+z
+z
+x
+y
+\rho 
+\rho 
+\theta 
+\rho 
+\rho 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
++
+=
++
++
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+z
+f ax
+by cx
+dy
+=
++
++
+,其中f 有连续的二阶偏导,求
+2z
+x y
+\partial 
+\partial \partial . 
+解.令u
+ax
+by
+=
++
+,v
+cx
+dy
+=
++
+,则
+u
+v
+u
+v
+z
+u
+v
+f
+f
+af
+cf
+af
+cf
+x
+x
+x
+\partial 
+\partial 
+\partial 
+=
++
+=
++
+=
++
+\partial 
+\partial 
+\partial 
+, 
+uu
+uv
+vu
+vv
+uu
+uv
+vu
+vv
+z
+u
+v
+u
+v
+a
+f
+f
+c
+f
+f
+abf
+adf
+bcf
+cdf
+x y
+y
+y
+y
+y
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
++
++
+=
++
++
++
+=
+
+
+
+
+\partial \partial 
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+
+
+(
+)
+(
+)
+uu
+uv
+vv
+abf
+ad
+bc f
+cdf
+abf
+ad
+bc f
+cdf
++
++
++
+=
++
++
++
+. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+w
+f x
+y
+z xyz
+=
++
++
+,其中f 有连续的二阶偏导,求
+2w
+x z
+\partial 
+\partial \partial . 
+解.令u
+x
+y
+z
+=
++
++
+,v
+xyz
+=
+,则
+w
+f
+u
+f
+v
+f
+yzf
+x
+u
+x
+v
+x
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
+\cdots 
++
+\cdots 
+=
++
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+, 
+(
+)
+(
+)
+(
+)
+f
+f
+w
+f
+yzf
+yf
+yz
+f
+xyf
+yf
+yz f
+xyf
+x z
+z
+z
+z
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
+=
++
++
+=
++
++
++
++
+=
+\partial \partial 
+\partial 
+\partial 
+\partial 
+(
+)
+f
+y x
+z f
+xy zf
+yf
++
++
++
++
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.全微分的形式不变性}}
+
+设
+(
+)
+,
+z
+f u v
+=
+,
+(
+)
+,
+u
+u x y
+=
+,
+(
+)
+,
+v
+v x y
+=
+,均有连续的偏导数,则 
+z
+z
+z
+u
+z
+v
+z
+u
+z
+v
+z
+z
+dz
+dx
+dy
+dx
+dy
+du
+dv
+x
+y
+u
+x
+v x
+u
+y
+v y
+u
+v
+
+
+\partial 
+\partial 
+\partial \partial 
+\partial \partial 
+\partial \partial 
+\partial \partial 
+\partial 
+\partial 
+
+
+=
++
+=
++
++
++
+=
++
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+
+
+
+
+,即 
+无论u ,v 是中间变量还是自变量,
+z
+z
+dz
+du
+dv
+u
+v
+\partial 
+\partial 
+=
++
+\partial 
+\partial 
+总是对的. 
+\textcolor{lyred}{补充练习 }
+1.设
+(
+)
+,
+f x y 有连续的偏导数,且
+(
+)
+1,1
+f
+=,
+(
+)
+1,1
+xf
+=
+,
+(
+)
+1,1
+yf
+=
+,令 
+()
+(
+)
+,
+,
+F x
+f
+x f x x
+=
+
+
+
+,求
+()1
+F'
+. 
+解.
+()
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+,
+,
+F
+x
+f
+x f x x
+f
+x f x x
+f
+x x
+f
+x x
+'
+=
++
++
+
+
+
+
+
+
+
+
+
+,故 
+()
+(
+)
+(
+)
+(
+)
+(
+)
+1,1
+1,1
+1,1
+1,1
+F
+f
+f
+f
+f
+'
+=
++
++
+=
+
+
+
+
+. 
+2.设
+()
+()
+,
+z
+f
+x
+y
+y
+x
+\varphi 
+\zeta 
+=
+-
++
+
+
+
+,其中f 有连续的二阶偏导,\varphi 与\zeta 可导,求
+2z
+x y
+\partial 
+\partial \partial . 
+解.
+()
+z
+f
+x
+f
+x
+\varphi 
+\partial 
+'
+'
+'
+=
+\cdots 
++
+\partial 
+,
+(
+)
+()
+()
+(
+)
+z
+f
+f
+y
+x
+f
+x y
+\zeta 
+\varphi 
+\partial 
+''
+''
+'
+'
+''
+=
+\cdots -
++
+\cdots 
++
+\cdots -
++
+
+
+
+
+\partial \partial 
+()
+()
+()
+()
+()
+f
+y
+x f
+y
+x
+f
+y f
+\zeta 
+\varphi 
+\zeta 
+\varphi 
+\zeta 
+''
+'
+'
+''
+'
+'
+''
+'
+''
+\cdots 
+=-
++
+-
++
+
+
+
+
+. 
+3.设
+, x
+y
+z
+f
+xy
+g
+y
+x
+
+
+
+
+=
++
+
+
+
+
+
+
+
+
+,其中f 有连续的二阶偏导, g 二阶可导,求
+2z
+x y
+\partial 
+\partial \partial . 
+解.
+z
+y
+y
+f
+y
+f
+g
+yf
+f
+g
+x
+y
+x
+y
+x
+\partial 
+-
+'
+'
+=
+\cdots 
++
+\cdots 
++
+\cdots 
+=
++
+-
+\partial 
+, 
+z
+x
+x
+y
+f
+y
+f
+x
+f
+f
+f
+x
+f
+g
+g
+x y
+y
+y
+y
+y
+x
+x
+x
+
+
+
+
+\partial 
+-
+-
+'
+''
+=
++
+\cdots +
+\cdots 
+-
++
+\cdots +
+\cdots 
+-
+-
+\cdots 
+=
+
+
+
+
+\partial \partial 
+
+
+
+
+x
+y
+f
+f
+xyf
+f
+g
+g
+y
+y
+x
+x
+'
+''
+-
++
+-
+-
+-
+. 
+4.设
+B
+AC
+-
+>
+,且
+A \neq 
+,证明:存在非奇异线性变换
+x
+y
+x
+y
+\psi 
+\lambda 
+\eta 
+\mu 
+=
++
+
+
+=
++
+
+,使得方程 
+u
+u
+u
+A
+B
+C
+x
+x y
+y
+\partial 
+\partial 
+\partial 
++
++
+=
+\partial 
+\partial \partial 
+\partial 
+可化为
+u
+\psi \eta 
+\partial 
+=
+\partial \partial 
+. 
+证. u
+u
+u
+u
+u
+x
+x
+x
+\psi 
+\eta 
+\lambda 
+\mu 
+\psi 
+\eta 
+\psi 
+\eta 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
+=
++
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+, u
+u
+u
+u
+u
+y
+y
+y
+\psi 
+\eta 
+\psi 
+\eta 
+\psi 
+\eta 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
+=
++
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+, 
+u
+u
+u
+u
+u
+u
+u
+u
+x
+x
+x
+x
+x
+\psi 
+\eta 
+\psi 
+\eta 
+\lambda 
+\mu 
+\lambda 
+\lambda \mu 
+\mu 
+\psi 
+\psi \eta 
+\eta \psi 
+\eta 
+\psi 
+\psi \eta 
+\eta 
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
++
++
+=
++
++
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial \partial \partial 
+\partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+
+
+
+
+, 
+(
+)
+u
+u
+u
+u
+u
+u
+u
+u
+x y
+y
+y
+y
+y
+\psi 
+\eta 
+\psi 
+\eta 
+\lambda 
+\mu 
+\lambda 
+\lambda 
+\mu 
+\mu 
+\psi 
+\psi \eta 
+\eta \psi 
+\eta 
+\psi 
+\psi \eta 
+\eta 
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
++
++
+=
++
++
++
+
+
+
+
+\partial \partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+
+
+
+
+, 
+u
+u
+u
+u
+u
+u
+u
+u
+y
+y
+y
+y
+y
+\psi 
+\eta 
+\psi 
+\eta 
+\psi 
+\psi \eta 
+\eta \psi 
+\eta 
+\psi 
+\psi \eta 
+\eta 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
++
++
+=
++
++
+\partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+\partial \partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial \partial 
+\partial 
+,于是 
+(
+)
+(
+)
+(
+)
+u
+u
+u
+A
+B
+C
+A
+B
+C
+A
+B
+C
+\lambda 
+\lambda 
+\lambda \mu 
+\lambda 
+\mu 
+\mu 
+\mu 
+\psi 
+\psi \eta 
+\eta 
+\partial 
+\partial 
+\partial 
++
++
++
++
++
++
++
++
++
+=
+
+
+
+
+\partial 
+\partial \partial 
+\partial 
+, 
+故取\lambda , \mu 为
+Ax
+Bx
+C
++
++
+=
+的两个不同的实根即可,证毕. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第9.5 节 隐函数的求导公式}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.一个方程的情形}}
+
+\textcolor{lyred}{定理}.设
+(
+)
+,
+F x y 在(
+)
+,
+P x
+y
+的邻域内有连续偏导数,
+(
+)
+,
+F x y
+=
+,
+(
+)
+,
+yF x y
+\neq 
+, 
+则方程
+(
+)
+,
+F x y =
+在P 的某个邻域内唯一确定连续可导的函数
+()
+y
+y x
+=
+,它满足 
+()
+,
+F x y x
+\equiv 
+
+
+
+
+,
+(
+)
+y
+y x
+=
+,并且
+x
+y
+F
+dy
+dx
+F
+=-
+. 
+\textcolor{lyred}{定理}.设
+(
+)
+, ,
+F x y z 在
+(
+)
+,
+,
+P x
+y z
+的某个邻域内有连续的偏导数,
+(
+)
+,
+,
+F x y z
+=, 
+(
+)
+,
+,
+zF
+x
+y z
+\neq 
+,则
+(
+)
+, ,
+F x y z =
+在P 的某个邻域内唯一确定连续可偏导的函数 
+(
+)
+,
+z
+z x y
+=
+,它满足
+(
+)
+, ,
+,
+F x y z x y
+\equiv 
+
+
+
+
+,
+(
+)
+,
+z
+z x
+y
+=
+,并且
+x
+z
+F
+z
+x
+F
+\partial =-
+\partial 
+,
+y
+z
+F
+z
+y
+F
+\partial =-
+\partial 
+. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+z
+z x y
+=
+是
+x
+y
+z
+z
++
++
+-
+=
+确定的隐函数,求
+z
+x
+\partial 
+\partial 
+. 
+解.
+x
+z
+F
+z
+x
+x
+F
+z
+\partial =-
+=
+\partial 
+-
+,
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+x
+z
+x
+z
+z
+x
+z
+x
+z
+z
+-
+-\cdots -
+-
++
+\partial 
+=
+=
+\partial 
+-
+-
+. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+z
+z x y
+=
+是
+y z
+x
+ze +
+=
+确定的隐函数,求
+2z
+x y
+\partial 
+\partial \partial . 
+解.两边对x 求偏导
+(
+)
+(
+)
+y z
+y z
+y z
+z
+z
+z
+z
+e
+ze
+x
+x
+x
+z e
+x
+z
++
++
++
+\partial 
+\partial 
+\partial 
+\Rightarrow =
++
+\Rightarrow 
+=
+=
+\partial 
+\partial 
+\partial 
++
++
+; 
+两边对y 求偏导
+(
+)
+y z
+y z
+y z
+y z
+z
+z
+z
+ze
+z
+e
+ze
+y
+y
+y
+z e
+z
++
++
++
++
+
+
+\partial 
+\partial 
+\partial 
+-
+\Rightarrow 
+=
++
++
+\Rightarrow 
+=
+=-
+
+
+\partial 
+\partial 
+\partial 
++
++
+
+
+, 
+(
+)
+(
+)
+yz
+z
+z
+z
+x y
+x
+y
+z
+x
+y
+z
+x
+z
+x
+z
+\partial 
+\partial 
+\partial 
+-
+
+
+
+
+=
+\cdots 
+=
+\cdots 
+=
+=-
+
+
+
+
+\partial \partial 
+\partial 
++
+\partial 
++
+
+
+
+
++
++
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.方程组的情形}}
+
+\textcolor{lyred}{定理}.设
+(
+)
+(
+)
+, , ,
+, , ,
+F x y u v
+G x y u v
+
+在
+(
+)
+,
+,
+,
+P x
+y u v
+的某个邻域内具有连续的偏导数,且 
+(
+)
+(
+)
+,
+,
+,
+,
+,
+,
+F x
+y u v
+G x
+y u v
+=
+
+=
+
+,\textcolor{lyred}{Jacobi 行列式}(
+)
+(
+)
+,
+,
+u
+v
+u
+v
+F
+F
+F G
+G
+G
+u v
+\partial 
+=
+\partial 
+在P 处不为0,则方程组 
+(
+)
+(
+)
+, , ,
+, , ,
+F x y u v
+G x y u v
+=
+
+=
+
+在P 的邻域内唯一确定一组有连续偏导数的函数
+(
+)
+(
+)
+,
+,
+u
+u x y
+v
+v x y
+=
+=
+
+, 
+它满足
+(
+)
+(
+)
+(
+)
+(
+)
+, ,
+,
+,
+,
+, ,
+,
+,
+,
+F x y u x y
+v x y
+G x y u x y
+v x y
+
+\equiv 
+
+
+
+
+
+
+\equiv 
+
+
+
+
+
+
+,
+(
+)
+(
+)
+,
+,
+u
+u x
+y
+v
+v x
+y
+=
+
+=
+
+,且 
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+F G
+x v
+F G
+u v
+u
+x
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=-
+\partial 
+,
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+F G
+u x
+F G
+u v
+v
+x
+\partial 
+\partial 
+\partial 
+\partial 
+\partial =-
+\partial 
+,
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+F G
+y v
+F G
+u v
+u
+y
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=-
+\partial 
+,
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+F G
+u y
+F G
+u v
+v
+y
+\partial 
+\partial 
+\partial 
+\partial 
+\partial =-
+\partial 
+. 
+\textcolor{lyred}{例}.设一组函数
+(
+)
+(
+)
+,
+,
+u
+u x y
+v
+v x y
+=
+=
+
+,满足
+xu
+yv
+yu
+xv
+-
+=
+
+
++
+=
+
+,求u
+x
+\partial 
+\partial , u
+y
+\partial 
+\partial , v
+x
+\partial 
+\partial , v
+y
+\partial 
+\partial . 
+解.方程组两边对x 求偏导,
+u
+v
+x
+y
+u
+x
+x
+u
+v
+y
+x
+v
+x
+x
+\partial 
+\partial 
+
+-
+=-
+\partial 
+\partial 
+\partial 
+\partial 
+
++
+=-
+
+\partial 
+\partial 
+
+,解得
+u
+xu
+yv
+x
+x
+y
+v
+yu
+xv
+x
+x
+y
+\partial 
+-
+-
+
+=
+\partial 
++
+\partial 
+-
+
+=
+\partial 
++
+
+; 
+方程组两边对y 求偏导,
+u
+v
+x
+y
+v
+y
+y
+u
+v
+y
+x
+u
+y
+y
+\partial 
+\partial 
+
+-
+=
+\partial 
+\partial 
+\partial 
+\partial 
+
++
+=-
+
+\partial 
+\partial 
+
+,解得
+u
+xv
+yu
+y
+x
+y
+v
+xu
+yv
+y
+x
+y
+\partial 
+-
+
+=
+\partial 
++
+\partial 
+-
+-
+
+=
+\partial 
++
+
+. 
+\textcolor{lyred}{例}.设
+(
+)
+(
+)
+,
+,
+u
+u x y
+v
+v x y
+=
+=
+
+是
+cos
+sin
+v
+x
+u
+u
+v
+y
+u
+u
+=
+
+
+=
+
+的反函数组,求u
+x
+\partial 
+\partial , u
+y
+\partial 
+\partial , v
+x
+\partial 
+\partial , v
+y
+\partial 
+\partial . 
+解.
+cos
+sin
+cos
+sin
+sin
+sin
+cos
+sin
+cos
+cos
+x
+x
+u
+v
+v
+v
+v
+v
+v
+u
+v
+v
+u
+x
+u
+u
+u
+u
+u
+u
+x
+u
+x
+u
+v
+v
+v
+v
+v
+v
+u
+v
+v
+u
+x
+u
+u
+u
+u
+u
+u
+x
+u
+x
+
+\partial 
+
+\partial 
+\partial 
+
+
+
+
+=
+-
+\cdots 
++
+-
+\cdots 
+=
+
+
+
+
+
+
+\partial 
+\partial 
+\partial 
+
+
+
+
+
+\Rightarrow 
+
+
+\partial 
+\partial 
+\partial 
+
+
+
+
+
+
+=
++
+\cdots 
+-
++
+\cdots 
+=
+
+
+
+
+
+
+\partial 
+\partial 
+\partial 
+
+
+
+
+
+
+,得 
+cos
+cos
+sin
+u
+v
+x
+u
+v
+v
+v
+v
+x
+u
+u
+u
+\partial 
+
+=
+\partial 
+\partial 
+
+=
+-
+\partial 
+
+,类似地,
+sin
+sin
+cos
+u
+v
+y
+u
+v
+v
+v
+v
+y
+u
+u
+u
+\partial 
+
+=
+\partial 
+\partial 
+
+=
++
+\partial 
+
+. 
+\textcolor{lyred}{定理}.设
+(
+)
+(
+)
+, ,
+, ,
+F x y z
+G x y z
+
+在(
+)
+,
+,
+P x
+y z
+的邻域内有连续的偏导数,
+(
+)
+(
+)
+,
+,
+,
+,
+F x
+y
+z
+G x
+y
+z
+=
+
+=
+
+, 
+(
+)
+(
+)
+,
+,
+P
+F G
+y z
+\partial 
+\neq 
+\partial 
+,则方程组
+(
+)
+(
+)
+, ,
+, ,
+F x y z
+G x y z
+=
+
+=
+
+在P 的邻域内唯一确定一组连续可导的 
+函数
+()
+()
+y
+y x
+z
+z x
+=
+=
+
+,它满足
+()
+()
+()
+()
+,
+,
+,
+,
+F x y x
+z x
+G x y x
+z x
+
+\equiv 
+
+
+
+
+
+
+\equiv 
+
+
+
+
+
+
+,
+(
+)
+(
+)
+y
+y x
+z
+z x
+=
+
+=
+
+,并且 
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+F G
+F G
+dy
+x z
+y z
+dx
+\partial 
+\partial 
+=-\partial 
+\partial 
+,
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+F G
+F G
+dz
+y x
+y z
+dx
+\partial 
+\partial 
+=-\partial 
+\partial 
+. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+y
+f x t
+=
+,而
+(
+)
+,
+t
+t x y
+=
+是由
+(
+)
+, ,
+F x y t =
+确定,求dy
+dx . 
+解一.
+(
+)
+,
+,
+x
+t
+x
+t
+t
+t
+x
+t
+y
+f
+f
+dy
+t
+t dy
+dy
+y
+f
+x t x y
+f
+f
+dx
+x
+y dx
+dx
+f
+\partial 
+\partial 
+\partial 
+\partial 
++
+
+
+\partial 
+\partial 
+\equiv 
+\Rightarrow 
+=
++
++
+\Rightarrow 
+=
+
+
+
+
+
+
+\partial 
+\partial 
+-
+
+
+,而 
+(
+)
+, ,
+x
+t
+F
+t
+F x y t
+x
+F
+\partial 
+=
+\Rightarrow 
+=-
+\partial 
+,
+y
+t
+F
+t
+y
+F
+\partial =-
+\partial 
+,代入,得
+x
+t
+t
+x
+t
+t
+y
+f F
+f F
+dy
+dx
+F
+f F
+-
+=
++
+; 
+解二.
+(
+)
+(
+)
+,
+, ,
+dy
+f
+f dt
+dy
+f dt
+f
+y
+f x t
+dx
+x
+t dx
+dx
+t dx
+x
+F
+F dy
+F dt
+F dy
+F dt
+F
+F x y t
+x
+y dx
+t dx
+y dx
+t dx
+x
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+=
++
+-
+=
+
+
+=
+
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+
+\Rightarrow 
+\Rightarrow 
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=
+
+
+
++
++
+=
++
+=-
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+
+
+,解得 
+x
+t
+t
+x
+t
+t
+y
+f F
+f F
+dy
+dx
+F
+f F
+-
+=
++
+. 
+\textcolor{lyred}{补充练习 }
+1.设
+(
+)
+,
+f x y 有连续的偏导数,
+y
+x
+=
+是
+(
+)
+,
+f x y 的一条等高线,已知
+(
+)
+1,1
+yf
+=-, 
+求
+(
+)
+1,1
+xf
+. 
+解. (
+)
+(
+)
+(
+)
+,
+,
+,
+x
+y
+f x x
+C
+f
+x x
+f
+x x
+x
+=
+\Rightarrow 
++
+\cdots 
+=
+,代入
+x =,
+y =,得 
+(
+)
+(
+)
+1,1
+1,1 3
+x
+y
+f
+f
++
+\cdots =
+,故
+(
+)
+1,1
+xf
+=
+. 
+2.设
+(
+)
+,
+z
+f x
+y
+z xyz
+=
++
++
+,
+(
+)
+,
+f x y 有连续的偏导数,求z
+x
+\partial 
+\partial , x
+y
+\partial 
+\partial , y
+z
+\partial 
+\partial . 
+解.
+x
+z
+F
+f
+yzf
+z
+x
+F
+f
+xyf
++
+\partial =-
+=
+\partial 
+-
+-
+,
+y
+x
+F
+f
+xzf
+x
+y
+F
+f
+yzf
++
+\partial =-
+=-
+\partial 
++
+,
+z
+y
+F
+f
+xyf
+y
+z
+F
+f
+xzf
+-
+-
+\partial =-
+=
+\partial 
++
+. 
+3.设
+(
+)
+ln
+z
+f x
+y
+xy
+=
+-
++
+,其中
+()
+y
+y x
+=
+是
+xy
+e
+x
+y
+-
++
+=
+确定的隐函数,已知 
+()
+()
+f
+f '
+=
+=,求
+x
+dz
+dx
+=
+. 
+解.
+(
+)
+(
+)
+f
+x
+y
+dz
+dy
+dy
+y
+x
+dx
+f x
+y
+dx
+dx
+'
+-
+
+
+=
+-
++
++
+
+
+-
+
+
+,而
+x =
+时
+y =-,代入得 
+()
+()
+1 0
+x
+x
+x
+f
+dz
+dy
+dy
+dx
+f
+dx
+dx
+=
+=
+=
+'
+
+
+=
+-
+-+
+=-
+
+
+
+
+,由
+xy
+e
+x
+y
+-
++
+=
+,两边求导,得 
+xy
+xy
+xy
+x
+dy
+dy
+dy
+ye
+dy
+e
+y
+x dx
+dx
+dx
+xe
+dx
+=
+-
+
+
++
+-+
+=
+\Rightarrow 
+=
+\Rightarrow 
+=
+
+
++
+
+
+,故
+x
+dz
+dx
+=
+=-. 
+4.设
+u
+xy z
+=
+,其中
+(
+)
+,
+z
+z x y
+=
+满足
+x
+y
+z
+xyz
++
++
+=
+,求
+(
+)
+1,1,1
+u
+y
+\partial 
+\partial 
+. 
+解.
+(
+)
+(
+)
+1,1,1
+1,1,1
+u
+z
+u
+z
+xyz
+xy z
+y
+y
+y
+y
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
+\Rightarrow 
+=
++
+\partial 
+\partial 
+\partial 
+\partial 
+,由
+x
+y
+z
+xyz
++
++
+=
+, 
+两边求偏导,
+(
+)
+1,1,1
+z
+z
+z
+y
+xz
+z
+y
+z
+xz
+xy
+y
+y
+y
+xy
+z
+y
+\partial 
+\partial 
+\partial 
+-
+\partial 
++
+=
++
+\Rightarrow 
+=
+\Rightarrow 
+=-
+\partial 
+\partial 
+\partial 
+-
+\partial 
+,故 
+(
+)
+1,1,1
+u
+y
+\partial 
+=
+-
+=-
+\partial 
+. 
+5.设
+(
+)
+,
+z
+z x y
+=
+由方程
+(
+)
+,
+F x
+y z
+-
+=
+确定,其中
+(
+)
+,
+F u v 具有连续的二阶偏导数, 
+求
+2z
+x y
+\partial 
+\partial \partial . 
+解.令
+(
+)
+(
+)
+, ,
+,
+f x y z
+F x
+y z
+=
+-
+,则
+x
+z
+f
+F
+z
+x
+f
+F
+\partial =-
+=-
+\partial 
+,
+y
+z
+f
+F
+z
+y
+f
+F
+\partial =-
+=
+\partial 
+, 
+(
+)
+(
+)
+z
+z
+F
+F
+F
+F
+F
+F
+y
+y
+F
+z
+z
+x y
+y
+F
+F
+
+
+
+
+\partial 
+\partial 
+-
++
+-
+-
++
+
+
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+
+
+=
+-
+=-
+
+
+\partial \partial 
+\partial 
+
+(
+)
+(
+)
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+
+
+
+
+-
++
+\cdots 
+-
+-
++
+\cdots 
+
+
+
+
+
+
+
+
+=-
+[
+]
+[
+]
+F F
+F F F
+F
+F F
+F F
+F F
+F F F
+F F
+F
+F
+-
++
+-
+-
++
+-
++
+=-
+=
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第9.6 节 多元函数微分学的几何应用}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.一元向量值函数及其导数}}
+
+{\bfseries \textcolor{lyred}{1.基本概念}}
+
+\textcolor{lyred}{定义}.设I \subset \mathbb{R},则
+:
+f
+I \to 
+\rho 
+\mathbb{R}称为\textcolor{lyred}{(一元)向量值函数},记为
+()
+r
+f t
+=
+\rho 
+\rho 
+,其中 
+()
+()
+()
+()
+(
+)
+,
+,
+f t
+x t
+y t
+z t
+=
+\rho 
+, ()
+x t , ()
+y t , ()
+z t 为其\textcolor{lyred}{分量}. 
+\textcolor{lyred}{定义}.
+()
+()
+()
+()
+(
+)
+lim
+lim
+,lim
+,lim
+t
+t
+t
+t
+t
+t
+t
+t
+f t
+x t
+y t
+z t
+\to 
+\to 
+\to 
+\to 
+=
+\rho 
+. 
+\textcolor{lyred}{定义}.若
+()
+()
+lim
+t
+t f t
+f t
+\to 
+=
+\rho 
+\rho 
+,则称
+()
+f t
+\rho 
+在0t 处\textcolor{lyred}{连续}. 
+\textcolor{lyred}{定义}.
+(
+)
+()
+()
+()
+()
+(
+)
+lim
+lim
+,
+,
+t
+t
+f t
+t
+f t
+r
+x t
+y t
+z t
+t
+t
+\Delta \to 
+\Delta \to 
++\Delta 
+-
+\Delta 
+'
+'
+'
+=
+=
+\Delta 
+\Delta 
+\rho 
+\rho 
+\rho 
+,称为
+()
+r
+f t
+=
+\rho 
+\rho 
+的\textcolor{lyred}{导数},或 
+\textcolor{lyred}{导向量},记为dr
+dt
+\rho 
+, df
+dt
+\rho 
+,
+()
+r t
+'\rho 
+,
+()
+f
+t
+'
+\rho 
+. 
+{\bfseries \textcolor{lyred}{2.几何意义}}
+
+设
+()
+()
+()
+()
+(
+)
+,
+,
+r
+r t
+x t
+y t
+z t
+=
+=
+\rho 
+\rho 
+,若r
+OM
+=
+\xi \xi \xi \xi \rho 
+\rho 
+,则M 的轨迹是一条曲线\Gamma ,称为()
+r t
+\rho 
+的 
+\textcolor{lyred}{终端曲线},或\textcolor{lyred}{图形},即
+()
+()
+()
+:
+x
+x t
+y
+y t
+z
+z t
+=
+
+
+\Gamma 
+=
+
+
+=
+
+,而
+()
+r
+f t
+=
+\rho 
+\rho 
+称为\Gamma 的\textcolor{lyred}{向量方程}. 
+设()
+r t
+OM
+=
+\xi \xi \xi \xi \rho 
+\rho 
+, (
+)
+r t
+t
+OM'
++\Delta =
+\xi \xi \xi \xi \rho 
+\rho 
+,则
+r
+MM
+t
+t
+'
+\Delta 
+=
+\Delta 
+\Delta 
+\xi \xi \xi \xi \xi \rho 
+\rho 
+为MM '的方向向量,而
+lim
+t
+dr
+r
+dt
+t
+\Delta \to 
+\Delta 
+=
+\Delta 
+\rho 
+\rho 
+为 
+\Gamma 在M 处切线的方向向量(假设不为零向量),称为\Gamma 的\textcolor{lyred}{切向量},记为T
+\rho 
+. 
+{\bfseries \textcolor{lyred}{3.物理意义}}
+
+设
+()
+r
+f t
+=
+\rho 
+\rho 
+为动点M 的位置向量,则它的速度
+dr
+v
+dt
+=
+\rho 
+\rho 
+,速率
+dr
+v
+dt
+=
+\rho 
+; 
+加速度
+dv
+d r
+a
+dt
+dt
+=
+=
+\rho 
+\rho 
+\rho 
+,加速度大小
+d r
+a
+dt
+=
+\rho 
+. 
+{\bfseries \textcolor{lyred}{4.求导法则}}
+
+(1)
+()
+()
+()
+()
+f t
+g t
+f
+t
+g t
+\alpha 
+\beta 
+\alpha 
+\beta 
+'
+
+
+'
+'
++
+=
++
+
+
+\rho 
+\rho 
+\rho 
+\rho 
+;(2)
+()()
+()()
+()
+()
+f t g t
+f
+t g t
+f t g t
+'
+'
+'
+=
++
+
+
+
+
+\rho 
+\rho 
+\rho 
+; 
+(3)
+()
+()
+()
+()
+()
+()
+f t
+g t
+f
+t
+g t
+f t
+g t
+'
+
+
+'
+'
+\cdots 
+=
+\cdots 
++
+\cdots 
+
+
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+; 
+(4)
+()
+()
+()
+()
+()
+()
+f t
+g t
+f
+t
+g t
+f t
+g t
+'
+
+
+'
+'
+\times 
+=
+\times 
++
+\times 
+
+
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+; 
+(5)
+()
+\{
+\}
+()
+()
+f
+g t
+g t f
+g t
+'
+'
+'
+=
+
+
+
+
+
+
+
+
+\rho 
+\rho 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.空间曲线的切线与法平面}}
+
+\textcolor{lyred}{情况1}.\textcolor{lyred}{参数方程} 
+设空间曲线
+()
+()
+()
+:
+x
+x t
+y
+y t
+z
+z t
+=
+
+
+\Gamma 
+=
+
+
+=
+
+,
+(
+)
+,
+,
+M x
+y z
+对应参数
+t
+t
+=
+,则该点处的\textcolor{lyred}{切线}方程为: 
+()
+()
+()
+x
+x
+y
+y
+z
+z
+x t
+y t
+z t
+-
+-
+-
+=
+=
+'
+'
+'
+,过M 且与切线垂直的平面称为\Gamma 在该点处的\textcolor{lyred}{法平面}. 
+\textcolor{lyred}{例}.求
+:
+x
+t
+y
+t
+z
+t
+=
+
+
+\Gamma 
+=
+
+=
+
+在(
+)
+1,1,1 处的切线与法平面方程. 
+解.
+(
+)
+(
+)
+1,2 ,3
+1,2,3
+t
+T
+t
+t
+=
+=
+=
+\rho 
+,故切线方程为
+x
+y
+z
+-
+-
+-
+=
+=
+; 
+法平面方程为
+(
+)
+(
+)
+(
+)
+x
+y
+z
+\cdots 
+-
++\cdots 
+-
++\cdots 
+-
+=
+. 
+\textcolor{lyred}{情况2}.\textcolor{lyred}{一般方程} 
+\textcolor{lyred}{定理}.设
+(
+)
+(
+)
+, ,
+:
+, ,
+F x y z
+G x y z
+=
+
+\Gamma 
+=
+
+,若在M 处(
+)(
+)
+,
+,
+,
+,
+x
+y
+z
+x
+y
+z
+F F F
+G G G
+\times 
+\neq 
+\rho 
+,则\Gamma 在M 处的 
+切向量
+(
+)(
+)
+,
+,
+,
+,
+x
+y
+z
+x
+y
+z
+T
+F F F
+G G G
+=
+\times 
+\rho 
+. 
+\textcolor{lyred}{例}.求
+:
+xyz
+x
+y
+=-
+
+\Gamma -
++
+=
+
+垂直于2
+x
+y
+z
+=
+=
+的法平面方程. 
+解.设切点(
+)
+, ,
+x y z ,则
+(
+)(
+)(
+)
+,
+,
+1, 2 ,0
+,
+, 2
+T
+yz xz xy
+y
+xy
+xy
+y z
+xz
+=
+\times 
+-
+=
+-
+-
+\rho 
+,由 
+(
+)
+// 2,1,1
+xy
+xy
+y z
+xz
+T
+y
+-
+-
+\Rightarrow 
+=
+=
+\Rightarrow 
+=
+\rho 
+,由
+xyz
+x
+x
+y
+z
+=-
+=-
+
+
+\Rightarrow 
+
+
+-
++
+=
+=
+
+
+,故 
+法平面方程为(
+)(
+)(
+)
+x
+y
+z
++
++
+-
++
+-
+=
+,即2
+x
+y
+z
++
++
+=
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.曲面的切平面与法线}}
+
+在
+(
+)
+:
+, ,
+F x y z
+\Sigma 
+=
+上任取过
+(
+)
+, ,
+M x y z 的光滑曲线
+()
+: r
+r t
+\Gamma 
+=
+\rho 
+\rho 
+,则 
+()
+()
+()
+,
+,
+F x t
+y t
+z t
+=
+
+
+
+
+,两边对t 求导,得到(
+)
+,
+,
+,
+,
+x
+y
+z
+dx dy dz
+F F F
+dt
+dt
+dt
+
+
+\cdots 
+=
+
+
+
+
+,其中 
+,
+,
+dx dy dz
+T
+dt
+dt
+dt
+
+
+=
+
+
+
+\xi \rho 
+是\Gamma 的切向量,而
+(
+)
+,
+,
+x
+y
+z
+n
+F F F
+=
+\rho 
+与\Gamma 无关,于是\Sigma 上所有过M 的 
+曲线在M 处的切线均垂直于n\rho ,它们构成一个平面,称为\Sigma 的\textcolor{lyred}{切平面},而n\rho 为它的 
+法向量,称为曲面\Sigma 的\textcolor{lyred}{法向量};过M ,垂直于切平面的直线称为该曲面的\textcolor{lyred}{法线}. 
+\textcolor{lyred}{例}.求
+z
+x
+y
+=
++
+-在(
+)
+2,1,4 处的切平面及法线方程. 
+解.
+x
+y
+z
++
+--
+=
+,
+(
+)(
+)
+(
+)
+2,1,4
+2 ,2 , 1
+4,2, 1
+n
+x
+y
+=
+-
+=
+-
+\rho 
+,故切平面方程为 
+(
+)
+(
+)(
+)
+x
+y
+z
+-
++
+-
+-
+-
+=
+;法线方程为
+x
+y
+z
+-
+-
+-
+=
+=-
+. 
+\textcolor{lyred}{例}.求
+x
+y
+z
++
++
+=
+上平行于
+x
+y
+z
++
++
+=
+的切平面方程. 
+解.设切点为(
+)
+, ,
+x y z ,则
+(
+)(
+)
+2 ,4 ,6
+// 1,4,6
+x
+y
+z
+n
+x
+y
+z
+=
+\Rightarrow 
+=
+=
+\rho 
+,得2x
+y
+z
+=
+=
+, 
+代入
+x
+y
+z
++
++
+=
+,得
+x =\pm ,故切点为(
+)
+1, 2, 2
+\pm \pm 
+\pm 
+,切平面方程为
+(
+)
+(
+)
+(
+)
+x
+y
+z
+\pm 
++\cdots 
+\pm 
++\cdots 
+\pm 
+=
+,即
+x
+y
+z
++
++
+=\pm 
+. 
+\textcolor{lyred}{例}.求过
+:
+x
+y
+z
+L
+x
+y
+z
++
+-
+-
+=
+
++
+-
+=
+
+,与
+x
+y
+z
++
+-
+=
+相切的平面方程. 
+解.设切点
+(
+)
+,
+,
+P x
+y z
+,则
+x
+y
+z
++
+-
+=
+,由
+(
+)
+,
+,
+n
+x
+y
+z
+=
+-
+\rho 
+,得切平面方程 
+(
+)
+(
+)
+(
+)
+x
+x
+x
+y
+y
+y
+z
+z
+z
+-
++
+-
+-
+-
+=
+,即
+x x
+y y
+z z
++
+-
+-
+=
+; 
+设切平面为
+(
+)
+x
+y
+z
+x
+y
+z
+\lambda 
++
+-
+-+
++
+-
+=
+,则 
+x
+y
+x
+y
+z
+z
+\lambda 
+\lambda 
+\lambda 
+\lambda 
+\lambda 
+\lambda 
+=
++
+
++
++
+--
+-
+
+=
+=
+=
+\Rightarrow 
+=+
+
+-
+-
+
+=+
+
+,代入
+x
+y
+z
++
+-
+=
+,解得
+\lambda =-, 7
+-, 
+即
+(
+)
+1,0,0
+P
+或(
+)
+1, 6, 6
+--
+-
+,故切平面方程为
+x -=
+,或
+x
+y
+z
++
+-
++=
+. 
+\textcolor{lyred}{例}.求过
+:
+x
+y
+z
+L
+-
+-
+-
+=
+=
+-
+,与
+x
+y
+z
++
++
+=
+相切的平面方程. 
+解.设切点
+(
+)
+,
+,
+P x
+y z
+,则
+x
+y
+z
++
++
+=
+,由
+(
+)
+,2
+,3
+n
+x
+y
+z
+=
+\rho 
+,得切平面方程 
+(
+)
+(
+)
+(
+)
+x
+x
+x
+y
+y
+y
+z
+z
+z
+-
++
+-
++
+-
+=
+,即
+x x
+y y
+z z
++
++
+-
+=
+; 
+代入
+6,3, 2
+
+
+
+
+
+
+,得
+x
+y
+z
++
++
+-
+=
+; 
+最后,(
+)(
+)
+2,1, 1
+,2
+,3
+x
+y
+z
+x
+y
+z
+-
+\cdots 
+=
+\Rightarrow 
++
+-
+=
+,得切点为 
+(
+)
+3,0,2 ,或(
+)
+1,2,2 ,故切平面为
+x
+y
+z
++
++
+-
+=
+,或
+x
+z
++
+-
+=
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.全微分的几何意义}}
+
+曲面
+(
+)
+:
+,
+z
+f x y
+\Sigma 
+=
+在点(
+)
+,
+,
+x
+y
+z
+处的切平面方程为 
+(
+)(
+)
+(
+)(
+)(
+)(
+)
+,
+,
+x
+y
+f
+x
+y
+x
+x
+f
+x
+y
+y
+y
+z
+z
+-
++
+-
++-
+-
+=
+,即 
+(
+)(
+)
+(
+)(
+)
+,
+,
+x
+y
+z
+z
+f
+x
+y
+x
+x
+f
+x
+y
+y
+y
+-
+=
+-
++
+-
+,故
+(
+)
+,
+z
+f x y
+=
+的全微分是曲面 
+(
+)
+:
+,
+z
+f x y
+\Sigma 
+=
+的切平面上点的纵坐标增量. 
+\textcolor{lyred}{补充练习 }
+1.设
+:
+x
+t
+y
+t
+z
+t
+=
+
+
+\Gamma 
+=-
+
+=
+
+上与
+ax
+by
+cz
+d
++
++
++
+=
+平行的切线恰有二条,求, ,
+a b c 应满足的 
+条件. 
+解.
+(
+)
+(
+)
+(
+)(
+)
+1, 2 ,3
+, ,
+1, 2 ,3
+, ,
+T
+t
+t
+a b c
+t
+t
+a b c
+a
+bt
+ct
+=
+-
+\bot
+\Rightarrow 
+-
+\cdots 
+=
+\Rightarrow 
+-
++
+=
+\rho 
+,此方程 
+恰有两个不同实根,故
+b
+ac
+\Delta =
+-
+>
+,且
+c \neq 
+. 
+2.求过
+x
+y
+z
+x
+y
+z
+
++
++
+=
+
++
++
+=
+
+在
+1,
+,
+M 
+
+
+
+
+
+
+
+处的切线,且垂直于
+x
+y
+z
++
++
+=
+的 
+平面方程. 
+解.
+(
+)
+(
+)
+2 ,2 ,2
+2,
+2, 2
+M
+n
+x
+y
+z
+=
+=
+\rho 
+,
+(
+)
+(
+)
+2 ,4 ,8
+2,2 2,4 2
+M
+n
+x
+y
+z
+=
+=
+\rho 
+,得 
+(
+)
+2 2, 3 2, 2
+T
+n
+n
+=
+\times 
+=
+-
+\rho 
+\rho 
+\rho 
+,故
+(
+)(
+)
+(
+)
+2, 3 2,
+2,1,1
+2,0, 2
+n =
+-
+\times 
+=-
+-
+\rho 
+, 
+于是所求平面方程为
+(
+)
+x
+y
+z
+
+
+
+
+\cdots 
+-
++\cdots 
+-
+-\cdots 
+-
+=
+
+
+
+
+
+
+
+
+
+
+
+
+,即
+x
+z
+-
+=
+. 
+3.设
+z
+x
+y
+=
++
+在(
+)
+1,2,5 处的切平面通过
+:
+x
+y
+b
+L
+ax
+y
+z
++
+=
+
+
++
+-
+=
+
+,求,a b. 
+解.
+(
+)(
+)
+(
+)
+1,2,5
+2 ,2 , 1
+2,4, 1
+n
+x
+y
+=
+-
+=
+-
+\rho 
+,设
+(
+)
+:
+x
+y
+b
+ax
+y
+z
+\lambda 
+\Pi 
++
+-
++
++
+-
+-
+=
+,则 
+a
+b
+\lambda 
+\lambda 
+\lambda 
+\lambda 
+\lambda 
++
++
+-
+--
+=
+=
+=
+\Rightarrow 
+=
+-
+-
+,
+a =-,
+b =
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第9.7 节 方向导数与梯度}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.方向导数}}
+
+设
+(
+)
+cos
+:
+cos
+x
+x
+t
+l
+t
+y
+y
+t
+\alpha 
+\beta 
+=
++
+
+\ge 
+
+=
++
+
+是以
+0P 为始点,以\alpha , \beta 为方向角的射线,若
+(
+)
+,
+f x y 在 
+某个
+(
+)
+U P 内有定义,则
+(
+)
+,
+f x y 在
+0P 处沿方向l 的\textcolor{lyred}{方向导数}为 
+()
+(
+)
+(
+)
+(
+)
+(
+)
+cos
+, 
+cos
+,
+lim
+lim
+P
+P
+l
+t
+P
+f P
+f P
+f x
+t
+y
+t
+f x
+y
+f
+l
+PP
+t
+\alpha 
+\beta 
++
+\to 
+\to 
+-
++
++
+-
+\partial 
+=
+=
+\partial 
+沿着
+. 
+\textcolor{lyred}{例}.求
+(
+)
+,
+f x y
+x
+y
+=
++
+在
+(
+)
+0,0
+O
+处沿
+(
+)
+cos
+,cos
+e
+\alpha 
+\beta 
+=
+\rho 
+的方向导数. 
+解.
+(
+)
+(
+)
+(
+)
+0,0
+cos
+, cos
+0,0
+lim
+t
+f t
+t
+f
+f
+l
+t
+\alpha 
+\beta 
++
+\to 
+-
+\partial 
+=
+=
+\partial 
+. 
+\textcolor{lyred}{定理}.设
+(
+)
+,
+f x y 在(
+)
+,
+P x y 处可微,则它在该点沿任意方向l 的方向导数均存在, 
+并且
+grad
+l
+f
+f e
+l
+\partial 
+=
+\cdots 
+\partial 
+\rho ,其中grad
+,
+f
+f
+f
+x
+y
+
+
+\partial 
+\partial 
+=
+
+\partial 
+\partial 
+
+
+,
+(
+)
+cos ,cos
+le
+\alpha 
+\beta 
+=
+\rho 
+. 
+\textcolor{lyred}{例}.求
+2 y
+z
+xe
+=
+在(
+)
+1,0
+P
+处沿(
+)
+1,0
+P
+到
+(
+)
+2, 1
+Q
+-
+方向的方向导数. 
+解.
+(
+)(
+)(
+)
+(
+)
+1,0
+grad
+1,0
+,2
+1,2
+y
+y
+z
+e
+xe
+=
+=
+,
+(
+)
+1, 1
+l =
+-
+\rho 
+,
+,
+le
+
+
+=
+-
+
+
+
+
+\rho 
+,故 
+(
+)
+(
+)
+1,0
+1,2
+,
+z
+l
+\partial 
+
+
+=
+\cdots 
+-
+=-
+
+
+\partial 
+
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+, ,
+f x y z
+xy
+yz
+zx
+=
++
++
+在(
+)
+1,1,2 处沿l
+\rho 
+的方向导数,其中l
+\rho 
+的方向角分别为 
+60\circ , 45\circ ,60\circ . 
+解.
+(
+)
+(
+)(
+)
+(
+)
+1,1,2
+grad
+1,1,2
+,
+,
+3,3,2
+f
+y
+z x
+z x
+y
+=
++
++
++
+=
+, 
+(
+)
+2 1
+cos60 ,cos45 ,cos60
+,
+,
+le
+
+
+=
+=
+
+
+
+
+
+\circ 
+\circ 
+\circ 
+\rho 
+,
+(
+)
+1,1,2
+3 2
+grad
+l
+f
+f e
+l
+\partial 
++
+=
+\cdots 
+=
+\partial 
+\rho 
+. 
+\textcolor{lyred}{例}.求
+x
+y
+u
+z
++
+=
+在(
+)
+1,1,1
+P
+处沿曲面
+x
+y
+z
++
++
+=
+在该点处指向内侧的 
+法线方向的方向导数. 
+解.
+(
+)(
+)
+(
+)
+1,1,1
+4 ,6 ,2
+4,6,2
+n
+x
+y
+z
+=-
+=-
+\rho 
+,故
+,
+,
+ne
+-
+-
+-
+
+
+=
+
+
+
+\rho 
+,而 
+grad
+,
+,
+,
+,
+P
+P
+u
+u
+u
+u
+x
+y
+z
+
+
+\partial 
+\partial 
+\partial 
+
+
+=
+=
+-
+
+
+
+
+\partial 
+\partial 
+\partial 
+
+
+
+
+,故
+grad
+n
+P
+P
+u
+u
+e
+n
+\partial 
+=
+\cdots 
+=-
+\partial 
+\rho 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.梯度}}
+
+设
+(
+)
+,
+f x y 在(
+)
+,x y 的某个邻域内有连续偏导数,记
+(
+)
+grad
+,
+,
+f
+f
+f x y
+x
+y
+
+
+\partial 
+\partial 
+=
+
+\partial 
+\partial 
+
+
+,称为 
+(
+)
+,
+f x y 在(
+)
+,x y 处的\textcolor{lyred}{梯度},也记为
+f
+\nabla 
+\rho 
+,其中\nabla 
+\rho 
+称为\textcolor{lyred}{向量微分算子}. 
+设
+(
+)
+, ,
+f x y z 在(
+)
+, ,
+x y z 的某个邻域内有连续偏导数,则它在(
+)
+, ,
+x y z 处的\textcolor{lyred}{梯度}为 
+(
+)
+grad
+, ,
+,
+,
+f
+f
+f
+f x y z
+x
+y
+z
+
+
+\partial 
+\partial 
+\partial 
+=
+
+\partial 
+\partial 
+\partial 
+
+
+,也记为
+f
+\nabla 
+\rho 
+. 
+\textcolor{lyred}{几何意义}:曲线
+(
+)
+,
+f x y
+c
+=
+称为
+(
+)
+,
+f x y 的\textcolor{lyred}{等值线},grad f 是该曲线的法向量,并且 
+从数值较低的等值线指向数值较高的等值线,沿该方向函数的变化率最大. 
+曲面
+(
+)
+, ,
+f x y z
+c
+=
+称为
+(
+)
+, ,
+f x y z 的\textcolor{lyred}{等值面},grad f 是该曲面的法向量,并且从数值 
+较低的等值面指向数值较高的等值面,沿该方向函数的变化率最大. 
+\textcolor{lyred}{定理}.设
+(
+)
+,
+f x y 在(
+)
+,x y 处可微,则 
+(1)当
+(
+)
+grad
+,
+l
+f x y
+=
+\rho 
+时,
+(
+)
+grad
+,
+f
+f x y
+l
+\partial 
+=
+\partial 
+最大; 
+(2)当
+(
+)
+grad
+,
+l
+f x y
+=-
+\rho 
+时,
+(
+)
+grad
+,
+f
+f x y
+l
+\partial 
+=-
+\partial 
+最小; 
+(3)当
+(
+)
+grad
+,
+l
+f x y
+\bot
+\rho 
+时,
+f
+l
+\partial 
+=
+\partial 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+,
+f x y
+x
+y
+=
++
+在(
+)
+1,1 处方向导数的最大值与最小值,以及使得方向 
+导数为零的方向. 
+解.
+(
+)
+(
+)(
+)
+(
+)
+1,1
+grad
+1,1
+,
+1,1
+f
+x y
+=
+=
+,故f
+l
+\partial 
+\partial 的最大值为
+2 ,最小值为
+-
+; 
+沿
+(
+)
+1, 1
+l =\pm 
+-
+\rho 
+方向的方向导数为零. 
+\textcolor{lyred}{例}.求
+(
+)
+, ,
+f x y z
+x
+xy
+z
+=
+-
+-
+在(
+)
+1,1,0 处方向导数的最大值以及取到该最大值的 
+方向. 
+解.
+(
+)(
+)(
+)
+(
+)
+1,1,0
+grad
+1,1,0
+, 2
+, 1
+2, 2, 1
+f
+x
+y
+xy
+=
+-
+-
+-
+=
+-
+-
+,故当
+(
+)
+2, 2, 1
+l =
+-
+-
+\rho 
+时, 
+(
+)
+2, 2, 1
+f
+l
+\partial 
+=
+-
+-
+=
+\partial 
+最大. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.数量场与向量场}}
+
+\textcolor{lyred}{定义}.区域G 上的函数
+(
+)
+f M 称为G 上的\textcolor{lyred}{数量场},如温度场;区域G 上的向量值 
+函数
+(
+)
+F M
+\rho 
+称为G 上的\textcolor{lyred}{向量场},如力场. 
+对于数量场
+(
+)
+f M ,向量场
+(
+)
+grad
+F
+f M
+=
+\rho 
+称为它的\textcolor{lyred}{梯度场},反之
+(
+)
+f M 称为这个 
+向量场的\textcolor{lyred}{势函数},具有势函数的向量场称为\textcolor{lyred}{保守场},\textcolor{lyred}{守恒场},\textcolor{lyred}{位势场},例如引力场, 
+真空中的静电场. 
+\textcolor{lyred}{例}.证明:中心力场
+()
+(
+)
+r
+r
+F
+f r e
+f
+x
+y
+z
+e
+=
+=
++
++
+\rho 
+\rho 
+\rho 一定是保守场. 
+证.设
+()
+()
+G r
+f r
+'
+=
+,则
+()
+()
+()
+( , , )
+grad
+grad
+r
+x y z
+G
+G r
+r
+G r
+f r e
+r
+'
+'
+=
+=
+=
+\rho ,证毕. 
+\textcolor{lyred}{补充练习 }
+1.求
+arctan
+y
+x
+u
+y
+z
+
+
+=
+
+
+
+
+在(
+)
+1,1,1 处的最大方向导数. 
+解. (
+)
+(
+)
+,1,1
+1,1,1
+x
+u x
+x
+u
+\pi 
+\pi 
+=
+\Rightarrow 
+=
+, (
+)
+(
+)
+1, ,1
+1,1,1
+y
+u
+y
+y
+u
+=
+\Rightarrow 
+=
+, 
+(
+)
+(
+)
+1,1,
+1,1,1
+z
+u
+z
+z
+u
+\pi 
+\pi 
+-
+=
+\Rightarrow 
+=-
+,故
+max
+,2,
+u
+l
+\pi 
+\pi 
+\pi 
+\partial 
+
+
+=
+-
+=
++
+
+
+\partial 
+
+
+. 
+2.求由
+z
+xz
+y
++
+-
+=
+确定的
+(
+)
+,
+z
+z x y
+=
+在(
+)
+0,1 处的最大方向导数. 
+解.
+x =
+,
+y =时
+z =,
+(
+)
+(
+)
+0,1
+1 1
+grad
+0,1
+,
+,
+3 3
+z
+z
+z
+x
+z
+x
+-
+
+
+
+
+=
+=-
+
+
+
+
++
++
+
+
+
+
+,故 
+(
+)
+max
+grad
+0,1
+z
+z
+l
+\partial =
+=
+\partial 
+. 
+3.设
+(
+)
+,
+f x y
+x
+y
+=
++
+在
+(
+)
+,
+M x
+y
+处沿
+(
+)
+1,2
+l =
+\rho 
+方向有最大的增长率,并且 
+(
+)
+,
+f x
+y
+=
+,求
+(
+)
+,
+M x
+y
+. 
+解.
+(
+)
+grad
+1,2
+M
+f
+y
+=
+与(
+)
+1,2 同向
+y
+\Rightarrow 
+=,又
+(
+)
+,
+f x
+y
+x
+=
+\Rightarrow 
+=
+. 
+4.设
+(
+)
+(
+)
+,
+1 ln
+ax
+f x y
+ye
+b x
+y
+=
++
++
+在(
+)
+0,1 处沿
+(
+)
+1,1
+l =
+\rho 
+方向取得最大增长率2 2 , 
+求a ,b . 
+解.
+(
+)
+(
+)
+grad
+0,1
+,1
+f
+a
+b
+=
++
+与(
+)
+1,1 同向,故
+a
+b
+a
+b
++
+=
+\Rightarrow 
+=
++,且
+a >
+,又 
+(
+)
+,
+2 2
+a b
+a
+a
+a
++
+=
+\Rightarrow 
++
+=
+\Rightarrow 
+=
+,
+b =. 
+5.设xOy 面上的一条曲线通过(
+)
+0,1 ,并且平行于
+(
+)
+,
+f x y
+x
+xy
+=
+-
+的梯度场,求 
+该曲线的方程. 
+解.
+(
+)(
+)
+grad
+,
+, 6
+x
+y
+f
+f
+f
+x
+y
+xy
+=
+=
+-
+-
+,设曲线方程为
+()
+y
+y x
+=
+,于是 
+dy
+xy
+dx
+x
+y
+-
+=
+-
+,此为齐次方程,解得
+3x y
+y
+C
+-
+=
+,
+C =-. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第9.8 节 多元函数的极值及其求法}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.多元函数的极值}}
+
+设
+(
+)
+,
+f x y 在(
+)
+,
+x
+y
+某个邻域内有定义,若对该邻域内不同于(
+)
+,
+x
+y
+的点上均有
+(
+)
+(
+)
+,
+,
+f x y
+f x
+y
+<
+,则称
+(
+)
+,
+f x y 在(
+)
+,
+x
+y
+处取得\textcolor{lyred}{极大值};\textcolor{lyred}{极小值}类似. 
+极大极小值统称为\textcolor{lyred}{极值},使函数取得极值的点称为\textcolor{lyred}{极值点}. 
+\textcolor{lyred}{例}.设
+(
+)
+,
+f x y 连续,
+(
+)
+(
+)
+(
+)
+(
+)
+,
+0,0
+,
+lim
+x y
+f x y
+xy
+x
+y
+\to 
+-
+=
++
+,证明:
+(
+)
+0,0
+f
+不是极值. 
+证.
+(
+)
+(
+)
+(
+)
+,
+f x y
+xy
+x
+y
+o
+x
+y
+
+
+=
++
++
++
++
+
+
+
+,故
+(
+)
+(
+)
+,
+f x x
+x
+o x
+=
++
+,而 
+(
+)
+(
+)
+,
+f x
+x
+x
+o x
+-
+=-
++
+,而
+(
+)
+0,0
+f
+=
+,即得,证毕. 
+\textcolor{lyred}{定理(必要条件)}.设
+(
+)
+,
+f x y 在点(
+)
+,
+x
+y
+处偏导数存在,且有极值,则 
+(
+)
+,
+xf
+x
+y
+=
+,
+(
+)
+,
+yf
+x
+y
+=
+. 
+\textcolor{lyred}{定理(充分条件)}.设
+(
+)
+,
+f x y 在(
+)
+,
+x
+y
+的某个邻域内有连续的二阶偏导数,且 
+(
+)
+,
+x
+y
+是其驻点,令
+(
+)
+,
+xx
+A
+f
+x
+y
+=
+,
+(
+)
+,
+xy
+B
+f
+x
+y
+=
+,
+(
+)
+,
+yy
+C
+f
+x
+y
+=
+,则 
+(1)
+AC
+B
+-
+>
+时(
+)
+,
+x
+y
+为极值点,且
+A <
+时为极大值,
+A >
+时为极小值; 
+(2)
+AC
+B
+-
+<
+时(
+)
+,
+x
+y
+不是极值点. 
+\textcolor{lyred}{例}.求
+(
+)
+,
+f x y
+x
+y
+x
+y
+x
+=
+-
++
++
+-
+的极值. 
+解.
+(
+)
+(
+)
+,
+,
+x
+y
+f
+x y
+x
+x
+f
+x y
+y
+y
+
+=
++
+-
+=
+
+=-
++
+=
+
+,解得驻点(
+)
+1,0 ,(
+)
+1,2 ,(
+)
+3,0
+-
+,(
+)
+3,2
+-
+, 
+xx
+A
+f
+x
+=
+=
++
+,
+xy
+B
+f
+=
+=
+,
+yy
+C
+f
+y
+=
+=-
++
+,列表如下 
+(
+)
+,x y        (
+)
+1,0        (
+)
+1,2       (
+)
+3,0
+-
+       (
+)
+3,2
+-
+A           12          12         12
+-
+-
+B           0           0           0           0 
+C           6          6
+-           6          6
+- 
+AC
+B
+-
+        72        72
+-
+-
+(
+)
+,
+f x y       极小值     非极值        非极值       极大值 
+极小值
+(
+)
+1,0
+f
+=-,极大值
+(
+)
+3,2
+f -
+=
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.多元函数的最大值最小值}}
+
+\textcolor{lyred}{方法}:(1)确定
+(
+)
+,
+f x y 在D 内最大最小值的存在性; 
+(2)列出
+(
+)
+,
+f x y 在D 内的驻点以及偏导数不存在的点,计算这些点处的函数值; 
+(3)若D 不是开区域,求出
+(
+)
+,
+f x y 在D
+D
+\partial 
+\cap 
+上的最大最小值; 
+(4)比较上述值的大小,最大者为最大值,最小者为最小值. 
+\textcolor{lyred}{例}.求体积为a 的长方体的最小表面积. 
+解.设长宽为x , y ,高为a
+xy ,故表面积
+a
+a
+S
+xy
+x
+y
+xy
+xy
+
+
+=
++
+\cdots 
++
+\cdots 
+=
+
+
+
+
+(
+)
+0,
+a
+a
+xy
+x
+y
+y
+x
+
+
++
++
+>
+>
+
+
+
+
+,由
+x
+a
+S
+y
+x
+
+
+=
+-
+=
+
+
+
+
+,
+y
+a
+S
+x
+y
+
+
+=
+-
+=
+
+
+
+
+,得 
+x
+y
+a
+=
+=
+,唯一驻点,由实际情况, (
+)
+3,
+S
+a
+a
+a
+=
+为最小值. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+,
+f x y
+x y
+x
+y
+=
+-
+-
+在由
+x
+y
++
+=
+, x 轴和y 轴所围成的闭区域D 上的 
+最大最小值. 
+解. D 为有界闭区域,故
+(
+)
+,
+f x y 在D 上存在最大最小值; 
+由
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+x
+y
+f
+x y
+xy
+x
+y
+x y
+xy
+x
+y
+x
+y
+f
+x y
+x
+x
+y
+x y
+x
+x
+y
+x
+y
+
+=
+-
+-
+-
+=
+-
+-
+=
++
+=
+
+
+\Rightarrow 
+
+
+=
+-
+-
+-
+=
+-
+-
+=
++
+=
+
+
+
+,得 
+唯一驻点(
+)
+2,1 ,而
+(
+)
+2,1
+f
+=
+; 在边界
+x =
+和
+y =
+上,
+(
+)
+,
+f x y =
+; 
+在
+x
+y
++
+=
+上,
+(
+)
+,
+f x y
+x
+x
+=-
++
+,0
+x
+\le 
+\le 
+,最小值为
+(
+)
+4,2
+f
+=-
+,最大值为 
+(
+)
+(
+)
+0,6
+6,0
+f
+f
+=
+=
+;故最大值为4 ,最小值为64
+-
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.条件极值 拉格朗日乘数法}}
+
+\textcolor{lyred}{条件极值}:求目标函数
+(
+)
+,
+f x y 在约束条件(
+)
+,
+x y
+\varphi 
+=
+下的极值. 
+\textcolor{lyred}{拉格朗日乘数法}.设(
+)
+,
+x
+y
+为上述条件极值问题的解,则存在\lambda ,使得 
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+x
+x
+y
+y
+f
+x
+y
+x
+y
+f
+x
+y
+x
+y
+\lambda \varphi 
+\lambda \varphi 
++
+=
+
++
+=
+
+,其中\lambda 称为\textcolor{lyred}{拉格朗日乘子}. 
+\textcolor{lyred}{注}.令
+(
+)
+(
+)
+,
+,
+L
+f x y
+x y
+\lambda \varphi 
+=
++
+,称为\textcolor{lyred}{拉格朗日函数},则上述条件为
+x
+y
+L
+L
+L\lambda 
+=
+=
+=
+. 
+\textcolor{lyred}{注}.其它情况,例如求
+(
+)
+, , ,
+f x y z t 在约束
+(
+)
+(
+)
+, , ,
+, , ,
+x y z t
+x y z t
+\varphi 
+\zeta 
+=
+
+=
+
+下的极值,则令 
+(
+)
+(
+)
+(
+)
+(
+)
+, , , ; ,
+, , ,
+, , ,
+, , ,
+L x y z t
+f x y z t
+x y z t
+x y z t
+\lambda \mu 
+\lambda \varphi 
+\mu \zeta 
+=
++
+\cdots 
++
+\cdots 
+,由 
+x
+y
+z
+t
+L
+L
+L
+L
+=
+=
+=
+=
+及
+\varphi 
+\zeta 
+=
+=
+,解出(
+)
+, ,
+x y z 即可. 
+\textcolor{lyred}{例}.求
+(
+)
+,
+f x y
+x
+y
+=
++
+在(
+)
+(
+)
+x
+y
+-
++
+-
+=
+上的最大最小值. 
+解.令(
+)
+(
+)
+(
+)
+, ;
+L x y
+x
+y
+x
+y
+\lambda 
+\lambda 
+
+=
++
++
+-
++
+-
+-
+
+
+
+,则 
+(
+)
+(
+)
+(
+)
+(
+)
+2 2
+x
+y
+L
+x
+x
+L
+y
+y
+x
+y
+\lambda 
+\lambda 
+
+=
++
+\cdots 
+-
+=
+
+
+=
++
+\cdots 
+-
+=
+
+
+
+-
++
+-
+=
+
+,解得
+x
+y
+=
+\pm 
+
+=
+\pm 
+
+,而 
+(
+)
+3,
+6 6
+f
+\pm 
+\pm 
+=
+\pm 
+,故最大值15
+6 6
++
+,最小值15
+6 6
+-
+. 
+\textcolor{lyred}{例}.求周长为12的直角三角形的最大面积. 
+解.设直角边长为x , y ,则
+S
+xy
+=
+,令
+(
+)
+L
+xy
+x
+y
+x
+y
+\lambda 
+=
++
++
++
++
+-
+,则 
+x
+y
+x
+L
+y
+x
+y
+y
+L
+x
+x
+y
+x
+y
+x
+y
+\lambda 
+\lambda 
+
+
+
+
+
+
+=
++
++
+=
+
+
+
++
+
+
+
+
+
+
+
+
+=
++
++
+=
+
+
+
++
+
+
+
+
++
++
++
+=
+
+
+
+,由(1)(2),得
+x
+x
+y
+y
+x
+y
+x
+y
+x
+y
++
++
+=
+\Rightarrow 
+=
++
++
+,故 
+6 2
+x
+y
+=
+=
+-
+,于是
+max
+72 2
+A
+=
+-
+. 
+\textcolor{lyred}{例}.求表面积为
+a 的长方体的最大体积. 
+解.设长宽高为, ,
+x y z ,则
+xyz
+V =
+,令
+(
+)
+L
+xyz
+xy
+yz
+zx
+a
+\lambda 
+=
++
++
++
+-
+,则 
+(
+)
+(
+)
+(
+)
+x
+y
+z
+L
+yz
+y
+z
+L
+xz
+x
+z
+x
+y
+z
+a
+L
+xy
+y
+x
+xy
+yz
+xz
+a
+\lambda 
+\lambda 
+\lambda 
+
+=
++
++
+=
+
+=
++
++
+=
+
+\Rightarrow 
+=
+=
+=
+
+=
++
++
+=
+
+
++
++
+=
+
+,故
+max
+V
+a
+=
+. 
+\textcolor{lyred}{例}.求曲面
+z
+x
+y
+=
++
+到平面
+:
+x
+y
+z
+\Pi 
++
++
++=
+的最短距离. 
+解.
+x
+y
+z
+d
++
++
++
+=
+,令
+(
+)
+(
+)
+L
+x
+y
+z
+z
+x
+y
+\lambda 
+=
++
++
++
++
+-
+-
+,则 
+(
+)
+(
+)
+(
+)
+x
+y
+z
+L
+x
+y
+z
+x
+L
+x
+y
+z
+y
+x
+y
+L
+x
+y
+z
+z
+x
+y
+\lambda 
+\lambda 
+\lambda 
+
+=
++
++
++
+-
+=
+
+=
++
++
++
+-
+=
+
+\Rightarrow 
+=
+=-
+
+=
++
++
++
++
+=
+
+=
++
+
+,
+z =
+,故
+min
+d
+=
+. 
+\textcolor{lyred}{例}.求原点到曲线
+z
+x
+y
+x
+y
+z
+=
++
++
++
+=
+
+上点的最长与最短距离. 
+解.令
+(
+)
+(
+)
+L
+x
+y
+z
+z
+x
+y
+x
+y
+z
+\lambda 
+\mu 
+=
++
++
++
+-
+-
++
++
++
+-
+,由 
+x
+x
+x
+y
+y
+y
+z
+z
+x
+y
+z
+x
+y
+z
+\lambda 
+\mu 
+\lambda 
+\mu 
+\lambda 
+\mu 
+
+-+
+-
++
+=
+
+=
+
+
+
+-
++
+=
+
+
+-+
+
+
+\Rightarrow 
+=
++
++
+=
+
+
+
+
+=
++
+
+=
+-
++
++
+=
+
+
+
+
+或
+x
+y
+z
+
+--
+=
+
+
+
+--
+
+=
+
+
+=
++
+
+
+,故
+max
+min
+5 3
+5 3
+d
+d
+
+=
++
+
+
+=
+-
+
+. 
+\textcolor{lyred}{补充练习 }
+1.将正数a 分解成三个正数x , y , z 之和,使得
+m
+n
+p
+u
+x y z
+=
+最大,其中m ,n , p 为 
+已知正数. 
+解.令
+(
+)
+m
+n
+p
+L
+x y z
+x
+y
+z
+a
+\lambda 
+=
++
++
++
+-
+,则
+m
+n
+p
+x
+m
+n
+p
+y
+m
+n
+p
+z
+L
+mx
+y z
+L
+nx y
+z
+L
+px y z
+x
+y
+z
+a
+\lambda 
+\lambda 
+\lambda 
+-
+-
+-
+
+=
++
+=
+
+=
++
+=
+
+=
++
+=
+
++
++
+=
+
+,解得x
+y
+z
+m
+n
+p
+=
+=
+, 
+故
+m
+x
+a
+m
+n
+p
+=
++
++
+,
+n
+y
+a
+m
+n
+p
+=
++
++
+,
+p
+z
+a
+m
+n
+p
+=
++
++
+. 
+2.欲做无盖长方体容器,底部造价每平米3元,侧面每平米1元,设预算为36元,求 
+尺寸使得容积最大. 
+解.设长宽高为x , y , z ,令
+(
+)
+1 2
+L
+xyz
+xy
+xz
+yz
+\lambda 
+=
++
++\cdots 
++
+-
+
+
+
+,则 
+(
+)
+(
+)
+(
+)
+(
+)
+1 2
+x
+y
+z
+L
+yz
+y
+z
+y
+y
+z
+x
+y
+L
+xz
+x
+z
+x
+x
+z
+z
+x
+z
+L
+xy
+x
+y
+z
+y
+y
+x
+y
+xy
+xz
+yz
+\lambda 
+\lambda 
+\lambda 
+=
++
++
+=
+
++
+
+=
+=
+
+
+
+=
++
++
+=
++
+
+
+
+\Rightarrow 
+\Rightarrow 
+
+
+
++
+=
++
++
+=
+=
+
+
+
+=
+
++
+
+
++\cdots 
++
+=
+
+
+,代入 
+(
+)
+1 2
+xy
+xz
+yz
++\cdots 
++
+=
+,得
+x =
+,
+y =
+,
+z =
+. 
+3.设长方体的三个面在坐标面上,一个顶点在平面
+(
+)
+, ,
+x
+y
+z
+a b c
+a
+b
+c
++
++
+=
+>
+上,求 
+该长方体的最大体积. 
+解.设长方体在平面上的那个顶点为
+(
+)
+, ,
+A x y z ,则V
+xyz
+=
+,令 
+x
+y
+z
+L
+xyz
+a
+b
+c
+\lambda 
+
+=
++
++
++
+-
+
+
+
+
+,则
+x
+y
+z
+L
+yz
+a
+a
+x
+L
+xz
+b
+b
+y
+L
+xy
+c
+c
+z
+x
+y
+z
+a
+b
+c
+\lambda 
+\lambda 
+\lambda 
+
+=
++
+\cdots 
+=
+
+=
+
+
+
+
+=
++
+\cdots 
+=
+
+
+\Rightarrow 
+=
+
+
+
+
+=
++
+\cdots 
+=
+
+=
+
+
+
++
++
+=
+
+,故
+max
+abc
+V
+=
+. 
+4.求过
+2,1, 3
+
+
+
+
+
+
+的平面
+(
+)
+, ,
+x
+y
+z
+a b c
+a
+b
+c
++
++
+=
+>
+,使它与三个坐标面所围四面体的 
+体积最小. 
+解.设该平面方程为
+x
+y
+z
+a
+b
+c
++
++
+=,其中2
+a
+b
+c
++
++
+=,体积
+V
+abc
+=
+, 
+令
+L
+abc
+a
+b
+c
+\lambda 
+
+=
++
++
++
+-
+
+
+
+
+,由
+a
+b
+c
+L
+L
+L
+L\lambda 
+=
+=
+=
+=
+,解得
+a =
+,
+b =
+,
+c =, 
+此时体积最小,故所求方程为
+x
+y
+z
++
++
+=. 
+5.在曲面
+x
+y
+z
++
++
+=上求一点,使得函数
+u
+x
+y
+z
+=
++
++
+在该点沿方向 
+(
+)
+1, 1,0
+l =
+-
+\rho 
+的方向导数最大. 
+解.
+(
+)
+grad
+2 ,2 ,2
+u
+x
+y
+z
+=
+,
+,
+,0
+le
+
+
+=
+-
+
+
+
+
+\rho 
+,
+grad
+l
+u
+u e
+x
+y
+l
+\partial 
+=
+\cdots 
+=
+-
+\partial 
+\rho 
+, 
+令
+(
+)
+L
+x
+y
+x
+y
+z
+\lambda 
+=
+-
++
++
++
+-
+,则
+x
+y
+z
+L
+x
+L
+y
+L
+z
+x
+y
+z
+\lambda 
+\lambda 
+\lambda 
+=+
+=
+
+
+=-+
+=
+
+=
+=
+
+
++
++
+=
+
+,解得 
+x =\pm 
+,
+y =\mu 
+,
+z =
+,故
+,
+,0
+u
+l 
+
+-
+
+
+
+
+\partial 
+=
+\partial 
+最大,
+1 1
+, ,0
+2 2
+u
+l 
+
+-
+
+
+
+
+\partial 
+=-
+\partial 
+最小. 

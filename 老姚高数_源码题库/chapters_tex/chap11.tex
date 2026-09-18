@@ -1,0 +1,11545 @@
+\begin{center}
+{\Large \bfseries \textcolor{lyred}{第十一章 曲线积分与曲面积分}}
+\end{center}
+
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第11.1 节 对弧长的曲线积分}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.第一类曲线积分的定义}}
+
+\textcolor{lyred}{定义}.设L 为xOy 面内一段光滑曲线,
+(
+)
+,
+f x y 在L 上有界,将L 任意分成n 段
+is
+\Delta , 
+弧长也记为
+is
+\Delta ,
+(
+)
+,
+i
+i
+is
+\psi \eta 
+\forall 
+\in \Delta ,作和
+(
+)
+,
+n
+i
+i
+i
+i
+f
+s
+\psi \eta 
+=
+\Delta 
+\sum 
+,若在无限细分L 的过程中, 
+随
+\{
+\}
+1max
+i
+i n
+s
+\lambda 
+\le \le 
+=
+\Delta 
+\to 
+,该和总是趋向于同一个只依赖于
+(
+)
+,
+f x y 和L 的常数I ,则 
+称I 为
+(
+)
+,
+f x y 在L 上\textcolor{lyred}{对弧长的曲线积分},记为
+(
+)
+,
+L
+f x y ds
+\int 
+,若L 是闭曲线,也记为 
+(
+)
+,
+L
+f x y ds
+\int \nabla 
+;称
+(
+)
+,
+f x y 为\textcolor{lyred}{被积函数}, L 为\textcolor{lyred}{积分弧段}. 
+\textcolor{lyred}{物理意义}:设L 为曲线型材料,有连续密度
+(
+)
+,x y
+\mu 
+,则
+(
+)
+,
+L
+M
+x y ds
+\mu 
+=\int 
+. 
+\textcolor{lyred}{几何意义}:设
+(
+)
+,
+f x y \ge 
+,连续,则以L 为准线且平行z 轴的柱面介于曲面
+z =
+, 
+(
+)
+,
+z
+f x y
+=
+之间部分的面积为
+(
+)
+(
+)
+lim
+,
+,
+n
+i
+i
+i
+i
+L
+A
+f
+s
+f x y ds
+\lambda 
+\psi \eta 
+\to 
+=
+=
+\Delta 
+=
+\sum 
+\int 
+,例如: 
+x
+y
+ax
+a
+x
+y ds
++
+=
+-
+-
+\int \nabla 
+为
+x
+y
+ax
++
+=
+含在
+x
+y
+z
+a
++
++
+=
+内上半部分的面积. 
+\textcolor{lyred}{定理}.设
+(
+)
+,
+f x y 在光滑曲线L 上连续,则
+(
+)
+,
+L
+f x y ds
+\int 
+存在. 
+\textcolor{lyred}{注}.若L 分段光滑,则规定
+(
+)
+(
+)
+(
+)
+,
+,
+,
+L
+L
+L
+f x y ds
+f x y ds
+f x y ds
+=
++
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{注}.对于分段光滑空间曲线\Gamma 和\Gamma 上的连续函数
+(
+)
+, ,
+f x y z ,也可以定义\textcolor{lyred}{对弧长的 }
+\textcolor{lyred}{曲线积分}
+(
+)
+(
+)
+, ,
+lim
+,
+,
+n
+i
+i
+i
+i
+i
+f x y z ds
+f
+s
+\lambda 
+\psi \eta 
+\to 
+=
+\Gamma 
+=
+\Delta 
+\sum 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.第一类曲线积分的性质}}
+
+\textcolor{lyred}{性质1}.
+(
+)
+(
+)
+(
+)
+(
+)
+,
+,
+,
+,
+L
+L
+L
+f x y
+g x y
+ds
+f x y ds
+g x y ds
+\alpha 
+\beta 
+\alpha 
+\beta 
+\pm 
+=
+\pm 
+
+
+
+
+\int 
+\int 
+\int 
+; 
+\textcolor{lyred}{性质2}.
+(
+)
+(
+)
+(
+)
+,
+,
+,
+L
+L
+L
+L
+f x y ds
+f x y ds
+f x y ds
++
+=
++
+\int 
+\int 
+\int 
+; 
+\textcolor{lyred}{性质3}. 1
+L
+ds
+s
+\cdots 
+=
+\int 
+,一般地,
+L
+k ds
+k s
+\cdots 
+=
+\cdots 
+\int 
+; 
+\textcolor{lyred}{性质4}.设在L 上
+(
+)
+(
+)
+,
+,
+f x y
+g x y
+\le 
+,则
+(
+)
+(
+)
+,
+,
+L
+L
+f x y ds
+g x y ds
+\le 
+\int 
+\int 
+; 
+\textcolor{lyred}{推论}.
+(
+)
+(
+)
+,
+,
+L
+L
+f x y ds
+f x y ds
+\le 
+\int 
+\int 
+. 
+\textcolor{lyred}{注}.也有类似于定积分的估值定理和积分中值定理. 
+\textcolor{lyred}{例}.求
+(
+)
+L
+I
+x
+y
+x
+y ds
+=
++
+-
+-
+\int \nabla 
+,其中
+(
+)
+(
+)
+:
+L
+x
+y
+-
++
+-
+=
+. 
+解.
+(
+)
+(
+)
+11 2
+L
+L
+I
+x
+y
+ds
+ds
+\pi 
+\pi 
+
+
+=
+-
++
+-
+-
+=
+\cdots 
+=
+\cdots 
+\cdots 
+=
+
+
+\int 
+\int 
+\nabla 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+I
+y
+z ds
+\Gamma 
+=
++
+\int \nabla 
+,其中
+: x
+y
+z
+y
+x
+
++
++
+=
+\Gamma 
+=
+
+. 
+解.
+I
+x
+y
+z ds
+ds
+\pi 
+\Gamma 
+\Gamma 
+=
++
++
+=
+\cdots 
+=
+\int 
+\int 
+\nabla 
+\nabla 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.对称性}}
+
+1.若积分曲线是平面曲线,则参照二重积分; 
+2.若积分曲线是空间曲线,则参照三重积分. 
+\textcolor{lyred}{例}.求
+(
+)
+cos
+x
+L
+I
+x
+y
+ye
+ds
+=
++
++
+\int \nabla 
+,其中
+:
+L x
+y
++
+=. 
+解.
+4 2
+L
+I
+ds
+=
++
++
+\cdots 
+=
+\int \nabla 
+. 
+\textcolor{lyred}{例}.求
+L
+x
+y
+I
+ds
+a
+b
+
+
+=
++
+
+
+
+
+\int \nabla 
+,其中
+:
+L x
+y
+R
++
+=
+. 
+解.
+(
+)
+L
+L
+x
+y
+I
+ds
+x
+y
+ds
+R
+a
+b
+a
+b
+a
+b
+\pi 
+
+
+
+
+
+
+=
++
+=
++
++
+=
++
+
+
+
+
+
+
+
+
+
+
+
+
+\int 
+\int 
+\nabla 
+\nabla 
+. 
+\textcolor{lyred}{例}.设
+(
+)
+:
+x
+L
+y
++
+-
+=的周长为a ,求
+(
+)
+L
+I
+x
+y
+ds
+=
++
+\int \nabla 
+. 
+解.
+:
+L x
+y
+y
++
+=
+,故
+(
+)
+1 1
+L
+L
+L
+I
+yds
+y
+ds
+ds
+a
+=
+=
+-+
+=
+=
+\int 
+\int 
+\int 
+\nabla 
+\nabla 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+L
+I
+y
+x
+x
+y
+x
+y
+ds
+
+
+=
++
++
++
++
+
+
+\int \nabla 
+,其中
+:
+L x
+y
+x
++
+=
+. 
+解.
+(
+)
+(
+)
+(
+)
+2 2
+L
+L
+L
+I
+x
+x
+x ds
+xds
+ds
+\pi 
+
+
+=
++
+=
++
+=
++
+=
++
+
+
+\int 
+\int 
+\int 
+\nabla 
+\nabla 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+xy
+z ds
+\Gamma 
+=
++
+\int \nabla 
+,其中
+:
+x
+y
+z
+x
+y
+z
+
++
++
+=
+\Gamma +
++
+=
+
+. 
+解.
+(
+)
+(
+)
+(
+)
+I
+xyds
+x
+y ds
+xy
+yz
+zx ds
+x
+y
+z ds
+\Gamma 
+\Gamma 
+\Gamma 
+\Gamma 
+=
+-
++
+=
++
++
+-
++
++
+=
+\int 
+\int 
+\int 
+\int 
+\nabla 
+\nabla 
+\nabla 
+\nabla 
+(
+)
+(
+)
+x
+y
+z
+x
+y
+z
+ds
+ds
+\pi 
+\Gamma 
+\Gamma 
+
+
++
++
+-
++
++
+-
+=-
+=-
+
+
+\int 
+\int 
+\nabla 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z ds
+\Gamma 
+=
++
++
+\int \nabla 
+,其中
+:
+x
+y
+z
+x
+y
+
++
++
+=
+\Gamma +
+=
+
+. 
+解.
+(
+)
+I
+xds
+zds
+x
+y ds
+\Gamma 
+\Gamma 
+\Gamma 
+=
++
+=
++
++
+=
+\int 
+\int 
+\int 
+\nabla 
+\nabla 
+\nabla 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.计算法}}
+
+\textcolor{lyred}{定理}.设
+()
+()
+: x
+x t
+L
+y
+y t
+=
+
+=
+
+,
+t
+\alpha 
+\beta 
+\le \le 
+,其中
+()
+x t
+'
+,
+()
+y t
+'
+均连续,并且
+()
+()
+x
+t
+y
+t
+'
+'
++
+\neq 
+, 
+则
+(
+)
+()
+()
+()
+()
+,
+,
+L
+f x y ds
+f
+x t
+y t
+x
+t
+y
+t dt
+\beta 
+\alpha 
+'
+'
+=
++
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{推论}.(1)设
+()(
+)
+:
+L y
+y x
+a
+x
+b
+=
+\le 
+\le 
+,则
+(
+)
+()
+()
+,
+,
+b
+L
+a
+f x y ds
+f
+x y x
+y
+x dx
+'
+=
++
+
+
+
+
+\int 
+\int 
+; 
+特别地,
+(
+)
+:
+L y
+y
+a
+x
+b
+=
+\le 
+\le 
+平行于x 轴时,
+(
+)
+(
+)
+,
+,
+b
+L
+a
+f x y ds
+f x y
+dx
+=
+\int 
+\int 
+. 
+(2)设
+()(
+)
+:
+L x
+x y
+c
+y
+d
+=
+\le 
+\le 
+,则
+(
+)
+()
+()
+,
+,
+d
+L
+c
+f x y ds
+f
+x y
+y
+x
+y dy
+'
+=
++
+
+
+
+
+\int 
+\int 
+; 
+特别地,
+(
+)
+:
+L x
+x
+c
+y
+d
+=
+\le 
+\le 
+平行于y 轴时,
+(
+)
+(
+)
+,
+,
+d
+L
+c
+f x y ds
+f x
+y dy
+=
+\int 
+\int 
+. 
+(3)设在极坐标下,
+()
+:
+L \rho 
+\rho \theta 
+=
+,\alpha 
+\theta 
+\beta 
+\le 
+\le 
+,则 
+(
+)
+()
+()
+()
+()
+,
+cos ,
+sin
+L
+f x y ds
+f
+d
+\beta 
+\alpha 
+\rho \theta 
+\theta \rho \theta 
+\theta 
+\rho 
+\theta 
+\rho 
+\theta 
+\theta 
+'
+=
++
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+L
+I
+yds
+=\int 
+,其中L 为
+y
+x
+=
+上
+(
+)
+0,0
+O
+与(
+)
+1,1
+B
+之间的一段弧. 
+解.
+(
+)
+(
+)
+5 5
+I
+x
+x
+dx
+x
+x dx
+'
+=
+\cdots 
++
+=
+\cdots 
++
+=
+-
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+x
+y
+L
+I
+x
+y e
+ds
++
+=
++
+\int \nabla 
+,其中L 为
+y
+x
+=
+-
+, y
+x
+=\pm 所围区域边界. 
+解.
+1 :
+L
+y
+x
+=-,
+x
+-
+\le 
+\le 
+,
+cos
+:
+sin
+x
+L
+y
+\theta 
+\theta 
+=
+
+
+=
+
+,
+\pi 
+\pi 
+\theta 
+\le 
+\le 
+,
+3 :
+L
+y
+x
+=
+,
+x
+\le 
+\le 
+, 
+(
+)
+(
+)
+(
+)
+cos
+sin
+x
+x
+I
+x
+x e
+dx
+e d
+x
+x e
+dx
+e
+\pi 
+\pi 
+\theta 
+\theta 
+\theta 
+-
+=
+-
++
++
++
++
+=
+-
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+L
+I
+y ds
+=\int \nabla 
+,其中
+(
+)
+:
+L
+x
+y
+x
+y
++
+=
+-
+为双纽线. 
+解.
+:
+cos2
+L \rho 
+\theta 
+=
+,故
+sin
+L
+I
+yds
+d
+\pi 
+\rho 
+\theta 
+\rho 
+\rho 
+\theta 
+'
+=
+=
+\cdots 
++
+=
+\int 
+\int 
+(
+)
+(
+)
+(
+)
+4 sin
+4 sin
+4 sin
+2 2
+d
+d
+d
+\pi 
+\pi 
+\pi 
+\theta 
+\rho 
+\rho \rho 
+\theta 
+\theta 
+\rho 
+\rho 
+\theta 
+\theta \theta 
+
+'
+'
++
+=
++
+=
+=
+-
+
+
+
+
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+x
+y
+ax
++
+=
+位于
+x
+y
+z
+a
++
++
+=
+内部分的面积. 
+解.
+L
+A
+a
+x
+y ds
+=
+-
+-
+\int \nabla 
+,在极坐标下,
+:
+cos
+L
+a
+\rho 
+\theta 
+=
+,
+\pi 
+\pi 
+\theta 
+-
+\le 
+\le 
+,故 
+cos
+A
+a
+d
+a
+a
+ad
+a
+\pi 
+\pi 
+\pi 
+\pi 
+\rho 
+\rho 
+\rho 
+\theta 
+\theta 
+\theta 
+-
+-
+'
+=
+-
+\cdots 
++
+=
+-
+\cdots 
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+x
+y
++
+=位于
+x
+y
+z
++
++
+=内部分的面积. 
+解.
+L
+A
+x
+y ds
+=
+-
+-
+\int \nabla 
+,其中
+cos
+:
+sin
+x
+t
+L
+y
+t
+=
+
+=
+
+,0
+t
+\pi 
+\le \le 
+,故 
+1 cos
+sin
+sin cos
+3sin
+cos
+3sin cos
+A
+t
+t
+t
+tdt
+t
+t
+t
+tdt
+\pi 
+\pi 
+\pi 
+=
+-
+-
+\cdots 
+=
+\cdots 
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{注}.类似地,设光滑空间曲线
+()
+()
+()
+:
+x
+x t
+y
+y t
+z
+z t
+=
+
+
+\Gamma 
+=
+
+=
+
+,
+t
+\alpha 
+\beta 
+\le \le 
+,则 
+(
+)
+()
+()
+()
+()
+()
+()
+, ,
+,
+,
+f x y z ds
+f
+x t
+y t
+z t
+x
+t
+y
+t
+z
+t dt
+\beta 
+\alpha 
+\Gamma 
+'
+'
+'
+=
+\cdots 
++
++
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z ds
+\Gamma 
+=
++
++
+\int 
+,其中\Gamma 为(
+)
+1,1,1
+A
+到(
+)
+2,3,4
+B
+的直线段. 
+解.
+:
+x
+t
+y
+t
+z
+t
+=+
+
+
+\Gamma 
+=
++
+
+=
++
+
+,
+[
+]
+0,1
+t \in 
+,故
+(
+)
+13 14
+I
+t
+dt
+=
++
++
++
+=
+\int 
+. 
+\textcolor{lyred}{例}.求
+y
+I
+ds
+x
+y
+z
+\Gamma 
+=
++
++
+\int \nabla 
+,其中
+:
+x
+y
+z
+x
+y
+x
+
++
++
+=
+\Gamma 
++
+=
+
+. 
+解.
+y
+I
+ds
+yds
+\Gamma 
+\Gamma 
+=
+=
+\int 
+\int 
+\nabla 
+\nabla 
+,其中
+(
+)
+1 cos
+:
+sin
+2 1 cos
+2sin 2
+x
+t
+y
+t
+t
+z
+t
+
+=+
+
+\Gamma 
+=
+
+
+=
+-
++
+=
+
+,0
+t
+\pi 
+\le \le 
+,故 
+(
+)
+sin
+1 cos
+cos
+cos
+2 2
+t
+t
+t
+I
+t
+dt
+d
+\pi 
+\pi 
+=
+\cdots 
++
+=-
++
+=
+-
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.物理应用}}
+
+设\Gamma 为曲线型材料,具有连续密度
+(
+)
+, ,
+x y z
+\mu 
+,则 
+1.质心坐标
+x ds
+x
+ds
+\mu 
+\mu 
+\Gamma 
+\Gamma 
+=\int 
+\int 
+,
+y ds
+y
+ds
+\mu 
+\mu 
+\Gamma 
+\Gamma 
+=\int 
+\int 
+,
+z ds
+z
+ds
+\mu 
+\mu 
+\Gamma 
+\Gamma 
+=\int 
+\int 
+; 
+2.对l 的转动惯量
+lI
+d
+ds
+\mu 
+\Gamma 
+=\int 
+,其中(
+)
+, ,
+d x y z 为(
+)
+, ,
+x y z 到l 的距离; 
+3.对(
+)
+,
+,
+x
+y
+z
+处单位质点的引力 
+(
+)
+(
+)
+(
+)
+,
+,
+x
+x
+y
+y
+z
+z
+F
+G
+ds
+ds
+ds
+r
+r
+r
+\mu 
+\mu 
+\mu 
+\Gamma 
+\Gamma 
+\Gamma 
+
+
+-
+-
+-
+=
+
+
+
+
+\int 
+\int 
+\int 
+\rho 
+. 
+\textcolor{lyred}{例}.求半径为R ,中心角为2\alpha 的均匀圆弧关于对称轴的转动惯量. 
+解.取x 轴为对称轴,原点为圆心建立坐标系,则
+x
+L
+I
+y
+ds
+\mu 
+=
+=
+\int 
+(
+)
+(
+)
+(
+)
+sin
+sin
+cos
+sin
+cos
+R
+R
+R
+d
+R
+\alpha 
+\alpha 
+\mu 
+\theta 
+\theta 
+\theta 
+\theta 
+\mu \alpha 
+\alpha 
+\alpha 
+-
+-
++
+=
+-
+\int 
+. 
+\textcolor{lyred}{补充练习 }
+1.求
+(
+)
+sin
+L
+I
+x
+x
+y
+x
+y
+y ds
+=
++
++
++
+-
+\int \nabla 
+,其中
+(
+)
+:
+L x
+y
++
+-
+=. 
+解.
+(
+)
+L
+L
+L
+I
+x
+y
+y ds
+yds
+ds
+\pi 
+=
++
+-
+=
+=
+=
+\int 
+\int 
+\int 
+\nabla 
+\nabla 
+\nabla 
+. 
+2.求
+L
+I
+x
+y ds
+=
++
+\int \nabla 
+,其中
+:
+L x
+y
+y
++
+=-
+. 
+解.
+:
+L x
+y
+y
+=\pm -
+-
+,
+dx
+y
+dy
+y
+y
+--
+=\pm 
+-
+-
+,
+dy
+ds
+x dy
+y
+y
+'
+=
++
+=
+-
+-
+, 
+故
+2 2
+4 2
+dy
+dy
+I
+y
+y
+y
+y
+y
+-
+-
+-
+
+
+=
+-
+\cdots 
+=
+=
++
+=
+
+
++
+-
+-
+\int 
+\int 
+; 
+或者,
+cos
+:
+1 sin
+x
+t
+L
+y
+t
+=
+
+
+=-+
+
+,故
+2sin
+sin
+cos
+t
+t
+I
+t dt
+dt
+\pi 
+\pi 
+=
+-
+\cdots 
+=
+-
+=
+\int 
+\int 
+; 
+或者,
+:
+2sin
+L \rho 
+\theta 
+=-
+,
+ds
+d
+d
+\rho 
+\rho 
+\theta 
+\theta 
+'
+=
++
+=
+,故 
+2sin
+I
+d
+d
+\pi 
+\pi 
+\rho 
+\theta 
+\theta 
+\theta 
+-
+-
+=
+\cdots 
+=
+-
+\cdots 
+=
+\int 
+\int 
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第11.2 节 对坐标的曲线积分}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.变力沿曲线作功}}
+
+设质点在变力
+(
+)
+,
+F
+P Q
+=
+\rho 
+的作用下沿有向曲线
+\approx 
+AB
+\Gamma =
+移动,将L 任意分成n 小段 
+\dots 
+i
+i
+i
+L
+M
+M
+-
+=
+,在每一小段上,变力作功
+(
+)
+(
+)
+,
+,
+i
+i
+i
+i
+i
+i
+i
+i
+W
+F
+M
+M
+F
+r
+\psi \eta 
+\psi \eta 
+-
+\approx 
+\cdots 
+=
+\cdots \Delta 
+\xi \xi \xi \xi \xi \xi \xi \rho 
+\rho 
+\rho 
+\rho ,其中 
+(
+)
+,
+i
+i
+i
+i
+r
+OM
+x y
+=
+=
+\xi \xi \xi \xi \rho 
+\rho 
+,故
+(
+)
+(
+)
+(
+)
+lim
+,
+lim
+,
+,
+n
+n
+i
+i
+i
+i
+i
+i
+i
+i
+i
+i
+i
+W
+F
+r
+P
+x
+Q
+y
+\lambda 
+\lambda 
+\psi \eta 
+\psi \eta 
+\psi \eta 
+\to 
+\to 
+=
+=
+=
+\cdots \Delta =
+\cdots \Delta 
++
+\cdots \Delta 
+
+
+
+
+\sum 
+\sum 
+\rho 
+\rho 
+, 
+其中
+x
+F 作的功为
+(
+)
+lim
+,
+n
+i
+i
+i
+i
+P
+x
+\lambda 
+\psi \eta 
+\to 
+=
+\cdots \Delta 
+\sum 
+,
+y
+F 作的功为
+(
+)
+lim
+,
+n
+i
+i
+i
+i
+Q
+y
+\lambda 
+\psi \eta 
+\to 
+=
+\cdots \Delta 
+\sum 
+,分别记为 
+(
+)
+,
+L
+P x y dx
+\int 
+,
+(
+)
+,
+L
+Q x y dy
+\int 
+,故
+(
+)
+(
+)
+(
+)
+,
+,
+,
+L
+L
+W
+P x y dx
+Q x y dy
+F x y
+dr
+=
++
+=
+\cdots 
+\int 
+\int 
+\rho 
+\rho . 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.第二类曲线积分的定义}}
+
+设
+\approx 
+L
+AB
+=
+为光滑有向曲线,
+(
+)
+,
+f x y 在L 上有界,将L 任意分成n 段
+\dots 
+i
+i
+i
+L
+M
+M
+-
+=
+, 
+其中
+(
+)
+,
+i
+i
+i
+M
+x y
+=
+,
+(
+)
+,
+i
+i
+iL
+\psi \eta 
+\forall 
+\in 
+,作和
+(
+)
+,
+n
+i
+i
+i
+i
+f
+x
+\psi \eta 
+=
+\Delta 
+\sum 
+,若在无限细分L 的过程中, 
+随着
+\{
+\}
+1max
+i
+i n
+s
+\lambda 
+\le \le 
+=
+\Delta 
+\to 
+,该和总是趋向于一个只依赖于
+(
+)
+,
+f x y 和L 的常数I ,则 
+称I 为
+(
+)
+,
+f x y 在L 上\textcolor{lyred}{对坐标x 的曲线积分},记为
+(
+)
+,
+L
+f x y dx
+\int 
+; 
+称
+(
+)
+,
+f x y 为\textcolor{lyred}{被积函数}, L 为\textcolor{lyred}{积分弧段}. 
+类似地,\textcolor{lyred}{对坐标y 的曲线积分}
+(
+)
+(
+)
+,
+lim
+,
+n
+i
+i
+i
+i
+L
+f
+x y dy
+f
+y
+\lambda 
+\psi \eta 
+\to 
+=
+=
+\Delta 
+\sum 
+\int 
+. 
+设
+(
+)
+,
+F
+P Q
+=
+\rho 
+为
+\approx 
+L
+AB
+=
+上的有界向量值函数,则它在L 上\textcolor{lyred}{对坐标的曲线积分}为 
+L
+L
+F dr
+Pdx
+Qdy
+\cdots 
+=
++
+\int 
+\int 
+\rho 
+\rho 
+,其中
+(
+)
+,
+dr
+dx dy
+=
+\rho 
+称为\textcolor{lyred}{有向曲线元素}. 
+\textcolor{lyred}{定理}.设
+(
+)
+,
+f x y 在光滑有向曲线L 上连续,则它在L 上对坐标的曲线积分存在. 
+\textcolor{lyred}{注}.设\Gamma 为空间光滑有向曲线,
+(
+)
+, ,
+f x y z 在\Gamma 上的有界函数,则 
+(
+)
+(
+)
+, ,
+lim
+,
+,
+n
+i
+i
+i
+i
+i
+f x y z dx
+f
+x
+\lambda 
+\psi \eta 
+\to 
+=
+\Gamma 
+=
+\Delta 
+\sum 
+\int 
+,
+(
+)
+(
+)
+, ,
+lim
+,
+,
+n
+i
+i
+i
+i
+i
+f x y z dy
+f
+y
+\lambda 
+\psi \eta 
+\to 
+=
+\Gamma 
+=
+\Delta 
+\sum 
+\int 
+, 
+(
+)
+(
+)
+, ,
+lim
+,
+,
+n
+i
+i
+i
+i
+i
+f x y z dz
+f
+z
+\lambda 
+\psi \eta 
+\to 
+=
+\Gamma 
+=
+\Delta 
+\sum 
+\int 
+; 
+设
+(
+)
+,
+,
+F
+P Q R
+=
+\rho 
+,则F dr
+Pdx
+Qdy
+Rdz
+\Gamma 
+\Gamma 
+\cdots 
+=
++
++
+\int 
+\int 
+\rho 
+\rho 
+,其中
+(
+)
+,
+,
+dr
+dx dy dz
+=
+\rho 
+. 
+\textcolor{lyred}{物理意义}.质点在变力
+(
+)
+,
+,
+F
+P Q R
+=
+\rho 
+作用下沿有向曲线
+\approx 
+AB
+\Gamma =
+移动,则所做的功 
+W
+F dr
+Pdx
+Qdy
+Rdz
+\Gamma 
+\Gamma 
+=
+\cdots 
+=
++
++
+\int 
+\int 
+\rho 
+\rho 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.第二类曲线积分的性质}}
+
+\textcolor{lyred}{性质1}. (
+)
+L
+L
+L
+F
+F
+dr
+F dr
+F
+dr
+\alpha 
+\beta 
+\alpha 
+\beta 
+\pm 
+\cdots 
+=
+\cdots 
+\pm 
+\cdots 
+\int 
+\int 
+\int 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho ; 
+\textcolor{lyred}{性质2}.
+L
+L
+L
+L
+F dr
+F dr
+F dr
++
+\cdots 
+=
+\cdots 
++
+\cdots 
+\int 
+\int 
+\int 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho ; 
+\textcolor{lyred}{性质3}.
+L
+L
+F dr
+F dr
+-
+\cdots 
+=-
+\cdots 
+\int 
+\int 
+\rho 
+\rho 
+\rho 
+\rho ; 
+\textcolor{lyred}{性质4}.
+\approx 
+B
+A
+AB
+dx
+x
+x
+\cdots 
+=
+-
+\int 
+,
+\approx 
+B
+A
+AB
+dy
+y
+y
+\cdots 
+=
+-
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.计算法}}
+
+\textcolor{lyred}{定理}.设光滑曲线
+()
+()
+: x
+x t
+L
+y
+y t
+=
+
+=
+
+, :t \alpha 
+\beta 
+\to 
+,则
+L
+dr
+F dr
+F
+dt
+dt
+\beta 
+\alpha 
+
+
+\cdots 
+=
+\cdots 
+
+
+
+
+\int 
+\int 
+\rho 
+\rho 
+\rho 
+\rho 
+,即 
+(
+)
+()
+()
+()
+,
+,
+L
+P x y dx
+P x t
+y t
+x t dt
+\beta 
+\alpha 
+'
+=
+
+
+
+
+\int 
+\int 
+,
+(
+)
+()
+()
+()
+,
+,
+L
+Q x y dy
+Q x t
+y t
+y t dt
+\beta 
+\alpha 
+'
+=
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{推论}.(1)若
+()
+:
+L y
+y x
+=
+,
+:
+x a
+b
+\to 
+,则
+(
+)
+(
+)
+,
+,
+L
+P x y dx
+Q x y dy
++
+=
+\int 
+()
+()
+()
+\{
+\}
+,
+,
+b
+a
+P x y x
+Q x y x
+y
+x
+dx
+'
++
+
+
+
+
+
+
+
+
+\int 
+;(2)若
+()
+:
+L x
+x y
+=
+,
+:
+y c
+d
+\to 
+,则 
+(
+)
+(
+)
+()
+()
+()
+\{
+\}
+,
+,
+,
+,
+d
+L
+c
+P x y dx
+Q x y dy
+P x y
+y x
+y
+Q x y
+y
+dy
+'
++
+=
++
+
+
+
+
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+L
+I
+xydx
+=\int 
+,其中L 为
+2y
+x
+=
+上从(
+)
+1, 1
+A
+-
+到(
+)
+1,1
+B
+的一段弧. 
+解.
+\approx 
+\approx 
+(
+)
+AO
+OB
+I
+xydx
+xydx
+x
+x dx
+x xdx
+x xdx
+=
++
+=
+-
++
+=
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+; 
+或者,
+I
+y ydy
+y dy
+-
+-
+=
+=
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设一质点在
+(
+)
+,
+M x y 处受到力F
+\xi \rho 
+的作用, F
+\xi \rho 
+的大小与M 到O 的距离成正比, 
+方向指向O ,现在质点由(
+)
+,0
+A a
+沿椭圆
+x
+y
+a
+b
++
+=按逆时针方向移动到
+(
+)
+0,
+B
+b , 
+求力F
+\xi \rho 
+所作的功. 
+解.
+cos
+:
+sin
+x
+a
+t
+L
+y
+b
+t
+=
+
+
+=
+
+, :0
+t
+\pi 
+\to 
+,
+(
+)
+,
+F
+k x y
+=-
+\rho 
+,
+\approx 
+\approx 
+AB
+AB
+W
+F dr
+k
+xdx
+ydy
+=
+\cdots 
+=-
++
+=
+\int 
+\int 
+\rho 
+\rho 
+(
+)
+(
+)
+(
+)
+cos
+cos
+sin
+sin
+sin cos
+b
+a
+k a
+td a
+t
+b
+td b
+t
+k b
+a
+t
+tdt
+k
+\pi 
+\pi 
+
+
+-
++
+=-
+-
+=-
+-
+
+
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+L
+I
+xydx
+=\int \nabla 
+,其中L 为(
+)
+x
+a
+y
+a
+-
++
+=
+与x 轴所围成的区域位于第一象限 
+部分的整个边界,取逆时针方向. 
+解.
+(
+)
+(
+)
+(
+)
+cos
+sin
+cos
+a
+L
+L
+I
+xydx
+xydx
+x
+dx
+a
+a
+t a
+t d a
+a
+t
+\pi 
+=
++
+=
+\cdots 
++
++
+\cdots 
++
+=
+\int 
+\int 
+\int 
+\int 
+(
+)
+1 cos
+sin
+a
+a
+t
+tdt
+\pi 
+\pi 
+-
++
+=-
+\int 
+. 
+\textcolor{lyred}{例}.求
+I
+x dx
+zy dy
+x ydz
+\Gamma 
+=
++
+-
+\int 
+,其中\Gamma 为
+(
+)
+3,2,1
+A
+到O 的有向线段. 
+解.
+:
+x
+t
+y
+t
+z
+t
+=
+
+
+\Gamma 
+=
+
+=
+
+,
+: \to 
+t
+,故
+I
+t dt
+=
+=-
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+(
+)
+I
+z
+y dx
+x
+z dy
+x
+y dz
+\Gamma 
+=
+-
++
+-
++
+-
+\int \nabla 
+,其中
+:
+x
+y
+x
+y
+z
+
++
+=
+\Gamma -
++
+=
+
+,从z 轴 
+正向看为顺时针方向. 
+解.
+cos
+:
+sin
+cos
+sin
+x
+t
+y
+t
+z
+t
+t
+=
+
+
+\Gamma 
+=
+
+=
+-
++
+
+, : 2
+t
+\pi \to 
+,故
+(
+)
+4cos
+I
+t
+dt
+\pi 
+\pi 
+=
+-
+=-
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.曲线积分与路径无关的例子}}
+
+\textcolor{lyred}{例}.求
+L
+I
+xydx
+x dy
+=
++
+\int 
+,其中L 为(1)
+y
+x
+=
+上O 到(
+)
+1,1
+B
+的一段弧; 
+(2)
+x
+y
+=
+上O 到(
+)
+1,1
+B
+的一段弧;(3)O 到(
+)
+1,0
+A
+,再到B 的折线. 
+解.(1)
+I
+x x dx
+x
+dx
+=
+\cdots 
++
+\cdots 
+=
+\int 
+,(2)
+(
+)
+I
+y
+y dy
+y
+dy
+=
+\cdots 
+\cdots 
++
+=
+\int 
+, 
+(3)
+(
+)
+(
+)
+,0
+1,
+OA
+AB
+I
+P x
+dx
+Q
+y dy
+dy
+=
++
+=
++
+=
++
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{六.两类曲线积分之间的联系}}
+
+\textcolor{lyred}{定理}.设T
+\rho 
+为有向曲线L 的\textcolor{lyred}{切向量}(指向L 的正方向),则
+(
+)
+L
+L
+F dr
+F e
+ds
+\tau 
+\cdots 
+=
+\cdots 
+\int 
+\int 
+\rho 
+\rho 
+\rho 
+\rho 
+, 
+\textcolor{lyred}{例}.设
+:
+L y
+x
+x
+=
+-
+,(
+)
+(
+)
+0,0
+1,1
+\to 
+,将
+L
+Pdx
+Qdy
++
+\int 
+化为对弧长的曲线积分. 
+解.
+1,
+1,
+dy
+x
+T
+dx
+x
+x
+
+
+-
+
+
+=
+=
+
+
+
+
+
+-
+
+
+\rho 
+,
+(
+)
+,1
+e
+x
+x
+x
+\tau =
+-
+-
+\rho 
+,故 
+(
+)(
+)
+(
+)
+,
+,
+L
+L
+Pdx
+Qdy
+x
+x P x y
+x Q x y
+ds
+
+
++
+=
+-
++
+-
+
+
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.设
+:
+cos
+L x
+t
+=
+,
+(
+)
+sin
+y
+t
+t
+\pi 
+=
+\le \le 
+,取逆时针方向,证明: 
+(
+)
+(
+)
+sin
+cos 2
+6 2
+L
+x
+y dx
+xy
+dy
++
++
+\le 
+\int \nabla 
+. 
+证.由
+(
+)
+(
+)
+,
+,
+L
+L
+L
+L
+Pdx
+Qdy
+P Q
+e ds
+P Q
+e ds
+P
+Q ds
+\tau 
+\tau 
++
+=
+\cdots 
+\le 
+\cdots 
+\le 
++
+\int 
+\int 
+\int 
+\int 
+\rho 
+\rho 
+\nabla 
+\nabla 
+\nabla 
+\nabla 
+,得到 
+(
+)
+(
+)
+sin
+cos 2
+6 2
+L
+L
+x
+y dx
+xy
+dy
+ds
++
++
+\le 
+=
+\int 
+\int 
+\nabla 
+\nabla 
+,证毕. 
+\textcolor{lyred}{补充练习 }
+1.求
+L
+xdy
+ydx
+I
+x
+y
+-
+=
++
+\int 
+,其中L 从
+(
+)
+1,0
+A -
+沿
+y
+x
+=-
+-
+到
+(
+)
+1,0
+B
+,然后再沿直线到 
+(
+)
+1,2
+D -
+的有向曲线. 
+解. \approx 
+cos
+:
+sin
+x
+t
+AB
+y
+t
+=
+
+
+=
+
+, :
+t
+\pi 
+-
+\to 
+,
+:
+BD y
+x
+=-+,
+:1
+x
+\to -,故 
+4cos
+sin
+dt
+dx
+I
+t
+t
+x
+x
+\pi 
+\pi 
+\pi 
+\pi 
+-
+-
+-
+=
++
+=
++
+=
++
+-
++
+\int 
+\int 
+. 
+2.求I
+ydx
+zdy
+xdz
+\Gamma 
+=
++
++
+\int \nabla 
+,其中\Gamma 为
+x
+y
+z
++
++
+=被三个坐标面截下三角形的边界, 
+从z 轴正向看为逆时针方向. 
+解.设
+1 :
+x
+x
+y
+x
+z
+=
+
+
+\Gamma 
+=-
+
+=
+
+,
+:1
+x
+\to 
+,由于在轮换x
+y
+z
+x
+\to 
+\to 
+\to 
+下, I 不变,故 
+(
+)
+I
+ydx
+zdy
+xdz
+ydx
+x dx
+\Gamma 
+\Gamma 
+=
++
++
+=
+=
+-
+=-
+\int 
+\int 
+\int 
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第11.3 节 格林公式及其应用}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.Green 公式}}
+
+\textcolor{lyred}{定理}.设分段光滑曲线L 为有界闭区域D 的正向边界, (
+)
+,
+P x y 和
+(
+)
+,
+Q x y 在D 上 
+有连续偏导数,则
+L
+D
+Q
+P
+Pdx
+Qdy
+dxdy
+x
+y
+
+
+\partial 
+\partial 
++
+=
+-
+
+
+\partial 
+\partial 
+
+
+\int 
+\int \int 
+\nabla 
+. 
+\textcolor{lyred}{注}. L
+D
+=\partial 
+的正方向(诱导定向)为:当观察者在L 上沿这个方向行走时, D 总是 
+位于他的左侧,即D 的外边界逆时针,内边界取顺时针. D
+\partial 
+的正向也记为D+
+\partial 
+. 
+\textcolor{lyred}{推论}. 2
+D
+D
+dxdy
+xdy
+ydx
+\partial 
+=
+-
+\int \int 
+\int \nabla 
+,或者
+D
+D
+dxdy
+xdy
+ydx
+\partial 
+=
+-
+\int \int 
+\int \nabla 
+. 
+\textcolor{lyred}{例}.求椭圆
+x
+y
+a
+a
++
+=围成图形的面积. 
+解.
+(
+)
+(
+)
+cos
+sin
+sin
+cos
+D
+D
+dxdy
+xdy
+ydx
+a
+td b
+t
+b
+td a
+t
+ab
+\pi 
+\pi 
+\partial 
+=
+-
+=
+-
+=
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求星形线
+(
+)
+cos
+sin
+x
+a
+t
+t
+y
+a
+t
+\pi 
+=
+\le \le 
+
+=
+
+围成图形的面积. 
+解.
+(
+)
+(
+)
+cos
+sin
+sin
+cos
+L
+a
+A
+xdy
+ydx
+a
+t
+a
+t
+a
+t
+a
+t
+dt
+\pi 
+\pi 
+
+
+'
+'
+=
+-
+=
+\cdots 
+-
+\cdots 
+=
+
+
+
+
+\int 
+\int 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+L
+I
+y
+x dx
+x
+y dy
+=
+-
++
++
+\int \nabla 
+,其中
+(
+)
+(
+)
+:
+L
+x
+y
+-
++
+-
+=
+,逆时针. 
+解.
+(
+)
+3 1
+D
+D
+Q
+P
+I
+dxdy
+dxdy
+x
+y
+\pi 
+
+
+\partial 
+\partial 
+=
+-
+=
+-
+=
+
+
+\partial 
+\partial 
+
+
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+sin
+cos
+x
+x
+L
+I
+e
+y
+x
+y dx
+e
+y
+x dy
+=
+-
+-
++
++
+\int 
+,其中L 为半圆周
+y
+x
+x
+=
+-
+上从 
+(
+)
+0,0
+O
+到(
+)
+2,0
+A
+的一段有向弧段. 
+解.
+(
+)
+D
+L AO
+AO
+I
+dxdy
+x dx
+\pi 
++
+=
+-
+=-
+-
+-
+=-
+-
+\int 
+\int 
+\int \int 
+\int 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+cos
+1 2 sin
+L
+I
+xy
+y
+x dx
+y
+x
+x y
+dy
+=
+-
++
+-
++
+\int 
+,其中L 为
+2x
+y
+\pi 
+=
+上从 
+(
+)
+0,0
+O
+到
+,1
+A \pi 
+
+
+
+
+
+
+的一段有向弧. 
+解.设
+,0
+B \pi 
+
+
+
+
+
+
+,则
+1 2
+L AB BO
+AB
+BO
+I
+y
+y
+dy
+\pi 
+\pi 
++
++
+
+
+=
+-
+-
+=-
+-
++
+=
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+L
+x
+y dx
+x
+y dy
+I
+x
+y
+-
++
++
+=
++
+\int 
+,其中L 为
+cos
+y
+x
+=
+上从
+,0
+A
+\pi 
+
+
+-
+
+
+
+
+到
+,0
+B \pi 
+
+
+
+
+
+
+的 
+一段有向弧. 
+解.取
+1 :
+L
+y
+x
+\pi 
+=
+-
+上从B 到A 的一段,则
+L L
+L
+L
+I
++
+=
+-
+=-
+=
+\int 
+\int 
+\int 
+\nabla 
+(
+)
+(
+)
+L
+D
+L
+AB
+AB
+x
+y dx
+x
+y dy
+d
+xdx
+\pi 
+\pi 
+\sigma 
+\pi 
+\pi 
+\pi 
+\pi 
++
+-
+
+
+
+
+-
++
++
+
+
+-
+=-
+-
+=-
+-
+=-
+
+
+
+
+
+
+
+
+
+
+
+
+\int 
+\int 
+\int 
+\int \int 
+\int 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+L
+xdy
+ydx
+I
+x
+y
+-
+=
++
+\int 
+,其中L 从
+,0
+A
+\pi 
+
+
+-
+
+
+
+
+沿
+cos
+y
+x
+\pi 
+
+
+=
++
+
+
+
+
+到
+,0
+B \pi 
+
+
+
+
+
+
+. 
+解.取
+1L 为从
+(
+)
+,0
+M r
+沿
+x
+y
+r
++
+=
+逆时针到
+(
+)
+,0
+N
+r
+-
+的有向弧,则 
+L
+L
+L
+L BM
+L
+NA
+BM
+NA
+L
+NM
+NM
+xdy
+ydx
+I
+r
+r
++
++
++
++
+
+
+-
+=
+-
+-
+-
+=-
+=-
+=-
+-
+=
+
+
+
+
+
+
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+\int 
+\nabla 
+\nabla 
+D
+dxdy
+r
+r
+r
+\pi 
+\pi 
+-
+=-
+\cdots 
+=-
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+L
+xdy
+ydx
+I
+x
+y
+-
+=
++
+\int \nabla 
+,其中
+:
+x
+y
+L a
+b
++
+=,逆时针方向. 
+解.取
+:
+r
+C
+x
+y
+r
++
+=
+,逆时针,则
+(
+)
+r
+r
+r
+L
+C
+C
+C
+xdy
+ydx
+I
+r
+\pi 
++-
+-
+-
+=
+-
+=
+=
+\int 
+\int 
+\int 
+\nabla 
+\nabla 
+\nabla 
+. 
+\textcolor{lyred}{例}.求
+L
+xdy
+ydx
+I
+x
+y
+-
+=
++
+\int 
+,其中L 为从
+(
+)
+1,0
+A -
+沿
+y
+x
+=-
+-
+到
+(
+)
+1,0
+B
+,然后沿直线 
+到
+(
+)
+1,2
+D -
+的一段有向弧. 
+解.取
+: 4
+C
+x
+y
+r
++
+=
+,逆时针,则
+C
+L DA
+DA
+DA
+xdy
+ydx
+I
+r
++
+-
+=
+-
+=
+-
+=
+\int 
+\int 
+\int 
+\int 
+\nabla 
+\nabla 
+x
+y
+r
+dy
+dxdy
+r
+y
+\pi 
+\pi 
+\pi 
++
+\le 
+-
+-
+=
+-
+=
++
+\int \int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.积分与路径无关的条件}}
+
+\textcolor{lyred}{定理}.在区域G 内,积分值
+L
+Pdx
+Qdy
++
+\int 
+与路径无关(只与起点终点有关) \Leftrightarrow 对于 
+G 内的任意闭曲线C ,恒有
+C
+Pdx
+Qdy
++
+=
+\int \nabla 
+. 
+\textcolor{lyred}{定义}.若平面区域G 内任意闭曲线所围部分均包含于G ,则称G 为\textcolor{lyred}{单连通区域},\textcolor{lyred}{ }
+即无“洞”的区域,否则称为\textcolor{lyred}{复连通区域}. 
+\textcolor{lyred}{定理}.设区域G 单连通,
+(
+)
+,
+P x y ,
+(
+)
+,
+Q x y 在G 内有连续偏导,则在G 内曲线积分 
+L
+Pdx
+Qdy
++
+\int 
+与路径无关
+Q
+P
+x
+y
+\partial 
+\partial 
+\Leftrightarrow 
+=
+\partial 
+\partial 处处成立. 
+\textcolor{lyred}{例}.求
+(
+)
+y
+y
+L
+I
+ye dx
+x
+y
+e dy
+=
++
++
+\int 
+,其中L 为从O沿
+x
+y
+=
+到(
+)
+1,1
+A
+的有向弧. 
+解. Q
+P
+x
+y
+\partial 
+\partial 
+=
+\partial 
+\partial , xOy 面单连通,故I 与路径无关,取(
+)
+1,0
+B
+,则 
+(
+)
+(
+)
+(
+)
+,0
+1,
+y
+OB
+BA
+I
+P x
+dx
+Q
+y dy
+y
+e dy
+=
++
+=
++
+=
++
++
+\int 
+\int 
+\int 
+\int 
+\int 
+,此路不通; 
+改取
+(
+)
+0,1
+C
+,则
+(
+)
+(
+)
+0,
+,1
+OC
+CA
+I
+Q
+y dy
+P x
+dx
+e dx
+e
+=
++
+=
++
+=
++
+\cdots 
+=
+\int 
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+L
+x
+y dx
+x
+y dy
+I
+x
+y
+-
++
++
+=
++
+\int 
+,其中L 为从
+(
+)
+1,0
+A -
+沿
+y
+x
+=
+-
+到(
+)
+1,0
+B
+的 
+一段有向弧. 
+解. Q
+P
+x
+y
+\partial 
+\partial 
+=
+\partial 
+\partial ,故I 与路径无关,取
+1L 为从
+(
+)
+1,0
+A -
+沿
+y
+x
+=-
+-
+到(
+)
+1,0
+B
+的一段 
+圆弧,则
+(
+)
+(
+)
+L
+L
+I
+x
+y dx
+x
+y dy
+\pi 
+=
+=
+-
++
++
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+L
+xdy
+ydx
+I
+x
+y
+-
+=
+-
+\int 
+,其中L 为
+y
+x
+=
++
+上从(
+)
+0,1
+A
+到(
+)
+3,2
+B
+的一段有向弧. 
+解. Q
+P
+x
+y
+\partial 
+\partial 
+=
+\partial 
+\partial ,\{
+\}
+y
+x
+>
+单连通,故
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+3,2
+0,2
+0,1
+0,2
+dx
+I
+x
+-
+=
++
+=
++
+=
+-
+-
+\int 
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.全微分求积}}
+
+{\bfseries \textcolor{lyred}{1.可积的条件}}
+
+\textcolor{lyred}{定义}.若在平面区域G 内Pdx
+Qdy
++
+是某个(
+)
+,
+u x y 的全微分,则称它在G 内\textcolor{lyred}{可积}, 
+称(
+)
+,
+u x y 为它的一个\textcolor{lyred}{原函数}. 
+\textcolor{lyred}{定理}.设(
+)
+,
+P x y ,
+(
+)
+,
+Q x y 均连续,若
+L
+Pdx
+Qdy
++
+\int 
+在G 内与路径无关,则Pdx
+Qdy
++
+在G 内可积, (
+)
+(
+)
+(
+)
+,
+,
+,
+x y
+x
+y
+u x y
+Pdx
+Qdy
+=
++
+\int 
+为它的一个原函数. 
+\textcolor{lyred}{定理}.设区域G 单连通, (
+)
+,
+P x y ,
+(
+)
+,
+Q x y 在G 内均有连续偏导数,则在G 内 
+Pdx
+Qdy
++
+可积
+Q
+P
+x
+y
+\partial 
+\partial 
+\Leftrightarrow 
+=
+\partial 
+\partial 处处成立. 
+\textcolor{lyred}{例}.验证
+xdy
+ydx
+x
+y
+-
++
+在右半平面内可积,并求它的一个原函数. 
+解. Q
+P
+x
+y
+\partial 
+\partial 
+=
+\partial 
+\partial ,\{
+\}
+x >
+单连通,故可积, (
+)
+(
+)
+(
+)
+,
+1,0
+,
+x y
+u x y
+Pdx
+Qdy
+=
++
+=
+\int 
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+,0
+,
+1,0
+,0
+,0
+,
+arctan
+x
+x y
+y
+x
+x
+dx
+xdy
+y
+P x
+dx
+Q x y dy
+x
+x
+y
+x
+-\cdots 
++
+=
++
+=
++
++
+\int 
+\int 
+\int 
+\int 
+. 
+\textcolor{lyred}{定理}.设G 为单连通区域,
+(
+)
+,
+P x y ,
+(
+)
+,
+Q x y 在G 内有连续偏导数,则下面的四个 
+命题等价: 
+(1)曲线积分
+L
+Pdx
+Qdy
++
+\int 
+在G 内与路径无关; 
+(2)对于G 内任意闭曲线C ,均有
+C
+Pdx
+Qdy
++
+=
+\int \nabla 
+; 
+(3) Q
+P
+x
+y
+\partial 
+\partial 
+=
+\partial 
+\partial 在G 内处处成立; 
+(4)微分形式Pdx
+Qdy
++
+在G 内可积. 
+{\bfseries \textcolor{lyred}{2.分项组合法}}
+
+\textcolor{lyred}{例}.验证在xOy 面内,(
+)
+(
+)
+x
+xy
+dx
+x y
+y
+dy
++
++
++
+可积,求原函数. 
+解.
+(
+)
+(
+)
+Pdx
+Qdy
+x dx
+xy dx
+x ydy
+y dy
+dx
+d
+x y
+dy
++
+=
++
++
++
+=
++
++
+= 
+(
+)
+d x
+x y
+y
++
++
+,故(
+)
+,
+u x y
+x
+x y
+y
+=
++
++
+. 
+\textcolor{lyred}{例}.验证在上半平面内,
+x
+xydx
+dy
+y
+
+
++
++
+
+
+
+
+可积,求原函数. 
+解.
+ln
+x
+x y
+Pdx
+Qdy
+xydx
+dy
+dy
+d
+y
+y
+
+
++
+=
++
++
+=
++
+
+
+
+
+,故(
+)
+,
+ln
+x y
+u x y
+y
+=
++
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.曲线积分的基本定理}}
+
+\textcolor{lyred}{定理}.设在G 内Pdx
+Qdy
+du
++
+=
+,则对G 内任意分段光滑有向弧段
+\approx 
+L
+AB
+=
+,均有 
+\approx 
+\approx 
+()
+()
+AB
+AB
+Pdx
+Qdy
+du
+u B
+u A
++
+=
+=
+-
+\int 
+\int 
+. 
+\textcolor{lyred}{向量形式}:若
+grad
+F
+u
+=
+\rho 
+,则
+\approx 
+\approx 
+()
+()
+AB
+AB
+F dr
+du
+u B
+u A
+\cdots 
+=
+=
+-
+\int 
+\int 
+\rho 
+\rho 
+. 
+\textcolor{lyred}{注}.故当力场F
+\xi \rho 
+为保守场,即具有势函数u 时,它对在其中运动的质点作的功 
+()
+()
+grad
+L
+L
+L
+W
+F dr
+u dr
+du
+u B
+u A
+=
+\cdots 
+=
+\cdots 
+=
+=
+-
+\int 
+\int 
+\int 
+\xi \rho 
+\rho 
+\rho 
+,与路径无关. 
+\textcolor{lyred}{例}.设右半平面内有一个力场,力的大小与点到原点的距离平方成正比,方向指向 
+原点,证明:这个力场对在其中运动的质点所作的功与质点的运动路径无关,并求 
+质点从(
+)
+1,1 到(
+)
+2,2 时力场对其所作的功. 
+解.
+(
+)
+(
+)
+(
+)
+3 2
+,
+,
+grad
+k
+F
+k
+x
+y
+x y
+k x x
+y
+y x
+y
+x
+y
+=-
++
+=-
++
++
+=-
++
+\xi \rho 
+,故 
+L
+W
+F dr
+=
+\cdots 
+\int 
+\rho 
+\rho 与路径无关,
+(
+)
+(
+)
+(
+)
+2,2
+1,1
+14 2
+k
+W
+x
+y
+k
+
+
+=-
++
+=-
+
+
+
+
+;或者, 
+Q
+P
+x
+y
+\partial 
+\partial 
+=
+\partial 
+\partial ,
+x >
+单连通,故
+14 2
+W
+k x x
+dx
+k y
+y dy
+k
+=-
++
+-
++
+=-
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.全微分方程}}
+
+\textcolor{lyred}{定义}.一阶微分方程(
+)
+(
+)
+,
+,
+P x y dx
+Q x y dy
++
+=
+称为\textcolor{lyred}{全微分方程},若存在可微函数 
+(
+)
+,
+u x y ,使得
+(
+)
+(
+)
+,
+,
+du
+P x y dx
+Q x y dy
+=
++
+. 
+\textcolor{lyred}{定理}.若(
+)
+(
+)
+(
+)
+,
+,
+,
+P x y dx
+Q x y dy
+du x y
++
+=
+,则全微分方程 
+(
+)
+(
+)
+,
+,
+P x y dx
+Q x y dy
++
+=
+的通解为(
+)
+,
+u x y
+C
+=
+. 
+\textcolor{lyred}{定理}.设在单连通区域内
+(
+)
+,
+P x y 和
+(
+)
+,
+Q x y 均有连续的偏导数,则微分方程 
+(
+)
+(
+)
+,
+,
+P x y dx
+Q x y dy
++
+=
+是全微分方程
+Q
+P
+x
+y
+\partial 
+\partial 
+\Leftrightarrow 
+=
+\partial 
+\partial . 
+\textcolor{lyred}{例}.求(
+)
+(
+)
+x
+y dx
+x
+y dy
+-
+-
+-
+=
+通解. 
+解一.
+Q
+P
+x
+y
+\partial 
+\partial 
+=
+=-
+\partial 
+\partial 
+,又xOy 面单连通,故(
+)
+(
+)
+2x
+y dx
+x
+y dy
+-
+-
+-
+可积, 
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+,
+0,0
+,
+x y
+y
+x
+u x y
+x
+y dx
+x
+y dy
+x
+dx
+x
+y
+dy
+=
+-
+-
+-
+=
+-
++
+-
+-
+=
+
+
+
+
+\int 
+\int 
+\int 
+x
+xy
+y
+-
++
+,故通解为
+x
+xy
+y
+C
+-
++
+=
+,即
+x
+xy
+y
+C
+-
++
+=
+; 
+解二.(
+)
+(
+)
+x
+y dx
+x
+y dy
+x dx
+ydx
+xdy
+ydy
+-
+-
+-
+=
+-
+-
++
+= 
+(
+)
+(
+)
+x dx
+ydx
+xdy
+ydy
+d
+x
+d xy
+d
+y
+d
+x
+xy
+y
+
+
+
+
+
+
+-
++
++
+=
+-
++
+=
+-
++
+
+
+
+
+
+
+
+
+
+
+
+
+, 
+故通解为
+x
+xy
+y
+C
+-
++
+=
+,即
+x
+xy
+y
+C
+-
++
+=
+; 
+解三.设(
+)
+(
+)
+2x
+y dx
+x
+y dy
+du
+-
+-
+-
+=
+,则 
+(
+)
+()
+u
+x
+y
+u
+x
+y dx
+x
+yx
+C y
+x
+\partial 
+=
+-
+\Rightarrow 
+=
+-
+=
+-
++
+\partial 
+\int 
+,而由u
+y
+x
+y
+\partial 
+=
+-
+\partial 
+,得 
+()
+()
+()
+x
+C
+y
+y
+x
+C
+y
+y
+C y
+y
+C
+'
+'
+-+
+=
+-
+\Rightarrow 
+=
+\Rightarrow 
+=
++
+,故 
+u
+x
+yx
+y
+C
+=
+-
++
++
+,通解为
+x
+xy
+y
+C
+-
++
+=
+,即
+x
+xy
+y
+C
+-
++
+=
+. 
+\textcolor{lyred}{例}.设
+:
+L x
+y
+x
+y
++
++
++
+=
+,逆时针,证明:
+cos
+sin
+L
+x
+y dy
+y
+x dx
+\pi 
+-
+\le 
+\int \nabla 
+. 
+证.左式
+(
+)
+cos
+sin
+2 2
+D
+y
+x
+d
+\pi 
+\pi 
+\sigma 
+=
++
+\le 
+\cdots 
+=
+\int \int 
+,证毕. 
+\textcolor{lyred}{补充练习 }
+1.求
+(
+)
+(
+)
+y
+L
+I
+x
+xy
+dx
+e
+x y dy
+=
++
++
++
++
+\int 
+,其中
+:
+L y
+x
+=
+-
+,
+:1
+x
+\to 
+. 
+解. Q
+P
+x
+y
+\partial 
+\partial 
+=
+\partial 
+\partial ,故
+(
+)
+y
+I
+x
+dx
+e dy
+e
+=
++
++
+=
+-
+\int 
+\int 
+. 
+2.求
+(
+)
+(
+)
+cos
+2 sin
+L
+I
+xy
+y
+x dx
+x
+y
+x
+x y
+dy
+=
+-
++
+-
++
+\int 
+,其中L 为从
+,1
+A \pi 
+
+
+
+
+
+
+沿 
+2x
+y
+\pi 
+=
+到
+, 1
+B \pi 
+
+
+-
+
+
+
+
+的一段有向弧. 
+解.
+D
+L BA
+BA
+y
+I
+xdxdy
+y
+dx
+\pi 
+\pi 
+\pi 
+-
++
+
+
+=
+-
+=
+-
+-
++
+=-
+
+
+
+
+\int 
+\int 
+\int \int 
+\int 
+\nabla 
+. 
+3.求
+(
+)
+(
+)
+(
+)
+L
+y
+x dx
+x
+y dy
+I
+x
+y
+-
+-
+-
+=
++
+\int 
+,其中L 从
+(
+)
+1,0
+A
+沿
+y
+x
+=
+-
+到
+(
+)
+0,1
+B
+. 
+解.
+(
+)
+(
+)
+L BA
+BA
+AB
+I
+y
+x dx
+x
+y dy
+dx
++
+=
+-
+=
+-
+-
+-
+=
+\cdots 
+=-
+\int 
+\int 
+\int 
+\int 
+\nabla 
+. 
+4.求
+(
+)
+L
+I
+x
+y
+xdx
+ydy
+=
++
++
+\int \nabla 
+,其中
+(
+)
+:
+L
+x
+y
+-
++
+=
+,逆时针. 
+解. Q
+P
+x
+y
+\partial 
+\partial 
+=
+\partial 
+\partial ,取
+: 4
+r
+C
+x
+y
+r
++
+=
+,逆时针,则
+r
+r
+C
+C
+I
+r
+xdx
+ydy
+=
+=
++
+=
+\int 
+\int 
+\nabla 
+\nabla 
+. 
+5.设
+()
+f x >
+有连续导数,且
+()
+f
+=
+,若在区域
+x >
+内,曲线积分 
+()
+()
+ln
+x
+L
+y
+ye f x
+dx
+f x dy
+x
+
+
+-
+-
+
+
+
+
+\int 
+与路径无关,求
+()
+f x . 
+解.
+()
+()
+()
+x
+Q
+P
+f
+x
+f x
+e f
+x
+x
+y
+x
+\partial 
+\partial 
+'
+=
+\Rightarrow 
+-
+=-
+\partial 
+\partial 
+,即
+()
+y
+f x
+=
+满足伯努利方程 
+x
+y
+y
+e y
+x
+'-
+=-
+,解得
+x
+x
+x
+y
+xe
+e
+C
+=
+-
++
+,又
+()
+f
+=
+,得
+C =
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第11.4 节 对面积的曲面积分}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.第一类曲面积分的定义}}
+
+\textcolor{lyred}{定义}.设\Sigma 为光滑曲面, (
+)
+, ,
+f x y z 在\Sigma 上有界,将\Sigma 任意划分成n 片
+iS
+\Delta 
+,直径为
+i\lambda , 
+面积为
+iS
+\Delta 
+,作和
+(
+)
+,
+,
+n
+i
+i
+i
+i
+i
+f
+S
+\psi \eta 
+=
+\Delta 
+\sum 
+,
+(
+)
+,
+,
+i
+i
+i
+iS
+\psi \eta 
+\forall 
+\in \Delta 
+,若在无限细分\Sigma 的过程中,
+随着
+\{\}
+1max
+i
+i n
+\lambda 
+\lambda 
+\le \le 
+=
+\to 
+,该和趋向于一个只依赖(
+)
+, ,
+f x y z 和\Sigma 的常数I ,则称I 为 
+(
+)
+, ,
+f x y z 在\Sigma 上\textcolor{lyred}{对面积的曲面积分},记为
+(
+)
+, ,
+f x y z dS
+\Sigma \int \int 
+,
+(
+)
+, ,
+f x y z 为\textcolor{lyred}{被积函数}, 
+\Sigma 为\textcolor{lyred}{积分曲面}. 
+\textcolor{lyred}{定理}.设
+(
+)
+, ,
+f x y z 在光滑曲面\Sigma 上连续,则
+(
+)
+, ,
+f x y z dS
+\Sigma \int \int 
+存在. 
+\textcolor{lyred}{物理意义}.设\Sigma 为曲面型材料,密度为
+(
+)
+, ,
+x y z
+\rho 
+,连续,则
+(
+)
+, ,
+M
+x y z dS
+\rho 
+\Sigma 
+=\int \int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.第一类曲面积分的性质}}
+
+\textcolor{lyred}{性质1}.
+(
+)
+(
+)
+(
+)
+(
+)
+, ,
+, ,
+, ,
+, ,
+f x y z
+g x y z
+dS
+f x y z dS
+f x y z dS
+\alpha 
+\beta 
+\alpha 
+\beta 
+\Sigma 
+\Sigma 
+\Sigma 
+\pm 
+=
+\pm 
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{性质2}.
+(
+)
+(
+)
+(
+)
+, ,
+, ,
+, ,
+f x y z dS
+f x y z dS
+f x y z dS
+\Sigma +\Sigma 
+\Sigma 
+\Sigma 
+=
++
+\int \int 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{性质3}.
+1 dS
+S
+\Sigma 
+\cdots 
+=
+\int \int 
+,一般地,
+k dS
+kS
+\Sigma 
+\cdots 
+=
+\int \int 
+. 
+\textcolor{lyred}{性质4}.若
+(
+)
+(
+)
+, ,
+, ,
+f x y z
+g x y z
+\le 
+,则
+(
+)
+(
+)
+, ,
+, ,
+f x y z dS
+g x y z dS
+\Sigma 
+\Sigma 
+\le 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{推论}.
+(
+)
+(
+)
+, ,
+, ,
+f x y z dS
+f x y z dS
+\Sigma 
+\Sigma 
+\le 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{注}.也有估值定理和积分中值定理. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.对称性}}
+
+\textcolor{lyred}{注}.参照三重积分.\textcolor{lyred}{ }
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+xz dS
+\Sigma 
+=
++
+\int \int 
+,其中
+(
+)
+:
+2 0
+x
+y
+z
+\Sigma 
++
+=
+\le 
+\le 
+. 
+解.
+(
+)
+8 2
+I
+x dS
+x
+y
+dS
+dS
+\pi 
+\Sigma 
+\Sigma 
+\Sigma 
+=
+=
++
+=
+=
+\int \int 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y dS
+\Sigma 
+=
++
+\int \int 
+,其中
+:
+x
+y
+z
+\Sigma 
++
++
+=. 
+解.
+(
+)
+I
+y dS
+x
+y
+z dS
+dS
+\Sigma 
+\Sigma 
+\Sigma 
+=
+=
++
++
+=
+=
+\cdots \cdots 
+=
+\int \int 
+\int \int 
+\int \int 
+
+
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z
+dS
+\Sigma 
+=
+-
++
++
+\int \int 
+,其中
+:
+x
+y
+z
+\Sigma 
++
++
+=. 
+解.
+(
+)
+I
+x
+y
+z
+dS
+x dS
+dS
+dS
+\pi 
+\Sigma 
+\Sigma 
+\Sigma 
+\Sigma 
+=
++
++
++
+=
++
+=
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+
+
+
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z
+dS
+\Sigma 
+=
++
++
+\int \int 
+,其中
+:
+x
+y
+z
+x
+\Sigma 
++
++
+=
+. 
+解.
+(
+)
+(
+)
+I
+x
+y
+z
+xy
+yz
+zx dS
+x
+xy
+yz
+zx dS
+\Sigma 
+\Sigma 
+=
++
++
++
++
++
+=
++
++
++
+=
+\int \int 
+\int \int 
+
+
+(
+)
+1 1
+xdS
+x
+dS
+dS
+\pi 
+\Sigma 
+\Sigma 
+\Sigma 
+=
+-+
+=
+=
+\int \int 
+\int \int 
+\int \int 
+
+
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z
+dS
+\Sigma 
+=
++
++
+\int \int 
+,其中
+:
+x
+y
+z
+y
+\Sigma 
++
++
+=
+. 
+解.
+(
+)
+(
+)
+I
+x
+y
+dS
+x
+y
+z
+dS
+ydS
+dS
+\pi 
+\Sigma 
+\Sigma 
+\Sigma 
+\Sigma 
+=
++
+=
++
++
+=
+=
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+
+
+
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z
+dS
+\Sigma 
+=
++
++
+-
+\int \int 
+,其中
+(
+)
+(
+)
+(
+)
+:
+x
+y
+z
+\Sigma 
+-
++
+-
++
+-
+=. 
+解.
+(
+)(
+)(
+)
+I
+x
+y
+z
+dS
+\Sigma 
+=
+-
++
+-
++
+-
++
+=
+
+
+
+
+\int \int 
+(
+)
+(
+)
+(
+)
+(
+)
+x
+y
+z
+dS
+dS
+dS
+\pi 
+\Sigma 
+\Sigma 
+\Sigma 
+
+
+-
++
+-
++
+-
++
+=
++
+=
+=
+
+
+\int \int 
+\int \int 
+\int \int 
+
+
+
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.计算法}}
+
+\textcolor{lyred}{定理(投影法)}.设
+(
+)
+, ,
+f x y z 在光滑曲面\Sigma 上连续,记
+(
+)
+, ,
+I
+f x y z dS
+\Sigma 
+=\int \int 
+,则 
+(1)当
+(
+)
+:
+,
+z
+z x y
+\Sigma 
+=
+,(
+)
+,
+xy
+x y
+D
+\in 
+时,
+(
+)
+, ,
+,
+xy
+x
+y
+D
+I
+f
+x y z x y
+z
+z dxdy
+=
++
++
+
+
+
+
+\int \int 
+; 
+(2)当
+(
+)
+:
+,
+y
+y x z
+\Sigma 
+=
+,(
+)
+,
+xz
+x z
+D
+\in 
+时,
+(
+)
+,
+,
+,
+xz
+x
+z
+D
+I
+f
+x y x z
+z
+y
+y dxdz
+=
++
++
+
+
+
+
+\int \int 
+; 
+(3)当
+(
+)
+:
+,
+x
+x y z
+\Sigma 
+=
+,(
+)
+,
+yz
+y z
+D
+\in 
+时,
+(
+)
+,
+, ,
+yz
+y
+z
+D
+I
+f
+x y z
+y z
+x
+x dydz
+=
++
++
+
+
+
+
+\int \int 
+. 
+\textcolor{lyred}{例}.求I
+xyzdS
+\Sigma 
+=\int \int 
+,其中\Sigma 为平面
+x
+y
+z
++
++
+=与三个坐标面围成四面体的表面. 
+解.
+(
+)
+1,
+0,
+x y
+x
+y
+I
+xyz dS
+xy
+x
+y
+dxdy
+\Sigma 
+\Sigma 
+\Sigma 
+\Sigma 
+\Sigma 
++\le 
+\ge 
+\ge 
+=
++
++
++
+=
+\cdots 
+=
+-
+-
+\cdots 
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+(
+)
+x
+dx
+xy
+x
+y dy
+-
+-
+-
+=
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+xyz y z
+z x
+x y
+dS
+\Sigma 
+=
++
++
+\int \int 
+,其中
+(
+)
+:
+, ,
+x
+y
+z
+a
+x y z
+\sum 
++
++
+=
+\ge 
+位于. 
+解.
+a
+z
+a
+x
+y
+dS
+d
+a
+x
+y
+\sigma 
+=
+-
+-
+\Rightarrow 
+=
+-
+-
+,故
+I
+xyz x y dS
+\Sigma 
+=
+\cdots 
+=
+\int \int 
+xy
+D
+a
+a
+x y
+a
+x
+y
+d
+a
+x
+y
+\sigma 
+-
+-
+\cdots 
+=
+-
+-
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+y
+z dS
+\Sigma 
+=
++
++
+\int \int 
+,其中\sum 为
+y
+z
++
+=
+被
+x
+y
++
+=
+截下部分. 
+解.
+z
+y
+dS
+d\sigma 
+=
+-
+\Rightarrow 
+=
+,故
+(
+)
+2 25
+125 2
+x
+y
+I
+y
+z dS
+d\sigma 
+\pi 
+\Sigma 
++
+\le 
+=
++
+=
+\cdots 
+=
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+xy
+yz
+zx dS
+\Sigma 
+=
++
++
+\int \int 
+,其中\Sigma 为
+z
+x
+y
+=
++
+被
+x
+y
+ax
++
+=
+截下部分. 
+解.
+2 cos
+64 2
+cos
+xy
+a
+D
+I
+zxdS
+x x
+y
+d
+d
+d
+a
+\pi 
+\theta 
+\pi 
+\sigma 
+\theta 
+\rho 
+\theta \rho 
+\Sigma 
+-
+=
+=
++
+\cdots 
+=
+=
+\int \int 
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+dS
+I
+x
+y
+z
+\Sigma 
+=
++
++
+\int \int 
+,其中\Sigma 为
+(
+)
+2 0
+x
+y
+R
+z
+H
++
+=
+\le 
+\le 
+. 
+解.设
+1 : x
+R
+y
+\Sigma 
+=
+-
+,则
+x
+x
+R
+dS
+dydz
+dydz
+y
+z
+R
+y
+
+
+\partial 
+\partial 
+
+
+=
++
++
+=
+
+
+
+
+\partial 
+\partial 
+
+
+-
+
+
+, 
+yz
+R
+H
+D
+R
+dS
+R
+Rdy
+dz
+I
+dydz
+x
+y
+z
+R
+z
+R
+z
+R
+y
+R
+y
+\Sigma 
+-
+=
+=
+\cdots 
+=
+\cdots 
+=
++
++
++
++
+-
+-
+\int \int 
+\int \int 
+\int 
+\int 
+2 arctan H
+R
+\pi 
+. 
+\textcolor{lyred}{例}.求I
+xdS
+\Sigma 
+=\int \int 
+,其中\Sigma 为
+x
+y
++
+=,
+z
+x
+=
++
+,
+z =
+围成立体的表面. 
+解.设
+1 :
+z
+x
+\Sigma 
+=
++
+,
+2 :
+z
+\Sigma 
+=
+,
+3 :
+y
+x
+\Sigma 
+=
+-
+,则
+I
+\Sigma 
+\Sigma 
+\Sigma 
+=
++
++
+=
+\int \int 
+\int \int 
+\int \int 
+xy
+xy
+xz
+x
+D
+D
+D
+x
+x
+dxdy
+x dxdy
+x
+dxdz
+dx
+dz
+x
+x
+\pi 
++
+-
+\cdots 
++
+\cdots 
++
+\cdots 
+=
++
++
+=
+-
+-
+\int \int 
+\int \int 
+\int \int 
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.物理应用}}
+
+设\Sigma 为曲面型材料,密度为
+(
+)
+, ,
+x y z
+\mu 
+,则 
+1.质心坐标为
+x dS
+x
+dS
+\mu 
+\mu 
+\Sigma 
+\Sigma 
+=\int \int 
+\int \int 
+,
+y dS
+y
+dS
+\mu 
+\mu 
+\Sigma 
+\Sigma 
+=\int \int 
+\int \int 
+,
+z dS
+z
+dS
+\mu 
+\mu 
+\Sigma 
+\Sigma 
+=\int \int 
+\int \int 
+; 
+2.对l 的转动惯量
+lI
+d
+dS
+\mu 
+\Sigma 
+=\int \int 
+,其中(
+)
+, ,
+d x y z 为(
+)
+, ,
+x y z 到l 的距离; 
+3.对位于(
+)
+,
+,
+x
+y
+z
+处的单位质点的引力 
+(
+)
+(
+)
+(
+)
+,
+,
+x
+x
+y
+y
+z
+z
+F
+G
+dS G
+dS G
+dS
+r
+r
+r
+\mu 
+\mu 
+\mu 
+\Sigma 
+\Sigma 
+\Sigma 
+
+
+-
+-
+-
+=
+
+
+
+\int \int 
+\int \int 
+\int \int 
+\rho 
+,其中 
+(
+)
+(
+)
+(
+)
+r
+x
+x
+y
+y
+z
+z
+=
+-
++
+-
++
+-
+. 
+\textcolor{lyred}{例}.求密度为\mu 的均匀半球形壳
+: z
+a
+x
+y
+\Sigma 
+=
+-
+-
+对位于原点处的单位质点的 
+引力. 
+解.由对称性,
+x
+y
+F
+F
+=
+=
+,
+(
+)
+(
+)
+z
+G
+z
+G
+F
+dS
+zdS
+a
+x
+y
+z
+\mu 
+\mu 
+\Sigma 
+\Sigma 
+-
+=
+=
+=
++
++
+\int \int 
+\int \int 
+x
+y
+a
+G
+a
+a
+x
+y
+dxdy
+G
+a
+a
+x
+y
+\mu 
+\mu \pi 
++
+\le 
+-
+-
+\cdots 
+=
+-
+-
+\int \int 
+. 
+\textcolor{lyred}{补充练习 }
+1.求
+dS
+I
+z
+\Sigma 
+=\int \int 
+,其中\Sigma 是
+x
+y
+z
++
++
+=
+被
+z =截下的顶部. 
+解.
+4 ln 2
+x
+y
+d
+I
+dxdy
+d
+a
+x
+y
+x
+y
+\pi 
+\rho \rho 
+\theta 
+\pi 
+\rho 
++
+\le 
+=
+\cdots 
+=
+=
+-
+-
+-
+-
+-
+\int \int 
+\int 
+\int 
+. 
+2.求I
+xyz dS
+\Sigma 
+=\int \int 
+,其中
+(
+)
+:
+z
+x
+y
+z
+\Sigma 
+=
++
+\le 
+\le 
+. 
+解.
+(
+)
+1,
+0,
+x
+y
+x
+y
+I
+xyz dS
+xy x
+y
+x
+y dxdy
+\Sigma 
++
+\le 
+\ge 
+\ge 
+=
+\cdots 
+=
++
++
++
+=
+\int \int 
+\int \int 
+125 5
+cos sin
+d
+d
+\pi 
+\theta \rho 
+\theta 
+\theta \rho 
+\rho 
+\rho \rho 
+-
+\cdots 
++
+\cdots 
+=
+\int 
+\int 
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第11.5 节 对坐标的曲面积分}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.第二类曲面积分的定义}}
+
+我们常见的曲面大都是\textcolor{lyred}{双侧的},选定一侧的双侧曲面称为\textcolor{lyred}{有向曲面}. 
+设\Sigma 为光滑有向曲面,
+(
+)
+, ,
+R x y z 在\Sigma 上有界,将\Sigma 任意分成n 小片
+iS
+\Delta 
+,直径为
+i\lambda , 
+作和
+(
+)(
+)
+,
+,
+n
+i
+i
+i
+i
+xy
+i
+R
+S
+\psi \eta 
+=
+\Delta 
+\sum 
+, (
+)
+,
+,
+i
+i
+i
+iS
+\psi \eta 
+\forall 
+\in \Delta 
+,其中(
+)
+i
+xy
+S
+\Delta 
+为
+iS
+\Delta 
+在xOy 平面上的 
+投影,若在无限细分\Sigma 的过程中,随着
+\{\}
+1max
+i
+i n
+\lambda 
+\lambda 
+\le \le 
+=
+\to 
+,该和趋向于一个只依赖 
+于
+(
+)
+, ,
+R x y z 和\Sigma 的常数I ,则称I 为
+(
+)
+, ,
+R x y z 在\Sigma 上\textcolor{lyred}{对坐标x 与y 的曲面积分}, 
+记为
+(
+)
+, ,
+R x y z dxdy
+\Sigma \int \int 
+;称
+(
+)
+, ,
+f x y z 为\textcolor{lyred}{被积函数},\Sigma 为\textcolor{lyred}{积分曲面}. 
+类似地,
+(
+)
+(
+)(
+)
+, ,
+lim
+,
+,
+n
+i
+i
+i
+i
+yz
+i
+P x y z dydz
+P
+S
+\lambda 
+\psi \eta 
+\to 
+=
+\Sigma 
+=
+\Delta 
+\sum 
+\int \int 
+; 
+(
+)
+(
+)(
+)
+, ,
+lim
+,
+,
+n
+i
+i
+i
+i
+zx
+i
+Q x y z dzdx
+Q
+S
+\lambda 
+\psi \eta 
+\to 
+=
+\Sigma 
+=
+\Delta 
+\sum 
+\int \int 
+. 
+设
+(
+)
+,
+,
+A
+P Q R
+=
+\rho 
+为\Sigma 上的有界向量值函数(场),则A
+\rho 
+在\Sigma 上\textcolor{lyred}{对坐标的曲面积分}为 
+A dS
+Pdydz
+Qdzdx
+Rdxdy
+\Sigma 
+\Sigma 
+\cdots 
+=
++
++
+\int \int 
+\int \int 
+\rho 
+\rho 
+,其中
+(
+)
+,
+,
+dS
+dydz dzdx dxdy
+=
+\rho 
+为\textcolor{lyred}{有向曲面元素}. 
+\textcolor{lyred}{定理}.光滑有向曲面上的连续函数对坐标的曲面积分存在. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.两类曲面积分的联系}}
+
+\textcolor{lyred}{定理}.设光滑有向曲面\Sigma 的单位法向量
+(
+)
+cos ,cos
+,cos
+ne
+\alpha 
+\beta 
+\gamma 
+=
+\rho 
+,则 
+cos
+Pdydz
+P
+dS
+\alpha 
+\Sigma 
+\Sigma 
+=
+\cdots 
+\int \int 
+\int \int 
+,
+cos
+Qdzdx
+Q
+dS
+\beta 
+\Sigma 
+\Sigma 
+=
+\cdots 
+\int \int 
+\int \int 
+,
+cos
+Rdxdy
+R
+dS
+\gamma 
+\Sigma 
+\Sigma 
+=
+\int \int 
+\int \int 
+,即 
+(
+)
+(
+)
+cos
+cos
+cos
+n
+A dS
+A e
+dS
+P
+Q
+R
+dS
+\alpha 
+\beta 
+\gamma 
+\Sigma 
+\Sigma 
+\Sigma 
+\cdots 
+=
+\cdots 
+=
++
++
+\int \int 
+\int \int 
+\int \int 
+\rho 
+\rho 
+\rho \rho 
+. 
+\textcolor{lyred}{例}.设\Sigma 为圆柱体(
+)
+(
+)
+(
+)
+4 1
+x
+x
+y
+y
+z
+-
++
+-
+\le 
+\le 
+\le 
+的外表面,证明: 
+(
+)
+(
+)
+cos
+sin 2
+16 3
+x
+y dydz
+xy
+dzdx
+dxdy
+\pi 
+\Sigma 
++
++
++
+\le 
+\int \int 
+. 
+证.
+(
+)
+n
+n
+A dS
+A e
+dS
+A e dS
+A dS
+dS
+\Sigma 
+\Sigma 
+\Sigma 
+\Sigma 
+\Sigma 
+\cdots 
+=
+\cdots 
+\le 
+\cdots 
+\le 
+\le 
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+,证毕. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.流过曲面一侧的流量}}
+
+设
+(
+)
+,
+,
+A
+P Q R
+=
+\rho 
+为一稳定不可压缩流体的流速场,\Sigma 为一片有向曲面,在\Sigma 上任取 
+dS ,则单位时间内流过其指定一侧的流体构成了一个底面积为dS ,斜高为A
+\rho 
+的 
+斜柱体,体积
+(
+)
+n
+d
+A e
+dS
+A dS
+\Phi =
+\cdots 
+=
+\cdots 
+\rho 
+\rho 
+\rho 
+\rho 
+,故单位时间内流过\Sigma 指定一侧的流量总量 
+A dS
+\Sigma 
+\Phi =
+\cdots 
+\int \int 
+\rho 
+\rho 
+,也称为\textcolor{lyred}{通量}. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.第二类曲面积分的性质}}
+
+\textcolor{lyred}{性质1}.
+(
+)
+A
+B
+dS
+A dS
+B dS
+\alpha 
+\beta 
+\alpha 
+\beta 
+\Sigma 
+\Sigma 
+\Sigma 
+\pm 
+\cdots 
+=
+\cdots 
+\pm 
+\cdots 
+\int \int 
+\int \int 
+\int \int 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+; 
+\textcolor{lyred}{性质2}.
+A dS
+A dS
+A dS
+\Sigma +\Sigma 
+\Sigma 
+\Sigma 
+\cdots 
+=
+\cdots 
++
+\cdots 
+\int \int 
+\int \int 
+\int \int 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+; 
+\textcolor{lyred}{性质3}.
+A dS
+A dS
+-\Sigma 
+\Sigma 
+\cdots 
+=-
+\cdots 
+\int \int 
+\int \int 
+\rho 
+\rho 
+\rho 
+\rho 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.计算法}}
+
+\textcolor{lyred}{定理(投影法)}.设\Sigma 为光滑有向曲面,
+,
+,
+P Q R 为\Sigma 上的有界函数. 
+(1)设
+(
+)
+:
+,
+z
+z x y
+\Sigma 
+=
+,上侧,则
+(
+)
+, ,
+,
+xy
+D
+Rdxdy
+R x y z x y
+dxdy
+\Sigma 
+=
+
+
+
+
+\int \int 
+\int \int 
+; 
+(2)设
+(
+)
+:
+,
+y
+y x z
+\Sigma 
+=
+,右侧,则
+(
+)
+,
+,
+,
+xz
+D
+Qdzdx
+Q x y x z
+z dzdx
+\Sigma 
+=
+
+
+
+
+\int \int 
+\int \int 
+; 
+(3)设
+(
+)
+:
+,
+x
+x y z
+\Sigma 
+=
+,前侧,则
+(
+)
+,
+, ,
+yz
+D
+Pdydz
+P x y z
+y z dydz
+\Sigma 
+=
+
+
+
+
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{定理(合一公式)}.设I
+Pdydz
+Qdzdx
+Rdxdy
+\Sigma 
+=
++
++
+\int \int 
+,则 
+(1)当
+(
+)
+:
+,
+z
+z x y
+\Sigma 
+=
+时,
+z
+z
+I
+P
+Q
+R
+dxdy
+x
+y
+\Sigma 
+
+
+
+
+\partial 
+\partial 
+
+
+=
+\cdots -
++
+\cdots -
++
+\cdots 
+
+
+
+
+
+
+\partial 
+\partial 
+
+
+
+
+
+
+\int \int 
+; 
+(2)当
+(
+)
+:
+,
+y
+y x z
+\Sigma 
+=
+时,
+y
+y
+I
+P
+Q
+R
+dzdx
+x
+z
+\Sigma 
+
+\partial 
+\partial 
+
+
+
+
+
+=
+\cdots -
++
+\cdots +
+\cdots -
+
+
+
+
+
+
+\partial 
+\partial 
+
+
+
+
+
+
+\int \int 
+; 
+(3)当
+(
+)
+:
+,
+x
+x y z
+\Sigma 
+=
+时,
+x
+x
+I
+P
+Q
+R
+dydz
+y
+z
+\Sigma 
+
+
+
+
+\partial 
+\partial 
+
+
+=
+\cdots +
+\cdots -
++
+\cdots -
+
+
+
+
+
+
+\partial 
+\partial 
+
+
+
+
+
+
+\int \int 
+. 
+\textcolor{lyred}{例}.设\Sigma 为
+[
+][
+][
+]
+0,
+0,
+0,
+a
+b
+c
+\Omega =
+\times 
+\times 
+的外侧表面,求
+I
+x dydz
+y dzdx
+z dxdy
+\Sigma 
+=
++
++
+\int \int 
+. 
+解.
+xy
+xy
+D
+D
+z dxdy
+c dxdy
+dxdy
+c ab
+\Sigma 
+\Sigma 
+\Sigma 
+=
++
+=
+-
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+
+,同理, 
+y dzdx
+b ac
+\Sigma 
+=
+\int \int 
+,
+x dydz
+a bc
+\Sigma 
+=
+\int \int 
+,故
+(
+)
+I
+a
+b
+c abc
+=
++
++
+. 
+\textcolor{lyred}{例}.求
+ze
+I
+dxdy
+x
+y
+\Sigma 
+=
++
+\int \int 
+,其中\Sigma 为
+z
+x
+y
+=
++
+,
+z =,
+z =
+围成立体的外表面. 
+解.记\Sigma 的上,下,侧面为
+\Sigma ,
+\Sigma ,
+\Sigma ,则
+I
+\Sigma 
+\Sigma 
+\Sigma 
+=
++
++
+=
+\int \int 
+\int \int 
+\int \int 
+x
+y
+x
+y
+x
+y
+x
+y
+e
+e
+e
+dxdy
+dxdy
+dxdy
+e
+x
+y
+x
+y
+x
+y
+\pi 
++
++
+\le 
++
+\le 
+\le 
++
+\le 
+-
+-
+=
++
++
++
+\int \int 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+I
+x
+xyz dxdy
+\Sigma 
+=
++
+\int \int 
+,其中\Sigma 为
+(
+)
+0,
+x
+y
+z
+x
+y
++
++
+=
+\ge 
+\ge 
+外侧. 
+解.
+(
+)
+(
+)
+xy
+xy
+D
+D
+I
+x
+xy
+x
+y
+dxdy
+x
+xy
+x
+y
+dxdy
+\Sigma 
+\Sigma 
+=
++
+=
++
+-
+-
+-
+-
+-
+-
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+cos
+sin
+xy
+D
+xy
+x
+y dxdy
+d
+d
+\pi 
+\theta \rho 
+\theta \rho 
+\theta 
+\rho 
+\rho \rho 
+-
+-
+=
+\cdots 
+\cdots 
+-
+\cdots 
+=
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+xdydz
+z dxdy
+I
+x
+y
+z
+\Sigma 
++
+=
++
++
+\int \int 
+,其中\Sigma 为
+\{
+\}
+1,
+x
+y
+z
+\Omega =
++
+\le 
+\le 
+的外表面. 
+解.记\Sigma 的上下前后面为
+\Sigma ,
+\Sigma ,
+\Sigma ,
+\Sigma ,则
+I
+\Sigma 
+\Sigma 
+\Sigma 
+\Sigma 
+=
++
++
++
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+(
+)
+(
+)
+yz
+yz
+D
+D
+x
+y
+x
+y
+dxdy
+y
+y
+dxdy
+dydz
+dydz
+x
+y
+z
+z
+x
+y
++
+\le 
++
+\le 
+-
+-
+-
+-
+\cdots 
+-
++
+-
+=
++
++
++
++
++
++-
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+yz
+D
+y
+y
+dydz
+dy
+dz
+z
+z
+\pi 
+-
+-
+-
+-
+=
+=
++
++
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+I
+x y
+x
+dydz
+z
+dxdy
+\Sigma 
+=
+-
++
++
++
+\int \int 
+,其中\Sigma 为
+x
+y
++
+=
+被
+z =
+,
+y
+z
++
+=
+截下部分的外侧. 
+解.设
+1 :
+x
+y
+\Sigma 
+=
+-
+前侧,则 
+(
+)
+(
+)
+yz
+y
+D
+I
+x dydz
+y
+dydz
+dy
+y dz
+\pi 
+-
+\Sigma 
+-
+=
+-
+=
+-
+-
+=-
+-
+=-
+\int \int 
+\int \int 
+\int 
+\int 
+. 
+\textcolor{lyred}{例}.求I
+xdydz
+zdxdy
+\Sigma 
+=
+-
+\int \int 
+,其中
+(
+)(
+)
+:
+z
+x
+y
+z
+\Sigma 
+=
++
+\le 
+\le 
+下侧. 
+解.
+(
+)(
+)
+(
+)(
+)
+,0,
+,
+,1
+,0,
+,
+,1
+x
+y
+I
+x
+z
+z
+z
+dxdy
+x
+z
+x
+y
+dxdy
+\Sigma 
+\Sigma 
+=
+-
+\cdots -
+-
+=
+-
+\cdots -
+-
+=
+\int \int 
+\int \int 
+(
+)
+(
+)
+(
+)
+x
+y
+x
+y
+x
+z dxdy
+x
+x
+y
+d
+x
+y
+d
+\sigma 
+\sigma 
+\pi 
+\Sigma 
++
+\le 
++
+\le 
+
+
+-
+-
+=
++
++
+=
++
+=
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+I
+y
+z dydz
+x
+y dxdy
+\Sigma 
+=
+-
++
+-
+\int \int 
+,其中\Sigma 为
+z
+x
+x
+y
+=
+-
+-
+被
+x
+y
+x
++
+=
+截下部分的上侧. 
+解.
+x
+x
+y
+x
+zz
+x
+x
+y
+z
+x
+z
+y
+zz
+z
++
+=
+
+-
++
++
+=
+\Rightarrow 
+\Rightarrow 
+=
+
++
+=
+
+,
+y
+y
+z
+z
+-
+=
+,故 
+(
+)
+(
+)
+(
+)
+,0,
+,
+,1
+x
+y
+x
+I
+y
+z
+x
+y
+dxdy
+y
+z
+x
+y
+dxdy
+z
+z
+z
+\Sigma 
+\Sigma 
+-
+-
+-
+
+
+
+
+=
+-
+-
+\cdots -
+-
+=
+-
++
+-
+=
+
+
+
+
+
+
+
+
+\int \int 
+\int \int 
+(
+)
+(
+)
+xy
+D
+x
+y
+x
+x
+y
+x
+x
+y
+x
+y
+d
+d
+x
+x
+y
+\sigma 
+\sigma 
+\pi 
++
+\le 
+
+
+-
+-
+-
+-
++
+-
+=
+\cdots 
+=
+
+
+
+-
+-
+
+
+
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{补充练习} 
+1.求
+I
+zdxdy
+xdydz
+y dzdx
+\Sigma 
+=
++
++
+\int \int 
+,其中
+(
+)
+:
+1 0
+x
+y
+z
+\Sigma 
++
+=
+\le 
+\le 
+外侧. 
+解.设
+1 :
+x
+y
+\Sigma 
+=
+-
+前侧,则 
+yz
+D
+I
+xdydz
+y dydz
+dy
+y dz
+\pi 
+\Sigma 
+-
+=
+=
+-
+=
+-
+=
+\int \int 
+\int \int 
+\int 
+\int 
+. 
+2.求
+(
+)
+I
+y
+z dydz
+z dxdy
+\Sigma 
+=
++
++
+\int \int 
+,其中
+(
+)
+:
+z
+x
+y
+z
+\Sigma 
+=
++
+\le 
+\le 
+下侧. 
+解.
+(
+)
+,0,
+,
+,1
+x
+y
+xy
+xz
+I
+y
+z
+z
+dxdy
+z
+dxdy
+x
+y
+x
+y
+x
+y
+\Sigma 
+\Sigma 
+
+
+
+
+-
+-
++
+
+
+
+
+=
++
+\cdots 
+=
+-
+=
+
+
+
+
++
++
++
+
+
+
+
+\int \int 
+\int \int 
+(
+)
+x
+y
+x
+y
+dxdy
+d
+d
+\pi 
+\theta \rho 
+\rho \rho 
+\pi 
+\le 
++
+\le 
+-
++
+=-
+\cdots 
+=-
+\int \int 
+\int 
+\int 
+. 
+3.求
+z
+z
+z
+I
+xe dydz
+ye dzdx
+e dxdy
+\Sigma 
+=
++
+-
+\int \int 
+,其中
+(
+)
+:
+1 0
+z
+x
+y
+z
+\Sigma 
+=
++
+-
+\le 
+\le 
+下侧. 
+解.
+(
+)
+,
+,
+,
+,1
+z
+z
+z
+x
+y
+x
+y
+I
+xe
+ye
+e
+dxdy
+x
+y
+x
+y
+\le 
++
+\le 
+
+
+-
+-
+
+
+=-
+-
+\cdots 
+=
+
+
++
++
+
+
+\int \int 
+(
+)
+(
+)
+(
+)
+x
+y
+x
+y
+e
+x
+y
+d
+d
+e
+d
+e
+\pi 
+\rho 
+\sigma 
+\theta 
+\rho 
+\rho \rho 
+\pi 
++
+-
+-
+\le 
++
+\le 
++
++
+=
++
+\cdots 
+=
+-
+\int \int 
+\int 
+\int 
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第11.6 节 高斯公式}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.Gauss 公式}}
+
+\textcolor{lyred}{定义}.设向量场
+(
+)
+,
+,
+A
+P Q R
+=
+\rho 
+,记div
+P
+Q
+R
+A
+x
+y
+z
+\partial 
+\partial 
+\partial 
+=
++
++
+\partial 
+\partial 
+\partial 
+\rho 
+,称为A
+\rho 
+的\textcolor{lyred}{散度}.\textcolor{lyred}{ }
+\textcolor{lyred}{定理}.设光滑有向闭曲面\Sigma 为闭区域\Omega 的外侧边界,
+(
+)
+,
+,
+A
+P Q R
+=
+\rho 
+为\Omega 上向量场, 
+其中
+(
+)
+, ,
+P x y z ,
+(
+)
+, ,
+Q x y z ,
+(
+)
+, ,
+R x y z 均在\Omega 上有连续偏导数,则 
+div
+A dS
+A dv
+\Sigma 
+\Omega 
+\cdots 
+=
+\cdots 
+\int \int 
+\int \int \int 
+\rho 
+\rho 
+\rho 
+
+. 
+\textcolor{lyred}{推论}.
+xdydz
+ydzdx
+zdxdy
+\partial \Omega 
+\Omega =
++
++
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+I
+y
+x dxdy
+x y
+z dydz
+\Sigma 
+=
+-
++
+-
+\int \int 
+,其中\Sigma 为
+x
+y
++
+=,
+z =
+,
+z =
+所围成 
+立体的内表面. 
+解.
+(
+)
+(
+)
+(
+)
+div
+,0,
+I
+x y
+z
+y
+x dv
+z
+y dv
+zdv
+dv
+\pi 
+\Omega 
+\Omega 
+\Omega 
+\Omega 
+=-
+-
+-
+=
+-
+=
+=
+=
+\int \int \int 
+\int \int \int 
+\int \int \int 
+\int \int \int 
+. 
+\textcolor{lyred}{例}.设(
+)
+()
+, ,
+u x y z
+C
+\in 
+\Omega ,证明:
+u
+u
+u
+u
+dS
+dv
+n
+x
+y
+z
+\partial \Omega 
+\Omega 
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+=
++
++
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+\int \int 
+\int \int \int 
+
+. 
+证.
+(
+)
+grad
+,
+,
+n
+u
+u
+u
+u
+dS
+u e
+dS
+dS
+n
+x
+y
+z
+\partial \Omega 
+\partial \Omega 
+\partial \Omega 
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+=
+\cdots 
+=
+\cdots 
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+\int \int 
+\int \int 
+\int \int 
+\rho 
+\rho 
+
+
+
+,即得,证毕. 
+\textcolor{lyred}{例}.求
+(
+)
+xdydz
+ydzdx
+zdxdy
+I
+x
+y
+z
+\Sigma 
++
++
+=
++
++
+\int \int 
+,其中
+:
+x
+y
+z
+a
+b
+c
+\Sigma 
++
++
+=,外侧. 
+解.取
+1 : x
+y
+z
+r
+\Sigma 
++
++
+=
+,外侧,
+\{
+\}
+\ x
+y
+z
+r
+'
+\Omega =\Omega 
++
++
+\le 
+,则 
+(
+)
+xdydz
+ydzdx
+zdxdy
+I
+dv
+r
+r
+r
+\pi 
+\pi 
+'
+\Sigma +-\Sigma 
+-\Sigma 
+\Omega 
+\Sigma 
++
++
+=
+-
+=
+\cdots 
++
+=
+\cdots \cdots 
+=
+\int \int 
+\int \int 
+\int \int \int 
+\int \int 
+
+
+
+. 
+\textcolor{lyred}{例}.求
+I
+x dydz
+y dzdx
+z dxdy
+\Sigma 
+=
++
++
+\int \int 
+,其中
+(
+)
+:
+x
+y
+z
+z
+h
+\Sigma 
++
+=
+\le 
+\le 
+,下侧. 
+解.取
+(
+)
+1 : z
+h x
+y
+h
+\Sigma 
+=
++
+\le 
+,上侧,则
+I
+\Sigma +\Sigma 
+\Sigma 
+=
+-
+=
+\int \int 
+\int \int 
+
+(
+)
+h
+x
+y
+h
+x
+y
+z
+h
+x
+y
+z dv
+h dxdy
+dz
+zdxdy
+h
+\pi 
+\pi 
+\Omega 
++
+\le 
++
+\le 
++
++
+-
+=
+-
+=-
+\int \int \int 
+\int \int 
+\int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+(
+)
+2 1
+I
+x
+y
+dydz
+z
+y
+dzdx
+yz
+x
+dxdy
+\Sigma 
+=
++
++
++
+-
+-
++
++
+\int \int 
+,其中 
+(
+)
+:
+y
+x
+z
+y
+\Sigma 
+-=
++
+\le 
+\le 
+,外侧. 
+解.取
+(
+)
+1 :
+y
+x
+z
+\Sigma 
+=
++
+\le 
+,右侧,则
+I
+\Sigma +\Sigma 
+\Sigma 
+=
+-
+=
+\int \int 
+\int \int 
+
+(
+)
+2 1 3
+x
+z
+x
+z
+y
+dv
+dzdx
+dy
+dzdx
+\pi 
+\pi 
+\Omega 
++
+\le 
++
+\le -
+-
+-
+=
++
+=
+\int \int \int 
+\int \int 
+\int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+z
+z
+z
+I
+xe dydz
+ye dzdx
+e dxdy
+\Sigma 
+=
++
+-
+\int \int 
+,其中
+(
+)
+:
+1 0
+z
+x
+y
+z
+\Sigma 
+=
++
+-
+\le 
+\le 
+,下侧. 
+解.取
+(
+)
+1 :
+z
+x
+y
+\Sigma 
+=
++
+\le 
+,上侧,
+(
+)
+2 :
+z
+x
+y
+\Sigma 
+=
++
+\le 
+,下侧,则 
+(
+)
+(
+)
+x
+y
+x
+y
+I
+e dxdy
+dxdy
+e
+\pi 
+\pi 
+\Sigma +\Sigma +\Sigma 
+\Sigma 
+\Sigma 
++
+\le 
++
+\le 
+=
+-
+-
+=
+-
+-
++
+-
+=-
++
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+xdydz
+ydzdx
+zdxdy
+I
+x
+y
+z
+\Sigma 
++
++
+=
++
++
+\int \int 
+,其中
+(
+)
+:1
+z
+x
+y
+z
+\Sigma 
+-
+=
++
+\ge 
+,上侧. 
+解.取
+(
+)
+1 :
+z
+x
+y
+x
+y
+\Sigma 
+=
+-
+-
++
+\le 
+,下侧,则
+I
+\Sigma +\Sigma 
+\Sigma 
+\Sigma 
+=
+-
+=
+-
+=
+\int \int 
+\int \int 
+\int \int 
+
+xdydz
+ydzdx
+zdxdy
+-\Sigma 
++
++
+\int \int 
+,再取
+(
+)
+2 :
+z
+x
+y
+\Sigma 
+=
++
+\le 
+,下侧,则 
+I
+dv
+\pi 
+\pi 
+-\Sigma +\Sigma 
+\Sigma 
+\Omega 
+=
+-
+=
+=\cdots 
+=
+\int \int 
+\int \int 
+\int \int \int 
+
+. 
+\textcolor{lyred}{例}.求
+(
+)
+xdydz
+ydzdx
+zdxdy
+I
+x
+y
+z
+\Sigma 
++
++
+=
++
++
+\int \int 
+,
+(
+)
+(
+)
+(
+)
+:
+x
+y
+z
+z
+-
+-
+\Sigma 
++
++
+=
+\ge 
+,上侧. 
+解.取
+1 : z
+r
+x
+y
+\Sigma 
+=
+-
+-
+,
+(
+)
+(
+)
+:
+,
+x
+y
+z
+x
+y
+r
+
+
+-
+-
+\Sigma 
+=
++
+\ge 
++
+\le 
+
+
+
+
+
+
+,下侧,则 
+I
+xdydz
+ydzdx
+zdxdy
+r
+\pi 
+\Sigma +\Sigma +\Sigma 
+\Sigma 
+\Sigma 
+-\Sigma 
+=
+-
+-
+=
++
++
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.沿闭曲面积分为零的条件}}
+
+\textcolor{lyred}{定理}.设G 为空间二维单连通区域,即G 内任意闭曲面所围区域均包含于G ,则 
+对于G 内任意的闭曲面\Sigma ,
+A dS
+\Sigma 
+\cdots 
+=
+\Leftrightarrow 
+\int \int 
+\rho 
+\rho 
+
+在G 内div
+A =
+\rho 
+. 
+\textcolor{lyred}{推论}.设G 为空间二维单连通区域,则在G 内,积分值
+A dS
+\Sigma 
+\cdots 
+\int \int 
+\rho 
+\rho 
+与积分曲面无关 
+\Leftrightarrow 在G 内div
+A =
+\rho 
+处处成立. 
+\textcolor{lyred}{例}.设
+(
+)(
+)
+:
+2 1
+z
+x
+y
+z
+\Sigma 
+=
+-
+-
+\ge 
+,上侧,求I = 
+(
+)
+yz x
+y
+z dydz
+xz x
+y
+z dzdx
+x y
+xy x
+y
+z
+dxdy
+\Sigma 
++
++
++
++
++
++
+-
++
++
+\int \int 
+. 
+解.除原点外,
+P
+Q
+R
+x
+y
+z
+\partial 
+\partial 
+\partial 
++
++
+=
+\partial 
+\partial 
+\partial 
+,故取
+1 :
+z
+x
+y
+\Sigma 
+=
+-
+-
+,上侧,则 
+(
+)
+I
+yzdydz
+xzdzdx
+x y
+xy dxdy
+\Sigma 
+=
++
++
+-
+\int \int 
+,又
+P
+Q
+R
+x
+y
+z
+\partial 
+\partial 
+\partial 
++
++
+=
+\partial 
+\partial 
+\partial 
+处处成立,再取 
+(
+)
+2 :
+z
+x
+y
+\Sigma 
+=
++
+\le 
+,上侧,则
+(
+)
+x
+y
+I
+x y
+xy dxdy
+x y dxdy
+\pi 
+\Sigma 
++
+\le 
+=
+-
+=
+=
+\int \int 
+\int \int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.散度的物理意义}}
+
+设A
+\rho 
+为一稳定不可压缩流体的流速场,则
+A dS
+\partial \Omega 
+\Phi =
+\cdots 
+\int \int 
+\rho 
+\rho 
+
+为单位时间内该流体由\Omega  
+内部通过\partial \Omega 流向外部的流量(流出-流入),也即\Omega 内产生新流体的总量,于是, 
+div
+lim
+div
+lim
+M
+M
+M
+A
+Adv
+\Delta \Omega \to 
+\Delta \Omega \to 
+\Delta \Omega 
+=
+=
+\Phi 
+\Delta \Omega 
+\Delta \Omega 
+\int \int \int 
+\rho 
+\rho 
+,代表M 处单位时间单位体积内产生 
+新流体的量,故当div
+M
+A
+>
+\rho 
+时,称M 为\textcolor{lyred}{源},当div
+M
+A
+>
+\rho 
+时,称M 为\textcolor{lyred}{负源},或\textcolor{lyred}{汇}, 
+div A
+\rho 
+的大小反映了源的强度,若处处div
+A =
+\rho 
+,则称A
+\rho 
+为\textcolor{lyred}{无源场}. 
+\textcolor{lyred}{补充练习 }
+1.求
+I
+xzdydz
+ydzdx
+yzdxdy
+\Sigma 
+=
++
++
+\int \int 
+,其中
+(
+)
+:
+,
+x
+y
+z
+x z
+\Sigma 
++
++
+=
+\ge 
+,前侧. 
+解.取
+(
+)
+1 :
+1,
+x
+y
+z
+z
+\Sigma 
+=
++
+\le 
+\ge 
+,后侧,
+(
+)
+2 :
+1,
+z
+x
+y
+x
+\Sigma 
+=
++
+\le 
+\ge 
+,下侧,则 
+(
+)
+(
+)
+I
+z
+y dv
+z
+dv
+\pi 
+\Sigma +\Sigma +\Sigma 
+\Sigma 
+\Sigma 
+\Sigma +\Sigma +\Sigma 
+\Omega 
+\Omega 
+=
+-
+-
+=
+=
++
++
+=
++
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+\int \int \int 
+\int \int \int 
+
+
+. 
+2.设
+()
+f x 在(
+)
+0,+\infty 上有连续的导数,对(
+)
+\{
+\}
+, ,
+:
+x y z
+x >
+内的任意闭曲面\Sigma ,均有 
+()
+()
+x
+xf x dydz
+xyf x dzdx
+ze dxdy
+\Sigma 
+-
+-
+=
+\int \int 
+,且
+()
+lim
+x
+f x
++
+\to 
+=,求
+()
+f x . 
+解.
+()
+()
+(
+)
+()
+()
+()
+div
+,
+,
+x
+x
+xf x
+xyf x
+ze
+xf
+x
+f x
+xf x
+e
+'
+-
+-
+=
++
+-
+-
+=
+,即
+()
+y
+f x
+=
+满足 
+x
+y
+y
+e
+x
+
+
+'+
+-
+=
+
+
+
+
+,解得
+()
+2x
+x
+e
+Ce
+f x
+x
++
+=
+,由
+lim
+x
+x
+x
+e
+Ce
+x
++
+\to 
++
+=,得到
+C =-,故 
+()
+2x
+x
+e
+e
+f x
+x
+-
+=
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第11.7 节 斯托克斯公式}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.Stokes 公式}}
+
+\textcolor{lyred}{定义}.向量场
+(
+)
+,
+,
+A
+P Q R
+=
+\rho 
+的散度为div A
+A
+=\nabla \cdots 
+\rho 
+\rho 
+\rho 
+,其中
+,
+,
+x
+y
+z
+
+
+\partial 
+\partial 
+\partial 
+\nabla =
+
+\partial 
+\partial 
+\partial 
+
+
+\rho 
+,又记 
+rot
+,
+,
+i
+j
+k
+R
+Q
+P
+R
+Q
+P
+A
+A
+x
+y
+z
+y
+z
+z
+x
+x
+y
+P
+Q
+R
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+=\nabla \times 
+=
+=
+-
+-
+-
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+,称为A
+\rho 
+的\textcolor{lyred}{旋度}. 
+\textcolor{lyred}{有向曲面边界的定向}:当观察者站在有向曲面\Sigma 选定一侧的边界上,沿着该方向 
+行走时,\Sigma 位于他的左侧;或者,从\Sigma 内部看,该方向为逆时针;或者,\Sigma 的法向量 
+与该方向之间满足右手法则.选择了该方向的\Sigma 的边界记为
++
+\partial \Sigma . 
+\textcolor{lyred}{定理}.设分段光滑有向闭曲线\Gamma 是分片光滑有向曲面\Sigma 的正向边界,若
+(
+)
+, ,
+P x y z , 
+(
+)
+, ,
+Q x y z ,
+(
+)
+, ,
+R x y z 在\Sigma 上有连续的偏导数,则 
+R
+Q
+P
+R
+Q
+P
+Pdx
+Qdy
+Rdz
+dydz
+dzdx
+dxdy
+y
+z
+z
+x
+x
+y
+\Gamma 
+\Sigma 
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+
+
++
++
+=
+-
++
+-
++
+-
+
+
+
+
+
+
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+\partial 
+
+
+
+
+
+
+\int 
+\int \int 
+\nabla 
+,即 
+(
+)
+rot
+rot
+n
+A dr
+A dS
+A e
+dS
+\Gamma 
+\Sigma 
+\Sigma 
+\cdots 
+=
+\cdots 
+=
+\cdots 
+\int 
+\int \int 
+\int \int 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+\nabla 
+,其中
+ne\rho 为\Sigma 的单位正法向量. 
+\textcolor{lyred}{注}.
+A dr
+\Gamma 
+\cdots 
+\int 
+\rho 
+\rho 
+\nabla 
+称为向量场A
+\rho 
+沿曲线\Gamma 的\textcolor{lyred}{环流量}. 
+\textcolor{lyred}{例}.证明:(1)
+(
+)
+div rot
+A =
+\rho 
+;(2)
+(
+)
+rot grad
+f
+=
+\rho 
+. 
+证.(1)对于空间任意具有光滑边界的有界闭区域\Omega ,均有 
+(
+)
+div rot
+rot
+A dv
+A dS
+A dr
+\Omega 
+\partial \Omega 
+\partial \partial \Omega 
+=
+\cdots 
+=
+\cdots 
+=
+\int \int \int 
+\int \int 
+\int 
+\rho 
+\rho 
+\rho 
+\rho 
+\rho 
+
+\nabla 
+,故
+(
+)
+div rot
+A =
+\rho 
+; 
+(2)对于空间任意具有光滑边界的光滑有向曲面\Sigma ,均有 
+(
+)
+rot grad
+grad
+f
+dS
+f dr
+df
+\Sigma 
+\partial \Sigma 
+\partial \Sigma 
+\cdots 
+=
+\cdots 
+=
+=
+\int \int 
+\int 
+\int 
+\rho 
+\rho 
+\nabla 
+\nabla 
+,故
+(
+)
+rot grad
+f
+=
+\rho 
+,证毕. 
+\textcolor{lyred}{例}.求I
+zdx
+xdy
+ydz
+\Gamma 
+=
++
++
+\int \nabla 
+,其中\Gamma 为
+x
+y
+z
++
++
+=被三个坐标面截下的三角形的 
+边界,取向与三角形的上侧法向之间符合右手法则. 
+解.
+(
+)
+(
+)
+(
+)
+rot
+, ,
+1,1,1
+1,1,1
+n
+I
+z x y
+e dS
+dS
+dS
+\Sigma 
+\Sigma 
+\Sigma 
+=
+\cdots 
+=
+\cdots 
+=
+=
+\cdots 
+=
+\int \int 
+\int \int 
+\int \int 
+\rho 
+; 
+或者,
+(
+)
+rot
+, ,
+xy
+D
+I
+z x y
+dS
+dydz
+dzdx
+dxdy
+dxdy
+d\sigma 
+\Sigma 
+\Sigma 
+\Sigma 
+=
+\cdots 
+=
++
++
+=
+=
+=
+\int \int 
+\int \int 
+\int \int 
+\int \int 
+\rho 
+. 
+\textcolor{lyred}{例}.求I
+ydx
+zdy
+xdz
+\Gamma 
+=
++
++
+\int \nabla 
+,其中
+(
+)
+:
+x
+y
+z
+x
+y
+x
+y
+
++
++
+=
++
+\Gamma +=
+
+,从x 轴正向看为顺时针. 
+解.
+(
+)
+(
+)(
+)
+1, 1,0
+rot
+, ,
+1, 1, 1
+2 2
+n
+I
+y z x
+e dS
+dS
+dS
+\pi 
+\Sigma 
+\Sigma 
+\Sigma 
+--
+=
+\cdots 
+=
+---
+\cdots 
+=
+=
+\int \int 
+\int \int 
+\int \int 
+\rho 
+. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+(
+)
+I
+y
+z
+dx
+z
+x
+dy
+x
+y
+dz
+\Gamma 
+=
+-
++
+-
++
+-
+\int \nabla 
+,其中
+:
+x
+y
+x
+y
+z
+
++
+=
+\Gamma +
++
+=
+
+,从z 轴的 
+正向看为逆时针. 
+解.
+(
+)
+(
+)
+(
+)
+rot
+,
+,
+1,1,1
+n
+I
+A e dS
+y
+z z
+x x
+y
+dS
+x
+y
+z dS
+\Sigma 
+\Sigma 
+\Sigma 
+=
+\cdots 
+=
+-
++
++
++
+\cdots 
+=-
++
++
+=
+\int \int 
+\int \int 
+\int \int 
+\rho \rho 
+2 1
+3 x
+y
+dS
+dxdy
+\pi 
+\Sigma 
++
+\le 
+-
+=-
+=-
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求I
+xyzdz
+\Gamma 
+=\int \nabla 
+,其中
+:
+y
+z
+x
+y
+z
+-
+=
+
+\Gamma 
++
++
+=
+
+,从z 轴正向看为逆时针. 
+解.
+(
+)
+(
+)
+(
+)
+rot 0,0,
+,
+,0
+0, 1,1
+n
+I
+xyz
+e dS
+xz
+yz
+dS
+yzdS
+\Sigma 
+\Sigma 
+\Sigma 
+=
+\cdots 
+=
+-
+\cdots 
+-
+=
+=
+\int \int 
+\int \int 
+\int \int 
+\rho 
+x
+y
+x
+y
+x
+y
+y
+dxdy
+y dxdy
+y
+dx dy
+'
+'
++
+\le 
++
+\le 
++
+\le 
+
+'
+'
+'
+\cdots 
+=
+=
+\cdots 
+=
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+(
+)
+x
+y
+x
+y
+dx dy
+\pi 
+'
+'
++
+\le 
+'
+'
+'
+'
++
+=
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+I
+xzdx
+x dy
+\Gamma 
+=
++
+\int \nabla 
+,其中
+:
+z
+x
+y
+x
+y
+ax
+=
++
+\Gamma 
++
+=
+
+,从z 轴正向看为顺时针. 
+解.
+(
+)
+(
+)
+(
+)
+2 ,2 , 1
+rot
+,
+,0
+0, ,2
+n
+x
+y
+I
+xz x
+e dS
+x
+x
+dS
+x
+y
+\Sigma 
+\Sigma 
+-
+=
+\cdots 
+=
+\cdots 
+=
++
++
+\int \int 
+\int \int 
+\rho 
+(
+)
+(
+)
+xy
+xy
+xy
+D
+D
+D
+xy
+x
+x
+y dxdy
+xy
+x dxdy
+xdxdy
+x
+y
+-
++
++
+=
+-
+=-
+=
++
++
+\int \int 
+\int \int 
+\int \int 
+(
+)
+xy
+xy
+D
+D
+x
+a
+a dxdy
+a
+dxdy
+a
+\pi 
+-
+-
++
+=-
+=-
+\int \int 
+\int \int 
+. 
+\textcolor{lyred}{例}.求
+I
+y dx
+z dy
+x dz
+\Gamma 
+=
++
++
+\int \nabla 
+,其中
+: z
+a
+x
+y
+x
+y
+ax
+=
+-
+-
+\Gamma 
++
+=
+
+,从z 轴正向看为逆时针. 
+解.
+(
+)
+(
+)
+rot
+,
+,
+2 , 2 , 2
+,
+,
+n
+x y z
+I
+y
+z
+x
+e dS
+z
+x
+y
+dS
+a a a
+\Sigma 
+\Sigma 
+
+
+=
+\cdots 
+=
+-
+-
+-
+\cdots 
+=
+
+
+
+
+\int \int 
+\int \int 
+\rho 
+(
+)
+xy
+D
+adxdy
+xz
+xy
+yz dS
+xzdS
+x a
+x
+y
+a
+a
+a
+a
+x
+y
+\Sigma 
+\Sigma 
+-
++
++
+=-
+=-
+-
+-
+\cdots 
+=
+-
+-
+\int \int 
+\int \int 
+\int \int 
+xy
+xy
+xy
+D
+D
+D
+a
+a
+a
+xdxdy
+x
+dxdy
+dxdy
+a
+\pi 
+
+
+-
+=-
+-
++
+=-
+\cdots 
+=-
+
+
+
+
+\int \int 
+\int \int 
+\int \int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.曲线积分与路径无关的条件}}
+
+\textcolor{lyred}{定义}.称空间区域G 为\textcolor{lyred}{一维单连通区域},若G 内每条闭曲线C 均是包含于G 内的 
+某个曲面的边界. 
+\textcolor{lyred}{定理}.设G 为空间一维单连通区域,
+(
+)
+, ,
+P x y z ,
+(
+)
+, ,
+Q x y z ,
+(
+)
+, ,
+R x y z 在G 内均有 
+连续的偏导数,则下列四个条件等价: 
+(1)在G 内曲线积分Pdx
+Qdy
+Rdz
+\Gamma 
++
++
+\int 
+与路径无关; 
+(2)对于G 内任意闭曲线C ,均有
+C
+Pdx
+Qdy
+Rdz
++
++
+=
+\int \nabla 
+; 
+(3)在G 内
+(
+)
+rot
+,
+,
+P Q R =
+\rho 
+;(4) 在G 内微分形式Pdx
+Qdy
+Rdz
++
++
+可积. 
+\textcolor{lyred}{注}.此时, (
+)
+(
+)
+(
+)
+, ,
+,
+,
+, ,
+x y z
+x
+y
+z
+u x y z
+Pdx
+Qdy
+Rdz
+=
++
++
+\int 
+是它在G 内的一个原函数. 
+\textcolor{lyred}{例}.求
+(
+)
+(
+)
+(
+)
+I
+x
+yz dx
+y
+xz dy
+z
+xy dz
+\Gamma 
+=
+-
++
+-
++
+-
+\int 
+,其中\Gamma 为
+cos
+sin
+x
+y
+z
+\varphi 
+\varphi 
+\varphi 
+=
+
+
+=
+
+=
+
+上从 
+(
+)
+1,0,0
+A
+到
+(
+)
+1,0,2
+B
+\pi 的一段有向弧. 
+解.
+(
+)
+rot
+,
+,
+x
+yz y
+xz z
+xy
+-
+-
+-
+=
+,故
+\approx 
+(
+)
+1 0
+AB
+I
+z
+dz
+\pi 
+\pi 
+=
+=
+-\cdots 
+=
+\int 
+\int 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.曲线积分的基本定理}}
+
+\textcolor{lyred}{定理}.设在G 内Pdx
+Qdy
+Rdz
+du
++
++
+=
+,则对G 内分段光滑有向弧段
+\approx 
+L
+AB
+=
+,均有 
+\approx 
+\approx 
+()
+()
+AB
+AB
+Pdx
+Qdy
+Rdz
+du
+u B
+u A
++
++
+=
+=
+-
+\int 
+\int 
+. 
+\textcolor{lyred}{向量形式}.若
+grad
+F
+u
+=
+\rho 
+,则
+\approx 
+\approx 
+()
+()
+AB
+AB
+F dr
+du
+u B
+u A
+\cdots 
+=
+=
+-
+\int 
+\int 
+\rho 
+\rho 
+. 
+\textcolor{lyred}{例}.设\Gamma 为光滑闭曲线,则
+(
+)
+grad sin
+x
+y
+z
+dr
+\Gamma 
++
++
+\cdots 
+=
+
+
+
+
+\int 
+\rho 
+\nabla 
+. 
+\textcolor{lyred}{例}.设(
+)
+0,0,1
+A
+,
+(
+)
+1,2,2
+B
+,
+r
+x
+y
+z
+=
++
++
+,求
+(
+)
+\approx 
+AB
+I
+r
+xdx
+ydy
+zdz
+=
++
++
+\int 
+. 
+解.
+\approx 
+\approx 
+\approx 
+(
+)
+AB
+AB
+AB
+I
+r dr
+r dr
+dr
+=
+=
+=
+=
+-
+=
+\int 
+\int 
+\int 
+. 

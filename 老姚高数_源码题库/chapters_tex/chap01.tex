@@ -1,0 +1,9024 @@
+\begin{center}
+{\Large \bfseries \textcolor{lyred}{第一章 函数与极限}}
+\end{center}
+
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.1 节 映射与函数}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.映射}}
+
+{\bfseries \textcolor{lyred}{1.映射概念}}
+
+\textcolor{lyred}{定义}.设
+,
+X Y 为非空集合,则X 到Y 的对应法则f 称为\textcolor{lyred}{映射},若
+x
+X
+\forall \in 
+, !y
+Y
+\exists 
+\in 
+与之对应,记为
+:
+f
+X
+Y
+\to 
+,其中y 称为x 的\textcolor{lyred}{像},记为
+()
+f x , x 称为y 的一个\textcolor{lyred}{原像}. 
+称X 为\textcolor{lyred}{定义域},记为
+f
+D ,像的全体称为\textcolor{lyred}{值域},记为
+f
+R ,或
+(
+)
+f
+X . 
+若
+(
+)
+f
+X
+Y
+=
+,则称f 为\textcolor{lyred}{满射}; 
+若
+(
+)
+(
+)
+x
+x
+f x
+f x
+\neq 
+\Rightarrow 
+\neq 
+,即原像唯一,则称f 为\textcolor{lyred}{单射}; 
+即是单射又是满射的映射称为\textcolor{lyred}{双射},或\textcolor{lyred}{一一映射}. 
+{\bfseries \textcolor{lyred}{2.逆映射与复合映射}}
+
+\textcolor{lyred}{定义}.若
+:
+f
+X
+Y
+\to 
+是单射,则
+f
+y
+R
+\forall \in 
+, !x
+X
+\exists 
+\in 
+,使得
+()
+f x
+y
+=
+,由此得到对应关系 
+1 :
+f
+f
+R
+X
+-
+\to 
+,称为f 的\textcolor{lyred}{逆映射}. 
+\textcolor{lyred}{定义}.设
+:
+g X
+Y
+\to 
+,
+:
+f Y
+Z
+\to 
+,
+Y
+Y
+\subset 
+,则
+x
+X
+\forall \in 
+,
+()
+(
+)
+!z
+f g x
+Z
+\exists 
+=
+\in 
+与之对应, 
+由此得到对应关系
+:
+f
+g X
+Z
+\to 
+\circ 
+,称为g 与f 的\textcolor{lyred}{复合映射}. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.函数}}
+
+{\bfseries \textcolor{lyred}{1.函数的概念}}
+
+\textcolor{lyred}{定义}.实数集之间的映射
+:
+f
+D \to \mathbb{R}称为\textcolor{lyred}{(实)函数},习惯上记为
+()
+y
+f x
+=
+, x
+D
+\in 
+, 
+其中x 称为\textcolor{lyred}{自变量}, y 称为\textcolor{lyred}{因变量},或者\textcolor{lyred}{函数值}. 
+{\bfseries \textcolor{lyred}{2.反函数与复合函数}}
+
+\textcolor{lyred}{定义}.设函数
+:
+f
+D \to \mathbb{R}是单射,则逆映射
+1 :
+f
+f
+R
+D
+-
+\to 
+称为f 的\textcolor{lyred}{反函数},记为 
+()
+x
+f
+y
+-
+=
+,或者
+()
+y
+f
+x
+-
+=
+. 
+\textcolor{lyred}{定义}.设有函数
+()
+y
+f u
+=
+,
+()
+u
+g x
+=
+,若
+g
+f
+R
+D
+\subset 
+,则g 与f 的复合映射称为它们的 
+\textcolor{lyred}{复合函数},其中u 称为\textcolor{lyred}{中间变量}. 
+{\bfseries \textcolor{lyred}{3.函数的几种初等性质}}
+
+{\bfseries \textcolor{lyred}{(1)有界性}}
+
+\textcolor{lyred}{定义}.若M
+\exists 
+\in \mathbb{R},使得当x
+D
+\in 
+时,均有
+()
+f x
+M
+\le 
+,则称
+()
+f x 在D 上\textcolor{lyred}{有界}; 
+否则,称
+()
+f x 在D 上\textcolor{lyred}{无界}. 
+\textcolor{lyred}{例}.证明:
+()
+cos
+f x
+x
+x
+=
+在(
+)
+0,1 上无界. 
+证.令
+nx
+n\pi 
+=
+,则
+(
+)
+n
+f x
+n\pi 
+=
+,
+M
+\forall 
+>
+,当
+M
+n
+\pi 
+>
+时,
+(
+)
+n
+f x
+M
+>
+,证毕. 
+\textcolor{lyred}{例}.证明:
+()
+sin
+f x
+x
+x
+=
+在(
+)
+0,+\infty 上无界. 
+证.令
+nx
+n\pi 
+=
+,则
+(
+)
+n
+f x
+n\pi 
+=
+,
+M
+\forall 
+>
+,当
+M
+n
+\pi 
+>
+时,
+(
+)
+n
+f x
+M
+>
+,证毕. 
+{\bfseries \textcolor{lyred}{(2)单调性}}
+
+\textcolor{lyred}{定义}.若在区间I 上,
+(
+)
+(
+)
+x
+x
+f x
+f x
+<
+\Rightarrow 
+<
+,则称
+()
+f x 在I 上\textcolor{lyred}{单调增加}; 
+若
+(
+)
+(
+)
+x
+x
+f x
+f x
+<
+\Rightarrow 
+>
+,则称
+()
+f x 在I 上\textcolor{lyred}{单调减少}. 
+\textcolor{lyred}{例}.设
+sin
+x
+y
+=
+,
+,
+2 2
+y
+\pi \pi 
+
+
+\in -
+
+
+
+
+,单调增,有反函数
+arcsin
+y
+x
+=
+,
+[
+]
+1,1
+x\in -
+; 
+设
+cos
+x
+y
+=
+,
+[
+]
+0,
+y
+\pi 
+\in 
+,单调减,有反函数
+arccos
+y
+x
+=
+,
+[
+]
+1,1
+x\in -
+; 
+设
+tan
+x
+y
+=
+,
+,
+2 2
+y
+\pi \pi 
+
+
+\in -
+
+
+
+
+,单调增,有反函数
+arctan
+y
+x
+=
+,
+(
+)
+,
+x\in -\infty \infty ; 
+设
+cot
+x
+y
+=
+,
+(
+)
+0,
+y
+\pi 
+\in 
+,单调减,有反函数
+arccot
+y
+x
+=
+,
+(
+)
+,
+x\in -\infty \infty . 
+{\bfseries \textcolor{lyred}{(3)奇偶性}}
+
+\textcolor{lyred}{定义}.设
+f
+D 关于原点对称,若
+(
+)
+()
+f
+x
+f x
+-
+=-
+,
+f
+x
+D
+\forall \in 
+,则称
+()
+f x 为\textcolor{lyred}{奇函数}; 
+若
+(
+)
+()
+f
+x
+f x
+-
+=
+,
+f
+x
+D
+\forall \in 
+,则称
+()
+f x 为\textcolor{lyred}{偶函数}. 
+{\bfseries \textcolor{lyred}{(4)周期性}}
+
+\textcolor{lyred}{定义}.若存在
+l >
+,使得
+(
+)
+()
+f x
+l
+f x
+\pm 
+=
+,
+f
+x
+D
+\forall \in 
+,则称
+()
+f x 为\textcolor{lyred}{周期函数},称l 为 
+\textcolor{lyred}{周期},它不是唯一的,通常说的周期是指最小正周期. 
+{\bfseries \textcolor{lyred}{4.初等函数}}
+
+\textcolor{lyred}{定义}.由常数函数及五类基本初等函数(幂函数,指数函数,对数函数,三角函数, 
+反三角函数),经过有限多次的四则运算,复合所产生的,可以用一个算式表示的 
+函数,称为\textcolor{lyred}{初等函数}. 
+\textcolor{lyred}{例}.
+1,
+sgn
+0,
+1,
+x
+x
+x
+x
+>
+
+
+=
+=
+
+-
+<
+
+,[]
+x 不是初等函数. 
+\textcolor{lyred}{例}.
+,
+,
+x
+x
+x
+x
+x
+x
+\ge 
+
+=
+=
+-
+<
+
+,是初等函数. 
+{\bfseries \textcolor{lyred}{5.双曲函数}}
+
+\textcolor{lyred}{双曲正弦}sh
+x
+x
+e
+e
+x
+-
+-
+=
+;\textcolor{lyred}{双曲余弦}ch
+x
+x
+e
+e
+x
+-
++
+=
+; 
+\textcolor{lyred}{双曲正切}
+sh
+th
+ch
+x
+x
+x
+x
+x
+e
+e
+x
+x
+e
+e
+-
+-
+-
+=
+=
++
+. 
+\textcolor{lyred}{反双曲正弦}
+(
+)
+arsh
+ln
+x
+x
+x
+=
++
++
+; 
+\textcolor{lyred}{反双曲余弦}
+(
+)
+arch
+ln
+x
+x
+x
+=
++
+-
+; 
+\textcolor{lyred}{反双曲正切}
+arth
+ln
+x
+x
+x
++
+=
+-
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.2 节 数列的极限}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.数列极限的定义}}
+
+\textcolor{lyred}{定义}.给定\{\}
+nx
+,若存在常数a ,使得
+\varepsilon 
+\forall 
+>
+,
+N
+\exists 
+>
+,当n
+N
+>
+时,有
+nx
+a
+\varepsilon 
+-
+<
+, 
+则称a 为\{\}
+nx
+的\textcolor{lyred}{极限},记为lim
+n
+n
+x
+a
+\to \infty 
+=
+,或
+(
+)
+nx
+a n
+\to 
+\to \infty . 
+若\{\}
+nx
+的极限存在,则称该数列\textcolor{lyred}{收敛},否则称为\textcolor{lyred}{发散}. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.收敛极限的性质}}
+
+{\bfseries \textcolor{lyred}{1.唯一性.若}}
+
+nx
+收敛,则它的极限唯一. 
+{\bfseries \textcolor{lyred}{2.有界性.若}}
+
+nx
+收敛,则它一定有界;反之不对. 
+{\bfseries \textcolor{lyred}{3.保号性.若}}
+
+(
+)
+lim
+n
+n
+x
+a
+\to \infty 
+=
+>
+<
+,则
+N
+\exists 
+>
+,当n
+N
+>
+时,
+(
+)
+nx >
+<
+. 
+\textcolor{lyred}{推论}.若除了有限多项之外,
+(
+)
+nx \ge 
+\le 
+,且lim
+n
+n
+x
+a
+\to \infty 
+=
+,则
+(
+)
+a \ge 
+\le 
+. 
+{\bfseries \textcolor{lyred}{4.归并性.数列}}
+
+nx
+收敛到a \Leftrightarrow 它的所有子列均收敛到a . 
+\textcolor{lyred}{注}.
+lim
+lim
+lim
+n
+n
+n
+n
+n
+n
+x
+a
+x
+x
+a
+-
+\to \infty 
+\to \infty 
+\to \infty 
+=
+\Leftrightarrow 
+=
+=
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.数列极限的例子}}
+
+\textcolor{lyred}{例}.证明:
+lim 3
+n
+n
+n
+\to \infty 
++
+=
++
+. 
+证.
+(
+)
+3 3
+nx
+n
+n
+n
+-
+=
+<
+<
++
+,
+\varepsilon 
+\forall 
+>
+,要使
+nx
+\varepsilon 
+-
+<
+,只要1
+n
+\varepsilon 
+<
+,即
+n
+\varepsilon 
+>
+,故 
+取
+N
+\varepsilon 
+\varepsilon 
+
+=
++>
+
+
+,当n
+N
+>
+时,
+nx
+\varepsilon 
+-
+<
+,证毕. 
+\textcolor{lyred}{例}.当
+q <时, lim
+n
+n
+q
+\to \infty 
+=
+. 
+证.
+n
+nx
+q
+-
+=
+,
+(
+)
+0,1
+\varepsilon 
+\forall \in 
+,要使
+nx
+\varepsilon 
+-
+<
+,只要
+n
+q
+\varepsilon 
+<
+,即lg
+lg
+n
+q
+\varepsilon 
+<
+,即 
+lg
+lg
+n
+q
+\varepsilon 
+>
+,故取
+lg
+lg
+lg
+lg
+N
+q
+q
+\varepsilon 
+\varepsilon 
+
+
+=
++>
+
+
+
+
+,当n
+N
+>
+时,
+nx
+\varepsilon 
+-
+<
+,证毕. 
+\textcolor{lyred}{注}.当
+a >
+时, lim
+n
+n
+a
+\to \infty 
+=; lim
+n
+n
+n
+\to \infty 
+=. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.数列极限的有理运算法则}}
+
+\textcolor{lyred}{法则1}.设lim
+n
+n
+x
+\to \infty 
+=
+,而\{\}
+ny
+是有界数列,则lim
+n
+n
+n
+x y
+\to \infty 
+=
+. 
+\textcolor{lyred}{法则2}.设lim
+n
+n
+x
+a
+\to \infty 
+=
+, lim
+n
+n
+y
+b
+\to \infty 
+=
+,则(1)
+(
+)
+lim
+n
+n
+n
+x
+y
+a
+b
+\to \infty 
+\pm 
+=
+\pm ; 
+(2)
+(
+)
+lim
+n
+n
+n
+x
+y
+a b
+\to \infty 
+\cdots 
+=
+\cdots ;(3)当
+b \neq 
+时,lim
+n
+n
+n
+x
+a
+y
+b
+\to \infty 
+=
+. 
+\textcolor{lyred}{注}.若lim
+n
+n
+x
+\to \infty 
+不存在, lim
+n
+n
+y
+\to \infty 
+存在,则
+(
+)
+lim
+n
+n
+n
+x
+y
+\to \infty 
+\pm 
+一定不存在. 
+\textcolor{lyred}{推论}.设某项起
+n
+n
+x
+y
+\ge 
+,且\{\}
+nx
+,\{\}
+ny
+收敛,则lim
+lim
+n
+n
+n
+n
+x
+y
+\to \infty 
+\to \infty 
+\ge 
+. 
+\textcolor{lyred}{例}.(1)
+(
+)
+(
+)
+sin
+lim
+lim
+sin
+n
+n
+n
+n
+n
+n
+\to \infty 
+\to \infty 
++
+=
+\cdots 
++
+=
+. 
+(2)
+4sin
+lim 2
+5sin
+n
+n
+n
+n
+n
+\to \infty 
+-
+=
++
+. 
+(3)
+(
+)
+(
+)
+2 5
+lim
+lim
+3 5
+n
+n
+n
+n
+n
+n
+n
+n
+\to \infty 
+\to \infty 
+-
+-
+=
+=-
++
++
+. 
+(4)
+2 1
+lim
+lim
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+\to \infty 
+\to \infty 
+-
++
+-
++
+=
+=
++
+-
++
+-
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{五.无穷小与无穷大数列}}
+
+\textcolor{lyred}{定义}.若lim
+n
+n
+x
+\to \infty 
+=
+,则称\{\}
+nx
+为\textcolor{lyred}{无穷小}. 
+若
+M
+\forall 
+>
+,
+N
+\exists 
+>
+,当n
+N
+>
+时,
+nx
+M
+>
+,则称\{\}
+nx
+为\textcolor{lyred}{无穷大},记为lim
+n
+n
+x
+\to \infty 
+=\infty . 
+\textcolor{lyred}{定理}.设
+nx \neq 
+,则
+lim
+lim
+n
+n
+n
+n
+x
+x
+\to \infty 
+\to \infty 
+=\infty \Leftrightarrow 
+=
+. 
+\textcolor{lyred}{注}.无穷大数列一定是无界数列,反之不一定. 
+\textcolor{lyred}{补充练习 }
+1.
+(
+)
+lim 1
+lim
+n
+n
+n
+k
+n
+k
+k
+\to \infty 
+\to \infty 
+=
+
+
++
++
++
++
+=
+=
+
+
++
++
++
++
++
++
++
+
+
+\sum 
+\Lambda 
+\Lambda 
+. 
+2.
+(
+)
+(
+)
+(
+)
+lim
+lim
+lim
+n
+n
+n
+n
+n
+n
+n
+n
+n n
+n n
+n
+n
+\to \infty 
+\to \infty 
+\to \infty 
+
+
++
++-
++
++
+-
+=
+=
+=
+
+
++
+-
++
+-
++
++
+\Lambda 
+\Lambda 
+. 
+3.设
+lim
+n
+n
+an
+b
+n
+\to \infty 
+
+
+-
+-
+=
+
+
++
+
+
+,求a ,b . 
+解.原式
+(
+)
+(
+)
+lim
+n
+a
+a
+a n
+a
+b n
+b
+a
+b
+b
+n
+\to \infty 
+-
+=
+=
+-
+-
++
+-
+
+
+=
+=
+\Rightarrow 
+\Rightarrow 
+
+
++
+=
+=-
++
+
+
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.3 节 函数的极限}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.函数极限的定义}}
+
+{\bfseries \textcolor{lyred}{1.当}}
+
+\textcolor{lyred}{x}
+\textcolor{lyred}{x}
+\textcolor{lyred}{\to }
+\textcolor{lyred}{时函数的极限 }
+\textcolor{lyred}{定义}.设
+()
+f x 在某个
+(
+)
+U x
+\circ 
+内有定义,若存在常数A ,使得
+\varepsilon 
+\forall >
+,存在
+\delta >
+,当 
+\delta 
+<
+-
+<
+x
+x
+时,均有
+()
+f x
+A
+\varepsilon 
+-
+<
+,则称A 为当
+x
+x
+\to 
+时,
+()
+f x 的\textcolor{lyred}{极限},记为 
+()
+lim
+x
+x f x
+A
+\to 
+=
+,或
+()
+(
+)
+f x
+A x
+x
+\to 
+\to 
+. 
+\textcolor{lyred}{注}.(1)这里
+x
+x
+\to 
+不包含
+x
+x
+=
+的情况,故
+()
+lim
+x
+x f x
+\to 
+与
+()
+f x 在
+0x 处的取值无关. 
+(2)过程“
+x
+x
+\to 
+”由两部分构成:
+x
+x-
+\to 
+,
+x
+x+
+\to 
+,由此可以定义两个\textcolor{lyred}{单侧极限 }
+()
+lim
+x
+x f x
+-
+\to 
+,
+()
+lim
+x
+x f x
++
+\to 
+,称为\textcolor{lyred}{左右极限}. 
+(3)左极限也记为(
+)
+f x-,
+(
+)
+f x -
+;右极限也记为(
+)
++
+f x
+,
+(
+)
+f x +
+. 
+\textcolor{lyred}{定理}.
+()
+lim
+x
+x f x
+\to 
+存在
+(
+)
+(
+)
+f x
+f x
+\Leftrightarrow 
+-
+=
++
+. 
+\textcolor{lyred}{例}.
+lim
+x
+x C
+C
+\to 
+=
+,
+lim
+x
+x x
+x
+\to 
+=
+,
++
+lim
+x
+x
+\to 
+=
+. 
+\textcolor{lyred}{例}.证明:当
+x >
+时,
+lim
+x
+x
+x
+x
+\to 
+=
+. 
+\textcolor{lyred}{例}.证明:(1)
+lim sin
+sin
+x
+x
+x
+x
+\to 
+=
+;(2)
+lim cos
+cos
+x
+x
+x
+x
+\to 
+=
+. 
+证.(1)由
+sin
+sin
+2sin
+cos
+x
+x
+x
+x
+x
+x
+x
+x
+-
++
+-
+=
+\le 
+-
+,即得; 
+(2)类似地,
+cos
+cos
+x
+x
+x
+x
+-
+\le 
+-
+,即得,证毕. 
+\textcolor{lyred}{例}.设
+()
+sin ,
+,
+x
+x
+f x
+x
+x
+\pi 
+\pi 
+\pi 
+<
+
+=
+-
+>
+
+,讨论
+()
+lim
+x
+f x
+\pi 
+\to 
+的存在性. 
+解. (
+)
+lim sin
+x
+f
+x
+\pi 
+\pi 
+-
+-
+\to 
+=
+=
+, (
+)
+lim
+x
+f
+x
+\pi 
+\pi 
+\pi 
++
++
+\to 
+=
+-
+=
+,故
+()
+lim
+x
+f x
+\pi 
+\to 
+=
+,存在. 
+\textcolor{lyred}{例}.
+limsgn
+x
+x
+\to 
+不存在,因为
+lim sgn
+x
+x
+-
+\to 
+=-,
+lim sgn
+x
+x
++
+\to 
+=.\textcolor{lyred}{ }
+类似地,
+[]
+lim
+x
+x
+\to 
+不存在,
+lim
+x
+x
+x
+\to 
+-
+-不存在. 
+{\bfseries \textcolor{lyred}{2.当x 时函数的极限}}
+
+\textcolor{lyred}{定义}.若存在常数A ,使得
+\varepsilon 
+\forall >
+,
+X
+\exists 
+>
+,当x
+X
+>
+时,
+()
+f x
+A
+\varepsilon 
+-
+<
+,则称A 为 
+当x \to \infty 时,
+()
+f x 的\textcolor{lyred}{极限},记为
+()
+lim
+x
+f x
+A
+\to \infty 
+=
+,或
+()
+(
+)
+f x
+A x
+\to 
+\to \infty . 
+\textcolor{lyred}{注}.过程“ x \to \infty ”由两部分构成: x \to -\infty , x \to +\infty ,故可以定义两个\textcolor{lyred}{单向极限} 
+()
+lim
+x
+f x
+\to -\infty 
+,
+()
+lim
+x
+f x
+\to +\infty 
+. 
+\textcolor{lyred}{定理}.
+()
+lim
+x
+f x
+\to \infty 
+存在
+()
+()
+lim
+lim
+x
+x
+f x
+f x
+\to -\infty 
+\to +\infty 
+\Leftrightarrow 
+=
+. 
+\textcolor{lyred}{例}.limarctan
+x
+x
+\to \infty 
+不存在,因为lim arctan
+x
+x
+\pi 
+\to -\infty 
+=-
+, lim arctan
+x
+x
+\pi 
+\to +\infty 
+=
+. 
+lim
+x
+x
+x
+\to \infty 
++
+不存在,因为
+lim
+lim
+x
+x
+x
+x
+x
+x
+\to -\infty 
+\to -\infty 
++
+=
+=-,
+lim
+x
+x
+x
+\to +\infty 
++
+=+. 
+\textcolor{lyred}{几何意义}.若
+()
+lim
+x
+f x
+A
+\to -\infty 
+=
+,或
+()
+lim
+x
+f x
+A
+\to +\infty 
+=
+,或
+()
+lim
+x
+f x
+A
+\to \infty 
+=
+,则称直线y
+A
+=
+为 
+曲线
+()
+y
+f x
+=
+的\textcolor{lyred}{水平渐近线}. 
+\textcolor{lyred}{例}.
+y =
+是
+y
+x
+=
+的水平渐近线;
+arctan
+y
+x
+=
+有两条水平渐近线
+y
+\pi 
+=\pm 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.函数极限的性质}}
+
+{\bfseries \textcolor{lyred}{1.唯一性.若}}
+
+()
+lim
+x
+x f x
+\to 
+存在,则极限唯一. 
+{\bfseries \textcolor{lyred}{2.局部有界性.若}}
+
+()
+lim
+x
+x f x
+\to 
+存在,则在某个
+(
+)
+U x
+\circ 
+中
+()
+f x 有界. 
+{\bfseries \textcolor{lyred}{3.局部保号性.若}}
+
+()
+(
+)
+lim
+x
+x f x
+A
+\to 
+=
+>
+<
+,则在某个
+(
+)
+U x
+\circ 
+中
+()
+(
+)
+f x >
+<
+. 
+\textcolor{lyred}{推论}.若在某个
+(
+)
+U x
+\circ 
+内
+()
+(
+)
+f x \ge 
+\le 
+,且
+()
+lim
+x
+x f x
+A
+\to 
+=
+,则
+(
+)
+A \ge 
+\le 
+. 
+\textcolor{lyred}{例}.设
+()
+(
+)
+(
+)
+lim
+x
+x
+f x
+f x
+a
+x
+x
+\to 
+-
+=
+>
+-
+,证明:在某个
+(
+)
+U x
+内
+(
+)
+f x
+为最小值. 
+证.在某个
+(
+)
+U x
+\circ 
+中
+()
+(
+)
+(
+)
+()
+(
+)
+f x
+f x
+f x
+f x
+x
+x
+-
+>
+\Rightarrow 
+>
+-
+,证毕. 
+{\bfseries \textcolor{lyred}{4.Heine 定理.}}
+
+()
+(
+)
+lim
+n
+n
+x
+x f x
+A
+x
+x
+x
+x
+\to 
+=
+\Leftrightarrow \forall 
+\to 
+\neq 
+,均有
+(
+)
+lim
+n
+n
+f x
+A
+\to \infty 
+=
+. 
+\textcolor{lyred}{例}.设
+()
+cos
+f x
+x
+=
+,证明:
+()
+lim
+x
+f x
+\to 
+不存在. 
+证.取
+nx
+n\pi 
+=
+,则lim
+n
+n
+x
+\to \infty 
+=
+,
+(
+)
+lim
+n
+n
+f x
+\to \infty 
+=,再取
+(
+)
+ny
+n
+\pi 
+=
+-
+,则lim
+n
+n
+y
+\to \infty 
+=
+, 
+(
+)
+lim
+n
+n
+f
+y
+\to \infty 
+=-,证毕. 
+\textcolor{lyred}{注}.类似地,(1)若
+()
+lim
+x
+f x
+\to \infty 
+存在,则极限必唯一. 
+(2)若
+()
+lim
+x
+f x
+\to \infty 
+存在,则
+X
+\exists 
+>
+,使得
+()
+f x 在x
+X
+>
+上有界. 
+(3)若
+()
+lim
+x
+f x
+A
+\to \infty 
+=
+,
+(
+)
+A >
+<
+,则
+X
+\exists 
+>
+,当x
+X
+>
+时
+()
+(
+)
+f x >
+<
+. 
+(4)
+()
+lim
+n
+x
+f x
+A
+x
+\to \infty 
+=
+\Leftrightarrow \forall 
+\to \infty ,均有
+(
+)
+lim
+n
+n
+f x
+A
+\to \infty 
+=
+. 
+\textcolor{lyred}{例}.设
+()
+f x 为周期函数,证明:若
+()
+lim
+x
+f x
+\to \infty 
+存在,则
+()
+f x 为常数. 
+证.设
+()
+lim
+x
+f x
+A
+\to \infty 
+=
+,若存在
+0x ,使得
+(
+)
+f x
+B
+A
+=
+\neq 
+,令
+nx
+x
+nT
+=
++
+,则 
+nx \to \infty ,而
+(
+)
+n
+f x
+B
+A
+\to 
+\neq 
+,矛盾,故
+()
+f x
+A
+\equiv 
+,证毕. 
+\textcolor{lyred}{补充练习 }
+1.设
+()
+sin
+f x
+x
+=
+,证明:
+()
+lim
+x
+f x
+\to \infty 
+不存在. 
+证.取
+nx
+n
+\pi 
+\pi 
+=
++
+,
+ny
+n
+\pi 
+\pi 
+=
+-
+,则
+nx \to \infty ,
+ny \to \infty ,而 
+(
+)
+lim
+n
+n
+f x
+\to \infty 
+=,
+(
+)
+lim
+n
+n
+f
+y
+\to \infty 
+=-,证毕. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.4 节 无穷小与无穷大}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.无穷小}}
+
+\textcolor{lyred}{定义}.若
+()
+lim
+x
+f x
+\to 
+=
+\Omega 
+,则称
+()
+f x 为当x \to \Omega 时的\textcolor{lyred}{无穷小量}. 
+\textcolor{lyred}{例}.当x \to \infty 时, 1
+x 为无穷小;当
+x
++
+\to 
+时,
+x -为无穷小; 
+当x \to -\infty 时,
+xe 为无穷小. 
+\textcolor{lyred}{定理}.
+()
+()
+()
+lim
+x
+f x
+A
+f x
+A
+x
+\alpha 
+\to 
+=
+\Leftrightarrow 
+=
++
+\Omega 
+,其中
+()
+lim
+x
+x
+\alpha 
+\to 
+=
+\Omega 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.无穷大}}
+
+\textcolor{lyred}{定义}.设
+()
+f x 在某个
+(
+)
+U x
+\circ 
+中有定义,若
+M
+\forall 
+>
+,
+\delta 
+\exists 
+>
+,当
+x
+x
+\delta 
+<
+-
+<
+时,有 
+()
+f x
+M
+>
+,则称
+()
+f x 为当
+x
+x
+\to 
+时的\textcolor{lyred}{无穷大},记为
+()
+lim
+x
+x f x
+\to 
+=\infty . 
+若
+M
+\forall 
+>
+,
+X
+\exists 
+>
+,当x
+X
+>
+时,
+()
+f x
+M
+>
+,则称
+()
+f x 为当x \to \infty 时的\textcolor{lyred}{无穷大}, 
+记为
+()
+lim
+x
+f x
+\to \infty 
+=\infty . 
+\textcolor{lyred}{例}.
+lim
+x
+x
+\to 
+=\infty ,
+lim
+x
+x
+-
+\to 
+=-\infty ,
+lim
+x
+x
++
+\to 
+=+\infty . 
+\textcolor{lyred}{例}. lim
+x
+x
+e
+\to +\infty 
+=\infty ,或者lim
+x
+x
+e
+\to +\infty 
+=+\infty . 
+\textcolor{lyred}{例}.
+lim
+x
+x
+x
+e
+e
+\to 
+-
++
+不存在:
+lim
+lim
+u
+x
+u
+x
+e
+e
+-
+\to -\infty 
+\to 
+=
+=
+,
+lim
+lim
+u
+x
+u
+x
+e
+e
++
+\to +\infty 
+\to 
+=
+=+\infty ,故 
+lim
+x
+x
+x
+e
+e
+-
+\to 
+-
+=
++
+,
+lim
+x
+x
+x
+e
+e
++
+\to 
+-
+=-
++
+. 
+\textcolor{lyred}{几何意义}.若
+()
+lim
+x
+x f x
+-
+\to 
+=\infty ,或
+()
+lim
+x
+x f x
++
+\to 
+=\infty ,则称直线
+x
+x
+=
+为曲线
+()
+y
+f x
+=
+的 
+\textcolor{lyred}{铅直渐近线}. 
+\textcolor{lyred}{例}.直线
+x =是
+y
+x
+=
+-的铅直渐近线. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.无穷大与无界量的关系}}
+
+\textcolor{lyred}{定理}.
+()
+(
+)
+lim
+n
+n
+x
+f x
+x
+x
+\to 
+=\infty \Leftrightarrow \forall 
+\to 
+\neq 
+\Omega 
+\Omega 
+\Omega ,均有
+(
+)
+lim
+n
+n
+f x
+\to \infty 
+=\infty . 
+\textcolor{lyred}{例}.证明:
+()
+sin
+f x
+x
+x
+=
+不是
+x \to 
+时的无穷大. 
+证.取
+nx
+n\pi 
+=
+,则
+nx \to 
+,而
+(
+)
+n
+f x
+=
+,证毕. 
+\textcolor{lyred}{例}.证明:
+()
+sin
+x
+f x
+e
+x
+=
+不是x \to +\infty 时的无穷大. 
+证.取
+nx
+n\pi 
+=
+,则
+nx \to +\infty ,而
+(
+)
+n
+f x
+=
+,证毕. 
+\textcolor{lyred}{注}.无穷大量一定是无界量,反之不一定. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.无穷大与无穷小的关系}}
+
+\textcolor{lyred}{定理}.设在x \to \Omega 的过程中
+()
+f x \neq 
+,则
+()
+()
+lim
+lim
+x
+x
+f x
+f x
+\to 
+\to 
+=\infty \Leftrightarrow 
+=
+\Omega 
+\Omega 
+. 
+\textcolor{lyred}{补充练习 }
+1.求曲线
+x
+y
+x
+x
+-
+=
++
+-
+的水平与铅直渐近线. 
+解.
+(
+)(
+)
+(
+)(
+)
+x
+x
+y
+x
+x
+-
++
+=
+-
++
+,
+lim
+lim
+x
+x
+x
+y
+x
+\to -
+\to -
++
+=
+=\infty 
++
+,故有铅直渐近线
+x =-; 
+lim
+lim
+x
+x
+x
+y
+x
+\to \infty 
+\to \infty 
++
+=
+=
++
+,故有水平渐近线
+y =. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.5 节 极限运算法则}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.函数和差积商的极限运算法则}}
+
+\textcolor{lyred}{定理}.(局部)有界函数与无穷小的积为无穷小. 
+(1)设在
+0x 的某个去心邻域内()
+g x 有界,而
+()
+lim
+x
+x f x
+\to 
+=
+,则
+()()
+lim
+x
+x f x g x
+\to 
+=
+. 
+(2)设在某个\{
+\}
+:
+x
+x
+X
+\ge 
+上()
+g x 有界,而
+()
+lim
+x
+f x
+\to \infty 
+=
+,则
+()()
+lim
+x
+f x g x
+\to \infty 
+=
+. 
+\textcolor{lyred}{定理}.设
+()
+lim
+x
+f x
+A
+\to 
+=
+\Omega 
+,
+()
+lim
+x
+g x
+B
+\to 
+=
+\Omega 
+(存在),则(1)
+()
+()
+lim
+x
+f x
+g x
+A
+B
+\to 
+\pm 
+=
+\pm 
+
+
+
+
+\Omega 
+; 
+(2)
+()
+()
+lim
+x
+f x
+g x
+A B
+\to 
+\cdots 
+=
+\cdots 
+
+
+
+
+\Omega 
+;(3)当
+B \neq 
+时,
+()
+()
+lim
+x
+f x
+A
+g x
+B
+\to 
+=
+\Omega 
+. 
+\textcolor{lyred}{注}.若
+()
+lim
+x
+f x
+\to \Omega 
+不存在,
+()
+lim
+x
+g x
+\to \Omega 
+存在,则
+()
+()
+lim
+x
+f x
+g x
+\to 
+\pm 
+
+
+
+
+\Omega 
+不存在. 
+\textcolor{lyred}{推论}.
+()
+()
+()
+()
+1 1
+lim
+lim
+lim
+n
+n
+n
+n
+x
+x
+x
+k f
+x
+k f
+x
+k
+f
+x
+k
+f
+x
+\to 
+\to 
+\to 
++
++
+=
++
++
+
+
+
+
+\Omega 
+\Omega 
+\Omega 
+\Lambda 
+\Lambda 
+. 
+\textcolor{lyred}{推论}.
+()
+()
+lim
+lim
+n
+n
+x
+x
+f x
+f x
+\to 
+\to 
+
+
+=
+
+
+
+
+
+
+\Omega 
+\Omega 
+. 
+\textcolor{lyred}{推论}.设
+()
+P x 为多项式,则
+()
+(
+)
+lim
+x
+x P x
+P x
+\to 
+=
+. 
+\textcolor{lyred}{推论}.设()
+()
+x
+x
+\varphi 
+\zeta 
+\ge 
+,若
+()
+lim
+x
+x
+a
+\varphi 
+\to 
+=
+\Omega 
+,
+()
+lim
+x
+x
+b
+\zeta 
+\to 
+=
+\Omega 
+,则a
+b
+\ge 
+. 
+\textcolor{lyred}{例}.
+lim sin
+x
+x
+x
+\to 
+=
+,
+arctan
+lim
+x
+x
+x
+\to \infty 
+=
+. 
+\textcolor{lyred}{例}.(1)
+lim
+5 2
+x
+x
+x
+x
+\to 
+-
+-
+=
+=-
+-
++
+-\cdots +
+. 
+(2)
+lim
+x
+x
+x
+x
+\to 
+-
+=\infty 
+-
++
+,因为
+lim
+x
+x
+x
+x
+\to 
+-
++
+=
+=
+-
+-
+. 
+(3)
+(
+)(
+)
+(
+)(
+)
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+-
+-
+-
++
+-
+=
+=
+=
+-
+-
++
+-
++
+. 
+\textcolor{lyred}{例}.(1)
+lim
+lim
+2 1
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to \infty 
+\to \infty 
+-
+-
+-
+-
+-
+-
+=
+=
+=
+-
++
+-
++
+-
+-
+. 
+(2)
+lim 3
+x
+x
+x
+x
+x
+\to \infty 
+-
++
+=\infty 
+-
+-
+. 
+(3)
+lim 2
+x
+x
+x
+x
+x
+\to \infty 
+-
+-
+=
+-
++
+. 
+\textcolor{lyred}{注}.
+(
+)
+0,
+lim
+,
+lim
+,
+,
+m
+m
+m
+m
+m
+m
+n
+m
+n
+n
+n
+n
+x
+x
+n
+n
+n
+n
+m
+n
+a x
+a
+x
+a
+a x
+a
+a
+b
+m
+n
+b x
+b
+x
+b
+b x
+b
+m
+n
+-
+-
+-
+\to \infty 
+\to \infty 
+-
+
+<
+
++
++
++
+
+\neq 
+=
+=
+=
+
++
++
++
+
+\infty 
+>
+
+\Lambda 
+\Lambda 
+. 
+\textcolor{lyred}{例}.
+(
+)(
+)
+(
+)
+(
+)
+(
+)(
+)
+lim
+lim
+x
+x
+x
+x
+x x
+x
+x
+x
+x
+x
+\to \infty 
+\to \infty 
++
+-
+-
++
++
+-
++
+=
+=
++
++
+\Lambda 
+\Lambda 
+\Lambda 
+. 
+\textcolor{lyred}{例}.(1)设
+lim
+x
+x
+ax
+b
+x
+x
+\to 
++
++
+=
+-
+-
+,求a ,b . 
+解.
+(
+)
+lim
+x
+x
+ax
+b
+a
+b
+\to 
++
++
+=
++
++
+=
+,故
+b
+a
+=-
+-
+,于是 
+(
+)(
+)
+(
+)(
+)
+lim
+lim
+x
+x
+x
+x
+a
+x
+ax
+a
+a
+x
+x
+x
+x
+\to 
+\to 
+-
++
++
++
+-
+-
++
+=
+=
+=
+-
+-
+-
++
+,故
+a =
+,
+b =-. 
+(2)设
+lim
+x
+x
+ax
+b
+x
+\to \infty 
+
+
+-
++
++
+=
+
+
++
+
+
+,求a ,b . 
+解.原式
+(
+)
+(
+)
+lim
+x
+a
+a
+a x
+a
+b x
+b
+a
+b
+b
+x
+\to \infty 
++
+=
+=-
++
++
++
++
+-
+
+
+=
+=
+\Rightarrow 
+\Rightarrow 
+
+
++
+=
+=
++
+
+
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.复合函数的极限运算法则}}
+
+\textcolor{lyred}{例}.
+lim
+lim
+u
+x
+u
+x
+e
+e
+-
+\to -\infty 
+\to 
+=
+=
+,
+lim
+lim
+u
+x
+u
+x
+e
+e
++
+\to +\infty 
+\to 
+=
+=+\infty , 
+lim arctan
+lim arctan
+u
+x
+u
+x
+\pi 
+-
+\to -\infty 
+\to 
+=
+=-
+,
+lim arctan
+lim arctan
+u
+x
+u
+x
+\pi 
++
+\to +\infty 
+\to 
+=
+=
+. 
+\textcolor{lyred}{例}.
+lim
+lim
+x
+u
+x
+u
+x
+\to 
+\to 
++
+=
+=
++
+,
+lim
+lim
+x
+u
+x
+u
+x
+\to \infty 
+\to 
++
+=
+=
++
+. 
+\textcolor{lyred}{例}.
+(
+)(
+)
+(
+)(
+)
+lim
+lim
+lim
+u
+x
+x
+u
+u
+u
+u
+x
+x
+u
+u
+u
+u
+u
+u
+x
+x
+=
+\to 
+\to 
+\to 
+-
++
+-
+-
+-
+-
+=
+=
+=
++
+-
+-
++
++
+-
+. 
+\textcolor{lyred}{定理}.设复合函数
+()
+f
+g x
+
+
+
+在
+(
+)
+U x
+\circ 
+内有定义,
+()
+lim
+x
+x g x
+u
+\to 
+=
+,并且,在
+(
+)
+U x
+\circ 
+内 
+()
+g x
+u
+\neq 
+,
+()
+lim
+u
+u f u
+A
+\to 
+=
+,则
+()
+()
+()
+lim
+lim
+u g x
+x
+x
+u
+u
+f
+g x
+f u
+A
+=
+\to 
+\to 
+=
+=
+
+
+
+
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.幂指函数的极限运算法则}}
+
+\textcolor{lyred}{定理}.设
+()
+lim
+x
+f x
+A
+\to 
+=
+>
+\Omega 
+,
+()
+lim
+x
+g x
+B
+\to 
+=
+\Omega 
+,则
+()
+()
+lim
+g x
+B
+x
+f x
+A
+\to 
+=
+
+
+
+
+\Omega 
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{四.斜渐近线}}
+
+\textcolor{lyred}{定义}.若
+()(
+)
+lim
+x
+f x
+ax
+b
+\to +\infty 
+-
++
+=
+
+
+
+
+,或
+()(
+)
+lim
+x
+f x
+ax
+b
+\to -\infty 
+-
++
+=
+
+
+
+
+,则称y
+ax
+b
+=
++
+为 
+曲线
+()
+y
+f x
+=
+的\textcolor{lyred}{斜渐近线}. 
+\textcolor{lyred}{命题}.
+()(
+)
+()
+lim
+lim
+x
+x
+f x
+f x
+ax
+b
+a
+x
+\to \infty 
+\to \infty 
+-
++
+=
+\Leftrightarrow 
+=
+
+
+
+
+,
+()
+lim
+x
+f x
+ax
+b
+\to \infty 
+-
+=
+
+
+
+
+. 
+\textcolor{lyred}{例}.求曲线
+y
+x
+x
+x
+=
+-
+-
+的斜渐近线. 
+解.(1)
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+a
+x
+x
+x
+\to +\infty 
+\to +\infty 
+\to +\infty 
+-
+-
+-
+=
+=
+-
+=
+-
+-
+=, 
+(
+)
+(
+)
+lim 2
+lim
+lim
+x
+x
+x
+x
+b
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to +\infty 
+\to +\infty 
+\to +\infty 
+=
+-
+-
+-
+=
+-
+-
+=
+=
++
+-
+,故 
+y
+x
+=
++
+为斜渐近线; 
+(2)
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+a
+x
+x
+x
+\to -\infty 
+\to -\infty 
+\to -\infty 
+-
+-
+-
+=
+=
+-
+=
++
+-
+=, 
+(
+)
+(
+)
+lim 2
+lim
+lim
+x
+x
+x
+x
+b
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to -\infty 
+\to -\infty 
+\to -\infty 
+=
+-
+-
+-
+=-
+-
++
+=
+=-
+-
+-
+,故 
+y
+x
+=
+-
+也为斜渐近线. 
+\textcolor{lyred}{补充练习 }
+1.
+(
+)(
+)
+(
+)(
+)
+8cos
+2cos
+lim
+lim
+lim
+2cos
+cos
+x
+u
+u
+u
+u
+x
+x
+u
+u
+x
+x
+u
+u
+u
+u
+\pi 
+\to 
+\to 
+\to 
+-
++
+-
+-
+-
+-
+=
+=
+=
++
+-
++
+-
+-
++
+. 
+2.
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to +\infty 
+\to +\infty 
++
+
+
++
++
+-
+=
+=
+
+
+
+
++
++
++
+. 
+3.
+(
+)
+(
+)
+(
+)
+(
+)(
+)
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to \infty 
+\to \infty 
++-
+-
++
+-
++
+=
+=
++
++
++
+\cdots 
++
++
++
+. 
+4.
++
++
++
+lim
+lim
+lim
+2 2
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+-
+-
+-
+=
+\cdots 
+\cdots 
+=
+=
+-
++
++
+-
+-
+(
+)(
+)
++
++
++
+lim
+lim
+lim
+2 2
+2 2
+2 2
+x
+x
+x
+x x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+-
++
++
+-
+=
+=
+-=
+-
+-
+. 
+5.设lim
+n
+n
+x
+\to \infty 
+存在,且
+2lim
+n
+n
+n
+x
+n
+n
+n
+n
+x
+\to \infty 
+=
+-
+-
++
++
+,求lim
+n
+n
+x
+\to \infty 
+. 
+解.设lim
+n
+n
+x
+a
+\to \infty 
+=
+,则
+(
+)
+lim
+n
+a
+n
+n
+n
+n
+a
+\to \infty 
+=
+-
+-
++
++
+,故 
+(
+)
+lim
+lim
+n
+n
+n
+a
+n
+n
+n
+n
+n
+n
+n
+n
+\to \infty 
+\to \infty 
+=
++
+-
+-
+=
+=
++
++
+-
+. 
+6.设
+()
+f x 为多项式,且
+()
+lim
+x
+f x
+x
+x
+\to \infty 
+-
+=-,
+()
+lim
+x
+f x
+x
+\to 
+=
+,求
+()
+f x . 
+解.设
+()
+f x
+x
+x
+ax
+b
+=
+-
++
++
+,
+()
+lim
+lim
+x
+x
+f x
+b
+a
+b
+x
+x
+\to 
+\to 
+
+
+=
++
+=
+\Rightarrow 
+=
+
+
+
+
+,
+a =
+. 
+7.设
+()
+f x 为三次多项式,且
+()
+()
+lim
+lim
+x
+x
+f x
+f x
+x
+x
+\to 
+\to 
+=
+=
+-
+-
+,求
+()
+lim
+x
+f x
+x
+\to 
+-
+. 
+解.设
+()
+(
+)(
+)(
+)
+f x
+a x
+x
+x
+b
+=
+-
+-
+-
+,则
+()
+(
+)
+lim
+x
+f x
+a
+b
+x
+\to 
+=-
+-
+=
+-
+, 
+()
+(
+)
+lim
+x
+f x
+a
+b
+x
+\to 
+=
+-
+=
+-
+,解得
+a =
+,
+b =
+,故
+()
+lim
+x
+f x
+x
+\to 
+=-
+-
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.6 节 极限存在准则 两个重要极限}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.第一个重要极限}}
+
+\textcolor{lyred}{定理}.(1)设
+n
+n
+n
+y
+x
+z
+\le 
+\le 
+,若lim
+lim
+n
+n
+n
+n
+y
+z
+a
+\to \infty 
+\to \infty 
+=
+=
+,则lim
+n
+n
+x
+a
+\to \infty 
+=
+; 
+(2)设()
+()
+()
+g x
+f x
+h x
+\le 
+\le 
+,若
+()
+()
+lim
+lim
+x
+x
+g x
+h x
+A
+\to 
+\to 
+=
+=
+\Omega 
+\Omega 
+,则
+()
+lim
+x
+f x
+A
+\to 
+=
+\Omega 
+. 
+\textcolor{lyred}{例}.设
+nx
+n
+n
+n
+n
+=
++
++
++
++
++
++
+\Lambda 
+,求lim
+n
+n
+x
+\to \infty 
+. 
+解.
+n
+n
+x
+n
+n
+n
+n
+\cdots 
+\le 
+\le 
+\cdots 
++
++
+,故lim
+n
+n
+x
+\to \infty 
+=. 
+\textcolor{lyred}{例}.设
+n
+n
+n
+n
+n
+m
+x
+a
+a
+a
+=
++
++
++
+\Lambda 
+,其中
+ia \ge 
+,求lim
+n
+n
+x
+\to \infty 
+. 
+解.记
+m
+a
+a
+\le 
+\le 
+\Lambda 
+,则
+n
+n
+n
+n
+m
+n
+m
+a
+x
+m a
+\le 
+\le 
+\cdots 
+,故lim
+n
+m
+n
+x
+a
+\to \infty 
+=
+. 
+\textcolor{lyred}{重要极限1}.
+sin
+lim
+x
+x
+x
+\to 
+=. 
+\textcolor{lyred}{例}.(1)
+tan
+sin
+sin
+lim
+lim
+lim
+lim
+cos
+cos
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+\to 
+
+
+=
+=
+\cdots 
+=
+
+
+
+
+. 
+(2)
+arcsin
+arcsin
+lim
+lim
+sin
+t
+x
+x
+t
+x
+t
+x
+t
+=
+\to 
+\to 
+=
+=,
+arctan
+arctan
+lim
+lim
+tan
+t
+x
+x
+t
+x
+t
+x
+t
+=
+\to 
+\to 
+=
+=. 
+(3)
+tan3
+tan3
+lim
+lim
+sin 2
+sin 2
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+
+
+=
+\cdots 
+\cdots 
+=
+
+
+
+
+. 
+(4)
+(
+)
+1 cos
+2sin
+2sin
+sin
+lim
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+\to 
+
+
+-
+=
+=
+=
+=
+
+
+
+
+. 
+\textcolor{lyred}{例}.(1)
+(
+)
+tan
+1 cos
+tan
+sin
+lim
+tan
+sin
+lim
+lim
+t
+x
+x
+t
+t
+t
+t
+t
+t
+x
+x
+x
+t
+t
+=
+\to \infty 
+\to 
+\to 
+\cdots 
+-
+-
+
+
+-
+=
+=
+=
+
+
+
+
+. 
+(2)
+(
+)
+(
+)
+lim
+lim
+lim
+sin
+sin
+sin
+t x
+x
+t
+t
+x
+t
+t
+x
+t
+t
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+=-
+\to 
+\to 
+\to 
+-
+=
+=-
+=-
++
+. 
+(3)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+sin
+sin
+sin
+lim
+lim
+lim
+sin
+sin
+sin
+m
+t x
+m n
+n
+x
+t
+t
+mt
+m
+mt
+mx
+m
+nx
+nt
+n
+n
+nt
+\pi 
+\pi 
+\pi 
+\pi 
+=-
+-
+\to 
+\to 
+\to 
++
+-
+=
+=
+=-
++
+-
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.第二个重要极限}}
+
+\textcolor{lyred}{定理}.单调有界数列必收敛. 
+\textcolor{lyred}{例}.求
+(
+)
+lim
+!
+n
+n
+a
+a
+n
+\to \infty 
+>
+. 
+解.
+!
+n
+n
+a
+x
+n
+=
+,则
+n
+n
+a
+x
+x
+n
++=
+\cdots 
++,当
+n
+a
+>
+-时,
+n
+n
+x
+x
++<
+,单减,又
+nx >
+,故有界, 
+因此收敛,设lim
+n
+n
+x
+x
+\to \infty 
+=
+,则
+n
+n
+a
+x
+x
+x
+x
+n
++=
+\cdots 
+\Rightarrow 
+=
+\cdots 
+=
++
+. 
+\textcolor{lyred}{例}.设
+x =
+,
+x =
++
+,\Lambda ,
+n
+n
+x
+x -
+=
++
+,求lim
+n
+n
+x
+\to \infty 
+. 
+解.显然
+x
+x
+<
+,而
+n
+n
+n
+n
+n
+n
+x
+x
+x
+x
+x
+x
+-
+-
++
+<
+\Rightarrow 
+=
++
+<
+=
++
+,由归纳法,\{\}
+nx
+单增; 
+显然
+x <
+,而
+n
+n
+n
+x
+x
+x
++
+<
+\Rightarrow 
+=
++
+<
+,由归纳法,
+nx <
+; 
+设lim
+n
+n
+x
+x
+\to \infty 
+=
+,则
+x
+x
+=
++
+,故
+x =
+. 
+\textcolor{lyred}{定理}.设
+n
+nx
+n
+
+
+=
++
+
+
+
+
+,则\{\}
+nx
+单调有界,因此收敛.记lim
+2.71828
+n
+n
+x
+e
+\to \infty 
+=
+=
+\Lambda . 
+\textcolor{lyred}{重要极限2}.
+lim 1
+x
+x
+e
+x
+\to \infty 
+
+
++
+=
+
+
+
+
+;
+(
+)
+lim 1
+x
+x
+x
+e
+\to 
++
+=. 
+\textcolor{lyred}{例}.
+(
+)
+sin
+lim 1 sin
+x
+x
+x
+e
+\to 
++
+=
+,
+(
+)
+lim 1
+x
+x
+x
+e
++
+-
+\to 
++
+-
+=
+. 
+\textcolor{lyred}{例}.(1)
+(
+)
+(
+)
+1 2
+lim 1 2
+lim 1 2
+x
+x
+x
+x
+x
+x
+e
+\cdots 
+\to 
+\to 
++
+=
++
+=
+. 
+(2)
+(
+)
+lim 1
+lim 1
+x
+x
+x
+x
+e
+x
+x
+\cdots -
+-
+-
+\to \infty 
+\to \infty 
+-
+
+
+
+
+-
+=
++
+=
+
+
+
+
+
+
+
+
+. 
+\textcolor{lyred}{例}.(1)
+(
+)
+1 1
+lim
+lim 1
+x
+x
+x
+x
+x
+x
+x
+x
+e
+-
+\cdots 
+-
+-
+-
+-
+\to 
+\to 
+=
++
+-
+=
+. 
+(2)
+1 2
+1 2
+lim
+lim 1
+lim 1
+1 2
+1 2
+1 2
+x
+x
+x
+x
+x
+x x
+x
+x
+x
+x
+x
+x
+e
+x
+x
+x
+-
+\cdots 
+\cdots 
+-
+\to 
+\to 
+\to 
++
++
+
+
+
+
+
+
+=
++
+-
+=
++
+=
+
+
+
+
+
+
+-
+-
+-
+
+
+
+
+
+
+. 
+(3)
+1 3
+1 3
+1 2
+1 3
+lim
+lim 1
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+e
+n
+n
+n
+n
+-
+-
+\cdots 
+\cdots 
+-
+-
+\to \infty 
+\to \infty 
+
+
+-
+-
+
+
+=
++
+=
+
+
+
+
+-
+-
+
+
+
+
+. 
+(4)
+(
+)
+(
+)
+cos
+cos
+lim cos
+lim 1
+cos
+x
+x
+x
+x
+x
+x
+x
+x
+e
+-
+-
+\cdots 
+-
+\to 
+\to 
+=
++
+-
+=
+
+
+
+
+. 
+(5)
+sin
+cos
+sin
+cos
+lim sin
+cos
+lim 1 sin
+cos
+x
+x
+x
+x
+x
+x
+x
+x
+e
+x
+x
+x
+x
++
+-
+\cdots 
++
+-
+\to \infty 
+\to \infty 
+
+
+
+
++
+=
++
++
+-
+=
+
+
+
+
+
+
+
+
+. 
+\textcolor{lyred}{例}.(1)
+(
+)
+(
+)
+ln 1
+lim
+limln 1
+limln
+ln
+x
+x
+x
+u
+e
+x
+x
+u
+e
+x
+\to 
+\to 
+\to 
++
+=
++
+=
+=
+=. 
+(2)
+(
+)(
+)
+(
+)
+ln 1
+ln
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
++
+-
+=
+\cdots 
+=
++
+-
++
+-
+. 
+\textcolor{lyred}{例}.(1)
+(
+)
+lim
+lim
+ln 1
+x
+x
+t e
+x
+t
+e
+t
+x
+t
+=
+-
+\to 
+\to 
+-
+=
+=
++
+. 
+(2)
+cos
+cos
+cos
+1 cos
+lim
+lim
+lim cos
+x
+x
+x
+x
+x
+x
+e
+e
+e
+e
+x
+e
+e
+e
+x
+x
+x
+x
+-
+-
+\to 
+\to 
+\to 
+-
+-
+-
+-
+=\cdots 
+=\cdots 
+\cdots 
+=-
+-
+. 
+(3)
+cos
+1 cos
+lim
+lim
+lim
+x
+x
+x
+x
+x
+e
+x
+e
+x
+x
+x
+x
+\to 
+\to 
+\to 
+-
+-
+-
+=
++
+=+
+=
+. 
+\textcolor{lyred}{补充练习 }
+1.证明:(1)
+!
+lim
+n
+n
+n
+n
+\to \infty 
+=
+;(2)
+lim 1
+n
+n
+n
+\to \infty 
++
++
++
+=
+\Lambda 
+. 
+证.(1)
+!
+n
+n
+n
+n
+<
+<
+;(2)
+n
+n n
+n
+<
++
++
++
+<
+\Lambda 
+,证毕. 
+2.
+sin 2
+tan5
+sin 2
+tan5
+lim
+lim
+sin3
+tan 2
+sin3
+tan 2
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
++
++
++
+=
+=
+=
+-
+-
+-
+. 
+3.
+(
+)
+cos2
+cos2
+cos2
+cos 2
+1 cos2
+lim
+lim
+lim
+cos2
+cos2
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+-
+-
+-
+=
+=
+=
++
+. 
+4.设
+()
+lim
+x
+f x
+\pi 
+\to 
+存在,且
+()
+()
+sin
+2lim
+x
+x
+f x
+f x
+x
+\pi 
+\pi 
+\to 
+=
++
+-
+,求
+()
+f x . 
+解.设
+()
+lim
+x
+f x
+A
+\pi 
+\to 
+=
+,则
+()
+sin
+x
+f
+x
+A
+x
+\pi 
+=
++
+-
+,取极限,得
+sin
+lim
+x
+x
+A
+A
+x
+\pi 
+\pi 
+\to 
+=
++
+-
+, 
+(
+)
+(
+)
+sin
+sin
+sin
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+A
+x
+x
+x
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\pi 
+\to 
+\to 
+\to 
+-
++
+-
+=-
+=-
+=
+=
+-
+-
+-
+,
+()
+sin
+x
+f x
+x
+\pi 
+=
++
+-
+. 
+5.讨论
+sin
+lim
+x
+x
+x
+e
+x
+x
+e
+\to 
+
+
++
+
+
++
+
+
+
+
++
+
+
+的存在性. 
+解.
+sin
+lim
+2 1
+x
+x
+x
+e
+x
+x
+e
+-
+\to 
+
+
++
+
+
++
+=
+-=
+
+
+
+
++
+
+
+,
+sin
+lim
+0 1
+x
+x
+x
+e
+x
+x
+e
++
+\to 
+
+
++
+
+
++
+=
++=
+
+
+
+
++
+
+
+,故存在. 
+6.
+(
+)
+lim
+sin
+lim 1
+sin
+n
+n
+n
+n
+n
+n
+n
+e
+n
+n
+n
+n
++
++
+\to \infty 
+\to \infty 
++
+
+
+=
++
+\cdots 
+=
+
+
+
+
+. 
+7.
+1 sin
+tan
+sin
+tan
+sin
+1 sin
+tan
+tan
+sin
+lim
+lim 1
+1 sin
+1 sin
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+e
+x
+x
++
+-
+\cdots 
+\cdots 
+-
++
+\to 
+\to 
++
+-
+
+
+
+
+=
++
+=
+
+
+
+
++
++
+
+
+
+
+. 
+8.
+(
+)
+(
+)
+cos
+cos
+lim cos
+lim 1
+cos
+x
+x
+x
+x
+x
+x
+e
+e
+x
+x
+x
+x
+e
+-
+-
+-
+\cdots 
+\cdots 
+-
+-
+-
+\to 
+\to 
+=
++
+-
+=
+
+
+
+
+. 
+9.
+sin
+sin
+cos
+cos
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+e
+x
+e
+x
+x
+x
+\to 
+\to 
+\to 
+-
+-
+-
+=
++
+=-
+-=-
+. 
+10.
+(
+)
+lim
+lim
+lim
+n n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+e
+e
+e
+n
+e
+n
+e
+-
++
++
++
++
+\to \infty 
+\to \infty 
+\to \infty 
+
+
+
+
+
+
+-
+=
+\cdots 
+-
+=
+-
+=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+)
+(
+)
+(
+)
+lim
+n n
+n
+e
+n
+n n
+n n
++
+\to \infty 
+-
+\cdots 
+\cdots 
+=
++
++
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.7 节 无穷小的比较}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.无穷小的阶}}
+
+\textcolor{lyred}{定义}.设\alpha , \beta 为x \to \Omega 过程中的无穷小量,则 
+(1)当lim
+x
+\beta 
+\alpha 
+\to 
+=
+\Omega 
+时,称\beta 是比\alpha \textcolor{lyred}{高阶的无穷小},记为
+()
+o
+\beta 
+\alpha 
+=
+; 
+(2)当lim
+x
+\beta 
+\alpha 
+\to 
+=\infty 
+\Omega 
+时,称\beta 是比\alpha \textcolor{lyred}{低阶的无穷小},记为
+()
+o
+\alpha 
+\beta 
+=
+; 
+(3)当lim
+x
+C
+\beta 
+\alpha 
+\to 
+=
+\neq 
+\Omega 
+时,称为\textcolor{lyred}{同阶无穷小};若lim
+x
+\beta 
+\alpha 
+\to 
+=
+\Omega 
+,则称为\textcolor{lyred}{等价},记
+~
+\beta 
+\alpha ; 
+\textcolor{lyred}{注}.等价关系具有\textcolor{lyred}{传递性},即
+~
+\alpha 
+\beta ,
+~
+~
+\beta 
+\gamma 
+\alpha 
+\gamma 
+\Rightarrow 
+. 
+\textcolor{lyred}{例}.当
+x \to 
+时,sin
+~
+x
+x ,arcsin
+~
+x
+x , tan
+~
+x
+x ,arctan
+~
+x
+x ,
+(
+)
+ln 1
+~
+x
+x
++
+,\textcolor{lyred}{ }
+1 ~
+xe
+x
+-
+,
+ln
+1~
+ln
+x
+x
+a
+a
+e
+x
+a
+-=
+-
+,(
+)
+(
+)
+(
+)
+ln 1
+1~
+ln 1
+~
+x
+x
+e
+x
+x
+\alpha 
+\alpha 
+\alpha 
+\alpha 
++
++
+-=
+-
++
+, 
+1~
+n
+x
+x
+n
++
+-
+,
+cos
+~ 2
+x
+x
+-
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.近似公式}}
+
+\textcolor{lyred}{定理}.当x \to \Omega 时,
+()
+~
+o
+\beta 
+\alpha 
+\beta 
+\alpha 
+\alpha 
+\Leftrightarrow 
+=
++
+,此时称\alpha 为\beta 的\textcolor{lyred}{主部}. 
+\textcolor{lyred}{注}.
+()
+sin x
+x
+o x
+=
++
+,
+()
+tan x
+x
+o x
+=
++
+,
+(
+)
+()
+ln 1
+x
+x
+o x
++
+=
++
+,
+()
+xe
+x
+o x
+=+
++
+, 
+(
+)
+()
+x
+x
+o x
+\alpha 
+\alpha 
++
+=+
++
+,
+(
+)
+cos
+x
+x
+o x
+=-
++
+. 
+\textcolor{lyred}{例}.
+(
+)
+()
+()
+()
+()
+()
+lim
+lim
+lim
+ln 1
+x
+x
+x
+x
+x
+o x
+x
+o x
+x
+o x
+x
+e
+x
+x
+o x
+x
+o x
+\to 
+\to 
+\to 
+
+
+
+
++
++
+-
++
++
++
+
+
+
+
++
+-
+
+
+
+
+=
+=
+=
++
++
++
+. 
+\textcolor{lyred}{例}.
+()
+()
+()
+()
+lim
+lim
+x
+x
+x
+o x
+x
+o x
+x
+x
+x
+x
+x
+o x
+x
+o x
+\to 
+\to 
+
+
+
+
++
++
+-
+-
++
+
+
+
+
++
+-
+-
+
+
+
+
+=
+=
+
+
+
+
++
+-
+-
++
++
+-
+-
++
+
+
+
+
+
+
+
+
+. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.等价无穷小的替换法则}}
+
+\textcolor{lyred}{定理}.设当x \to \Omega 时,
+~
+\alpha 
+\alpha ',
+~
+\beta 
+\beta ',则lim
+lim
+x
+x
+\beta 
+\beta 
+\alpha 
+\alpha 
+\to 
+\to 
+'
+=
+'
+\Omega 
+\Omega 
+. 
+\textcolor{lyred}{注(因式替代原则)}.若当x \to \Omega 时,
+~
+\alpha 
+\alpha ',则
+()
+()
+lim
+lim
+x
+x
+f x
+f x
+\alpha 
+\alpha 
+\to 
+\to 
+'
+=
+\Omega 
+\Omega 
+. 
+\textcolor{lyred}{注}.经典的错误:
+tan
+sin
+lim
+lim
+sin
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+-
+-
+=
+=
+; 
+tan
+sin
+tan
+sin
+lim
+lim
+lim
+lim
+lim
+lim
+sin
+sin
+sin
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+\to 
+\to 
+\to 
+-
+-
+=
+-
+=
+-
+=
+=
+, 
+实际上:
+(
+)
+tan
+1 cos
+tan
+sin
+lim
+lim
+lim
+sin
+sin
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+-
+\cdots 
+-
+=
+=
+=
+. 
+\textcolor{lyred}{例}.(1)
+sin5
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+=
+=
++
+, lim 2 sin
+lim 2
+n
+n
+n
+n
+n
+n
+x
+x
+x
+\to \infty 
+\to \infty 
+=
+\cdots 
+=
+. 
+(2)
+lim sin ln 1
+lim ln 1
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to \infty 
+\to \infty 
+\to \infty 
+
+
+
+
++
+=
++
+=
+\cdots 
+=
+
+
+
+
+
+
+
+
+. 
+(3)
+(
+)
+(
+)
+(
+)
+(
+)
+1 cos
+lim
+lim
+lim
+ln 1 3
+x
+x
+x
+x
+x
+e
+e
+x
+x
+x
+x
+\to 
+\to 
+\to 
+-
+-
+-
+=
+=
+=-
+-
+-
+-
+. 
+(4)
+(
+)
+cos
+cos
+1 1
+cos
+lim
+lim
+lim
+ln 1
+tan
+tan
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
++
+-
++
++
+--
++
+-
+=
+=
+=
+-
+-
+-
+. 
+\textcolor{lyred}{例}.(1)
+tan
+lim tan3 tan
+lim tan3
+tan
+lim
+tan3
+t
+x
+t
+t
+x
+t
+x
+x
+t
+t
+t
+\pi 
+\pi 
+\pi 
+\pi 
+=
+-
+\to 
+\to 
+\to 
+
+
+
+
+-
+=
+-
+=
+=
+
+
+
+
+
+
+
+
+. 
+(2)
+(
+)
+1 8
+lim
+lim
+lim
+t
+x
+x
+t
+t
+t
+t
+x
+x
+x
+t
+t
+t
+t
+=
+\to \infty 
+\to 
+\to 
+
+
++
+-
++
++
+-
++
+=
++
+-
++
+=
+=
+
+
+
+
+
+
+1 8
+lim
+lim
+t
+t
+t
+t
+t
+t
+\to 
+\to 
++
+-
++-
+-
+=
+-
+=
+. 
+\textcolor{lyred}{例}.(1)
+tan
+sin
+tan
+sin
+sin
+tan
+sin
+lim
+lim
+lim
+sin
+sin
+x
+x
+x
+x
+x
+x
+x
+x
+e
+e
+e
+x
+x
+e
+x
+x
+x
+-
+\to 
+\to 
+\to 
+-
+-
+-
+=
+\cdots 
+=
+=
+. 
+(2)
+(
+)
+ln 1 3
+ln 1
+lim
+lim3
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+e
+x
+x
+x
+x
+
+
++
+
+
+
+
+\to 
+\to 
+\to 
+\to 
+
+
+
+
++
+-
++
+
+
+
+
++
+-
+-
+
+
+
+
+=
+=
+=
+=
+. 
+(3)
+ln
+ln
+ln
+lim
+lim
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+a
+b
+a
+b
+a
+b
+a
+b
+x
+x
+x
+x
+x
+x
+x
+x
+a
+b
+e
+e
+e
+e
+ab
+\to 
+\to 
+
+
+
+
++
++
++
+-
++
+-
+
+
+
+
+
+
+
+
+
+
+
+
+\to 
+\to 
+
+
++
+=
+=
+=
+=
+=
+
+
+
+
+. 
+\textcolor{lyred}{注}.
+lim
+x
+x
+x
+k
+k
+k
+x
+a
+a
+a
+a
+k
+\to 
+
+
++
++
+=
+
+
+
+
+\Lambda 
+\Lambda 
+,
+lim
+n
+n
+n
+k
+k
+k
+n
+a
+a
+a
+a
+k
+\to \infty 
+
+
++
++
+=
+
+
+
+
+
+
+\Lambda 
+\Lambda 
+. 
+(4)
+lim
+ln sin
+lim
+sin
+sin
+lim
+1 ln2
+lim sin
+t
+x
+x
+x
+x
+t
+x
+x
+x
+t
+x
+x
+x
+t
+x
+e
+e
+e
+e
+e
+x
+\to \infty 
+\to \infty 
+\to 
+
+
+
+
+
+
+
+
++
++
+-
++
+-
+
+
+
+
++
+
+
+
+
+\to \infty 
+
+
++
+=
+=
+=
+=
+=
+
+
+
+
+. 
+\textcolor{lyred}{例}.已知
+()
+lim
+x
+f x
+x
+\to 
+=
+,求
+()
+sin
+lim 1
+x
+x
+f x
+x
+\to 
+
+
++
+
+
+
+
+. 
+解.
+()
+lim
+x
+f x
+x
+\to 
+=
+,故
+()
+()
+()
+ln 1
+sin
+lim
+sin
+lim 1
+lim
+x
+f x
+f x
+x
+x
+x
+x
+x
+x
+f x
+e
+e
+e
+x
+\to 
+
+
++
+
+
+
+
+\to 
+\to 
+
+
++
+=
+=
+=
+
+
+
+
+; 
+或者,
+()
+()
+()
+()
+()
+sin
+sin
+lim
+lim 1
+lim 1
+x
+f x
+x
+f x
+x
+f x
+x
+x
+x
+x
+x
+f x
+f x
+e
+e
+x
+x
+\to 
+\cdots 
+\cdots 
+\to 
+\to 
+
+
+
+
++
+=
++
+=
+=
+
+
+
+
+
+
+
+
+. 
+\textcolor{lyred}{补充练习 }
+1.
+lim
+sin
+lim
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to -\infty 
+\to -\infty 
+\to -\infty 
+=
+\cdots 
+=
+=
+=-
+-
+-
+-
+-
+. 
+2.
+lim
+lim
+lim
+cos
+cos
+cos
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
++
+-
++
++
+-
++
+-
+=
+-
+=
+-
+=-
+-
+-
+-
+-
+-
+. 
+3.
+(
+)
+(
+)(
+)
+(
+)
+2 1
+lim
+lim
+lim
+ln
+ln 1
+x
+x
+x
+x
+x
+e
+e
+e
+x
+e
+e
+e
+x x
+x
+x
+x
+x
+x
+x
+-
+\to 
+\to 
+\to 
+-
+-
+-
+=
+=
+=
+-
++
+-
++
+-
++
+-
+. 
+4.
+1 sin
+1 sin
+1 sin
+1 sin
+lim
+lim
+lim
+lim
+t
+t
+t
+x
+x
+x
+t
+t
+t
+e
+e
+e
+t
+x e
+e
+e
+e
+t
+t
+t
+=
+-
+-
+-
+-
+\to \infty 
+\to 
+\to 
+\to 
+
+
+-
+-
+-
+-
+-
+=
+=
+=
+=
+
+
+
+
+
+
+sin
+lim
+t
+t
+e
+e
+t
+\to 
+-
+=-
+. 
+5.
+(
+)
+ln 2
+lim
+lim
+lim
+ln 2
+x x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+e
+-
++
++
++
++
+\to \infty 
+\to \infty 
+\to \infty 
+
+
+
+
+
+
+-
+=
+-
+=
+-
+=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+. 
+6.
+(
+)
+2 cos
+ln
+cos
+lim
+lim
+ln cos2
+cos2
+x
+x
+x
+x
+x
+x
+e
+x
+x
+x
+x
++
+
+
+
+
+
+
+\to 
+\to 
+
+
+
+
++
+
+-
+=
+-
+=
+
+
+
+
+
+
+-
+
+
+
+
+
+
+
+
+
+
+cos
+cos
+1 cos
+lim
+ln
+lim
+ln 1
+lim
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
+-
++
+-
+-
+-
+-
+
+
+
+
+=
++
+=
+\cdots 
+=
+
+
+
+
+
+
+
+
+. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.8 节 函数的连续性与间断点}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.函数的连续性}}
+
+设
+()
+y
+f x
+=
+在
+(
+)
+U x
+内有定义,记
+x
+x
+x
+\Delta =
+-
+,称为x 的\textcolor{lyred}{增量},相应地,有函数值的 
+\textcolor{lyred}{增量}
+()
+(
+)
+(
+)
+(
+)
+y
+f x
+f x
+f x
+x
+f x
+\Delta 
+\Delta 
+=
+-
+=
++
+-
+. 
+\textcolor{lyred}{定义}.若
+lim
+x
+y
+\Delta 
+\Delta 
+\to 
+=
+,或
+()
+(
+)
+lim
+x
+x f x
+f x
+\to 
+=
+,则称
+()
+y
+f x
+=
+在
+0x 处\textcolor{lyred}{连续}. 
+\textcolor{lyred}{定理}.
+()
+f x 在
+0x 处连续
+(
+)
+(
+)
+(
+)
+f x
+f x
+f x
+-
++
+\Leftrightarrow 
+=
+=
+. 
+\textcolor{lyred}{定义}.设
+()
+f x 在
+0x 的左侧邻域(
+)
+,
+x
+x
+\delta 
+-
+内有定义,若(
+)
+(
+)
+f x
+f x
+-=
+,则称
+()
+f x 
+在
+0x 处\textcolor{lyred}{左连续};类似地,可以定义\textcolor{lyred}{右连续}. 
+\textcolor{lyred}{定义}.若
+()
+f x 在(
+)
+,a b 内处处连续,则称
+()
+f x 为(
+)
+,a b 上的\textcolor{lyred}{连续函数}; 
+若
+()
+f x 在(
+)
+,a b 内处处连续,且在x
+a
+=
+处右连续,在x
+b
+=
+处左连续,则称
+()
+f x 为 
+闭区间[
+]
+,a b 上的\textcolor{lyred}{连续函数}. 
+\textcolor{lyred}{例}.设
+()
+(
+)
+cos2 ,
+ln 1
+,
+x
+x
+f x
+ax
+x
+x
+\le 
+
+=
++
+
+>
+
+,若
+()
+f x 在
+x =
+处连续,求a . 
+解. (
+)
+lim cos2
+x
+f
+x
+-
+-
+\to 
+=
+=, (
+)
+(
+)
+ln 1
+lim
+x
+ax
+f
+a
+x
++
++
+\to 
++
+=
+=
+,
+()
+f
+=,故
+a =. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.函数的间断点}}
+
+\textcolor{lyred}{定义}.设
+()
+f x 在
+(
+)
+U x
+\circ 
+内有定义,且在
+0x 处不连续,即有以下三种情况之一发生: 
+(1)
+(
+)
+f x
+没有定义;(2)极限
+()
+lim
+x
+x f x
+\to 
+不存在;(3)
+()
+(
+)
+lim
+x
+x f x
+f x
+\to 
+\neq 
+,则称
+0x 为 
+()
+f x 的\textcolor{lyred}{间断点}. 
+\textcolor{lyred}{第一类间断点}: (
+)
+f x-与(
+)
+f x+均存在. 
+(1)若(
+)
+(
+)
+f x
+f x
+-
++
+\neq 
+,则称
+0x 为\textcolor{lyred}{跳跃间断点},例如sgn x 在
+x =
+处. 
+(2)若(
+)
+(
+)
+f x
+f x
+-
++
+=
+,即
+()
+lim
+x
+x f x
+\to 
+存在,则称
+0x 为\textcolor{lyred}{可去间断点}. 
+\textcolor{lyred}{第二类间断点}: (
+)
+f x-与(
+)
+f x+中至少有一个不存在. 
+特别地,若(
+)
+f x-或(
+)
+f x+=\infty ,则称
+0x 为\textcolor{lyred}{无穷间断点},例如tan x 在
+x
+\pi 
+=\pm 
+处. 
+\textcolor{lyred}{例}.讨论
+()
+sin x
+f x
+x
+=
+在
+x =
+处的间断点类型. 
+解.
+()
+f x 在
+x =
+处没有定义,而
+()
+lim
+x
+f x
+\to 
+=存在,故为可去间断点; 
+若补充定义
+()
+f
+=,则
+x =
+成为连续点. 
+\textcolor{lyred}{例}.设
+()
+1,
+1,
+x
+x
+f x
+x
+x
+-
+\le 
+
+=+
+>
+
+,讨论
+()
+f x 在
+x =
+处的间断点类型. 
+解. (
+)
+(
+)
+lim
+x
+f
+x
+-
+-
+\to 
+=
+-
+=-, (
+)
+(
+)
+lim
+x
+f
+x
++
++
+\to 
+=
++
+=,故为跳跃间断点. 
+\textcolor{lyred}{例}.讨论
+()
+arctan
+f x
+x
+=
+在
+x =
+处的间断点类型. 
+解. (
+)
+f
+\pi 
+-=-
+, (
+)
+f
+\pi 
++=
+,故
+x =
+为跳跃间断点. 
+\textcolor{lyred}{例}.讨论
+()
+sin
+f x
+x
+=
+在
+x =
+处的间断点类型. 
+解. (
+)
+f
+-与(
+)
+f
++均不存在,故
+x =
+为第二类间断点. 
+\textcolor{lyred}{例}.确定
+()
+x
+f x
+x
+x
+-
+=
+-
++
+的间断点及其类型.\textcolor{lyred}{ }
+解.
+()
+(
+)(
+)
+(
+)(
+)
+x
+x
+f x
+x
+x
+-
++
+=
+-
+-
+,故
+x =为可去间断点,
+x =
+为无穷间断点. 
+\textcolor{lyred}{例}.确定
+()
+tan
+f x
+x
+=+
+的间断点及其类型. 
+解.
+x
+k
+\pi 
+\pi 
+=
++
+为可去间断点,
+x
+k
+\pi 
+\pi 
+=
+-
+为无穷间断点. 
+\textcolor{lyred}{例}.确定
+()
+x
+x
+f x
+-
+=
++
+的间断点及其类型. 
+解.
+lim 2
+x
+x
+-
+\to 
+=
+,
+()
+lim 2
+lim
+x
+x
+x
+f
+x
++
+-
+\to 
+\to 
+=+\infty \Rightarrow 
+=,
+()
+lim
+x
+f
+x
++
+\to 
+=-,故
+x =
+为 
+跳跃间断点. 
+\textcolor{lyred}{例}.确定
+()
+lim1
+n
+n
+x
+f x
+x
+\to \infty 
++
+=
++
+的间断点及其类型.\textcolor{lyred}{ }
+解.
+()
+,
+0,
+1,
+0,
+x
+x
+x
+f x
+x
+x
++
+<
+
+>
+
+=
+=
+
+
+=-
+
+,故
+x =为跳跃间断点,
+x =-为连续点. 
+\textcolor{lyred}{补充练习 }
+1.确定
+()
+x
+x
+f x
+e -
+=
+-
+的间断点及其类型.\textcolor{lyred}{ }
+解.
+()
+lim
+lim
+x
+x
+x
+x
+e
+e
+f x
+-
+\to 
+\to 
+=
+=\Rightarrow 
+=\infty ,故
+x =
+为无穷间断点; 
+()
+lim
+lim
+x
+x
+x
+x
+e
+f
+x
+-
+-
+-
+\to 
+\to 
+=
+\Rightarrow 
+=,
+()
+lim
+lim
+x
+x
+x
+x
+e
+f
+x
++
++
+-
+\to 
+\to 
+=+\infty \Rightarrow 
+=
+,故
+x =为跳跃间断点. 
+2.确定
+()
+ln
+x x
+f x
+x
++
+=
+的间断点及其类型. 
+解.
+x =为无穷间断点,
+x =
+为可去间断点; 
+(
+)
+(
+)
+(
+)
+(
+)
+lim
+lim
+lim
+lim
+ln
+ln
+ln
+ln 1
+t x
+x
+x
+x
+t
+x x
+x x
+x
+t
+x
+x
+x
+t
+-
+-
+-
+-
+=+
+\to -
+\to -
+\to -
+\to 
++
+-
++
++
+=
+=
+=
+=-
+-
+-
+-
+, 
+(
+)
+(
+)
+lim
+lim
+ln
+ln
+x
+x
+x x
+x x
+x
+x
++
++
+\to -
+\to -
++
++
+=
+=
+-
+,故
+x =-为跳跃间断点. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.9 节 连续函数的运算与初等函数的连续性}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.连续函数的四则运算}}
+
+\textcolor{lyred}{定理}.设
+()
+f x 和()
+g x 均在
+0x 处连续,则它们的和差积商(分母不为零)也在
+0x 处 
+连续. 
+\textcolor{lyred}{注}.设在
+0x 处
+()
+f x 连续,而()
+g x 间断,则
+()
+()
+f x
+g x
+\pm 
+必在
+0x 处间断. 
+\textcolor{lyred}{推论}.连续函数的和差积商在定义区间内均是连续函数. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.连续函数的反函数与复合函数}}
+
+\textcolor{lyred}{定理}.设
+()
+y
+f x
+=
+在区间I 上单调且连续,则其反函数
+()
+x
+f
+y
+-
+=
+在对应的区间 
+f
+J
+R
+=
+上单调且连续. 
+\textcolor{lyred}{定理}.设
+()
+lim
+x
+g x
+u
+\to 
+=
+\Omega 
+,
+()
+f u 在
+0u 处连续,则
+()
+(
+)
+()
+lim
+lim
+x
+x
+f
+g x
+f u
+f
+g x
+\to 
+\to 
+
+
+=
+=
+
+
+
+
+
+
+\Omega 
+\Omega 
+. 
+\textcolor{lyred}{例}.
+lim
+lim
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+-
+-
+=
+=
+-
+-
+,
+sin
+sin
+lim 2
+lim
+x
+x
+x
+x
+x
+x
+e
+e
+e
+\to 
+
+
+-
+-
+
+
+
+
+\to 
+=
+=
+. 
+\textcolor{lyred}{例}.
+(
+)
+(
+)
+(
+)
+log
+lim
+lim log
+log
+lim 1
+log
+ln
+a
+x
+x
+a
+a
+a
+x
+x
+x
+x
+x
+x
+e
+x
+a
+\to 
+\to 
+\to 
++
+
+
+
+
+=
++
+=
++
+=
+=
+
+
+
+
+
+
+
+
+. 
+\textcolor{lyred}{定理}.设
+()
+u
+g x
+=
+在
+x
+x
+=
+处连续,
+()
+y
+f u
+=
+在
+(
+)
+u
+g x
+=
+处连续,则
+()
+y
+f
+g x
+=
+
+
+
+ 
+在
+x
+x
+=
+处连续. 
+\textcolor{lyred}{推论}.连续函数的复合函数在定义区间内连续. 
+\textcolor{lyred}{例}.证明:
+()
+f x 连续
+()
+f x
+\Rightarrow 
+也连续. 
+证.
+()
+y
+f x
+=
+由y
+u
+=
+和
+()
+u
+f x
+=
+复合而成,两者均连续,即得,证毕. 
+\textcolor{lyred}{例}.设
+()
+f x , ()
+g x 连续,证明
+()
+()
+\{
+\}
+max
+,
+f x
+g x
+,
+()
+()
+\{
+\}
+min
+,
+f x
+g x
+连续. 
+证.
+()
+()
+\{
+\}
+()
+()
+()
+()
+max
+,
+f x
+g x
+f x
+g x
+f x
+g x
++
++
+-
+=
+, 
+()
+()
+\{
+\}
+()
+()
+()
+()
+min
+,
+f x
+g x
+f x
+g x
+f x
+g x
++
+-
+-
+=
+,即得,证毕. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{三.初等函数的连续性}}
+
+\textcolor{lyred}{定理}.所有初等函数在其定义区间内均为连续函数. 
+\textcolor{lyred}{例}.
+limln arcsin
+ln arcsin
+ln
+x
+x
+\pi 
+\to 
+=
+=
+. 
+\textcolor{lyred}{例}.
+lim
+lim
+lim
+1 8
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
+\to 
++
+-
++
+-
++
++
+=
+=
+\cdots 
+=
+-
+-
++
++
++
++
+. 
+\textcolor{lyred}{例}.
+tan
+1 sin
+tan
+sin
+1 sin
+lim
+lim
+sin
+tan
+1 sin
+1 sin
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+\to 
+\to 
++
+-
++
+-
++
++
+=
+=
++
++
++
++
+-
+. 
+\textcolor{lyred}{补充练习 }
+1.
+(
+)
+(
+)
+(
+)
+limsin
+lim
+sin
+lim
+sin
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+\pi 
+\pi 
+\pi 
+\to \infty 
+\to \infty 
+\to \infty 
++
+=
+-
++-
+=
+-
+=
+++
+. 
+2.设
+()
+f x 在
+x =
+处连续,且在(
+)
+,
+-\infty +\infty 上满足
+()
+(
+)
+f x
+f
+x
+=
+,证明:
+()
+f x 为 
+常数函数. 
+证.
+x
+\forall ,
+()
+2n
+x
+x
+x
+f x
+f
+f
+f
+
+
+
+
+
+
+=
+=
+=
+=
+
+
+
+
+
+
+
+
+
+
+
+
+\Lambda 
+,故
+()
+()
+lim
+2n
+n
+x
+f
+x
+f
+f
+\to \infty 
+
+
+=
+=
+
+
+
+
+,即得, 
+证毕. 
+3.设
+(
+)
+()
+()
+f x
+y
+f x f
+y
++
+=
+,
+(
+)
+,
+,
+x y
+\forall 
+\in -\infty +\infty ,并且
+()
+f x 在
+x =
+处连续,证明: 
+()
+f x 在(
+)
+,
+-\infty +\infty 上连续. 
+证.
+x
+\forall ,
+()
+()
+()
+f x
+f x f
+=
+,故(1)
+()
+()
+f
+f x
+=
+\Rightarrow 
+\equiv 
+;或者 
+(2)
+()
+()
+(
+)
+()
+(
+)
+()
+(
+)
+lim
+lim
+lim
+x
+x
+x
+f
+f
+f x
+x
+f x f
+x
+f x
+f
+x
+\Delta \to 
+\Delta \to 
+\Delta \to 
+\neq 
+\Rightarrow 
+=\Rightarrow 
++\Delta 
+=
+\Delta 
+=
+\Delta 
+= 
+()
+()
+()
+f x f
+f x
+=
+,即得,证毕. 
+\vspace{6pt}
+{\large \bfseries \textcolor{lyred}{第1.10 节 闭区间上连续函数的性质}}
+
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{一.最大值最小值定理}}
+
+\textcolor{lyred}{定理}.设
+()
+f x 在[
+]
+,a b 上连续,则存在
+1\psi ,
+[
+]
+,a b
+\psi \in 
+,使得
+[
+]
+,
+x
+a b
+\forall \in 
+,均有 
+()
+()
+(
+)
+f
+f x
+f
+\psi 
+\psi 
+\le 
+\le 
+. 
+\textcolor{lyred}{推论}.设
+()
+f x 在[
+]
+,a b 上连续,则
+()
+f x 在[
+]
+,a b 上有界. 
+\textcolor{lyred}{推论}.设
+()
+f x 在(
+)
+,a b 上连续,且(
+)
+f a+与(
+)
+f b-存在,则
+()
+f x 在(
+)
+,a b 上有界. 
+\vspace{4pt}
+{\bfseries \textcolor{lyred}{二.零点定理与介值定理}}
+
+\textcolor{lyred}{定理}.设
+()
+f x 在[
+]
+,a b 上连续,且
+()
+()
+f a
+f b
+\cdots 
+<
+,则
+(
+)
+,a b
+\psi 
+\exists \in 
+,使得
+()
+f \psi =
+. 
+\textcolor{lyred}{例}.证明:方程
+x
+x
+-
++=
+在(
+)
+0,1 上至少有一个根. 
+证.设
+()
+f x
+x
+x
+=
+-
++,则
+()
+f
+=>
+,
+()1
+f
+=-<
+,即得,证毕. 
+\textcolor{lyred}{例}.设
+()
+[
+]
+0,1
+f x
+C
+\in 
+,且
+()
+f x
+\le 
+\le ,证明:
+[
+]
+0,1
+\psi 
+\exists \in 
+,使得
+()
+f \psi 
+\psi 
+=
+. 
+证.令
+()
+()
+F x
+f x
+x
+=
+-
+,则
+()
+()
+F
+f
+=
+\ge 
+,
+()
+()
+F
+f
+=
+-\le 
+,即得,证毕. 
+\textcolor{lyred}{例}.设
+()
+[
+]
+0,1
+f x
+C
+\in 
+,且
+()
+()
+f
+f
+=
+,证明:
+[
+]
+0,1
+\psi 
+\exists \in 
+,使得
+()
+f
+f
+\psi 
+\psi 
+
+
++
+=
+
+
+
+
+. 
+证.令
+()
+()
+F x
+f
+x
+f x
+
+
+=
++
+-
+
+
+
+
+,则
+()
+F
+F 
+
++
+=
+
+
+
+
+,故
+()
+F
+F 
+
+\cdots 
+\le 
+
+
+
+
+,证毕. 
+\textcolor{lyred}{定理}.设
+()
+f x 在[
+]
+,a b 上连续,
+()
+f a
+A
+=
+,
+()
+f b
+B
+=
+, A
+B
+\neq 
+,则对介于
+,
+A B 之间的 
+任何数C ,存在
+(
+)
+,a b
+\psi \in 
+,使得
+()
+f
+C
+\psi =
+. 
+\textcolor{lyred}{推论}.有界闭区间上的连续函数能取到最大最小值之间的任何值. 
+\textcolor{lyred}{推论}.设
+()
+[
+]
+,
+f x
+C a b
+\in 
+,
+[
+]
+,
+ix
+a b
+\in 
+,
+i\lambda >
+,
+1,2,
+,
+i
+n
+=
+\Lambda 
+,则
+[
+]
+,a b
+\psi 
+\exists \in 
+,使得 
+()
+()
+(
+)
+(
+)
+n
+n
+n
+f x
+f x
+f x
+f
+\lambda 
+\lambda 
+\lambda 
+\psi 
+\lambda 
+\lambda 
+\lambda 
++
++
++
+=
++
++
++
+\Lambda 
+\Lambda 
+. 
+\textcolor{lyred}{补充练习 }
+1.设
+()
+[
+]
+0,1
+f x
+C
+\in 
+,且
+()
+f
+=
+,
+()1
+f
+=,证明:
+(
+)
+0,1
+\psi 
+\exists \in 
+,使得
+()
+1 2
+f \psi 
+\psi 
+=-
+. 
+证.令
+()
+()1
+F x
+f x
+x
+=
+-+
+,则
+()
+F
+=-,
+()
+F
+=
+,即得,证毕. 
+2.设
+()
+(
+)
+,
+f
+x
+C
+\in 
+-\infty +\infty ,且
+()
+lim
+x
+f x
+x
+\to \infty 
+=
+,证明:方程
+()
+f x
+x
++
+=
+存在实根. 
+证.令
+()
+()
+F x
+f x
+x
+=
++
+,则
+()
+lim
+x
+F x
+x
+\to \infty 
+=>
+,由保号性知,当x
+X
+>
+时,
+()
+F x
+x
+>
+, 
+即当x
+X
+>
+时
+()
+F x >
+,当x
+X
+<-
+时
+()
+F x <
+,即得,证毕. 
